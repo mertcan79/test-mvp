@@ -24,7 +24,7 @@ Each recommendation must have:
 **2. A short explanation below it**, starting with:
 💡 Explanation: [Reason — data-driven, clear, tactical]
 
-📌 Allowed action types: [discount], [bundle promotion], [menu highlight], [availability update]  
+📌 Allowed action types: [discount], [bundle promotion], [availability update]  
 📌 Action line must include:  
 - Item name  
 - What you want the restaurant to do  
