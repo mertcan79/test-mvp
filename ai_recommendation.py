@@ -12,40 +12,27 @@ def get_structured_recommendations(data_summary):
     prompt = f"""
 You are a restaurant business strategist helping an owner act on performance insights.
 
-Your task: Generate **3 clear and professional recommendations** using item-level trends, ordering patterns, and menu performance.
+Your task is to generate **3 clear and actionable recommendations**, using sales trends, item performance, and inventory data.
 
-Each recommendation must have:
-
-**1. A natural language action line**, like:
-- “Apply a 15% discount on Tavuk İskender this Saturday”
-- “Bundle Ayran with Tavuk Wrap from July 8–12”
-- “Highlight Cheesecake on the menu between July 10–20”
-
-**2. A short explanation below it**, starting with:
-💡 Explanation: [Reason — data-driven, clear, tactical]
-
-📌 Allowed action types: [discount], [bundle promotion], [availability update]  
-📌 Action line must include:  
-- Item name  
-- What you want the restaurant to do  
-- Specific details (e.g., 10% discount, bundle with X)  
-- Time range using **natural phrasing** (e.g. “next weekend”, “July 5–10”, “this Friday”)
-
-📌 Each recommendation must be for only one item (or one bundle). No grouping.
+Each recommendation must follow this exact format:
 
 ---
 
-EXAMPLES:
-
-Apply a 15% discount on Tavuk İskender this Saturday [discount] [Saturday, July 6]  
-💡 Explanation: Sales dropped 3 days in a row. Saturday is the slowest day; a discount could boost orders.
-
-Bundle Ayran with Tavuk Wrap for weekday lunch hours [bundle promotion] [July 8–12]  
-💡 Explanation: Ayran underperforms solo. Pairing it with a best-seller increases basket size.
+Action: [Natural sentence describing the recommendation. Example: "Apply a 15% discount on Tavuk Şiş this Saturday."]
+Action Type: [discount] or [bundle promotion] or [availability update]
+Date Range: [e.g., "Saturday, July 6" or "July 10–15"]
+Explanation: [Start with "💡" and give a clear, data-driven reason why this helps.]
 
 ---
 
-Now generate your recommendations based on the following data:
+📌 Notes:
+- Do not group items.
+- Each action must target only one item (or one combo).
+- Use realistic restaurant language.
+- Use actual weekday or date ranges.
+- Always include the Explanation section for every recommendation.
+
+Here is the data to work from:
 
 \"\"\"
 {data_summary}
@@ -54,10 +41,10 @@ Now generate your recommendations based on the following data:
     response = client.chat.completions.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "You are a data-driven and articulate restaurant business assistant."},
+            {"role": "system", "content": "You are a structured restaurant strategy advisor."},
             {"role": "user", "content": prompt}
         ],
         temperature=0.4,
-        max_tokens=450
+        max_tokens=600  # increase to avoid trimming
     )
     return response.choices[0].message.content.strip()
