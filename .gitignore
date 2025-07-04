@@ -1,2 +1,7 @@
 /.env
 .streamlit/secrets.toml
+main.ipynb
+summary.txt
+test.py
+Adisyo - QAPERA.pdf
+adisyo_api.py
