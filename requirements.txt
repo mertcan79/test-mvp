@@ -1,0 +1,11 @@
+streamlit>=1.32.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.20.0
+openai>=1.30.0
+python-dotenv>=1.0.1
+playwright
+selenium
+webdriver-manager>=3.8.5
+matplotlib>=3.9.0
+seaborn>=0.12.2

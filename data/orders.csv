@@ -1,0 +1,501 @@
+order_id,datetime,channel,items,total_price,payment_method,location,customer_type
+1,2025-06-26 15:43:50,Yemeksepeti,"[{'item_id': 18, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",769.33,Wallet,Üsküdar,New
+2,2025-06-30 19:37:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 5, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",569.73,Credit Card,Beşiktaş,New
+3,2025-06-05 09:02:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Credit Card,Kadıköy,Returning
+4,2025-06-28 15:46:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 17, 'quantity': 3}]",523.78,Wallet,Kadıköy,Returning
+5,2025-06-20 01:50:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",709.67,Wallet,Kadıköy,Returning
+6,2025-06-16 02:11:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 6, 'quantity': 2}]",413.92,Credit Card,Kadıköy,New
+7,2025-07-03 03:42:50,Phone,"[{'item_id': 18, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 9, 'quantity': 1}]",348.82,Cash,Beşiktaş,Returning
+8,2025-06-28 16:38:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",484.77,Wallet,Beşiktaş,Returning
+9,2025-06-27 20:22:50,Trendyol,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",407.43,Wallet,Beşiktaş,Returning
+10,2025-06-07 12:06:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 5, 'quantity': 1}]",435.8,Wallet,Beşiktaş,Returning
+11,2025-06-09 16:12:50,Trendyol,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",510.98,Wallet,Üsküdar,Returning
+12,2025-06-12 18:19:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 2}]",258.1,Wallet,Beşiktaş,New
+13,2025-07-04 14:28:50,Trendyol,"[{'item_id': 16, 'quantity': 3}, {'item_id': 19, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",322.78,Cash,Kadıköy,New
+14,2025-06-17 17:30:50,Trendyol,"[{'item_id': 6, 'quantity': 2}]",169.3,Credit Card,Kadıköy,New
+15,2025-06-30 04:30:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 1}]",222.47,Credit Card,Üsküdar,New
+16,2025-06-23 06:58:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",408.4,Credit Card,Üsküdar,New
+17,2025-06-09 09:22:50,Trendyol,"[{'item_id': 6, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",469.65,Credit Card,Üsküdar,New
+18,2025-06-16 17:55:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 10, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",540.58,Cash,Beşiktaş,New
+19,2025-06-12 02:39:50,Trendyol,"[{'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",314.27,Wallet,Beşiktaş,Returning
+20,2025-06-11 00:49:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",174.45,Credit Card,Üsküdar,New
+21,2025-06-11 01:55:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 6, 'quantity': 1}]",487.74,Wallet,Beşiktaş,New
+22,2025-06-21 06:45:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",141.72,Cash,Üsküdar,New
+23,2025-06-29 19:17:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",597.51,Credit Card,Beşiktaş,New
+24,2025-06-24 15:32:50,Trendyol,"[{'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 2}]",365.27,Wallet,Beşiktaş,Returning
+25,2025-07-02 09:05:50,In-Store,"[{'item_id': 18, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",356.76,Wallet,Üsküdar,Returning
+26,2025-06-19 01:43:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 3}]",171.99,Cash,Kadıköy,New
+27,2025-06-20 10:34:50,Phone,"[{'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 2}]",236.97,Credit Card,Beşiktaş,Returning
+28,2025-06-07 17:37:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 14, 'quantity': 2}]",175.41,Wallet,Beşiktaş,Returning
+29,2025-06-14 10:07:50,Phone,"[{'item_id': 6, 'quantity': 2}]",169.3,Wallet,Üsküdar,Returning
+30,2025-06-19 23:26:50,Yemeksepeti,"[{'item_id': 18, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",415.71,Cash,Beşiktaş,Returning
+31,2025-06-20 20:11:50,In-Store,"[{'item_id': 12, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",251.47,Cash,Beşiktaş,Returning
+32,2025-06-28 02:27:50,Trendyol,"[{'item_id': 8, 'quantity': 1}]",58.71,Wallet,Kadıköy,New
+33,2025-06-18 04:05:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 16, 'quantity': 1}]",121.71,Credit Card,Kadıköy,Returning
+34,2025-06-07 05:33:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}]",125.85,Cash,Üsküdar,Returning
+35,2025-06-13 07:41:50,Phone,"[{'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",634.8,Wallet,Kadıköy,Returning
+36,2025-06-19 01:46:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",683.48,Cash,Beşiktaş,New
+37,2025-06-12 03:13:50,Phone,"[{'item_id': 20, 'quantity': 2}, {'item_id': 1, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 2, 'quantity': 2}]",692.32,Cash,Beşiktaş,New
+38,2025-06-12 04:21:50,Phone,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 6, 'quantity': 3}]",563.99,Credit Card,Beşiktaş,New
+39,2025-06-11 02:58:50,Trendyol,"[{'item_id': 7, 'quantity': 1}]",71.67,Credit Card,Üsküdar,Returning
+40,2025-06-15 09:36:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 2}]",347.68,Credit Card,Beşiktaş,New
+41,2025-06-17 18:30:50,In-Store,"[{'item_id': 18, 'quantity': 3}]",130.35,Wallet,Beşiktaş,Returning
+42,2025-06-13 04:23:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 3}]",211.05,Cash,Beşiktaş,Returning
+43,2025-07-03 10:38:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",321.82,Wallet,Kadıköy,New
+44,2025-06-23 07:52:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",616.24,Credit Card,Kadıköy,New
+45,2025-06-07 17:29:50,Trendyol,"[{'item_id': 18, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",302.6,Wallet,Kadıköy,Returning
+46,2025-07-03 01:38:50,In-Store,"[{'item_id': 20, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",275.55,Cash,Kadıköy,Returning
+47,2025-06-17 12:51:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",824.37,Credit Card,Kadıköy,New
+48,2025-06-07 21:05:50,Phone,"[{'item_id': 7, 'quantity': 1}]",71.67,Credit Card,Beşiktaş,Returning
+49,2025-06-21 13:23:50,In-Store,"[{'item_id': 19, 'quantity': 3}, {'item_id': 14, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",440.38,Wallet,Üsküdar,Returning
+50,2025-06-06 00:42:50,Phone,"[{'item_id': 14, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",279.04,Cash,Kadıköy,Returning
+51,2025-07-02 23:27:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",341.32,Credit Card,Beşiktaş,New
+52,2025-06-09 05:04:50,Phone,"[{'item_id': 18, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",462.0,Wallet,Üsküdar,New
+53,2025-06-13 03:29:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 20, 'quantity': 2}]",688.64,Cash,Kadıköy,Returning
+54,2025-06-05 21:02:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",228.01,Credit Card,Beşiktaş,New
+55,2025-06-04 21:03:50,Trendyol,"[{'item_id': 12, 'quantity': 3}]",215.7,Wallet,Beşiktaş,New
+56,2025-06-30 21:29:50,Phone,"[{'item_id': 5, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",406.29,Cash,Beşiktaş,Returning
+57,2025-06-19 01:00:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 2}, {'item_id': 15, 'quantity': 1}]",372.0,Credit Card,Üsküdar,New
+58,2025-06-26 21:31:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",498.41,Cash,Üsküdar,Returning
+59,2025-06-24 19:42:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",417.81,Cash,Üsküdar,New
+60,2025-06-14 06:57:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",309.84,Wallet,Üsküdar,Returning
+61,2025-07-03 06:56:50,In-Store,"[{'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",170.5,Credit Card,Beşiktaş,New
+62,2025-06-29 18:56:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",275.61,Credit Card,Beşiktaş,New
+63,2025-06-27 06:13:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 1}, {'item_id': 1, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 17, 'quantity': 1}]",313.83,Cash,Beşiktaş,New
+64,2025-06-23 07:13:50,Phone,"[{'item_id': 11, 'quantity': 1}, {'item_id': 6, 'quantity': 2}]",211.25,Cash,Kadıköy,New
+65,2025-06-23 16:27:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",524.35,Wallet,Kadıköy,New
+66,2025-06-17 07:40:50,Phone,"[{'item_id': 5, 'quantity': 3}]",172.53,Wallet,Üsküdar,Returning
+67,2025-06-17 18:03:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",267.19,Cash,Beşiktaş,Returning
+68,2025-06-27 03:34:50,In-Store,"[{'item_id': 15, 'quantity': 1}]",35.64,Wallet,Kadıköy,Returning
+69,2025-06-26 22:20:50,Phone,"[{'item_id': 15, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",215.81,Credit Card,Üsküdar,New
+70,2025-06-27 10:17:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,Returning
+71,2025-06-23 11:15:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 19, 'quantity': 3}, {'item_id': 6, 'quantity': 2}]",673.31,Wallet,Beşiktaş,Returning
+72,2025-07-04 10:54:50,Phone,"[{'item_id': 2, 'quantity': 1}]",97.51,Cash,Üsküdar,New
+73,2025-06-30 14:29:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 17, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",435.94,Cash,Kadıköy,Returning
+74,2025-06-29 05:49:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",338.38,Cash,Kadıköy,Returning
+75,2025-06-12 14:28:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 5, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",498.25,Cash,Beşiktaş,Returning
+76,2025-06-19 16:56:50,In-Store,"[{'item_id': 18, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",520.35,Wallet,Kadıköy,Returning
+77,2025-06-18 16:52:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",290.37,Wallet,Kadıköy,New
+78,2025-06-14 00:18:50,Phone,"[{'item_id': 7, 'quantity': 1}]",71.67,Wallet,Üsküdar,Returning
+79,2025-06-14 06:19:50,Trendyol,"[{'item_id': 2, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 11, 'quantity': 3}]",266.81,Credit Card,Beşiktaş,Returning
+80,2025-07-04 07:17:50,In-Store,"[{'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 4, 'quantity': 1}]",327.61,Wallet,Üsküdar,New
+81,2025-06-14 05:02:50,Phone,"[{'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",137.12,Wallet,Beşiktaş,Returning
+82,2025-06-18 20:42:50,Trendyol,"[{'item_id': 18, 'quantity': 1}]",43.45,Cash,Kadıköy,New
+83,2025-06-23 15:16:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",536.37,Credit Card,Beşiktaş,Returning
+84,2025-06-14 13:12:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",107.89,Credit Card,Kadıköy,New
+85,2025-06-12 02:22:50,In-Store,"[{'item_id': 13, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 1, 'quantity': 1}]",287.74,Wallet,Beşiktaş,Returning
+86,2025-06-25 21:25:50,In-Store,"[{'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",139.27,Cash,Beşiktaş,New
+87,2025-06-06 15:28:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",466.67,Credit Card,Üsküdar,Returning
+88,2025-06-11 08:10:50,Trendyol,"[{'item_id': 5, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 18, 'quantity': 2}, {'item_id': 7, 'quantity': 2}]",809.96,Cash,Beşiktaş,New
+89,2025-06-08 13:34:50,In-Store,"[{'item_id': 12, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",391.83,Cash,Beşiktaş,New
+90,2025-06-16 23:30:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 4, 'quantity': 1}]",356.47,Credit Card,Beşiktaş,New
+91,2025-06-29 04:00:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 5, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 17, 'quantity': 3}]",544.56,Cash,Beşiktaş,New
+92,2025-06-05 10:31:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 19, 'quantity': 3}]",183.51,Cash,Beşiktaş,Returning
+93,2025-06-28 13:27:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",820.69,Wallet,Beşiktaş,New
+94,2025-06-10 12:40:50,Phone,"[{'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 15, 'quantity': 1}]",279.29,Wallet,Beşiktaş,Returning
+95,2025-06-08 21:52:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",98.83,Cash,Üsküdar,Returning
+96,2025-06-11 06:24:50,In-Store,"[{'item_id': 18, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",515.86,Wallet,Kadıköy,New
+97,2025-06-14 15:28:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 17, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",216.44,Cash,Üsküdar,Returning
+98,2025-06-16 17:37:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",429.89,Credit Card,Beşiktaş,Returning
+99,2025-06-26 08:29:50,In-Store,"[{'item_id': 5, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 7, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",587.54,Wallet,Üsküdar,Returning
+100,2025-06-10 01:14:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",332.27,Wallet,Üsküdar,Returning
+101,2025-07-02 00:18:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",133.38,Credit Card,Kadıköy,New
+102,2025-06-24 21:03:50,Phone,"[{'item_id': 15, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",427.23,Credit Card,Üsküdar,New
+103,2025-07-03 18:55:50,In-Store,"[{'item_id': 14, 'quantity': 2}]",71.78,Credit Card,Üsküdar,Returning
+104,2025-07-01 09:11:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",466.36,Cash,Üsküdar,New
+105,2025-06-24 11:18:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 3, 'quantity': 2}]",421.57,Cash,Üsküdar,New
+106,2025-06-09 03:41:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",189.63,Cash,Üsküdar,New
+107,2025-06-06 22:29:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 7, 'quantity': 3}]",468.96,Cash,Kadıköy,Returning
+108,2025-06-29 03:54:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",628.12,Wallet,Üsküdar,Returning
+109,2025-06-27 07:59:50,In-Store,"[{'item_id': 3, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",264.61,Wallet,Üsküdar,Returning
+110,2025-06-26 08:01:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 3, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 14, 'quantity': 1}]",361.5,Cash,Üsküdar,Returning
+111,2025-06-09 18:58:50,Trendyol,"[{'item_id': 19, 'quantity': 3}, {'item_id': 8, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",515.54,Cash,Beşiktaş,Returning
+112,2025-06-26 20:13:50,Trendyol,"[{'item_id': 6, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",511.39,Cash,Kadıköy,Returning
+113,2025-06-05 05:38:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",167.0,Wallet,Kadıköy,New
+114,2025-06-26 00:37:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",123.43,Credit Card,Kadıköy,Returning
+115,2025-06-09 14:31:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",425.03,Credit Card,Beşiktaş,Returning
+116,2025-07-02 20:31:50,Trendyol,"[{'item_id': 20, 'quantity': 1}]",27.16,Credit Card,Beşiktaş,Returning
+117,2025-06-07 17:39:50,Trendyol,"[{'item_id': 16, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 4, 'quantity': 3}]",194.54,Wallet,Üsküdar,Returning
+118,2025-06-05 19:23:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",252.25,Cash,Üsküdar,New
+119,2025-06-19 14:16:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",291.16,Wallet,Kadıköy,Returning
+120,2025-06-24 23:19:50,In-Store,"[{'item_id': 1, 'quantity': 3}]",216.63,Wallet,Üsküdar,New
+121,2025-06-10 04:25:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 13, 'quantity': 2}]",926.3,Wallet,Beşiktaş,New
+122,2025-06-18 16:17:50,Yemeksepeti,"[{'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",543.79,Wallet,Üsküdar,Returning
+123,2025-06-11 00:24:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",222.69,Cash,Üsküdar,New
+124,2025-06-12 08:47:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 14, 'quantity': 1}, {'item_id': 2, 'quantity': 3}]",387.13,Credit Card,Kadıköy,Returning
+125,2025-06-06 21:34:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",264.77,Wallet,Üsküdar,Returning
+126,2025-06-25 07:20:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",389.92,Cash,Üsküdar,New
+127,2025-06-27 11:15:50,Phone,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",334.85,Wallet,Kadıköy,Returning
+128,2025-06-29 10:19:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 6, 'quantity': 2}]",228.01,Credit Card,Beşiktaş,New
+129,2025-06-27 12:14:50,In-Store,"[{'item_id': 11, 'quantity': 1}]",41.95,Credit Card,Beşiktaş,New
+130,2025-06-28 14:42:50,Phone,"[{'item_id': 6, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 9, 'quantity': 3}]",824.4,Wallet,Beşiktaş,New
+131,2025-06-30 21:13:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",169.98,Cash,Beşiktaş,New
+132,2025-06-21 02:22:50,In-Store,"[{'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",103.0,Credit Card,Kadıköy,Returning
+133,2025-06-14 10:02:50,In-Store,"[{'item_id': 16, 'quantity': 3}]",149.43,Cash,Kadıköy,New
+134,2025-06-22 19:37:50,In-Store,"[{'item_id': 18, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 12, 'quantity': 3}]",548.1,Cash,Üsküdar,New
+135,2025-06-07 07:46:50,Trendyol,"[{'item_id': 11, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 7, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",532.84,Cash,Üsküdar,Returning
+136,2025-06-20 21:43:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 3}]",490.22,Wallet,Üsküdar,New
+137,2025-06-12 07:40:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 5, 'quantity': 2}]",406.85,Wallet,Üsküdar,New
+138,2025-06-11 08:22:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}]",143.34,Cash,Kadıköy,New
+139,2025-07-02 20:03:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",461.4,Wallet,Beşiktaş,New
+140,2025-06-17 04:28:50,Trendyol,"[{'item_id': 19, 'quantity': 2}, {'item_id': 2, 'quantity': 1}]",148.07,Wallet,Üsküdar,New
+141,2025-06-25 19:25:50,Trendyol,"[{'item_id': 6, 'quantity': 2}]",169.3,Cash,Beşiktaş,Returning
+142,2025-07-02 21:55:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 4, 'quantity': 3}, {'item_id': 1, 'quantity': 3}]",633.78,Cash,Beşiktaş,Returning
+143,2025-06-23 00:39:50,Trendyol,"[{'item_id': 5, 'quantity': 1}]",57.51,Cash,Kadıköy,New
+144,2025-07-04 08:57:50,In-Store,"[{'item_id': 14, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 5, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",562.18,Cash,Kadıköy,Returning
+145,2025-06-12 01:30:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",388.23,Cash,Beşiktaş,New
+146,2025-06-19 10:12:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",185.33,Wallet,Beşiktaş,New
+147,2025-06-14 12:22:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 17, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 12, 'quantity': 1}]",394.32,Cash,Beşiktaş,Returning
+148,2025-06-20 20:23:50,In-Store,"[{'item_id': 3, 'quantity': 1}]",53.06,Cash,Beşiktaş,New
+149,2025-06-26 04:54:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",567.26,Cash,Üsküdar,New
+150,2025-06-28 15:28:50,In-Store,"[{'item_id': 11, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",489.66,Cash,Üsküdar,Returning
+151,2025-06-10 06:19:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 9, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",552.11,Wallet,Beşiktaş,New
+152,2025-06-15 23:41:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",636.06,Cash,Kadıköy,Returning
+153,2025-06-10 04:14:50,Trendyol,"[{'item_id': 15, 'quantity': 2}]",71.28,Cash,Beşiktaş,New
+154,2025-06-10 07:36:50,In-Store,"[{'item_id': 2, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 9, 'quantity': 3}]",657.43,Wallet,Üsküdar,New
+155,2025-06-19 07:52:50,Trendyol,"[{'item_id': 11, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",514.68,Cash,Üsküdar,Returning
+156,2025-06-21 02:51:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 16, 'quantity': 1}]",229.5,Wallet,Kadıköy,New
+157,2025-07-02 20:45:50,Trendyol,"[{'item_id': 2, 'quantity': 3}]",292.53,Credit Card,Üsküdar,Returning
+158,2025-06-04 23:43:50,In-Store,"[{'item_id': 11, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",383.5,Wallet,Kadıköy,Returning
+159,2025-06-30 11:50:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}]",71.28,Cash,Üsküdar,New
+160,2025-06-17 08:01:50,Phone,"[{'item_id': 7, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",909.03,Wallet,Üsküdar,New
+161,2025-07-03 13:10:50,Phone,"[{'item_id': 15, 'quantity': 2}]",71.28,Credit Card,Beşiktaş,New
+162,2025-06-07 21:23:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 18, 'quantity': 1}]",309.75,Credit Card,Beşiktaş,Returning
+163,2025-06-14 06:15:50,Trendyol,"[{'item_id': 18, 'quantity': 2}]",86.9,Credit Card,Beşiktaş,Returning
+164,2025-07-02 11:58:50,In-Store,"[{'item_id': 13, 'quantity': 3}]",235.23,Credit Card,Üsküdar,Returning
+165,2025-06-16 11:52:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 4, 'quantity': 1}]",109.6,Cash,Kadıköy,New
+166,2025-06-15 23:20:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 4, 'quantity': 2}]",334.33,Credit Card,Beşiktaş,New
+167,2025-07-04 03:19:50,Phone,"[{'item_id': 9, 'quantity': 2}]",166.02,Cash,Kadıköy,Returning
+168,2025-06-10 14:33:50,Trendyol,"[{'item_id': 12, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",171.52,Cash,Beşiktaş,New
+169,2025-06-04 19:17:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",412.99,Wallet,Üsküdar,Returning
+170,2025-06-20 15:54:50,Trendyol,"[{'item_id': 9, 'quantity': 1}, {'item_id': 5, 'quantity': 3}]",255.54,Wallet,Üsküdar,Returning
+171,2025-06-08 07:06:50,Yemeksepeti,"[{'item_id': 13, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",553.47,Credit Card,Üsküdar,New
+172,2025-06-12 09:06:50,In-Store,"[{'item_id': 6, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",241.51,Cash,Beşiktaş,New
+173,2025-06-07 16:20:50,Phone,"[{'item_id': 3, 'quantity': 2}]",106.12,Wallet,Kadıköy,Returning
+174,2025-06-20 10:07:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",917.13,Cash,Kadıköy,Returning
+175,2025-06-29 11:04:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 10, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",646.33,Credit Card,Beşiktaş,Returning
+176,2025-06-27 18:24:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 1}]",571.79,Wallet,Beşiktaş,Returning
+177,2025-06-25 00:31:50,In-Store,"[{'item_id': 16, 'quantity': 2}, {'item_id': 6, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 4, 'quantity': 2}]",323.46,Credit Card,Beşiktaş,Returning
+178,2025-06-22 18:43:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",210.55,Cash,Beşiktaş,Returning
+179,2025-06-17 19:58:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}]",207.26,Credit Card,Üsküdar,New
+180,2025-06-20 19:30:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",510.23,Cash,Kadıköy,Returning
+181,2025-06-22 09:36:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 19, 'quantity': 3}]",832.42,Credit Card,Kadıköy,New
+182,2025-06-06 12:29:50,Trendyol,"[{'item_id': 18, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",365.87,Credit Card,Kadıköy,Returning
+183,2025-06-18 09:04:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",142.7,Wallet,Üsküdar,New
+184,2025-06-13 08:43:50,Phone,"[{'item_id': 9, 'quantity': 1}]",83.01,Cash,Üsküdar,New
+185,2025-06-30 11:23:50,Trendyol,"[{'item_id': 17, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 20, 'quantity': 3}]",505.3,Wallet,Kadıköy,Returning
+186,2025-06-10 11:41:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",636.45,Credit Card,Üsküdar,Returning
+187,2025-07-03 18:38:50,In-Store,"[{'item_id': 3, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 12, 'quantity': 1}]",258.67,Cash,Üsküdar,New
+188,2025-06-09 23:02:50,Phone,"[{'item_id': 16, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",308.61,Wallet,Kadıköy,Returning
+189,2025-06-08 20:29:50,In-Store,"[{'item_id': 17, 'quantity': 1}]",57.33,Wallet,Üsküdar,New
+190,2025-06-26 10:27:50,Trendyol,"[{'item_id': 8, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",227.5,Cash,Kadıköy,Returning
+191,2025-06-11 14:40:50,Phone,"[{'item_id': 5, 'quantity': 3}, {'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 1}]",224.97,Credit Card,Beşiktaş,New
+192,2025-06-30 12:58:50,In-Store,"[{'item_id': 3, 'quantity': 3}, {'item_id': 7, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",606.09,Cash,Beşiktaş,New
+193,2025-06-26 00:44:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 3}, {'item_id': 17, 'quantity': 2}]",363.69,Wallet,Üsküdar,Returning
+194,2025-06-24 09:07:50,Trendyol,"[{'item_id': 3, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",139.96,Cash,Üsküdar,Returning
+195,2025-06-13 01:16:50,Trendyol,"[{'item_id': 1, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",328.53,Cash,Kadıköy,New
+196,2025-06-12 22:30:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",589.09,Wallet,Kadıköy,Returning
+197,2025-06-20 00:02:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 2, 'quantity': 1}]",236.81,Wallet,Üsküdar,Returning
+198,2025-06-05 00:08:50,Trendyol,"[{'item_id': 12, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",352.56,Cash,Üsküdar,Returning
+199,2025-06-13 21:32:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",520.59,Credit Card,Beşiktaş,New
+200,2025-06-23 07:05:50,Phone,"[{'item_id': 6, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",598.09,Credit Card,Beşiktaş,New
+201,2025-06-17 13:51:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",517.26,Wallet,Beşiktaş,New
+202,2025-07-04 04:18:50,In-Store,"[{'item_id': 13, 'quantity': 3}]",235.23,Cash,Beşiktaş,New
+203,2025-06-20 05:16:50,Trendyol,"[{'item_id': 3, 'quantity': 3}]",159.18,Wallet,Üsküdar,New
+204,2025-06-10 11:08:50,Trendyol,"[{'item_id': 17, 'quantity': 3}, {'item_id': 4, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",311.18,Credit Card,Kadıköy,Returning
+205,2025-07-04 00:46:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",717.01,Credit Card,Üsküdar,Returning
+206,2025-06-17 17:46:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 18, 'quantity': 1}]",474.55,Wallet,Kadıköy,Returning
+207,2025-06-04 18:12:50,Trendyol,"[{'item_id': 18, 'quantity': 2}, {'item_id': 6, 'quantity': 2}]",256.2,Cash,Kadıköy,New
+208,2025-06-19 07:46:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",120.58,Cash,Üsküdar,New
+209,2025-07-03 13:58:50,Phone,"[{'item_id': 5, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",620.86,Credit Card,Üsküdar,Returning
+210,2025-07-01 00:29:50,Trendyol,"[{'item_id': 7, 'quantity': 1}]",71.67,Cash,Kadıköy,Returning
+211,2025-06-22 06:46:50,In-Store,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Kadıköy,New
+212,2025-07-03 13:13:50,In-Store,"[{'item_id': 15, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",143.31,Wallet,Üsküdar,Returning
+213,2025-07-02 03:17:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 12, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 3}]",710.3,Cash,Üsküdar,New
+214,2025-06-12 13:57:50,Phone,"[{'item_id': 17, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 4, 'quantity': 3}, {'item_id': 6, 'quantity': 1}]",392.69,Wallet,Beşiktaş,New
+215,2025-07-02 02:26:50,Phone,"[{'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",305.8,Wallet,Üsküdar,Returning
+216,2025-06-07 16:12:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",247.8,Wallet,Beşiktaş,New
+217,2025-06-11 05:40:50,In-Store,"[{'item_id': 17, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",200.86,Cash,Üsküdar,New
+218,2025-07-01 16:03:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",372.89,Wallet,Üsküdar,Returning
+219,2025-06-10 10:41:50,Trendyol,"[{'item_id': 6, 'quantity': 3}]",253.95,Wallet,Beşiktaş,Returning
+220,2025-06-16 18:46:50,Phone,"[{'item_id': 3, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",767.6,Wallet,Beşiktaş,New
+221,2025-06-17 11:14:50,In-Store,"[{'item_id': 2, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 12, 'quantity': 2}]",735.98,Cash,Üsküdar,Returning
+222,2025-06-11 00:39:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 3}]",369.08,Wallet,Beşiktaş,Returning
+223,2025-06-19 10:48:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 20, 'quantity': 3}]",374.01,Credit Card,Kadıköy,New
+224,2025-06-11 17:49:50,In-Store,"[{'item_id': 9, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",494.05,Cash,Kadıköy,Returning
+225,2025-06-08 11:56:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",320.45,Cash,Üsküdar,New
+226,2025-06-23 09:30:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",109.27,Wallet,Kadıköy,New
+227,2025-06-08 02:40:50,Trendyol,"[{'item_id': 8, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 17, 'quantity': 3}]",421.23,Cash,Üsküdar,New
+228,2025-06-05 02:26:50,Trendyol,"[{'item_id': 12, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",193.76,Cash,Beşiktaş,Returning
+229,2025-06-23 12:32:50,Trendyol,"[{'item_id': 12, 'quantity': 1}]",71.9,Cash,Kadıköy,New
+230,2025-06-09 01:08:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 7, 'quantity': 3}]",329.67,Credit Card,Kadıköy,New
+231,2025-07-04 12:11:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",406.38,Cash,Üsküdar,New
+232,2025-06-12 01:04:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",156.11,Wallet,Üsküdar,Returning
+233,2025-06-06 03:26:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",520.48,Cash,Beşiktaş,New
+234,2025-06-10 08:08:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",277.55,Wallet,Kadıköy,New
+235,2025-06-18 18:36:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",420.57,Credit Card,Üsküdar,Returning
+236,2025-06-15 14:00:50,In-Store,"[{'item_id': 3, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 20, 'quantity': 3}]",386.37,Cash,Üsküdar,New
+237,2025-06-22 12:26:50,Phone,"[{'item_id': 19, 'quantity': 3}]",75.84,Cash,Kadıköy,New
+238,2025-06-26 00:04:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}]",537.57,Cash,Kadıköy,Returning
+239,2025-06-26 14:40:50,Phone,"[{'item_id': 11, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",322.13,Credit Card,Beşiktaş,Returning
+240,2025-06-27 07:10:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 17, 'quantity': 2}]",631.72,Credit Card,Beşiktaş,New
+241,2025-06-12 13:25:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 2, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 1}]",783.15,Cash,Üsküdar,Returning
+242,2025-06-14 03:32:50,Phone,"[{'item_id': 20, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",171.58,Cash,Beşiktaş,Returning
+243,2025-06-20 03:38:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 5, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",494.6,Wallet,Beşiktaş,Returning
+244,2025-06-27 10:30:50,Trendyol,"[{'item_id': 4, 'quantity': 2}]",67.52,Wallet,Üsküdar,New
+245,2025-06-29 14:49:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 1}]",443.18,Wallet,Beşiktaş,Returning
+246,2025-06-14 01:14:50,Phone,"[{'item_id': 15, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 18, 'quantity': 2}]",641.66,Wallet,Üsküdar,New
+247,2025-06-18 08:49:50,In-Store,"[{'item_id': 14, 'quantity': 2}]",71.78,Wallet,Üsküdar,New
+248,2025-06-20 21:05:50,Phone,"[{'item_id': 17, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",492.71,Cash,Beşiktaş,Returning
+249,2025-06-13 23:16:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",353.16,Credit Card,Kadıköy,Returning
+250,2025-06-30 00:09:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 2, 'quantity': 2}]",564.02,Credit Card,Üsküdar,Returning
+251,2025-07-03 05:51:50,In-Store,"[{'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",506.36,Wallet,Üsküdar,Returning
+252,2025-06-28 22:13:50,Yemeksepeti,"[{'item_id': 3, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",692.35,Wallet,Beşiktaş,New
+253,2025-07-02 22:29:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",587.35,Wallet,Beşiktaş,New
+254,2025-06-20 21:01:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 3, 'quantity': 3}]",586.39,Cash,Üsküdar,Returning
+255,2025-06-26 22:44:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 10, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",647.97,Wallet,Kadıköy,Returning
+256,2025-07-01 22:36:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",608.43,Cash,Beşiktaş,Returning
+257,2025-06-07 12:40:50,Trendyol,"[{'item_id': 8, 'quantity': 3}, {'item_id': 11, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",327.26,Credit Card,Beşiktaş,Returning
+258,2025-06-13 01:24:50,In-Store,"[{'item_id': 14, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 4, 'quantity': 2}]",318.68,Wallet,Üsküdar,Returning
+259,2025-07-02 23:03:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 15, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",643.76,Wallet,Beşiktaş,New
+260,2025-06-19 07:41:50,In-Store,"[{'item_id': 1, 'quantity': 2}]",144.42,Cash,Kadıköy,Returning
+261,2025-06-12 09:51:50,In-Store,"[{'item_id': 9, 'quantity': 3}]",249.03,Cash,Beşiktaş,New
+262,2025-06-30 18:39:50,Trendyol,"[{'item_id': 11, 'quantity': 2}]",83.9,Cash,Kadıköy,New
+263,2025-06-14 00:15:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 14, 'quantity': 2}]",568.04,Wallet,Üsküdar,New
+264,2025-06-21 11:32:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 19, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",541.34,Cash,Üsküdar,New
+265,2025-06-12 19:40:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",452.85,Wallet,Kadıköy,Returning
+266,2025-06-10 20:24:50,Phone,"[{'item_id': 3, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",465.66,Wallet,Üsküdar,Returning
+267,2025-07-03 13:09:50,In-Store,"[{'item_id': 12, 'quantity': 1}]",71.9,Credit Card,Beşiktaş,Returning
+268,2025-06-19 00:59:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 14, 'quantity': 3}]",454.72,Credit Card,Kadıköy,Returning
+269,2025-06-19 23:09:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",308.26,Cash,Beşiktaş,New
+270,2025-06-26 01:57:50,In-Store,"[{'item_id': 8, 'quantity': 2}, {'item_id': 18, 'quantity': 3}]",247.77,Wallet,Kadıköy,New
+271,2025-06-26 03:37:50,Trendyol,"[{'item_id': 4, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 1}]",374.71,Cash,Kadıköy,Returning
+272,2025-07-01 23:04:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 7, 'quantity': 3}, {'item_id': 4, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",423.75,Cash,Beşiktaş,Returning
+273,2025-06-16 14:52:50,Phone,"[{'item_id': 1, 'quantity': 1}]",72.21,Wallet,Üsküdar,New
+274,2025-07-01 02:45:50,Trendyol,"[{'item_id': 9, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 15, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 4, 'quantity': 3}]",506.49,Cash,Üsküdar,New
+275,2025-06-20 14:17:50,Phone,"[{'item_id': 12, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",330.72,Wallet,Kadıköy,Returning
+276,2025-06-14 07:52:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 1}]",291.95,Credit Card,Beşiktaş,New
+277,2025-06-27 02:58:50,In-Store,"[{'item_id': 10, 'quantity': 2}]",207.26,Cash,Beşiktaş,Returning
+278,2025-06-24 16:07:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",627.5,Cash,Beşiktaş,New
+279,2025-06-15 20:45:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",92.97,Cash,Beşiktaş,New
+280,2025-06-06 19:11:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",291.16,Cash,Kadıköy,New
+281,2025-07-03 08:03:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}]",83.9,Cash,Kadıköy,New
+282,2025-07-02 13:59:50,Phone,"[{'item_id': 9, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",223.35,Credit Card,Beşiktaş,Returning
+283,2025-06-28 09:47:50,Phone,"[{'item_id': 5, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",154.57,Cash,Beşiktaş,New
+284,2025-06-30 03:59:50,Yemeksepeti,"[{'item_id': 3, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 6, 'quantity': 3}, {'item_id': 12, 'quantity': 2}]",611.25,Cash,Üsküdar,Returning
+285,2025-06-22 15:46:50,In-Store,"[{'item_id': 2, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",751.3,Wallet,Beşiktaş,Returning
+286,2025-07-02 19:01:50,Trendyol,"[{'item_id': 1, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",441.53,Credit Card,Kadıköy,Returning
+287,2025-06-30 17:25:50,In-Store,"[{'item_id': 4, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",84.32,Credit Card,Üsküdar,New
+288,2025-06-30 22:11:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 13, 'quantity': 2}]",406.96,Wallet,Beşiktaş,New
+289,2025-06-15 01:41:50,In-Store,"[{'item_id': 13, 'quantity': 2}]",156.82,Wallet,Üsküdar,New
+290,2025-06-22 07:50:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",129.0,Wallet,Üsküdar,New
+291,2025-06-23 13:56:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 6, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",770.1,Wallet,Kadıköy,Returning
+292,2025-06-07 01:27:50,In-Store,"[{'item_id': 12, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",418.51,Wallet,Kadıköy,Returning
+293,2025-06-22 20:43:50,Phone,"[{'item_id': 9, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",237.69,Wallet,Beşiktaş,New
+294,2025-07-01 13:43:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 1}]",462.66,Cash,Üsküdar,Returning
+295,2025-06-26 17:53:50,In-Store,"[{'item_id': 1, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 6, 'quantity': 3}]",448.93,Credit Card,Beşiktaş,New
+296,2025-06-06 22:22:50,Phone,"[{'item_id': 3, 'quantity': 1}]",53.06,Credit Card,Beşiktaş,New
+297,2025-06-22 03:09:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 20, 'quantity': 2}]",203.75,Cash,Üsküdar,New
+298,2025-06-15 02:32:50,Phone,"[{'item_id': 15, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 12, 'quantity': 3}]",328.93,Credit Card,Kadıköy,New
+299,2025-07-01 10:45:50,Trendyol,"[{'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 2}]",402.69,Credit Card,Üsküdar,Returning
+300,2025-06-09 16:33:50,In-Store,"[{'item_id': 5, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",144.41,Cash,Üsküdar,Returning
+301,2025-06-09 01:04:50,In-Store,"[{'item_id': 17, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",173.37,Credit Card,Üsküdar,New
+302,2025-06-23 10:08:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 11, 'quantity': 1}]",432.3,Cash,Beşiktaş,New
+303,2025-06-27 23:15:50,Phone,"[{'item_id': 10, 'quantity': 1}]",103.63,Wallet,Kadıköy,Returning
+304,2025-06-17 19:29:50,Trendyol,"[{'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",649.47,Cash,Üsküdar,New
+305,2025-07-03 22:40:50,Trendyol,"[{'item_id': 13, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",365.33,Cash,Üsküdar,Returning
+306,2025-06-06 19:08:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",400.69,Credit Card,Üsküdar,Returning
+307,2025-06-05 21:41:50,In-Store,"[{'item_id': 17, 'quantity': 3}, {'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",603.31,Wallet,Kadıköy,New
+308,2025-06-08 05:47:50,Trendyol,"[{'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",409.77,Wallet,Kadıköy,New
+309,2025-06-13 15:46:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}]",106.92,Cash,Üsküdar,Returning
+310,2025-06-17 03:15:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",738.63,Credit Card,Kadıköy,New
+311,2025-06-10 10:00:50,In-Store,"[{'item_id': 16, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",633.2,Credit Card,Üsküdar,New
+312,2025-06-22 01:28:50,Trendyol,"[{'item_id': 9, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",554.43,Cash,Üsküdar,Returning
+313,2025-06-19 10:41:50,Phone,"[{'item_id': 2, 'quantity': 2}]",195.02,Credit Card,Üsküdar,New
+314,2025-06-07 22:54:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",438.98,Wallet,Beşiktaş,New
+315,2025-06-13 08:27:50,Trendyol,"[{'item_id': 19, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",528.43,Credit Card,Üsküdar,Returning
+316,2025-07-03 17:25:50,Trendyol,"[{'item_id': 11, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",111.06,Cash,Beşiktaş,New
+317,2025-06-21 07:22:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",572.07,Cash,Beşiktaş,New
+318,2025-06-08 02:58:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",252.53,Credit Card,Beşiktaş,Returning
+319,2025-06-06 17:01:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}, {'item_id': 20, 'quantity': 3}, {'item_id': 9, 'quantity': 3}, {'item_id': 6, 'quantity': 3}]",710.31,Credit Card,Kadıköy,New
+320,2025-07-03 09:47:50,Phone,"[{'item_id': 13, 'quantity': 3}]",235.23,Credit Card,Beşiktaş,New
+321,2025-06-16 06:06:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",160.96,Wallet,Kadıköy,Returning
+322,2025-06-17 09:00:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",370.52,Wallet,Kadıköy,New
+323,2025-06-19 20:29:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",291.15,Cash,Kadıköy,New
+324,2025-06-11 21:34:50,Phone,"[{'item_id': 3, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 18, 'quantity': 1}]",489.27,Credit Card,Beşiktaş,Returning
+325,2025-06-12 13:53:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 2, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",391.78,Wallet,Kadıköy,New
+326,2025-06-19 13:36:50,In-Store,"[{'item_id': 19, 'quantity': 2}]",50.56,Cash,Kadıköy,Returning
+327,2025-06-24 00:30:50,Trendyol,"[{'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",350.25,Cash,Üsküdar,Returning
+328,2025-07-01 07:58:50,Trendyol,"[{'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 15, 'quantity': 2}]",475.61,Credit Card,Beşiktaş,New
+329,2025-06-21 04:35:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",124.34,Credit Card,Beşiktaş,Returning
+330,2025-06-28 00:12:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 17, 'quantity': 2}]",677.45,Credit Card,Kadıköy,New
+331,2025-06-21 19:51:50,Trendyol,"[{'item_id': 7, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 12, 'quantity': 1}]",586.0,Cash,Beşiktaş,Returning
+332,2025-06-27 22:40:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",461.2,Credit Card,Üsküdar,Returning
+333,2025-06-15 09:10:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",510.28,Cash,Beşiktaş,Returning
+334,2025-07-04 05:20:50,Phone,"[{'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 1, 'quantity': 1}]",193.8,Credit Card,Kadıköy,Returning
+335,2025-06-23 06:10:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",472.16,Wallet,Üsküdar,New
+336,2025-06-05 09:57:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}]",54.32,Wallet,Üsküdar,Returning
+337,2025-07-02 05:44:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 6, 'quantity': 1}, {'item_id': 2, 'quantity': 2}]",380.95,Cash,Kadıköy,New
+338,2025-06-20 02:55:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 12, 'quantity': 2}]",475.51,Cash,Kadıköy,Returning
+339,2025-06-09 15:41:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 14, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 18, 'quantity': 3}]",456.47,Cash,Beşiktaş,Returning
+340,2025-06-18 00:07:50,Trendyol,"[{'item_id': 9, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",201.91,Cash,Beşiktaş,New
+341,2025-07-04 12:41:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 7, 'quantity': 1}, {'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",515.93,Credit Card,Kadıköy,New
+342,2025-06-28 11:46:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Credit Card,Üsküdar,New
+343,2025-06-08 13:41:50,Trendyol,"[{'item_id': 18, 'quantity': 2}]",86.9,Credit Card,Kadıköy,Returning
+344,2025-06-19 08:10:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 7, 'quantity': 1}]",147.51,Wallet,Üsküdar,New
+345,2025-06-15 23:10:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",572.44,Wallet,Beşiktaş,Returning
+346,2025-06-23 22:47:50,In-Store,"[{'item_id': 11, 'quantity': 3}]",125.85,Wallet,Üsküdar,New
+347,2025-06-29 21:10:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",349.53,Cash,Beşiktaş,Returning
+348,2025-06-08 08:21:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 10, 'quantity': 2}]",610.63,Credit Card,Kadıköy,New
+349,2025-07-04 13:36:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",280.42,Cash,Kadıköy,New
+350,2025-06-22 08:19:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 3}, {'item_id': 12, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",391.3,Cash,Beşiktaş,Returning
+351,2025-06-18 02:26:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",125.03,Wallet,Kadıköy,New
+352,2025-06-12 22:38:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 10, 'quantity': 2}, {'item_id': 18, 'quantity': 1}]",358.38,Cash,Üsküdar,Returning
+353,2025-06-15 05:42:50,Phone,"[{'item_id': 5, 'quantity': 3}]",172.53,Cash,Kadıköy,Returning
+354,2025-07-02 02:41:50,Trendyol,"[{'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",392.57,Cash,Beşiktaş,New
+355,2025-06-12 15:18:50,Trendyol,"[{'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",233.16,Cash,Beşiktaş,New
+356,2025-06-28 22:03:50,Trendyol,"[{'item_id': 15, 'quantity': 3}]",106.92,Credit Card,Üsküdar,Returning
+357,2025-06-21 05:46:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 2, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",537.98,Credit Card,Beşiktaş,Returning
+358,2025-07-03 15:45:50,Trendyol,"[{'item_id': 6, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",314.49,Cash,Beşiktaş,New
+359,2025-06-29 11:26:50,Phone,"[{'item_id': 13, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",645.46,Credit Card,Üsküdar,New
+360,2025-06-04 20:12:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",329.13,Credit Card,Beşiktaş,New
+361,2025-06-11 14:09:50,Trendyol,"[{'item_id': 8, 'quantity': 1}]",58.71,Cash,Beşiktaş,New
+362,2025-06-07 06:54:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Cash,Üsküdar,New
+363,2025-06-27 11:04:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 19, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",328.26,Cash,Kadıköy,Returning
+364,2025-06-09 23:51:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 2}, {'item_id': 3, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",496.75,Credit Card,Beşiktaş,New
+365,2025-06-09 19:21:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",170.19,Cash,Kadıköy,New
+366,2025-06-20 02:14:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",269.65,Wallet,Kadıköy,New
+367,2025-06-15 06:50:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",141.72,Credit Card,Üsküdar,Returning
+368,2025-06-07 13:55:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 3}]",588.29,Cash,Beşiktaş,Returning
+369,2025-06-21 03:17:50,Trendyol,"[{'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 12, 'quantity': 1}]",593.77,Cash,Kadıköy,New
+370,2025-06-15 12:19:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",166.24,Cash,Üsküdar,New
+371,2025-07-01 00:30:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 2}, {'item_id': 14, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",392.43,Cash,Beşiktaş,New
+372,2025-06-25 13:25:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 3}]",595.35,Wallet,Üsküdar,New
+373,2025-06-21 08:32:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 18, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",848.32,Credit Card,Üsküdar,Returning
+374,2025-07-01 23:46:50,Phone,"[{'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 6, 'quantity': 1}]",641.12,Credit Card,Beşiktaş,New
+375,2025-06-15 22:00:50,In-Store,"[{'item_id': 19, 'quantity': 3}]",75.84,Cash,Kadıköy,New
+376,2025-06-20 09:56:50,In-Store,"[{'item_id': 12, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 14, 'quantity': 3}]",752.32,Cash,Üsküdar,Returning
+377,2025-07-04 04:05:50,Phone,"[{'item_id': 12, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",294.11,Credit Card,Kadıköy,Returning
+378,2025-06-28 18:46:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",139.94,Wallet,Kadıköy,New
+379,2025-06-24 21:22:50,In-Store,"[{'item_id': 1, 'quantity': 3}]",216.63,Wallet,Beşiktaş,New
+380,2025-06-29 22:48:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 14, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 5, 'quantity': 3}]",717.34,Cash,Üsküdar,New
+381,2025-07-03 02:49:50,Phone,"[{'item_id': 18, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",298.25,Cash,Kadıköy,Returning
+382,2025-07-01 13:25:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 4, 'quantity': 1}]",60.92,Credit Card,Beşiktaş,New
+383,2025-06-30 17:40:50,Trendyol,"[{'item_id': 7, 'quantity': 3}, {'item_id': 11, 'quantity': 3}]",340.86,Cash,Kadıköy,Returning
+384,2025-06-08 22:59:50,In-Store,"[{'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",229.03,Credit Card,Üsküdar,Returning
+385,2025-06-07 20:56:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",279.22,Wallet,Üsküdar,New
+386,2025-06-22 17:34:50,In-Store,"[{'item_id': 6, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",135.21,Cash,Üsküdar,New
+387,2025-06-09 12:06:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 15, 'quantity': 3}]",262.52,Cash,Kadıköy,Returning
+388,2025-06-16 19:53:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 19, 'quantity': 2}]",122.34,Cash,Üsküdar,New
+389,2025-06-21 18:14:50,Phone,"[{'item_id': 1, 'quantity': 3}]",216.63,Credit Card,Üsküdar,Returning
+390,2025-06-18 22:57:50,Phone,"[{'item_id': 14, 'quantity': 1}]",35.89,Credit Card,Üsküdar,Returning
+391,2025-06-14 20:41:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 1}]",69.4,Cash,Kadıköy,New
+392,2025-06-19 16:52:50,Trendyol,"[{'item_id': 1, 'quantity': 1}]",72.21,Wallet,Üsküdar,Returning
+393,2025-06-05 20:02:50,Trendyol,"[{'item_id': 1, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",354.09,Credit Card,Beşiktaş,Returning
+394,2025-06-19 03:28:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}]",54.32,Wallet,Beşiktaş,Returning
+395,2025-06-14 02:05:50,Phone,"[{'item_id': 20, 'quantity': 1}]",27.16,Wallet,Kadıköy,Returning
+396,2025-06-09 03:06:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",443.27,Wallet,Kadıköy,Returning
+397,2025-06-21 04:10:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 1, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",412.48,Wallet,Beşiktaş,Returning
+398,2025-06-15 20:58:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 15, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",510.8,Wallet,Üsküdar,New
+399,2025-06-19 00:09:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",159.11,Wallet,Üsküdar,Returning
+400,2025-06-16 00:50:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",120.36,Credit Card,Üsküdar,Returning
+401,2025-06-29 16:08:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",295.54,Cash,Kadıköy,Returning
+402,2025-06-09 07:16:50,Trendyol,"[{'item_id': 1, 'quantity': 2}]",144.42,Cash,Kadıköy,New
+403,2025-06-19 08:06:50,Trendyol,"[{'item_id': 2, 'quantity': 1}]",97.51,Credit Card,Beşiktaş,Returning
+404,2025-07-03 18:29:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 3}]",425.55,Cash,Kadıköy,New
+405,2025-06-09 22:37:50,In-Store,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",404.27,Wallet,Üsküdar,New
+406,2025-06-23 20:35:50,In-Store,"[{'item_id': 15, 'quantity': 1}]",35.64,Credit Card,Üsküdar,New
+407,2025-06-17 19:44:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 1}]",261.05,Wallet,Kadıköy,Returning
+408,2025-06-29 04:48:50,Phone,"[{'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",406.84,Wallet,Beşiktaş,Returning
+409,2025-06-27 03:43:50,Trendyol,"[{'item_id': 5, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",302.89,Wallet,Beşiktaş,New
+410,2025-06-17 04:19:50,Phone,"[{'item_id': 9, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",276.19,Credit Card,Kadıköy,Returning
+411,2025-07-02 03:29:50,Trendyol,"[{'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",836.94,Wallet,Üsküdar,Returning
+412,2025-06-18 07:55:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",445.83,Credit Card,Beşiktaş,New
+413,2025-06-04 18:54:50,In-Store,"[{'item_id': 10, 'quantity': 2}, {'item_id': 9, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",713.37,Cash,Beşiktaş,New
+414,2025-06-18 02:26:50,Phone,"[{'item_id': 10, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 12, 'quantity': 2}]",689.54,Wallet,Beşiktaş,New
+415,2025-06-24 02:15:50,Trendyol,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",261.58,Cash,Kadıköy,Returning
+416,2025-07-03 21:51:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 15, 'quantity': 3}]",797.46,Credit Card,Üsküdar,Returning
+417,2025-06-30 22:45:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 1}]",69.65,Cash,Kadıköy,Returning
+418,2025-06-09 04:51:50,Trendyol,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,New
+419,2025-06-11 19:28:50,Trendyol,"[{'item_id': 10, 'quantity': 1}]",103.63,Cash,Beşiktaş,New
+420,2025-06-28 11:44:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,New
+421,2025-06-18 12:40:50,In-Store,"[{'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",347.2,Credit Card,Beşiktaş,New
+422,2025-06-08 01:58:50,Trendyol,"[{'item_id': 5, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",341.15,Cash,Beşiktaş,New
+423,2025-07-01 08:33:50,In-Store,"[{'item_id': 14, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 1}]",281.83,Cash,Kadıköy,Returning
+424,2025-07-03 07:47:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",582.36,Credit Card,Kadıköy,New
+425,2025-06-19 12:39:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",284.92,Cash,Kadıköy,New
+426,2025-06-14 18:12:50,Phone,"[{'item_id': 9, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 3}]",661.36,Cash,Beşiktaş,New
+427,2025-06-10 15:44:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 19, 'quantity': 3}, {'item_id': 5, 'quantity': 1}]",204.63,Credit Card,Beşiktaş,Returning
+428,2025-06-13 01:19:50,Trendyol,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",367.55,Credit Card,Beşiktaş,Returning
+429,2025-06-08 05:35:50,Trendyol,"[{'item_id': 12, 'quantity': 2}]",143.8,Wallet,Üsküdar,Returning
+430,2025-06-30 16:49:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 9, 'quantity': 1}]",579.22,Credit Card,Kadıköy,New
+431,2025-06-14 19:37:50,Trendyol,"[{'item_id': 9, 'quantity': 3}]",249.03,Wallet,Üsküdar,Returning
+432,2025-06-06 18:53:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",515.17,Cash,Üsküdar,Returning
+433,2025-06-13 20:01:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",559.83,Credit Card,Kadıköy,New
+434,2025-06-08 08:24:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 3}]",491.43,Cash,Üsküdar,New
+435,2025-06-07 17:09:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 7, 'quantity': 3}]",679.66,Credit Card,Üsküdar,Returning
+436,2025-06-09 00:35:50,In-Store,"[{'item_id': 9, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",381.98,Cash,Üsküdar,New
+437,2025-06-24 15:49:50,In-Store,"[{'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",475.12,Cash,Kadıköy,New
+438,2025-06-08 15:47:50,Trendyol,"[{'item_id': 10, 'quantity': 2}]",207.26,Wallet,Beşiktaş,New
+439,2025-06-19 23:30:50,Phone,"[{'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",373.45,Cash,Beşiktaş,New
+440,2025-07-03 06:02:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",437.5,Cash,Kadıköy,Returning
+441,2025-06-16 10:37:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}]",125.85,Credit Card,Beşiktaş,New
+442,2025-06-27 13:24:50,Phone,"[{'item_id': 8, 'quantity': 1}]",58.71,Cash,Kadıköy,Returning
+443,2025-06-30 06:56:50,Trendyol,"[{'item_id': 8, 'quantity': 2}, {'item_id': 7, 'quantity': 3}]",332.43,Cash,Kadıköy,Returning
+444,2025-06-10 11:57:50,Phone,"[{'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 5, 'quantity': 1}]",395.38,Credit Card,Beşiktaş,New
+445,2025-07-02 17:07:50,Trendyol,"[{'item_id': 15, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 4, 'quantity': 3}]",548.81,Credit Card,Beşiktaş,New
+446,2025-06-05 13:52:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",551.26,Wallet,Beşiktaş,New
+447,2025-06-27 15:54:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 3, 'quantity': 2}]",334.13,Wallet,Üsküdar,New
+448,2025-06-11 03:19:50,In-Store,"[{'item_id': 17, 'quantity': 1}]",57.33,Wallet,Beşiktaş,New
+449,2025-06-09 10:39:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",572.97,Credit Card,Kadıköy,Returning
+450,2025-06-13 13:23:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",486.45,Credit Card,Kadıköy,New
+451,2025-06-28 00:29:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",246.44,Credit Card,Beşiktaş,New
+452,2025-06-12 02:22:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 5, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",313.52,Cash,Beşiktaş,Returning
+453,2025-06-12 20:12:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 12, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",668.91,Cash,Üsküdar,New
+454,2025-07-03 13:29:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 15, 'quantity': 2}]",527.56,Cash,Beşiktaş,Returning
+455,2025-06-09 23:16:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",291.45,Credit Card,Kadıköy,New
+456,2025-06-28 07:45:50,Trendyol,"[{'item_id': 7, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 20, 'quantity': 2}]",597.81,Credit Card,Kadıköy,New
+457,2025-06-16 23:38:50,In-Store,"[{'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 6, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",372.99,Credit Card,Beşiktaş,New
+458,2025-06-08 20:25:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",248.35,Credit Card,Beşiktaş,New
+459,2025-06-16 06:09:50,In-Store,"[{'item_id': 16, 'quantity': 3}, {'item_id': 2, 'quantity': 2}]",344.45,Wallet,Üsküdar,Returning
+460,2025-07-04 00:39:50,Phone,"[{'item_id': 8, 'quantity': 2}]",117.42,Cash,Üsküdar,Returning
+461,2025-06-09 23:01:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",197.27,Credit Card,Beşiktaş,Returning
+462,2025-06-23 22:52:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",156.95,Credit Card,Beşiktaş,Returning
+463,2025-06-07 12:14:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",568.27,Credit Card,Üsküdar,New
+464,2025-06-29 07:15:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 17, 'quantity': 2}, {'item_id': 7, 'quantity': 2}]",435.9,Wallet,Kadıköy,Returning
+465,2025-06-21 19:32:50,In-Store,"[{'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",621.27,Cash,Üsküdar,New
+466,2025-06-13 16:19:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 6, 'quantity': 3}]",546.48,Cash,Beşiktaş,Returning
+467,2025-06-24 02:44:50,Phone,"[{'item_id': 7, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",448.62,Cash,Üsküdar,New
+468,2025-06-12 13:29:50,Trendyol,"[{'item_id': 4, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",477.3,Cash,Üsküdar,New
+469,2025-06-23 04:55:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 3}]",253.95,Cash,Üsküdar,Returning
+470,2025-06-30 16:06:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 13, 'quantity': 3}]",343.75,Cash,Üsküdar,Returning
+471,2025-07-01 11:52:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 16, 'quantity': 3}]",390.72,Wallet,Üsküdar,Returning
+472,2025-06-15 22:09:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",580.34,Credit Card,Üsküdar,New
+473,2025-06-14 00:33:50,Phone,"[{'item_id': 19, 'quantity': 3}]",75.84,Wallet,Kadıköy,New
+474,2025-06-23 02:30:50,Trendyol,"[{'item_id': 18, 'quantity': 1}, {'item_id': 13, 'quantity': 2}]",200.27,Wallet,Kadıköy,New
+475,2025-06-12 11:31:50,In-Store,"[{'item_id': 4, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 1}]",347.64,Credit Card,Beşiktaş,New
+476,2025-06-05 08:13:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 5, 'quantity': 3}]",937.33,Cash,Beşiktaş,New
+477,2025-06-10 22:31:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",525.77,Cash,Kadıköy,Returning
+478,2025-06-06 22:22:50,In-Store,"[{'item_id': 18, 'quantity': 1}]",43.45,Cash,Kadıköy,New
+479,2025-06-22 19:46:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",703.79,Cash,Beşiktaş,New
+480,2025-06-10 16:57:50,Phone,"[{'item_id': 12, 'quantity': 2}]",143.8,Cash,Kadıköy,New
+481,2025-06-15 01:16:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",382.16,Credit Card,Beşiktaş,Returning
+482,2025-06-27 20:35:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}]",58.71,Credit Card,Beşiktaş,New
+483,2025-06-24 08:31:50,Phone,"[{'item_id': 2, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 1}]",481.72,Wallet,Beşiktaş,New
+484,2025-06-07 03:07:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",296.49,Cash,Üsküdar,Returning
+485,2025-06-30 12:35:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",361.92,Credit Card,Üsküdar,Returning
+486,2025-06-22 02:01:50,Trendyol,"[{'item_id': 17, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",273.96,Cash,Üsküdar,New
+487,2025-06-27 01:31:50,In-Store,"[{'item_id': 7, 'quantity': 1}]",71.67,Wallet,Üsküdar,Returning
+488,2025-06-18 20:29:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",281.95,Cash,Üsküdar,New
+489,2025-06-29 14:00:50,Trendyol,"[{'item_id': 7, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",385.1,Wallet,Üsküdar,New
+490,2025-06-05 07:28:50,Phone,"[{'item_id': 5, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",291.62,Cash,Üsküdar,Returning
+491,2025-06-19 10:33:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 4, 'quantity': 3}]",421.0,Cash,Kadıköy,Returning
+492,2025-06-25 10:59:50,Trendyol,"[{'item_id': 12, 'quantity': 2}]",143.8,Cash,Kadıköy,New
+493,2025-06-16 21:53:50,Trendyol,"[{'item_id': 7, 'quantity': 2}]",143.34,Wallet,Beşiktaş,New
+494,2025-06-07 12:22:50,In-Store,"[{'item_id': 8, 'quantity': 2}, {'item_id': 7, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",567.66,Credit Card,Üsküdar,Returning
+495,2025-06-14 05:21:50,In-Store,"[{'item_id': 4, 'quantity': 1}]",33.76,Credit Card,Kadıköy,New
+496,2025-06-06 13:43:50,Phone,"[{'item_id': 11, 'quantity': 3}]",125.85,Credit Card,Kadıköy,Returning
+497,2025-06-13 11:47:50,In-Store,"[{'item_id': 10, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 14, 'quantity': 2}]",677.12,Cash,Beşiktaş,Returning
+498,2025-06-21 15:07:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",712.07,Credit Card,Üsküdar,New
+499,2025-06-20 10:18:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 2}]",195.02,Cash,Üsküdar,New
+500,2025-06-06 15:39:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",532.73,Cash,Kadıköy,New

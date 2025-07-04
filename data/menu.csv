@@ -1,0 +1,21 @@
+item_id,item_name,category,price,cost,ingredients,available
+1,Tavuk Şiş,İçecek,72.21,45.95,Tavuk|Peynir|Patates,True
+2,Köfte,Ana Yemek,97.51,41.41,Tavuk|Patates|Peynir,True
+3,Adana Dürüm,Ana Yemek,53.06,28.35,Biber|Peynir|Patates,True
+4,Urfa Dürüm,Tatlı,33.76,15.86,Pirinç|Peynir|Domates,False
+5,Lahmacun,Aperatif,57.51,23.82,Pirinç|Biber|Tavuk,True
+6,Pide,Aperatif,84.65,38.07,Peynir|Patates|Tavuk,True
+7,Mantı,Tatlı,71.67,42.28,Peynir|Et|Biber,True
+8,İskender,İçecek,58.71,35.53,Biber|Et|Domates,False
+9,Pilav Üstü Tavuk,Tatlı,83.01,43.26,Patates|Tavuk|Yoğurt,True
+10,Çorba,Tatlı,103.63,45.58,Tavuk|Yoğurt|Domates,True
+11,Mercimek Çorbası,Tatlı,41.95,20.53,Tavuk|Biber|Et,False
+12,Ayran,Aperatif,71.9,30.21,Pirinç|Peynir|Tavuk,True
+13,Kola,Ana Yemek,78.41,38.96,Tavuk|Pirinç|Et,False
+14,Fanta,Tatlı,35.89,18.92,Yoğurt|Pirinç|Et,True
+15,Su,Aperatif,35.64,16.48,Pirinç|Tavuk|Yoğurt,True
+16,Baklava,Aperatif,49.81,23.7,Biber|Peynir|Tavuk,True
+17,Künefe,Tatlı,57.33,30.18,Peynir|Yoğurt|Biber,False
+18,Sütlaç,Tatlı,43.45,20.87,Biber|Patates|Et,True
+19,Cheesecake,Ana Yemek,25.28,12.7,Pirinç|Domates|Peynir,True
+20,Tiramisu,İçecek,27.16,14.15,Et|Biber|Peynir,True
