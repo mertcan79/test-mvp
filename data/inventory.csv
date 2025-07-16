@@ -1,9 +1,0 @@
-ingredient,stock_qty_kg,restock_threshold_kg,supplier
-Peynir,37.62,2.72,Metro
-Patates,9.8,4.19,Metro
-Biber,47.61,3.6,Metro
-Domates,24.26,7.5,Metro
-Yoğurt,47.65,5.11,Metro
-Et,39.09,2.42,Tedarikçi B
-Tavuk,45.86,9.56,Tedarikçi A
-Pirinç,34.33,7.85,Tedarikçi A
