@@ -1,9 +1,0 @@
-Project summary
-
-The project will serve restaurants in Turkey to connect to their online and offline sales to show them insights about their sales. 
-We will show them sales and marketing related metrics. On top of that we plan to add AI summaries, 
-recommendations and automation via AI agents based on recommendations of the AI system. 
-
-Potential customers: tavuk dunyasi, maydanoz doner
-
-Similar companies: growdash, pardonAI

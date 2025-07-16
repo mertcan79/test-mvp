@@ -1,6 +1,6 @@
 import streamlit as st
-from data_summary import generate_data_summary
-from ai_recommendation import get_structured_recommendations
+from utilities.data_summary import generate_data_summary
+from utilities.ai_recommendation import get_structured_recommendations
 
 st.set_page_config(page_title="UseydIntel TR", layout="wide")
 st.title("🤖 AI-Powered Recommendations")

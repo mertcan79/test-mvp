@@ -50,3 +50,44 @@ if not low_stock.empty:
 # Orders table
 st.subheader("Recent Orders")
 st.dataframe(o.sort_values("datetime", ascending=False).head(10))
+
+from geopy.geocoders import Nominatim
+import time
+
+# Cache coordinates to avoid repeated API calls
+@st.cache_data(show_spinner=False)
+def get_coordinates(districts):
+    geolocator = Nominatim(user_agent="useydintel")
+    coords = []
+    for d in districts:
+        try:
+            location = geolocator.geocode(f"{d}, Istanbul, Turkey")
+            if location:
+                coords.append({"location": d, "lat": location.latitude, "lon": location.longitude})
+            else:
+                coords.append({"location": d, "lat": None, "lon": None})
+            time.sleep(1)  # be polite to the API
+        except:
+            coords.append({"location": d, "lat": None, "lon": None})
+    return pd.DataFrame(coords)
+
+# Aggregate total sales by district
+district_sales = o.groupby("location")["total_price"].sum().reset_index()
+district_coords = get_coordinates(district_sales["location"].unique())
+district_sales = district_sales.merge(district_coords, on="location", how="left")
+district_sales = district_sales.dropna(subset=["lat", "lon"])
+
+# Show map
+st.subheader("🗺️ Sales by Location Map")
+fig = px.scatter_mapbox(
+    district_sales,
+    lat="lat",
+    lon="lon",
+    size="total_price",
+    hover_name="location",
+    size_max=40,
+    zoom=9,
+    mapbox_style="open-street-map",
+    title="Sales Volume by District"
+)
+st.plotly_chart(fig, use_container_width=True)
