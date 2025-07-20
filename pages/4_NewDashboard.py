@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
+import re
 
 st.set_page_config(page_title="TableWise Dashboard", layout="wide")
 
@@ -208,62 +209,73 @@ fig, ax = plt.subplots(figsize=(12, 8))
 sns.heatmap(pivot, annot=True, fmt=".1f", cmap="coolwarm", cbar_kws={"label": "% of Weekly Sales"})
 st.pyplot(fig)
 
-# --- Costs ---
-@st.cache_data
+# ---- Profitability ----@st.cache_data
+
 def load_product_cost_data():
     products = pd.read_csv("data/products.csv")
-    costs = pd.read_excel("data/costs.xlsx", sheet_name="Costs")
+    raw_costs = pd.read_excel("data/costs.xlsx", sheet_name="Costs")
 
-    # Normalize product names for merging
-    products['normalized_name'] = products['productName'].str.strip().str.lower()
-    costs['normalized_name'] = costs['Product'].str.strip().str.lower()
+    # Clean function for product names
+    def clean_name(name):
+        if pd.isna(name):
+            return ''
+        name = str(name).lower().strip()
+        name = re.sub(r"\(.*?\)", "", name)
+        name = re.sub(r"\d+\s?(g|gr|ml|cl)", "", name)
+        name = re.sub(r"[^a-zçğıöşü\s]", "", name)
+        name = re.sub(r"\s+", " ", name).strip()
+        return name
 
-    # Merge cost info
-    df = pd.merge(products, costs[['Cost', 'normalized_name']], on='normalized_name', how='left')
+    # Prepare clean cost table from the finalized format
+    raw_costs.columns = raw_costs.columns.str.strip()
+    raw_costs['normalized_name'] = raw_costs['Product'].apply(clean_name)
+    costs = raw_costs.groupby('normalized_name', as_index=False).agg({'Cost': 'mean'})
+
+    products['normalized_name'] = products['productName'].apply(clean_name)
+
+    canonical_map = products.groupby('normalized_name')['productName'].agg(lambda x: x.mode().iloc[0] if not x.mode().empty else x.iloc[0])
+    products['productName'] = products['normalized_name'].map(canonical_map)
+
+    df = pd.merge(products, costs, on='normalized_name', how='left')
+
+    exclude_keywords = [
+        "istemiyorum", "pişmiş", "seçimi", "not", "sıfır", "adet",
+        "ayran", "coca", "fanta", "ice tea", "şeftali", "vişne", "sos", "extra",
+        "ketçap", "mayonez", "su", "çay", "çubuk", "mozzarella", "patates", "ball", "stick", "cola"
+    ]
+    df = df[~df["productName"].str.lower().str.contains('|'.join(exclude_keywords))]
+    df = df[df["unitPrice"] > 0]
+
     return df
 
 products_df = load_product_cost_data()
 
 # --- Calculate Profitability Fields ---
-commission_rate = 0.13  # 13% default platform fee
+commission_rate = 0.13
 
 def calculate_profit_table(df):
     df = df.copy()
 
-    # Fill missing costs with zero
-    df["Cost"] = df["Cost"].fillna(0)
-
-    # Calculate basic totals
     df["toplam_satis"] = df["unitPrice"] * df["quantity"]
     df["bugunku_komisyon"] = df["toplam_satis"] * commission_rate
     df["bugunku_urun_maliyeti"] = df["Cost"] * df["quantity"]
 
-    # Assume these are zero for now (could be loaded later)
     df["genel_gider_maliyeti"] = 0.0
     df["servis_maliyeti"] = 0.0
     df["paketleme_maliyeti"] = 0.0
 
-    # Per unit breakdowns
     df["komisyon_birim"] = df["unitPrice"] * commission_rate
     df["urun_maliyet_birim"] = df["Cost"]
     df["genel_gider_birim"] = 0.0
     df["servis_birim"] = 0.0
     df["paketleme_birim"] = 0.0
 
-    # Total unit cost
-    df["toplam_maliyet_birim"] = df[
-        ["komisyon_birim", "urun_maliyet_birim", "genel_gider_birim", "servis_birim", "paketleme_birim"]
-    ].sum(axis=1)
-
-    # Total cost = unit * quantity
+    df["toplam_maliyet_birim"] = df[["komisyon_birim", "urun_maliyet_birim", "genel_gider_birim", "servis_birim", "paketleme_birim"]].sum(axis=1)
     df["toplam_maliyet"] = df["toplam_maliyet_birim"] * df["quantity"]
-
-    # Profit
     df["kar"] = df["toplam_satis"] - df["toplam_maliyet"]
     df["birim_kazanc"] = df["unitPrice"] - df["toplam_maliyet_birim"]
     df["kar_orani"] = (df["birim_kazanc"] / df["unitPrice"]).fillna(0) * 100
 
-    # Final display
     df_result = df[[
         "orderId", "productName", "quantity", "unitPrice", "toplam_satis",
         "bugunku_komisyon", "bugunku_urun_maliyeti", "komisyon_birim", "urun_maliyet_birim",
@@ -290,17 +302,45 @@ def calculate_profit_table(df):
 
 profit_table = calculate_profit_table(products_df)
 
-# --- Cost Visual ---
+# --- Streamlit Display ---
 st.title("💰 Product Cost & Profitability Analysis")
-st.dataframe(profit_table.head(15).style.format({
-    "Unit Price": "₺{:.2f}",
-    "Total Sales": "₺{:.2f}",
-    "Commission (Total)": "₺{:.2f}",
-    "Cost (Total)": "₺{:.2f}",
-    "Commission/unit": "₺{:.2f}",
-    "Cost/unit": "₺{:.2f}",
-    "Total Cost/unit": "₺{:.2f}",
-    "Total Cost": "₺{:.2f}",
-    "Profit/unit": "₺{:.2f}",
-    "Profit Margin %": "{:.2f}%"
-}), use_container_width=True)
+
+view_option = st.radio("View Mode", ["Detailed (Raw)", "Summarized (By Product)"])
+
+if view_option == "Summarized (By Product)":
+    summary = (
+        profit_table.groupby("Product")
+        .agg({
+            "Qty": "sum",
+            "Unit Price": "mean",
+            "Total Sales": "sum",
+            "Commission (Total)": "sum",
+            "Cost (Total)": "sum",
+            "Total Cost": "sum",
+            "Profit/unit": "mean",
+            "Profit Margin %": "mean"
+        })
+        .reset_index()
+    )
+    st.dataframe(summary.style.format({
+        "Unit Price": "₺{:.2f}",
+        "Total Sales": "₺{:.2f}",
+        "Commission (Total)": "₺{:.2f}",
+        "Cost (Total)": "₺{:.2f}",
+        "Total Cost": "₺{:.2f}",
+        "Profit/unit": "₺{:.2f}",
+        "Profit Margin %": "{:.2f}%"
+    }), use_container_width=True)
+else:
+    st.dataframe(profit_table.head(50).style.format({
+        "Unit Price": "₺{:.2f}",
+        "Total Sales": "₺{:.2f}",
+        "Commission (Total)": "₺{:.2f}",
+        "Cost (Total)": "₺{:.2f}",
+        "Commission/unit": "₺{:.2f}",
+        "Cost/unit": "₺{:.2f}",
+        "Total Cost/unit": "₺{:.2f}",
+        "Total Cost": "₺{:.2f}",
+        "Profit/unit": "₺{:.2f}",
+        "Profit Margin %": "{:.2f}%"
+    }), use_container_width=True)
