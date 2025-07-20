@@ -92,3 +92,110 @@ top_products = (
 
 st.dataframe(top_products.head(15), use_container_width=True)
 
+# --- Load Ingredient Costs ---
+def load_costs_from_hierarchical_excel(path="data/Burgerator.xlsx", sheet_name="Urun_Maliyet"):
+    df = pd.read_excel(path, sheet_name=sheet_name)
+    df.columns = df.columns.str.strip()
+
+    # Carry down main product name for ingredients
+    df["ÜRÜN"] = df["ÜRÜN"].fillna(method="ffill")
+    df["Birim Fiyat"] = pd.to_numeric(df["Birim Fiyat"].replace("₺", "", regex=True), errors="coerce").fillna(0)
+
+    # Total ingredient cost per product
+    cost_df = df.groupby("ÜRÜN")["Birim Fiyat"].sum().reset_index()
+    cost_df = cost_df.rename(columns={"ÜRÜN": "product", "Birim Fiyat": "unit_cost"})
+    cost_df["product"] = cost_df["product"].str.strip().str.lower()
+    return cost_df
+
+# --- Prepare Orders ---
+def prepare_orders(df):
+    df = df.copy()
+    df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+    df["product"] = df["product"].str.strip().str.lower()
+    df["tarih"] = pd.to_datetime(df["insert_date"]).dt.date
+    df["total_price"] = df["unit_price"] * df["quantity"]
+    return df
+
+# --- Merge & Compute Profitability ---
+def compute_profitability(orders_df, cost_df):
+    merged = pd.merge(orders_df, cost_df, on="product", how="left")
+    merged["unit_cost"] = merged["unit_cost"].fillna(0)
+    merged["total_cost"] = merged["unit_cost"] * merged["quantity"]
+    merged["profit"] = merged["total_price"] - merged["total_cost"]
+    merged["profit_margin"] = ((merged["profit"] / merged["total_price"]).fillna(0) * 100).round(2)
+    return merged
+
+# --- Load, Process, Display ---
+ingredient_costs = load_costs_from_hierarchical_excel()
+filtered_df = prepare_orders(filtered_df)
+profit_df = compute_profitability(filtered_df, ingredient_costs)
+
+# --- Streamlit Output ---
+st.markdown("### 🍔 Ingredient-Based Profitability")
+
+st.dataframe(profit_df[[
+    "tarih", "product", "quantity", "unit_price", "total_price",
+    "unit_cost", "total_cost", "profit", "profit_margin"
+]].sort_values("profit_margin", ascending=False), use_container_width=True)
+
+st.markdown("### 🍔 Product Cluster Analysis")
+
+grouped = filtered_df.groupby("Product").agg({
+    "Quantity": "sum",
+    "Unit Price": "mean",  # assume fixed menu price
+    "Total Product Price": "sum",
+    "Cost": "sum"  # from merged cost table
+}).reset_index()
+
+grouped["AvgCostPerItem"] = grouped["Cost"] / grouped["Quantity"]
+grouped["AvgSalesPrice"] = grouped["Total Product Price"] / grouped["Quantity"]
+grouped["ContributionMargin"] = grouped["AvgSalesPrice"] - grouped["AvgCostPerItem"]
+
+# Popularity as % of total
+grouped["Popularity"] = grouped["Quantity"] / grouped["Quantity"].sum()
+
+# Set thresholds (can be adjusted)
+popularity_threshold = grouped["Popularity"].median()
+profitability_threshold = grouped["ContributionMargin"].median()
+
+def classify(row):
+    if row["ContributionMargin"] >= profitability_threshold:
+        if row["Popularity"] >= popularity_threshold:
+            return "Star"
+        else:
+            return "Puzzle"
+    else:
+        if row["Popularity"] >= popularity_threshold:
+            return "Plowhorse"
+        else:
+            return "Turtle"
+
+grouped["Category"] = grouped.apply(classify, axis=1)
+
+# 🎯 Quadrant Chart
+fig = px.scatter(
+    grouped,
+    x="ContributionMargin",
+    y="Popularity",
+    color="Category",
+    text="Product",
+    hover_data=["Quantity", "Total Product Price", "Cost", "AvgSalesPrice"],
+    color_discrete_map={
+        "Star": "green",
+        "Puzzle": "blue",
+        "Plowhorse": "red",
+        "Turtle": "gray"
+    },
+    labels={"ContributionMargin": "Profitability", "Popularity": "Popularity"},
+    title="Product Cluster Analysis"
+)
+fig.update_traces(textposition='top center')
+st.plotly_chart(fig, use_container_width=True)
+
+# 📋 KPI Cards
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Number of Menu Items", len(grouped))
+col2.metric("Menu Mix % (Top)", f"{(grouped[grouped['Category']=='Star']['Popularity'].sum() * 100):.2f}%")
+col3.metric("Average Contribution Margin", f"{grouped['ContributionMargin'].mean():.2f}₺")
+col4.metric("Potential Food Cost %", f"{(grouped['AvgCostPerItem'].sum() / grouped['AvgSalesPrice'].sum()) * 100:.2f}%")
+

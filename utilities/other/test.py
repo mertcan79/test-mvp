@@ -1,105 +1,108 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import plotly.express as px
-import openai
+import requests
 import os
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
+import csv
 
-# ------------------------
-# Setup
-# ------------------------
+import time
+
+# Load env
 load_dotenv()
-openai.api_key = os.getenv("openai_key")
+API_KEY = os.getenv("adisyo_web_siparis")
+API_SECRET = os.getenv("adisyo_api")
+CONSUMER = os.getenv("adisyo_id")
 
-st.set_page_config(page_title="UseydIntel TR", layout="wide")
-st.markdown("""
-    <style>
-        .main {background-color: #f9f9fb;}
-        .stDataFrame th {background-color: #f1f3f6; color: #333;}
-    </style>
-""", unsafe_allow_html=True)
+# Constants
+URL = "https://ext.adisyo.com/api/External/v2/CompletedOrders"
+days = 195
+start_time_utc = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d %H:%M:%S")
+page = 1
+all_orders = []
 
-# ------------------------
-# Sidebar Filters
-# ------------------------
-st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3595/3595455.png", width=80)
-st.sidebar.title("📍 Market Filters")
-selected_district = st.sidebar.selectbox("District", ["Kadıköy", "Beşiktaş", "Şişli"])
-selected_category = st.sidebar.selectbox("Category", ["Burger", "Pizza", "Kebap", "Vegan", "Dessert"])
+# Headers
+headers = {
+    "x-api-key": API_KEY,
+    "x-api-secret": API_SECRET,
+    "x-api-consumer": CONSUMER,
+    "Content-Type": "application/json"
+}
 
-# ------------------------
-# Load Real Data
-# ------------------------
-@st.cache_data
-def load_real_data():
-    try:
-        return pd.read_csv("data.csv")  # Replace with dynamic path if needed
-    except FileNotFoundError:
-        st.error("Real data file not found. Please ensure 'data.csv' exists.")
-        return pd.DataFrame()
 
-data = load_real_data()
-filtered = data[(data['District'] == selected_district) & (data['Category'] == selected_category)]
+retry_count = 0
+max_retries = 5
 
-st.title("📊 UseydIntel TR – Restaurant Competitive Intelligence")
-st.markdown("Gain strategic insights from your food delivery market in real-time. 🧠")
+while True:
+    params = {
+        "startDate": start_time_utc,
+        "includeCancelled": "true",
+        "orderType": "",
+        "page": page
+    }
 
-col1, col2 = st.columns([3, 2])
-with col1:
-    st.subheader(f"📌 Competitor Overview: {selected_district} / {selected_category}")
-    st.dataframe(filtered, use_container_width=True, height=400)
+    response = requests.get(URL, headers=headers, params=params)
+    print(f"🔄 Page {page} - Status Code: {response.status_code}")
 
-with col2:
-    st.metric("Avg Discount (%)", f"{filtered['Discount (%)'].mean():.1f}%")
-    st.metric("Avg Item Price (₺)", f"{filtered['Avg Item Price (₺)'].mean():.2f}₺")
-    st.metric("Avg ROI Potential (%)", f"{filtered['Est. ROI Increase (%)'].mean():.1f}%")
+    if response.status_code == 601:
+        retry_count += 1
+        if retry_count > max_retries:
+            print("❌ Too many retries. Exiting.")
+            break
+        wait_time = 45  # wait slightly longer than 40 sec
+        print(f"⏳ Rate limit. Waiting {wait_time} sec...")
+        time.sleep(wait_time)
+        continue
 
-# ------------------------
-# Plot: Discount vs Price
-# ------------------------
-st.subheader("📉 Discount vs. Price vs. ROI")
-fig = px.scatter(
-    filtered,
-    x="Avg Item Price (₺)",
-    y="Discount (%)",
-    color="Est. ROI Increase (%)",
-    hover_data=["Restaurant", "Promo Type", "Top Item"],
-    title="🎯 Optimal Pricing and Discount Strategy",
-    color_continuous_scale='Turbo',
-    height=500
-)
-st.plotly_chart(fig, use_container_width=True)
+    if response.status_code != 200:
+        print("❌ Error:", response.text)
+        break
 
-# ------------------------
-# AI-Powered Insight
-# ------------------------
-st.subheader("🤖 AI-Powered Insight")
+    retry_count = 0  # reset on success
 
-@st.cache_data(show_spinner=False)
-def get_ai_analysis(df):
-    prompt = f"""
-    Analyze this restaurant competition data in the {selected_district} district under the {selected_category} category. Provide strategic insights, trends, and suggestions based on the following data:
+    data = response.json()
+    orders = data.get("orders", [])
+    if not orders:
+        break
 
-    {df.to_string(index=False)}
+    all_orders.extend(orders)
 
-    Please format the output in bullet points.
-    """ 
-    try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[
-                {"role": "system", "content": "You are a helpful marketing & business analyst."},
-                {"role": "user", "content": prompt}
-            ]
-        )
-        return response['choices'][0]['message']['content']
-    except Exception as e:
-        return f"Error: {e}"
+    if page >= data.get("pageCount", 1):
+        break
 
-if not filtered.empty:
-    with st.spinner("Analyzing market with GPT-4..."):
-        insights = get_ai_analysis(filtered)
-        st.markdown(insights)
+    page += 1
+    print(f"✅ Page {page - 1} complete. Waiting 45 seconds before next...")
+    time.sleep(45)  # 👈 necessary delay for CompletedOrders
+
+print(f"✅ Total orders collected: {len(all_orders)}")
+
+# Flatten orders to product-level rows
+rows = []
+for order in all_orders:
+    for product in order.get("products", []):
+        rows.append({
+            "Order ID": order["id"],
+            "Table": order.get("tableName"),
+            "Waiter": order.get("waiterName"),
+            "Order Total": order.get("orderTotal"),
+            "Tax": order.get("taxAmount"),
+            "Currency": order.get("currency"),
+            "Insert Date": order.get("insertDate"),
+            "Order Type": order.get("orderType"),
+            "Status": order.get("status"),
+            "Product": product["productName"],
+            "Quantity": product["quantity"],
+            "Unit Price": product["unitPrice"],
+            "Total Product Price": product["totalAmount"],
+            "Product Description": product.get("description") or "",
+            "Features": ", ".join([f["featureName"] for f in product.get("features", [])])
+        })
+
+# Save to CSV
+output_file = f"data/adisyo_completed_orders_full_{days}d.csv"
+if rows:
+    with open(output_file, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"📁 Saved {len(rows)} rows to '{output_file}'")
 else:
-    st.warning("No data available for the selected filters.")
+    print("⚠️ No data to write.")
