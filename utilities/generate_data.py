@@ -6,7 +6,7 @@ import uuid
 import os
 
 os.makedirs('data', exist_ok=True)
-
+ 
 item_names = [
     "Tavuk Şiş", "Köfte", "Adana Dürüm", "Urfa Dürüm", "Lahmacun", "Pide", "Mantı", "İskender",
     "Pilav Üstü Tavuk", "Çorba", "Mercimek Çorbası", "Ayran", "Kola", "Fanta", "Su", "Baklava",
