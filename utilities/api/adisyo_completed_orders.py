@@ -25,7 +25,9 @@ headers = {
 orders_file = open("data/orders.csv", "w", newline="", encoding="utf-8")
 products_file = open("data/products.csv", "w", newline="", encoding="utf-8")
 features_file = open("data/features.csv", "w", newline="", encoding="utf-8")
+payments_file = open("data/payments.csv", "w", newline="", encoding="utf-8")
 
+payments_writer = None
 orders_writer = None
 products_writer = None
 features_writer = None
@@ -121,7 +123,25 @@ while True:
                     features_writer = csv.DictWriter(features_file, fieldnames=feature_row.keys())
                     features_writer.writeheader()
                 features_writer.writerow(feature_row)
-
+            # Write payments
+            for payment in order.get("payments", []):
+                payment_row = {
+                    "orderId": payment.get("orderId"),
+                    "paymentTypeId": payment.get("paymentTypeId"),
+                    "paymentName": payment.get("paymentName"),
+                    "amount": payment.get("amount"),
+                    "currency": payment.get("currency"),
+                    "exchangeRate": payment.get("exchangeRate"),
+                    "insertDate": payment.get("insertDate"),
+                    "customerId": payment.get("customerId"),
+                    "customerName": payment.get("customerName"),
+                    "customerSurname": payment.get("customerSurname"),
+                    "isDebit": payment.get("isDebit")
+                }
+                if not payments_writer:
+                    payments_writer = csv.DictWriter(payments_file, fieldnames=payment_row.keys())
+                    payments_writer.writeheader()
+                payments_writer.writerow(payment_row)
         total_order_count += 1
 
     if page >= data.get("pageCount", 1):
@@ -129,7 +149,7 @@ while True:
 
     page += 1
     print("✅ Waiting 45 sec before next page...")
-    time.sleep(45)
+    time.sleep(50)
 
 # Finalize
 orders_file.close()

@@ -4,26 +4,59 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 import re
+from PIL import Image
 
+# Load and display logo
+logo = Image.open("archive/logo.png")
+st.image(logo, width=150)
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #f7f8ff;
+    }
+    .css-18e3th9 {
+        background-color: #f7f8ff;
+    }
+    .stApp {
+        color: #333;
+    }
+    .st-bw {
+        color: #2E2EFF;  /* Use logo blue color for primary text */
+    }
+    .css-1d391kg {
+        background-color: #2E2EFF !important;  /* logo purple */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.set_page_config(page_title="TableWise Dashboard", layout="wide")
 
 # ---- Load data ----
 @st.cache_data
-
 def load_data():
-    orders = pd.read_csv("data/orders.csv")
-    products = pd.read_csv("data/products.csv")
-    features = pd.read_csv("data/features.csv")
+    orders = pd.read_csv("data/full/orders.csv")
+    products = pd.read_csv("data/full/products.csv")
+    features = pd.read_csv("data/full/features.csv")
+    payments = pd.read_csv("data/full/payments.csv")
 
-    orders.columns = orders.columns.str.strip().str.lower().str.replace(" ", "_")
+    # Clean columns
+    for df in [orders, products, features, payments]:
+        df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+    
+    # Parse dates
     orders["insertdate"] = pd.to_datetime(orders["insertdate"], format='mixed')
+    payments["insertdate"] = pd.to_datetime(payments["insertdate"], format='mixed')
 
-    products.columns = products.columns.str.strip().str.lower().str.replace(" ", "_")
-    features.columns = features.columns.str.strip().str.lower().str.replace(" ", "_")
+    # Use only first payment per order (or customize to sum by orderId if needed)
+    payment_map = payments.groupby("orderid")["paymentname"].first().reset_index()
+    orders = orders.merge(payment_map, left_on="id", right_on="orderid", how="left")
+    orders.drop(columns=["orderid"], inplace=True)
 
-    return orders, products, features
+    return orders, products, features, payments
 
-orders, products, features = load_data()
+orders, products, features, payments = load_data()
 
 # ---- Sidebar Filters ----
 st.sidebar.header("Filters")
@@ -31,14 +64,14 @@ min_date, max_date = orders["insertdate"].min(), orders["insertdate"].max()
 date_range = st.sidebar.date_input("Select Date Range", [min_date, max_date])
 
 branches = st.sidebar.multiselect("Select Table", orders["tablename"].dropna().unique(), default=None)
-channels = st.sidebar.multiselect("Select Channel", orders["saleschannelname"].dropna().unique(), default=None)
+channel_types = st.sidebar.multiselect("Select Payment Channel", orders["paymentname"].dropna().unique())
 
 # ---- Filter Data ----
 mask = (orders["insertdate"].dt.date >= date_range[0]) & (orders["insertdate"].dt.date <= date_range[1])
 if branches:
     mask &= orders["tablename"].isin(branches)
-if channels:
-    mask &= orders["saleschannelname"].isin(channels)
+if channel_types:
+    mask &= orders["paymentname"].isin(channel_types)
 
 filtered_orders = orders[mask]
 
@@ -69,8 +102,8 @@ with pie1:
     st.plotly_chart(fig, use_container_width=True)
 
 with pie2:
-    by_channel = filtered_orders.groupby("saleschannelname")["ordertotal"].sum().reset_index()
-    fig = px.pie(by_channel, values="ordertotal", names="saleschannelname", title="Sales by Channel")
+    by_payment = filtered_orders.groupby("paymentname")["ordertotal"].sum().reset_index()
+    fig = px.pie(by_payment, values="ordertotal", names="paymentname", title="Sales by Payment Channel")
     st.plotly_chart(fig, use_container_width=True)
 
 st.title("Menu Insights")
@@ -212,8 +245,8 @@ st.pyplot(fig)
 # ---- Profitability ----@st.cache_data
 
 def load_product_cost_data():
-    products = pd.read_csv("data/products.csv")
-    raw_costs = pd.read_excel("data/costs.xlsx", sheet_name="Costs")
+    products = pd.read_csv("data/full/products.csv")
+    raw_costs = pd.read_excel("data/full/costs.xlsx", sheet_name="Costs")
 
     # Clean function for product names
     def clean_name(name):

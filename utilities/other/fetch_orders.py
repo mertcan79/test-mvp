@@ -1,30 +1,19 @@
 import requests
 import os
-from datetime import datetime, timedelta, timezone
-from dotenv import load_dotenv
 import csv
+import time
+from datetime import datetime, timezone
+from dotenv import load_dotenv
 
-# Load API keys
+# Load environment variables
 load_dotenv()
 API_KEY = os.getenv("adisyo_web_siparis")
 API_SECRET = os.getenv("adisyo_api")
 CONSUMER = os.getenv("adisyo_id")
 
-# API endpoint
+# API setup
 URL = "https://ext.adisyo.com/api/External/v2/CompletedOrders"
-days=180
-# UTC start date for last 24 hours
-start_time_utc = (datetime.now(timezone.utc) - timedelta(hours=24*days)).strftime("%Y-%m-%d %H:%M:%S")
-
-# Query parameters
-params = {
-    "startDate": start_time_utc,
-    "includeCancelled": "true",
-    "orderType": "",
-    "page": 10
-}
-
-# Required headers
+start_time_utc = datetime(2025, 1, 1, 0, 0, 0, tzinfo=timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 headers = {
     "x-api-key": API_KEY,
     "x-api-secret": API_SECRET,
@@ -32,43 +21,118 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# Send GET request
-response = requests.get(URL, headers=headers, params=params)
-print("Status Code:", response.status_code)
+# Output files
+orders_file = open("data/orders.csv", "w", newline="", encoding="utf-8")
+products_file = open("data/products.csv", "w", newline="", encoding="utf-8")
+features_file = open("data/features.csv", "w", newline="", encoding="utf-8")
 
-if response.status_code == 200:
-    orders = response.json().get("orders", [])
+orders_writer = None
+products_writer = None
+features_writer = None
 
-    # Prepare flattened rows
-    rows = []
+page = 1
+retry_count = 0
+max_retries = 5
+total_order_count = 0
+
+while True:
+    params = {
+        "startDate": start_time_utc,
+        "includeCancelled": "true",
+        "orderType": "",
+        "page": page
+    }
+
+    response = requests.get(URL, headers=headers, params=params)
+    print(f"🔄 Page {page} - Status Code: {response.status_code}")
+
+    if response.status_code == 601:
+        retry_count += 1
+        if retry_count > max_retries:
+            print("❌ Too many retries. Exiting.")
+            break
+        print("⏳ Rate limit hit. Sleeping 45 sec...")
+        time.sleep(45)
+        continue
+
+    if response.status_code != 200:
+        print("❌ Error:", response.text)
+        break
+
+    retry_count = 0
+    data = response.json()
+    orders = data.get("orders", [])
+    if not orders:
+        break
+
     for order in orders:
-        for product in order.get("products", []):
-            rows.append({
-                "Order ID": order["id"],
-                "Table": order.get("tableName"),
-                "Waiter": order.get("waiterName"),
-                "Order Total": order.get("orderTotal"),
-                "Tax": order.get("taxAmount"),
-                "Currency": order.get("currency"),
-                "Insert Date": order.get("insertDate"),
-                "Order Type": order.get("orderType"),
-                "Status": order.get("status"),
-                "Product": product["productName"],
-                "Quantity": product["quantity"],
-                "Unit Price": product["unitPrice"],
-                "Total Product Price": product["totalAmount"],
-                "Product Description": product.get("description") or "",
-                "Features": ", ".join([f["featureName"] for f in product.get("features", [])])
-            })
+        # Write orders
+        order_row = {
+            "id": order.get("id"),
+            "tableName": order.get("tableName"),
+            "waiterName": order.get("waiterName"),
+            "orderTotal": order.get("orderTotal"),
+            "taxAmount": order.get("taxAmount"),
+            "currency": order.get("currency"),
+            "insertDate": order.get("insertDate"),
+            "updateDate": order.get("updateDate"),
+            "orderType": order.get("orderType"),
+            "status": order.get("status"),
+            "salesChannelName": order.get("salesChannelName"),
+            "paymentMethodName": order.get("paymentMethodName"),
+            "customerId": order.get("customerId"),
+            "orderNumber": order.get("orderNumber")
+        }
+        if not orders_writer:
+            orders_writer = csv.DictWriter(orders_file, fieldnames=order_row.keys())
+            orders_writer.writeheader()
+        orders_writer.writerow(order_row)
 
-    # Write to CSV
-    output_file = f"data/adisyo_completed_orders_{days}.csv"
-    with open(output_file, mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
-        writer.writeheader()
-        writer.writerows(rows)
+        # Write products
+        for p in order.get("products", []):
+            product_row = {
+                "orderId": order.get("id"),
+                "productName": p.get("productName"),
+                "quantity": p.get("quantity"),
+                "unitPrice": p.get("unitPrice"),
+                "totalAmount": p.get("totalAmount"),
+                "description": p.get("description"),
+                "cancelReason": p.get("cancelReason"),
+                "productId": p.get("productId"),
+                "productCode": p.get("productCode"),
+                "groupName": p.get("groupName"),
+                "groupId": p.get("groupId")
+            }
+            if not products_writer:
+                products_writer = csv.DictWriter(products_file, fieldnames=product_row.keys())
+                products_writer.writeheader()
+            products_writer.writerow(product_row)
 
-    print(f"✅ Saved {len(rows)} product rows from {len(orders)} orders to '{output_file}'")
+            # Write features
+            for f in p.get("features", []):
+                feature_row = {
+                    "orderId": order.get("id"),
+                    "productId": p.get("productId"),
+                    "featureName": f.get("featureName"),
+                    "featureId": f.get("featureId"),
+                    "additionalPrice": f.get("additionalPrice")
+                }
+                if not features_writer:
+                    features_writer = csv.DictWriter(features_file, fieldnames=feature_row.keys())
+                    features_writer.writeheader()
+                features_writer.writerow(feature_row)
 
-else:
-    print("❌ Error:", response.text)
+        total_order_count += 1
+
+    if page >= data.get("pageCount", 1):
+        break
+
+    page += 1
+    print("✅ Waiting 45 sec before next page...")
+    time.sleep(45)
+
+# Finalize
+orders_file.close()
+products_file.close()
+features_file.close()
+print(f"✅ Completed. Total orders written: {total_order_count}")

@@ -1,0 +1,986 @@
+order_product_id,feature_id,featureName,additionalPrice
+950065827,602098,Cajun Baharatı İstiyorum,0.0
+950065827,602102,Normal Pişim,0.0
+950065827,602096,Eldiven İstiyorum,0.0
+950082454,602098,Cajun Baharatı İstiyorum,0.0
+950082454,602096,Eldiven İstiyorum,0.0
+950082454,602102,Normal Pişim,0.0
+950110905,602098,Cajun Baharatı İstiyorum,0.0
+950110905,602102,Normal Pişim,0.0
+950168321,602098,Cajun Baharatı İstiyorum,0.0
+950168321,602096,Eldiven İstiyorum,0.0
+950168321,602102,Normal Pişim,0.0
+950168321,911612,FÜME ET İSTEMİYORUM,-5.0
+950195349,602096,Eldiven İstiyorum,0.0
+950195349,602098,Cajun Baharatı İstiyorum,0.0
+950210471,602098,Cajun Baharatı İstiyorum,0.0
+950210469,602098,Cajun Baharatı İstiyorum,0.0
+950232633,602098,Cajun Baharatı İstiyorum,0.0
+950232633,602096,Eldiven İstiyorum,0.0
+950247938,602098,Cajun Baharatı İstiyorum,0.0
+950253464,602098,Cajun Baharatı İstiyorum,0.0
+950253464,602096,Eldiven İstiyorum,0.0
+950253464,602102,Normal Pişim,0.0
+950254266,602098,Cajun Baharatı İstiyorum,0.0
+950255167,602098,Cajun Baharatı İstiyorum,0.0
+950257512,602098,Cajun Baharatı İstiyorum,0.0
+950274764,602096,Eldiven İstiyorum,0.0
+950274764,602098,Cajun Baharatı İstiyorum,0.0
+950335721,602098,Cajun Baharatı İstiyorum,0.0
+950335721,602096,Eldiven İstiyorum,0.0
+950335721,602102,Normal Pişim,0.0
+950335721,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+950335721,911611,CHEDDAR PEYNİRİ İSTEMİYORUM,-3.0
+950335721,911612,FÜME ET İSTEMİYORUM,-5.0
+950335728,602098,Cajun Baharatı İstiyorum,0.0
+950335728,602096,Eldiven İstiyorum,0.0
+950335728,602102,Normal Pişim,0.0
+950336930,602098,Cajun Baharatı İstiyorum,0.0
+950336930,602102,Normal Pişim,0.0
+950336930,602096,Eldiven İstiyorum,0.0
+950445692,602098,Cajun Baharatı İstiyorum,0.0
+950445692,602102,Normal Pişim,0.0
+950445692,602096,Eldiven İstiyorum,0.0
+,,,
+950065827,602098,Cajun Baharatı İstiyorum,0.0
+950065827,602102,Normal Pişim,0.0
+950065827,602096,Eldiven İstiyorum,0.0
+950082454,602098,Cajun Baharatı İstiyorum,0.0
+950082454,602096,Eldiven İstiyorum,0.0
+950082454,602102,Normal Pişim,0.0
+950110905,602098,Cajun Baharatı İstiyorum,0.0
+950110905,602102,Normal Pişim,0.0
+950168321,602098,Cajun Baharatı İstiyorum,0.0
+950168321,602096,Eldiven İstiyorum,0.0
+950168321,602102,Normal Pişim,0.0
+950168321,911612,FÜME ET İSTEMİYORUM,-5.0
+950195349,602096,Eldiven İstiyorum,0.0
+950195349,602098,Cajun Baharatı İstiyorum,0.0
+950210471,602098,Cajun Baharatı İstiyorum,0.0
+950210469,602098,Cajun Baharatı İstiyorum,0.0
+950232633,602098,Cajun Baharatı İstiyorum,0.0
+950232633,602096,Eldiven İstiyorum,0.0
+950247938,602098,Cajun Baharatı İstiyorum,0.0
+950253464,602098,Cajun Baharatı İstiyorum,0.0
+950253464,602096,Eldiven İstiyorum,0.0
+950253464,602102,Normal Pişim,0.0
+950254266,602098,Cajun Baharatı İstiyorum,0.0
+950255167,602098,Cajun Baharatı İstiyorum,0.0
+950257512,602098,Cajun Baharatı İstiyorum,0.0
+950274764,602096,Eldiven İstiyorum,0.0
+950274764,602098,Cajun Baharatı İstiyorum,0.0
+950335721,602098,Cajun Baharatı İstiyorum,0.0
+950335721,602096,Eldiven İstiyorum,0.0
+950335721,602102,Normal Pişim,0.0
+950335721,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+950335721,911611,CHEDDAR PEYNİRİ İSTEMİYORUM,-3.0
+950335721,911612,FÜME ET İSTEMİYORUM,-5.0
+950335728,602098,Cajun Baharatı İstiyorum,0.0
+950335728,602096,Eldiven İstiyorum,0.0
+950335728,602102,Normal Pişim,0.0
+950336930,602098,Cajun Baharatı İstiyorum,0.0
+950336930,602102,Normal Pişim,0.0
+950336930,602096,Eldiven İstiyorum,0.0
+950445692,602098,Cajun Baharatı İstiyorum,0.0
+950445692,602102,Normal Pişim,0.0
+950445692,602096,Eldiven İstiyorum,0.0
+950494733,602098,Cajun Baharatı İstiyorum,0.0
+950494733,602102,Normal Pişim,0.0
+950494727,602098,Cajun Baharatı İstiyorum,0.0
+950494727,602102,Normal Pişim,0.0
+950494727,602096,Eldiven İstiyorum,0.0
+950495891,602098,Cajun Baharatı İstiyorum,0.0
+950495891,911612,FÜME ET İSTEMİYORUM,-5.0
+950495891,602102,Normal Pişim,0.0
+950495891,602096,Eldiven İstiyorum,0.0
+950495893,602098,Cajun Baharatı İstiyorum,0.0
+950495893,602102,Normal Pişim,0.0
+950495893,602096,Eldiven İstiyorum,0.0
+950533710,602098,Cajun Baharatı İstiyorum,0.0
+950533710,602096,Eldiven İstiyorum,0.0
+950533710,602102,Normal Pişim,0.0
+950533713,602098,Cajun Baharatı İstiyorum,0.0
+950533713,602096,Eldiven İstiyorum,0.0
+950533713,602102,Normal Pişim,0.0
+950557395,602098,Cajun Baharatı İstiyorum,0.0
+950557426,602098,Cajun Baharatı İstiyorum,0.0
+950561215,602098,Cajun Baharatı İstiyorum,0.0
+950561215,602102,Normal Pişim,0.0
+950561215,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+950578586,602098,Cajun Baharatı İstiyorum,0.0
+950580253,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+950580253,602099,CAJUN BAHARATI İSTEMİYORUM,0.0
+950583810,602098,Cajun Baharatı İstiyorum,0.0
+950583810,602096,Eldiven İstiyorum,0.0
+950583820,602098,Cajun Baharatı İstiyorum,0.0
+950583820,602096,Eldiven İstiyorum,0.0
+950583816,602098,Cajun Baharatı İstiyorum,0.0
+950583816,602096,Eldiven İstiyorum,0.0
+950590185,602098,Cajun Baharatı İstiyorum,0.0
+950621289,602098,Cajun Baharatı İstiyorum,0.0
+950627423,602098,Cajun Baharatı İstiyorum,0.0
+950627423,602102,Normal Pişim,0.0
+950632253,602096,Eldiven İstiyorum,0.0
+950632253,602098,Cajun Baharatı İstiyorum,0.0
+950633623,602098,Cajun Baharatı İstiyorum,0.0
+950633623,602102,Normal Pişim,0.0
+950633623,602096,Eldiven İstiyorum,0.0
+950633626,602098,Cajun Baharatı İstiyorum,0.0
+950633626,602102,Normal Pişim,0.0
+950658315,602098,Cajun Baharatı İstiyorum,0.0
+950658315,602102,Normal Pişim,0.0
+950670575,602096,Eldiven İstiyorum,0.0
+950670575,602098,Cajun Baharatı İstiyorum,0.0
+950670577,602098,Cajun Baharatı İstiyorum,0.0
+950670577,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+950679756,602098,Cajun Baharatı İstiyorum,0.0
+950695387,602098,Cajun Baharatı İstiyorum,0.0
+950696944,602098,Cajun Baharatı İstiyorum,0.0
+950696944,602102,Normal Pişim,0.0
+950696936,602098,Cajun Baharatı İstiyorum,0.0
+950696936,602102,Normal Pişim,0.0
+950696936,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+950714495,602098,Cajun Baharatı İstiyorum,0.0
+950714495,602102,Normal Pişim,0.0
+950731884,602096,Eldiven İstiyorum,0.0
+950731884,602098,Cajun Baharatı İstiyorum,0.0
+950731884,602102,Normal Pişim,0.0
+950731880,602096,Eldiven İstiyorum,0.0
+950731880,602098,Cajun Baharatı İstiyorum,0.0
+950731880,602102,Normal Pişim,0.0
+950745437,602098,Cajun Baharatı İstiyorum,0.0
+950745439,602098,Cajun Baharatı İstiyorum,0.0
+950783804,602098,Cajun Baharatı İstiyorum,0.0
+950798102,602096,Eldiven İstiyorum,0.0
+950798102,602098,Cajun Baharatı İstiyorum,0.0
+950798102,602102,Normal Pişim,0.0
+950882094,602098,Cajun Baharatı İstiyorum,0.0
+950882094,602102,Normal Pişim,0.0
+950914239,602096,Eldiven İstiyorum,0.0
+950914239,602098,Cajun Baharatı İstiyorum,0.0
+950914239,602102,Normal Pişim,0.0
+951259292,602098,Cajun Baharatı İstiyorum,0.0
+951259292,602096,Eldiven İstiyorum,0.0
+951259292,602102,Normal Pişim,0.0
+951259292,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+951278493,602098,Cajun Baharatı İstiyorum,0.0
+951278493,602102,Normal Pişim,0.0
+951302908,602098,Cajun Baharatı İstiyorum,0.0
+951302908,602102,Normal Pişim,0.0
+951302915,602098,Cajun Baharatı İstiyorum,0.0
+951302915,602102,Normal Pişim,0.0
+951384920,602098,Cajun Baharatı İstiyorum,0.0
+951390110,602098,Cajun Baharatı İstiyorum,0.0
+951390110,602102,Normal Pişim,0.0
+951411448,602098,Cajun Baharatı İstiyorum,0.0
+951411448,602102,Normal Pişim,0.0
+951435686,602098,Cajun Baharatı İstiyorum,0.0
+951435686,602102,Normal Pişim,0.0
+951435686,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+951435684,602098,Cajun Baharatı İstiyorum,0.0
+951435684,602102,Normal Pişim,0.0
+951435684,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+951446159,602098,Cajun Baharatı İstiyorum,0.0
+951446159,602102,Normal Pişim,0.0
+951446167,602098,Cajun Baharatı İstiyorum,0.0
+951446167,602102,Normal Pişim,0.0
+951446167,911614,DOMATES İSTEMİYORUM,-1.0
+951461258,602096,Eldiven İstiyorum,0.0
+951463043,602098,Cajun Baharatı İstiyorum,0.0
+951498437,602098,Cajun Baharatı İstiyorum,0.0
+951498437,602102,Normal Pişim,0.0
+951498428,602098,Cajun Baharatı İstiyorum,0.0
+951498428,602102,Normal Pişim,0.0
+951546692,602098,Cajun Baharatı İstiyorum,0.0
+951546692,602102,Normal Pişim,0.0
+951548133,602098,Cajun Baharatı İstiyorum,0.0
+951548133,602102,Normal Pişim,0.0
+951551946,602098,Cajun Baharatı İstiyorum,0.0
+951551946,602102,Normal Pişim,0.0
+951551946,602096,Eldiven İstiyorum,0.0
+951565912,602098,Cajun Baharatı İstiyorum,0.0
+951565912,602096,Eldiven İstiyorum,0.0
+951565912,602102,Normal Pişim,0.0
+951572905,602098,Cajun Baharatı İstiyorum,0.0
+951572905,602102,Normal Pişim,0.0
+951572908,602098,Cajun Baharatı İstiyorum,0.0
+951572908,602102,Normal Pişim,0.0
+951589963,602098,Cajun Baharatı İstiyorum,0.0
+951589963,602102,Normal Pişim,0.0
+951589957,602098,Cajun Baharatı İstiyorum,0.0
+951589957,602102,Normal Pişim,0.0
+951653314,602096,Eldiven İstiyorum,0.0
+951653314,602098,Cajun Baharatı İstiyorum,0.0
+951653319,602098,Cajun Baharatı İstiyorum,0.0
+951653319,602102,Normal Pişim,0.0
+951682004,602098,Cajun Baharatı İstiyorum,0.0
+951682004,602102,Normal Pişim,0.0
+951692066,602098,Cajun Baharatı İstiyorum,0.0
+951699048,602098,Cajun Baharatı İstiyorum,0.0
+951699048,602102,Normal Pişim,0.0
+951704183,602096,Eldiven İstiyorum,0.0
+951704183,602098,Cajun Baharatı İstiyorum,0.0
+951704183,602102,Normal Pişim,0.0
+951704180,602096,Eldiven İstiyorum,0.0
+951704180,602098,Cajun Baharatı İstiyorum,0.0
+951704180,602102,Normal Pişim,0.0
+951711589,602096,Eldiven İstiyorum,0.0
+951711589,602098,Cajun Baharatı İstiyorum,0.0
+951711589,602102,Normal Pişim,0.0
+951711601,602096,Eldiven İstiyorum,0.0
+951711601,602098,Cajun Baharatı İstiyorum,0.0
+951711601,602102,Normal Pişim,0.0
+951711595,602096,Eldiven İstiyorum,0.0
+951711595,602098,Cajun Baharatı İstiyorum,0.0
+951711595,602102,Normal Pişim,0.0
+951711605,602096,Eldiven İstiyorum,0.0
+951711605,602098,Cajun Baharatı İstiyorum,0.0
+951711605,602102,Normal Pişim,0.0
+951743100,602098,Cajun Baharatı İstiyorum,0.0
+951753752,602098,Cajun Baharatı İstiyorum,0.0
+951753747,602096,Eldiven İstiyorum,0.0
+951753743,602098,Cajun Baharatı İstiyorum,0.0
+951756957,602098,Cajun Baharatı İstiyorum,0.0
+951779424,602098,Cajun Baharatı İstiyorum,0.0
+951779424,602102,Normal Pişim,0.0
+951779428,602098,Cajun Baharatı İstiyorum,0.0
+951779428,602102,Normal Pişim,0.0
+951828499,602098,Cajun Baharatı İstiyorum,0.0
+951828499,602102,Normal Pişim,0.0
+951828505,602098,Cajun Baharatı İstiyorum,0.0
+951828505,602102,Normal Pişim,0.0
+951828505,602096,Eldiven İstiyorum,0.0
+951835087,602098,Cajun Baharatı İstiyorum,0.0
+951835087,602096,Eldiven İstiyorum,0.0
+951835087,602102,Normal Pişim,0.0
+951836225,602098,Cajun Baharatı İstiyorum,0.0
+951836225,602102,Normal Pişim,0.0
+951836234,602098,Cajun Baharatı İstiyorum,0.0
+951836234,602102,Normal Pişim,0.0
+951836234,602096,Eldiven İstiyorum,0.0
+951838147,602098,Cajun Baharatı İstiyorum,0.0
+951838147,602102,Normal Pişim,0.0
+951838138,602098,Cajun Baharatı İstiyorum,0.0
+951838138,602102,Normal Pişim,0.0
+951838138,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+951838138,911612,FÜME ET İSTEMİYORUM,-5.0
+951838138,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+951854958,602098,Cajun Baharatı İstiyorum,0.0
+951854958,602102,Normal Pişim,0.0
+951895596,602098,Cajun Baharatı İstiyorum,0.0
+951895596,602096,Eldiven İstiyorum,0.0
+951895596,602102,Normal Pişim,0.0
+951929351,602098,Cajun Baharatı İstiyorum,0.0
+951929351,602102,Normal Pişim,0.0
+951940999,602098,Cajun Baharatı İstiyorum,0.0
+951940999,602096,Eldiven İstiyorum,0.0
+951940999,602102,Normal Pişim,0.0
+951941010,602098,Cajun Baharatı İstiyorum,0.0
+951941010,602096,Eldiven İstiyorum,0.0
+951941010,602102,Normal Pişim,0.0
+951941008,602098,Cajun Baharatı İstiyorum,0.0
+951941008,602102,Normal Pişim,0.0
+951941006,602098,Cajun Baharatı İstiyorum,0.0
+951941006,602096,Eldiven İstiyorum,0.0
+951941006,602102,Normal Pişim,0.0
+951941004,602098,Cajun Baharatı İstiyorum,0.0
+951941004,602096,Eldiven İstiyorum,0.0
+951941004,602102,Normal Pişim,0.0
+951941001,602098,Cajun Baharatı İstiyorum,0.0
+951941001,602096,Eldiven İstiyorum,0.0
+951941001,602102,Normal Pişim,0.0
+951947469,602098,Cajun Baharatı İstiyorum,0.0
+951947469,602096,Eldiven İstiyorum,0.0
+951947469,602102,Normal Pişim,0.0
+951980764,602098,Cajun Baharatı İstiyorum,0.0
+951980764,602102,Normal Pişim,0.0
+951980764,911611,CHEDDAR PEYNİRİ İSTEMİYORUM,-3.0
+951980764,911612,FÜME ET İSTEMİYORUM,-5.0
+951998305,602096,Eldiven İstiyorum,0.0
+951998305,602098,Cajun Baharatı İstiyorum,0.0
+951998305,602102,Normal Pişim,0.0
+951998307,602096,Eldiven İstiyorum,0.0
+951998307,602098,Cajun Baharatı İstiyorum,0.0
+951998307,602102,Normal Pişim,0.0
+952011648,602096,Eldiven İstiyorum,0.0
+952011648,602098,Cajun Baharatı İstiyorum,0.0
+952011648,602102,Normal Pişim,0.0
+952456171,602098,Cajun Baharatı İstiyorum,0.0
+952456171,602102,Normal Pişim,0.0
+952582197,602098,Cajun Baharatı İstiyorum,0.0
+952582197,602102,Normal Pişim,0.0
+952591396,602096,Eldiven İstiyorum,0.0
+952591396,602098,Cajun Baharatı İstiyorum,0.0
+952591396,602102,Normal Pişim,0.0
+952606734,602096,Eldiven İstiyorum,0.0
+952606734,602098,Cajun Baharatı İstiyorum,0.0
+952606734,602102,Normal Pişim,0.0
+952664314,602098,Cajun Baharatı İstiyorum,0.0
+952664314,602102,Normal Pişim,0.0
+952758629,602098,Cajun Baharatı İstiyorum,0.0
+952758629,602102,Normal Pişim,0.0
+952779687,602096,Eldiven İstiyorum,0.0
+952779687,602102,Normal Pişim,0.0
+952779687,602098,Cajun Baharatı İstiyorum,0.0
+952779692,602098,Cajun Baharatı İstiyorum,0.0
+952779692,602096,Eldiven İstiyorum,0.0
+952779692,602102,Normal Pişim,0.0
+952781449,602098,Cajun Baharatı İstiyorum,0.0
+952781449,602102,Normal Pişim,0.0
+952787314,602098,Cajun Baharatı İstiyorum,0.0
+952787314,602102,Normal Pişim,0.0
+952787314,602096,Eldiven İstiyorum,0.0
+952798871,602098,Cajun Baharatı İstiyorum,0.0
+952798871,602102,Normal Pişim,0.0
+952798873,602098,Cajun Baharatı İstiyorum,0.0
+952798873,602102,Normal Pişim,0.0
+952798868,602098,Cajun Baharatı İstiyorum,0.0
+952798868,602102,Normal Pişim,0.0
+952804430,602098,Cajun Baharatı İstiyorum,0.0
+952804430,602096,Eldiven İstiyorum,0.0
+952804430,602102,Normal Pişim,0.0
+952809343,602096,Eldiven İstiyorum,0.0
+952809343,602098,Cajun Baharatı İstiyorum,0.0
+952809343,602102,Normal Pişim,0.0
+952840282,602098,Cajun Baharatı İstiyorum,0.0
+952840282,602102,Normal Pişim,0.0
+952840282,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+952840282,911612,FÜME ET İSTEMİYORUM,-5.0
+952841417,602098,Cajun Baharatı İstiyorum,0.0
+952841417,602102,Normal Pişim,0.0
+952841417,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+952845968,602096,Eldiven İstiyorum,0.0
+952845968,602098,Cajun Baharatı İstiyorum,0.0
+952850434,602098,Cajun Baharatı İstiyorum,0.0
+952850434,602102,Normal Pişim,0.0
+952859859,602098,Cajun Baharatı İstiyorum,0.0
+952859859,602096,Eldiven İstiyorum,0.0
+952859859,602102,Normal Pişim,0.0
+952866055,602098,Cajun Baharatı İstiyorum,0.0
+952866055,602096,Eldiven İstiyorum,0.0
+952866055,602102,Normal Pişim,0.0
+952929193,602098,Cajun Baharatı İstiyorum,0.0
+952929193,602102,Normal Pişim,0.0
+952929191,602098,Cajun Baharatı İstiyorum,0.0
+952929191,602102,Normal Pişim,0.0
+952929191,602096,Eldiven İstiyorum,0.0
+952933886,602098,Cajun Baharatı İstiyorum,0.0
+952933886,602102,Normal Pişim,0.0
+952933884,602096,Eldiven İstiyorum,0.0
+952933884,602098,Cajun Baharatı İstiyorum,0.0
+952933884,602102,Normal Pişim,0.0
+952940731,602098,Cajun Baharatı İstiyorum,0.0
+952940731,602102,Normal Pişim,0.0
+952940725,602098,Cajun Baharatı İstiyorum,0.0
+952940725,602102,Normal Pişim,0.0
+952940725,911612,FÜME ET İSTEMİYORUM,-5.0
+952989272,602096,Eldiven İstiyorum,0.0
+952989272,602098,Cajun Baharatı İstiyorum,0.0
+952989272,602102,Normal Pişim,0.0
+953029710,602096,Eldiven İstiyorum,0.0
+953029710,602098,Cajun Baharatı İstiyorum,0.0
+953029710,602102,Normal Pişim,0.0
+953029710,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953029718,602096,Eldiven İstiyorum,0.0
+953029718,602098,Cajun Baharatı İstiyorum,0.0
+953029718,602102,Normal Pişim,0.0
+953036507,602098,Cajun Baharatı İstiyorum,0.0
+953036507,602102,Normal Pişim,0.0
+953036507,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953051392,602096,Eldiven İstiyorum,0.0
+953051392,602098,Cajun Baharatı İstiyorum,0.0
+953051392,602102,Normal Pişim,0.0
+953078137,602096,Eldiven İstiyorum,0.0
+953078137,602098,Cajun Baharatı İstiyorum,0.0
+953078137,602102,Normal Pişim,0.0
+953078139,602098,Cajun Baharatı İstiyorum,0.0
+953078139,602102,Normal Pişim,0.0
+953078139,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953112522,602096,Eldiven İstiyorum,0.0
+953112522,602098,Cajun Baharatı İstiyorum,0.0
+953112522,602102,Normal Pişim,0.0
+953120356,602096,Eldiven İstiyorum,0.0
+953120356,602098,Cajun Baharatı İstiyorum,0.0
+953120356,602102,Normal Pişim,0.0
+953144604,602096,Eldiven İstiyorum,0.0
+953144604,602098,Cajun Baharatı İstiyorum,0.0
+953144607,602098,Cajun Baharatı İstiyorum,0.0
+953144607,602102,Normal Pişim,0.0
+953146601,602098,Cajun Baharatı İstiyorum,0.0
+953146601,602102,Normal Pişim,0.0
+953146606,602098,Cajun Baharatı İstiyorum,0.0
+953146606,602102,Normal Pişim,0.0
+953198088,602096,Eldiven İstiyorum,0.0
+953198088,602098,Cajun Baharatı İstiyorum,0.0
+953227525,602098,Cajun Baharatı İstiyorum,0.0
+953227525,602102,Normal Pişim,0.0
+953227525,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953227525,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+953227533,602098,Cajun Baharatı İstiyorum,0.0
+953227533,602102,Normal Pişim,0.0
+953463876,602098,Cajun Baharatı İstiyorum,0.0
+953463876,602096,Eldiven İstiyorum,0.0
+953463876,602102,Normal Pişim,0.0
+953499391,602098,Cajun Baharatı İstiyorum,0.0
+953499391,602102,Normal Pişim,0.0
+953499391,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953499398,602098,Cajun Baharatı İstiyorum,0.0
+953499398,602102,Normal Pişim,0.0
+953499398,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953500131,602098,Cajun Baharatı İstiyorum,0.0
+953500131,602096,Eldiven İstiyorum,0.0
+953500131,602102,Normal Pişim,0.0
+953539121,602098,Cajun Baharatı İstiyorum,0.0
+953539121,602102,Normal Pişim,0.0
+953539121,602096,Eldiven İstiyorum,0.0
+953553743,602098,Cajun Baharatı İstiyorum,0.0
+953553743,602102,Normal Pişim,0.0
+953555954,602098,Cajun Baharatı İstiyorum,0.0
+953555954,602102,Normal Pişim,0.0
+953558104,602098,Cajun Baharatı İstiyorum,0.0
+953558104,602102,Normal Pişim,0.0
+953558104,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953585710,602098,Cajun Baharatı İstiyorum,0.0
+953585710,602096,Eldiven İstiyorum,0.0
+953585710,602102,Normal Pişim,0.0
+953625465,602098,Cajun Baharatı İstiyorum,0.0
+953625465,602102,Normal Pişim,0.0
+953651066,602098,Cajun Baharatı İstiyorum,0.0
+953652338,602098,Cajun Baharatı İstiyorum,0.0
+953652338,911612,FÜME ET İSTEMİYORUM,-5.0
+953652338,602102,Normal Pişim,0.0
+953652338,602096,Eldiven İstiyorum,0.0
+953653240,602098,Cajun Baharatı İstiyorum,0.0
+953653240,602096,Eldiven İstiyorum,0.0
+953663128,602098,Cajun Baharatı İstiyorum,0.0
+953663128,602102,Normal Pişim,0.0
+953671382,602098,Cajun Baharatı İstiyorum,0.0
+953671382,602096,Eldiven İstiyorum,0.0
+953674241,602098,Cajun Baharatı İstiyorum,0.0
+953674241,602096,Eldiven İstiyorum,0.0
+953674241,602102,Normal Pişim,0.0
+953674243,602096,Eldiven İstiyorum,0.0
+953674243,602098,Cajun Baharatı İstiyorum,0.0
+953674243,602102,Normal Pişim,0.0
+953708633,602098,Cajun Baharatı İstiyorum,0.0
+953708633,602102,Normal Pişim,0.0
+953733474,602096,Eldiven İstiyorum,0.0
+953733474,602098,Cajun Baharatı İstiyorum,0.0
+953733474,602102,Normal Pişim,0.0
+953759834,602098,Cajun Baharatı İstiyorum,0.0
+953759834,602102,Normal Pişim,0.0
+953759834,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953759831,602098,Cajun Baharatı İstiyorum,0.0
+953759831,602102,Normal Pişim,0.0
+953759831,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+953766091,602098,Cajun Baharatı İstiyorum,0.0
+953766091,602102,Normal Pişim,0.0
+953773398,602098,Cajun Baharatı İstiyorum,0.0
+953773398,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953813318,602096,Eldiven İstiyorum,0.0
+953813318,602098,Cajun Baharatı İstiyorum,0.0
+953813306,602098,Cajun Baharatı İstiyorum,0.0
+953852066,602098,Cajun Baharatı İstiyorum,0.0
+953856460,602098,Cajun Baharatı İstiyorum,0.0
+953856462,602098,Cajun Baharatı İstiyorum,0.0
+953862859,602096,Eldiven İstiyorum,0.0
+953862859,602098,Cajun Baharatı İstiyorum,0.0
+953862859,602102,Normal Pişim,0.0
+953862862,602096,Eldiven İstiyorum,0.0
+953862862,602098,Cajun Baharatı İstiyorum,0.0
+953894956,602098,Cajun Baharatı İstiyorum,0.0
+953894956,602096,Eldiven İstiyorum,0.0
+953894956,602102,Normal Pişim,0.0
+953894956,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+953894958,602098,Cajun Baharatı İstiyorum,0.0
+953894958,602102,Normal Pişim,0.0
+953894958,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+953898456,602098,Cajun Baharatı İstiyorum,0.0
+953898823,602098,Cajun Baharatı İstiyorum,0.0
+953907417,602096,Eldiven İstiyorum,0.0
+953907417,602098,Cajun Baharatı İstiyorum,0.0
+953907417,602102,Normal Pişim,0.0
+953916719,602098,Cajun Baharatı İstiyorum,0.0
+953916719,602102,Normal Pişim,0.0
+953916713,602098,Cajun Baharatı İstiyorum,0.0
+953916713,602096,Eldiven İstiyorum,0.0
+953916713,602102,Normal Pişim,0.0
+953937145,602098,Cajun Baharatı İstiyorum,0.0
+953937145,602096,Eldiven İstiyorum,0.0
+953937133,602098,Cajun Baharatı İstiyorum,0.0
+953937133,602102,Normal Pişim,0.0
+953948242,602098,Cajun Baharatı İstiyorum,0.0
+953948250,602098,Cajun Baharatı İstiyorum,0.0
+953953547,602098,Cajun Baharatı İstiyorum,0.0
+953953547,602102,Normal Pişim,0.0
+953953557,602098,Cajun Baharatı İstiyorum,0.0
+953953557,602102,Normal Pişim,0.0
+953953557,602096,Eldiven İstiyorum,0.0
+953960750,602098,Cajun Baharatı İstiyorum,0.0
+953960750,602102,Normal Pişim,0.0
+953960750,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+953960757,602098,Cajun Baharatı İstiyorum,0.0
+953960757,602102,Normal Pişim,0.0
+953968145,602098,Cajun Baharatı İstiyorum,0.0
+953968145,602096,Eldiven İstiyorum,0.0
+953968145,602102,Normal Pişim,0.0
+953968145,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+953991349,602098,Cajun Baharatı İstiyorum,0.0
+953991349,602102,Normal Pişim,0.0
+953991357,602098,Cajun Baharatı İstiyorum,0.0
+953991357,602102,Normal Pişim,0.0
+954008489,602102,Normal Pişim,0.0
+954008489,602098,Cajun Baharatı İstiyorum,0.0
+954034957,602098,Cajun Baharatı İstiyorum,0.0
+954034957,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+954034955,602098,Cajun Baharatı İstiyorum,0.0
+954037761,602098,Cajun Baharatı İstiyorum,0.0
+954051272,602098,Cajun Baharatı İstiyorum,0.0
+954051272,602102,Normal Pişim,0.0
+954076394,602098,Cajun Baharatı İstiyorum,0.0
+954076394,602102,Normal Pişim,0.0
+954088665,602098,Cajun Baharatı İstiyorum,0.0
+954088665,602102,Normal Pişim,0.0
+954088646,602098,Cajun Baharatı İstiyorum,0.0
+954088646,602102,Normal Pişim,0.0
+954088646,911611,CHEDDAR PEYNİRİ İSTEMİYORUM,-3.0
+954090695,602098,Cajun Baharatı İstiyorum,0.0
+954090695,602102,Normal Pişim,0.0
+954090695,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+954090692,602098,Cajun Baharatı İstiyorum,0.0
+954090692,602102,Normal Pişim,0.0
+954090692,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+954090692,911612,FÜME ET İSTEMİYORUM,-5.0
+954100230,602096,Eldiven İstiyorum,0.0
+954100230,602098,Cajun Baharatı İstiyorum,0.0
+954100230,602102,Normal Pişim,0.0
+954161493,602096,Eldiven İstiyorum,0.0
+954161493,602098,Cajun Baharatı İstiyorum,0.0
+954161493,602102,Normal Pişim,0.0
+954161497,602098,Cajun Baharatı İstiyorum,0.0
+954161497,602102,Normal Pişim,0.0
+954393798,602096,Eldiven İstiyorum,0.0
+954393798,602098,Cajun Baharatı İstiyorum,0.0
+954393798,602102,Normal Pişim,0.0
+954492149,602098,Cajun Baharatı İstiyorum,0.0
+954492149,602102,Normal Pişim,0.0
+954492149,911612,FÜME ET İSTEMİYORUM,-5.0
+954532145,602098,Cajun Baharatı İstiyorum,0.0
+954532145,602102,Normal Pişim,0.0
+954612709,602098,Cajun Baharatı İstiyorum,0.0
+954629643,602098,Cajun Baharatı İstiyorum,0.0
+954629643,602102,Normal Pişim,0.0
+954629643,602096,Eldiven İstiyorum,0.0
+954636745,602098,Cajun Baharatı İstiyorum,0.0
+954636745,602102,Normal Pişim,0.0
+954642480,602098,Cajun Baharatı İstiyorum,0.0
+954642480,602102,Normal Pişim,0.0
+954695026,602098,Cajun Baharatı İstiyorum,0.0
+954719513,602098,Cajun Baharatı İstiyorum,0.0
+954719516,602098,Cajun Baharatı İstiyorum,0.0
+954730924,602098,Cajun Baharatı İstiyorum,0.0
+954730924,602102,Normal Pişim,0.0
+954736839,602098,Cajun Baharatı İstiyorum,0.0
+954736839,602096,Eldiven İstiyorum,0.0
+954736839,602102,Normal Pişim,0.0
+954736836,602096,Eldiven İstiyorum,0.0
+954736836,602098,Cajun Baharatı İstiyorum,0.0
+954736836,602102,Normal Pişim,0.0
+954775844,602098,Cajun Baharatı İstiyorum,0.0
+954775844,602102,Normal Pişim,0.0
+954775844,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+954788630,602098,Cajun Baharatı İstiyorum,0.0
+954788630,602102,Normal Pişim,0.0
+954788634,602098,Cajun Baharatı İstiyorum,0.0
+954788634,602102,Normal Pişim,0.0
+954788626,602098,Cajun Baharatı İstiyorum,0.0
+954788626,602102,Normal Pişim,0.0
+954788626,602096,Eldiven İstiyorum,0.0
+954791204,602098,Cajun Baharatı İstiyorum,0.0
+954791204,602096,Eldiven İstiyorum,0.0
+954791204,602102,Normal Pişim,0.0
+954795089,602098,Cajun Baharatı İstiyorum,0.0
+954795089,602102,Normal Pişim,0.0
+954859705,602098,Cajun Baharatı İstiyorum,0.0
+954859705,602096,Eldiven İstiyorum,0.0
+954859705,602102,Normal Pişim,0.0
+954863902,602098,Cajun Baharatı İstiyorum,0.0
+954863902,602096,Eldiven İstiyorum,0.0
+954863902,602102,Normal Pişim,0.0
+954917170,602098,Cajun Baharatı İstiyorum,0.0
+954933539,602096,Eldiven İstiyorum,0.0
+954933539,602098,Cajun Baharatı İstiyorum,0.0
+954933539,602102,Normal Pişim,0.0
+954976818,602098,Cajun Baharatı İstiyorum,0.0
+955007885,602098,Cajun Baharatı İstiyorum,0.0
+955007885,602102,Normal Pişim,0.0
+955007885,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+955007887,602098,Cajun Baharatı İstiyorum,0.0
+955007887,602102,Normal Pişim,0.0
+955007890,602096,Eldiven İstiyorum,0.0
+955007890,602098,Cajun Baharatı İstiyorum,0.0
+955007890,602102,Normal Pişim,0.0
+955011342,602096,Eldiven İstiyorum,0.0
+955011342,602098,Cajun Baharatı İstiyorum,0.0
+955036215,602098,Cajun Baharatı İstiyorum,0.0
+955036215,602102,Normal Pişim,0.0
+955036220,602098,Cajun Baharatı İstiyorum,0.0
+955036220,602102,Normal Pişim,0.0
+955046670,602096,Eldiven İstiyorum,0.0
+955046670,602098,Cajun Baharatı İstiyorum,0.0
+955046670,602102,Normal Pişim,0.0
+955104487,602096,Eldiven İstiyorum,0.0
+955104487,602098,Cajun Baharatı İstiyorum,0.0
+955104487,602102,Normal Pişim,0.0
+955104491,602096,Eldiven İstiyorum,0.0
+955104491,602098,Cajun Baharatı İstiyorum,0.0
+955104491,602102,Normal Pişim,0.0
+955113393,602098,Cajun Baharatı İstiyorum,0.0
+955113386,602098,Cajun Baharatı İstiyorum,0.0
+955407401,602098,Cajun Baharatı İstiyorum,0.0
+955407401,602102,Normal Pişim,0.0
+955407401,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+955414810,602098,Cajun Baharatı İstiyorum,0.0
+955414810,602102,Normal Pişim,0.0
+955414813,602098,Cajun Baharatı İstiyorum,0.0
+955414813,602102,Normal Pişim,0.0
+955414813,911612,FÜME ET İSTEMİYORUM,-5.0
+955448799,602098,Cajun Baharatı İstiyorum,0.0
+955448799,602102,Normal Pişim,0.0
+955448799,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+955488658,602098,Cajun Baharatı İstiyorum,0.0
+955488655,602098,Cajun Baharatı İstiyorum,0.0
+955510247,602098,Cajun Baharatı İstiyorum,0.0
+955510247,602102,Normal Pişim,0.0
+955511441,602098,Cajun Baharatı İstiyorum,0.0
+955511441,602102,Normal Pişim,0.0
+955511438,602098,Cajun Baharatı İstiyorum,0.0
+955511438,602102,Normal Pişim,0.0
+955515770,602098,Cajun Baharatı İstiyorum,0.0
+955515770,602102,Normal Pişim,0.0
+955618343,602098,Cajun Baharatı İstiyorum,0.0
+955618343,602102,Normal Pişim,0.0
+955618343,602096,Eldiven İstiyorum,0.0
+955638031,602098,Cajun Baharatı İstiyorum,0.0
+955638031,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+955653376,602098,Cajun Baharatı İstiyorum,0.0
+955653376,602102,Normal Pişim,0.0
+955689137,602098,Cajun Baharatı İstiyorum,0.0
+955689137,602102,Normal Pişim,0.0
+955713082,602098,Cajun Baharatı İstiyorum,0.0
+955713082,602102,Normal Pişim,0.0
+955726430,602098,Cajun Baharatı İstiyorum,0.0
+955726430,602102,Normal Pişim,0.0
+955726430,602096,Eldiven İstiyorum,0.0
+955726430,911612,FÜME ET İSTEMİYORUM,-5.0
+955769655,602098,Cajun Baharatı İstiyorum,0.0
+955769655,602102,Normal Pişim,0.0
+955769655,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+955769655,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+955775889,602102,Normal Pişim,0.0
+955775889,602098,Cajun Baharatı İstiyorum,0.0
+955795373,602098,Cajun Baharatı İstiyorum,0.0
+955795373,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+955795371,602098,Cajun Baharatı İstiyorum,0.0
+955804598,415824,Extra Cheddar,15.0
+955804598,415826,Extra Füme,20.0
+955804598,602096,Eldiven İstiyorum,0.0
+955804598,602098,Cajun Baharatı İstiyorum,0.0
+955813123,602096,Eldiven İstiyorum,0.0
+955813123,602098,Cajun Baharatı İstiyorum,0.0
+955813123,602102,Normal Pişim,0.0
+955817797,602096,Eldiven İstiyorum,0.0
+955817797,602098,Cajun Baharatı İstiyorum,0.0
+955817797,602102,Normal Pişim,0.0
+955817795,602096,Eldiven İstiyorum,0.0
+955817795,602098,Cajun Baharatı İstiyorum,0.0
+955822760,602096,Eldiven İstiyorum,0.0
+955822760,602098,Cajun Baharatı İstiyorum,0.0
+955822760,602102,Normal Pişim,0.0
+955850257,602098,Cajun Baharatı İstiyorum,0.0
+955850257,602096,Eldiven İstiyorum,0.0
+955868846,602098,Cajun Baharatı İstiyorum,0.0
+955868846,602102,Normal Pişim,0.0
+955896328,602099,CAJUN BAHARATI İSTEMİYORUM,0.0
+955896328,602096,Eldiven İstiyorum,0.0
+955896328,602102,Normal Pişim,0.0
+955901920,602098,Cajun Baharatı İstiyorum,0.0
+955901920,602102,Normal Pişim,0.0
+955920589,602098,Cajun Baharatı İstiyorum,0.0
+955920589,602102,Normal Pişim,0.0
+955920589,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+955920589,911612,FÜME ET İSTEMİYORUM,-5.0
+955920589,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+955957132,602098,Cajun Baharatı İstiyorum,0.0
+955991148,602098,Cajun Baharatı İstiyorum,0.0
+955991156,602098,Cajun Baharatı İstiyorum,0.0
+955995972,602098,Cajun Baharatı İstiyorum,0.0
+955995972,602096,Eldiven İstiyorum,0.0
+955995972,602102,Normal Pişim,0.0
+956026060,602098,Cajun Baharatı İstiyorum,0.0
+956026060,602096,Eldiven İstiyorum,0.0
+956026060,602102,Normal Pişim,0.0
+956026065,602096,Eldiven İstiyorum,0.0
+956026065,602098,Cajun Baharatı İstiyorum,0.0
+956026065,602102,Normal Pişim,0.0
+956044288,602098,Cajun Baharatı İstiyorum,0.0
+956044288,602096,Eldiven İstiyorum,0.0
+956044288,602102,Normal Pişim,0.0
+956048247,602098,Cajun Baharatı İstiyorum,0.0
+956048247,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956048247,911612,FÜME ET İSTEMİYORUM,-5.0
+956048247,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+956048250,602098,Cajun Baharatı İstiyorum,0.0
+956053815,602098,Cajun Baharatı İstiyorum,0.0
+956053815,602096,Eldiven İstiyorum,0.0
+956053815,602102,Normal Pişim,0.0
+956053815,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+956053812,602098,Cajun Baharatı İstiyorum,0.0
+956053812,602102,Normal Pişim,0.0
+956053812,602096,Eldiven İstiyorum,0.0
+956053812,911612,FÜME ET İSTEMİYORUM,-5.0
+956075350,602098,Cajun Baharatı İstiyorum,0.0
+956075350,602102,Normal Pişim,0.0
+956075350,911611,CHEDDAR PEYNİRİ İSTEMİYORUM,-3.0
+956075350,911612,FÜME ET İSTEMİYORUM,-5.0
+956080904,602096,Eldiven İstiyorum,0.0
+956080904,602098,Cajun Baharatı İstiyorum,0.0
+956080904,602102,Normal Pişim,0.0
+956080896,602096,Eldiven İstiyorum,0.0
+956080896,602098,Cajun Baharatı İstiyorum,0.0
+956080896,602102,Normal Pişim,0.0
+956080896,2133341,RELİSH SOS İSTEMİYORUM,-1.0
+956082001,602098,Cajun Baharatı İstiyorum,0.0
+956087708,602098,Cajun Baharatı İstiyorum,0.0
+956087708,602102,Normal Pişim,0.0
+956111437,602098,Cajun Baharatı İstiyorum,0.0
+956111437,602102,Normal Pişim,0.0
+956121079,602096,Eldiven İstiyorum,0.0
+956121079,602098,Cajun Baharatı İstiyorum,0.0
+956121079,602102,Normal Pişim,0.0
+956379405,602096,Eldiven İstiyorum,0.0
+956379405,602098,Cajun Baharatı İstiyorum,0.0
+956422854,602098,Cajun Baharatı İstiyorum,0.0
+956422854,602102,Normal Pişim,0.0
+956422854,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+956442386,602096,Eldiven İstiyorum,0.0
+956442386,602098,Cajun Baharatı İstiyorum,0.0
+956442386,602102,Normal Pişim,0.0
+956442381,602096,Eldiven İstiyorum,0.0
+956442381,602098,Cajun Baharatı İstiyorum,0.0
+956442381,602102,Normal Pişim,0.0
+956446432,602098,Cajun Baharatı İstiyorum,0.0
+956446432,602102,Normal Pişim,0.0
+956446432,602096,Eldiven İstiyorum,0.0
+956446435,602098,Cajun Baharatı İstiyorum,0.0
+956446435,602102,Normal Pişim,0.0
+956496776,602098,Cajun Baharatı İstiyorum,0.0
+956496776,602102,Normal Pişim,0.0
+956513861,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956513861,911612,FÜME ET İSTEMİYORUM,-5.0
+956513861,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+956513861,602098,Cajun Baharatı İstiyorum,0.0
+956513861,602102,Normal Pişim,0.0
+956558984,602098,Cajun Baharatı İstiyorum,0.0
+956558984,602102,Normal Pişim,0.0
+956604542,602098,Cajun Baharatı İstiyorum,0.0
+956604542,602102,Normal Pişim,0.0
+956607239,602098,Cajun Baharatı İstiyorum,0.0
+956607239,602102,Normal Pişim,0.0
+956682374,602098,Cajun Baharatı İstiyorum,0.0
+956682374,602102,Normal Pişim,0.0
+956682374,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+956730456,602098,Cajun Baharatı İstiyorum,0.0
+956730456,602096,Eldiven İstiyorum,0.0
+956730456,602102,Normal Pişim,0.0
+956775901,602098,Cajun Baharatı İstiyorum,0.0
+956775901,602102,Normal Pişim,0.0
+956775901,602096,Eldiven İstiyorum,0.0
+956777043,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956777043,602098,Cajun Baharatı İstiyorum,0.0
+956777043,602102,Normal Pişim,0.0
+956780469,602098,Cajun Baharatı İstiyorum,0.0
+956780469,602102,Normal Pişim,0.0
+956782383,602098,Cajun Baharatı İstiyorum,0.0
+956782383,602096,Eldiven İstiyorum,0.0
+956782381,602098,Cajun Baharatı İstiyorum,0.0
+956782381,602102,Normal Pişim,0.0
+956804228,602102,Normal Pişim,0.0
+956804228,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956804228,911612,FÜME ET İSTEMİYORUM,-5.0
+956804228,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+956804228,602099,CAJUN BAHARATI İSTEMİYORUM,0.0
+956811684,602098,Cajun Baharatı İstiyorum,0.0
+956811684,602102,Normal Pişim,0.0
+956811684,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956814036,602098,Cajun Baharatı İstiyorum,0.0
+956814036,602102,Normal Pişim,0.0
+956823188,602098,Cajun Baharatı İstiyorum,0.0
+956823188,602102,Normal Pişim,0.0
+956823188,911612,FÜME ET İSTEMİYORUM,-5.0
+956839607,602098,Cajun Baharatı İstiyorum,0.0
+956839607,602102,Normal Pişim,0.0
+956846626,602098,Cajun Baharatı İstiyorum,0.0
+956846626,602102,Normal Pişim,0.0
+956846619,602098,Cajun Baharatı İstiyorum,0.0
+956846619,602102,Normal Pişim,0.0
+956863304,602098,Cajun Baharatı İstiyorum,0.0
+956863304,602102,Normal Pişim,0.0
+956863304,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+956876758,602098,Cajun Baharatı İstiyorum,0.0
+956876758,602102,Normal Pişim,0.0
+956876758,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956876758,911612,FÜME ET İSTEMİYORUM,-5.0
+956876745,602098,Cajun Baharatı İstiyorum,0.0
+956876745,602102,Normal Pişim,0.0
+956876745,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956898132,602098,Cajun Baharatı İstiyorum,0.0
+956898132,602102,Normal Pişim,0.0
+956898132,911614,DOMATES İSTEMİYORUM,-1.0
+956898146,602098,Cajun Baharatı İstiyorum,0.0
+956898146,602102,Normal Pişim,0.0
+956908622,602098,Cajun Baharatı İstiyorum,0.0
+956908622,602096,Eldiven İstiyorum,0.0
+956913307,602098,Cajun Baharatı İstiyorum,0.0
+956913307,602102,Normal Pişim,0.0
+956945679,602098,Cajun Baharatı İstiyorum,0.0
+956945679,602096,Eldiven İstiyorum,0.0
+956945679,602102,Normal Pişim,0.0
+956945679,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+956945666,602098,Cajun Baharatı İstiyorum,0.0
+956945666,602096,Eldiven İstiyorum,0.0
+956945666,602102,Normal Pişim,0.0
+956945666,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+956981042,602098,Cajun Baharatı İstiyorum,0.0
+956981042,602102,Normal Pişim,0.0
+957006510,602098,Cajun Baharatı İstiyorum,0.0
+957006510,602102,Normal Pişim,0.0
+957006510,2133341,RELİSH SOS İSTEMİYORUM,-1.0
+957052464,602098,Cajun Baharatı İstiyorum,0.0
+957052464,602102,Normal Pişim,0.0
+957052464,602096,Eldiven İstiyorum,0.0
+957073049,602098,Cajun Baharatı İstiyorum,0.0
+957073049,602102,Normal Pişim,0.0
+957073047,602096,Eldiven İstiyorum,0.0
+957073047,602098,Cajun Baharatı İstiyorum,0.0
+957073047,602102,Normal Pişim,0.0
+957109883,602098,Cajun Baharatı İstiyorum,0.0
+957109883,602102,Normal Pişim,0.0
+957110725,602098,Cajun Baharatı İstiyorum,0.0
+957110725,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+957110729,602098,Cajun Baharatı İstiyorum,0.0
+957146788,602098,Cajun Baharatı İstiyorum,0.0
+957176079,602098,Cajun Baharatı İstiyorum,0.0
+957176079,602102,Normal Pişim,0.0
+957186697,602098,Cajun Baharatı İstiyorum,0.0
+957186697,602102,Normal Pişim,0.0
+957484263,602098,Cajun Baharatı İstiyorum,0.0
+957484263,602102,Normal Pişim,0.0
+957493773,602098,Cajun Baharatı İstiyorum,0.0
+957493773,602102,Normal Pişim,0.0
+957493773,602096,Eldiven İstiyorum,0.0
+957506058,602098,Cajun Baharatı İstiyorum,0.0
+957506058,602102,Normal Pişim,0.0
+957526240,602096,Eldiven İstiyorum,0.0
+957526240,602098,Cajun Baharatı İstiyorum,0.0
+957526240,602102,Normal Pişim,0.0
+957526242,602098,Cajun Baharatı İstiyorum,0.0
+957526242,602102,Normal Pişim,0.0
+957620940,602096,Eldiven İstiyorum,0.0
+957630277,602098,Cajun Baharatı İstiyorum,0.0
+957661735,602098,Cajun Baharatı İstiyorum,0.0
+957674005,602098,Cajun Baharatı İstiyorum,0.0
+957674005,602102,Normal Pişim,0.0
+957675086,602096,Eldiven İstiyorum,0.0
+957675086,602098,Cajun Baharatı İstiyorum,0.0
+957675086,602102,Normal Pişim,0.0
+957675084,602096,Eldiven İstiyorum,0.0
+957675084,602098,Cajun Baharatı İstiyorum,0.0
+957675084,602102,Normal Pişim,0.0
+957675084,911612,FÜME ET İSTEMİYORUM,-5.0
+957689024,602098,Cajun Baharatı İstiyorum,0.0
+957689024,602102,Normal Pişim,0.0
+957689027,602098,Cajun Baharatı İstiyorum,0.0
+957689027,602102,Normal Pişim,0.0
+957698001,602098,Cajun Baharatı İstiyorum,0.0
+957698001,602102,Normal Pişim,0.0
+957757179,602098,Cajun Baharatı İstiyorum,0.0
+957757179,602102,Normal Pişim,0.0
+957757179,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+957788657,602098,Cajun Baharatı İstiyorum,0.0
+957788657,602102,Normal Pişim,0.0
+957788654,602098,Cajun Baharatı İstiyorum,0.0
+957788654,602102,Normal Pişim,0.0
+957794645,602096,Eldiven İstiyorum,0.0
+957794645,602098,Cajun Baharatı İstiyorum,0.0
+957794645,602102,Normal Pişim,0.0
+957794640,602096,Eldiven İstiyorum,0.0
+957794640,602098,Cajun Baharatı İstiyorum,0.0
+957794640,602102,Normal Pişim,0.0
+957807018,602098,Cajun Baharatı İstiyorum,0.0
+957807018,602102,Normal Pişim,0.0
+957807018,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+957807014,602098,Cajun Baharatı İstiyorum,0.0
+957807014,602102,Normal Pişim,0.0
+957837428,602098,Cajun Baharatı İstiyorum,0.0
+957837428,602102,Normal Pişim,0.0
+957837428,911612,FÜME ET İSTEMİYORUM,-5.0
+957837438,602098,Cajun Baharatı İstiyorum,0.0
+957837438,602102,Normal Pişim,0.0
+957846859,602098,Cajun Baharatı İstiyorum,0.0
+957846859,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+957846859,911612,FÜME ET İSTEMİYORUM,-5.0
+957846859,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+957846857,602098,Cajun Baharatı İstiyorum,0.0
+957862808,602098,Cajun Baharatı İstiyorum,0.0
+957862808,602102,Normal Pişim,0.0
+957862808,602096,Eldiven İstiyorum,0.0
+957862808,911612,FÜME ET İSTEMİYORUM,-5.0
+957873722,602098,Cajun Baharatı İstiyorum,0.0
+957873722,602102,Normal Pişim,0.0
+957873717,602098,Cajun Baharatı İstiyorum,0.0
+957873717,602102,Normal Pişim,0.0
+957873717,602096,Eldiven İstiyorum,0.0
+957915415,602098,Cajun Baharatı İstiyorum,0.0
+957915415,602102,Normal Pişim,0.0
+957933368,602098,Cajun Baharatı İstiyorum,0.0
+957933368,602096,Eldiven İstiyorum,0.0
+957933368,602102,Normal Pişim,0.0
+957934232,602098,Cajun Baharatı İstiyorum,0.0
+957934232,602102,Normal Pişim,0.0
+957942157,911609,ET EKMEK ÇOCUK MENÜ,-15.0
+957956824,602098,Cajun Baharatı İstiyorum,0.0
+957956824,602102,Normal Pişim,0.0
+957977443,602102,Normal Pişim,0.0
+957977443,602099,CAJUN BAHARATI İSTEMİYORUM,0.0
+957977443,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+957977443,911612,FÜME ET İSTEMİYORUM,-5.0
+957977443,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+957977437,602098,Cajun Baharatı İstiyorum,0.0
+957977437,602102,Normal Pişim,0.0
+957977437,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+957977437,911612,FÜME ET İSTEMİYORUM,-5.0
+957977437,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+957982103,602096,Eldiven İstiyorum,0.0
+957982103,602098,Cajun Baharatı İstiyorum,0.0
+957982103,602102,Normal Pişim,0.0
+957982106,602098,Cajun Baharatı İstiyorum,0.0
+957982106,602102,Normal Pişim,0.0
+957990864,602098,Cajun Baharatı İstiyorum,0.0
+958009034,602098,Cajun Baharatı İstiyorum,0.0
+958009034,911610,KARAMELİZE SOĞAN İSTEMİYORUM,-1.0
+958009034,911612,FÜME ET İSTEMİYORUM,-5.0
+958009034,911613,B ÖZEL SOS İSTEMİYORUM,-1.0
+958013187,602098,Cajun Baharatı İstiyorum,0.0
+958100951,602098,Cajun Baharatı İstiyorum,0.0
+958108037,602096,Eldiven İstiyorum,0.0
+958108037,602098,Cajun Baharatı İstiyorum,0.0
+958108037,602102,Normal Pişim,0.0
+958183195,602098,Cajun Baharatı İstiyorum,0.0
+958195353,602098,Cajun Baharatı İstiyorum,0.0
+958231041,602098,Cajun Baharatı İstiyorum,0.0
+958231041,602102,Normal Pişim,0.0
+958231052,602096,Eldiven İstiyorum,0.0
+958231052,602098,Cajun Baharatı İstiyorum,0.0
+958231052,602102,Normal Pişim,0.0
+,,,

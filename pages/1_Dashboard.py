@@ -1,201 +1,240 @@
+# streamlit_dashboard_recent.py
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import json
+import requests
+from PIL import Image
 
-st.set_page_config(page_title="TableWise", layout="wide")
+# Load and display logo
+logo = Image.open("archive/logo.png")
+st.image(logo, width=150)
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #f7f8ff;
+    }
+    .css-18e3th9 {
+        background-color: #f7f8ff;
+    }
+    .stApp {
+        color: #333;
+    }
+    .st-bw {
+        color: #2E2EFF;  /* Use logo blue color for primary text */
+    }
+    .css-1d391kg {
+        background-color: #2E2EFF !important;  /* logo purple */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.set_page_config(page_title="Recent Orders Dashboard", layout="wide")
 
-# ---- Load data ----
+# Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/adisyo_completed_orders_full_195d.csv")
+    df = pd.read_csv("data/adisyo_recent_orders.csv")
     df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
-    df["insert_date"] = pd.to_datetime(df["insert_date"], format='mixed')
+    df["insert_date"] = pd.to_datetime(df["insert_date"], errors="coerce")
+    df["delivery_time"] = pd.to_datetime(df["delivery_time"], errors="coerce")
+    df["hour"] = df["insert_date"].dt.hour
+
+    def map_time_of_day(hour):
+        if 6 <= hour < 11:
+            return "Breakfast"
+        elif 11 <= hour < 16:
+            return "Lunch"
+        elif 16 <= hour < 22:
+            return "Dinner"
+        else:
+            return "Late Night"
+
+    df["time_of_day"] = df["hour"].apply(map_time_of_day)
+
+    def extract_district(region):
+        if pd.isna(region):
+            return None
+        region = str(region).lower()
+        known_districts = [
+            "bağcılar", "bahçelievler", "bakırköy", "zeytinburnu", "fatih", "esenler", "bayrampaşa"
+        ]
+        for district in known_districts:
+            if district in region:
+                return district.capitalize()
+        return "Diğer"
+
+    df["district"] = df["region"].apply(extract_district)
+
     return df
 
 df = load_data()
 
-# ---- Sidebar Filters ----
+# Sidebar Filters
 st.sidebar.header("Filters")
-min_date, max_date = df["insert_date"].min(), df["insert_date"].max()
-date_range = st.sidebar.date_input("Select Date Range", [min_date, max_date])
+min_date = df["insert_date"].min().date()
+max_date = df["insert_date"].max().date()
+date_range = st.sidebar.date_input("Order Date Range", [min_date, max_date])
 
-branches = st.sidebar.multiselect("Select Branch", df["table"].dropna().unique(), default=None)
-channels = st.sidebar.multiselect("Select Channel", df["status"].unique(), default=None)
+apps = st.sidebar.multiselect("Delivery App", df["delivery_app"].dropna().unique())
+payments = st.sidebar.multiselect("Payment Method", df["payment_method"].dropna().unique())
+regions = st.sidebar.multiselect("Region", df["region"].dropna().unique())
 
-# ---- Filter Data ----
-mask = (df["insert_date"].dt.date >= date_range[0]) & (df["insert_date"].dt.date <= date_range[1])
-if branches:
-    mask &= df["table"].isin(branches)
-if channels:
-    mask &= df["status"].isin(channels)
+# Apply filters
+mask = df["insert_date"].dt.date.between(date_range[0], date_range[1])
+if apps:
+    mask &= df["delivery_app"].isin(apps)
+if payments:
+    mask &= df["payment_method"].isin(payments)
+if regions:
+    mask &= df["region"].isin(regions)
 
-filtered_df = df[mask]
+filtered = df[mask]
 
-# ---- KPIs ----
-total_sales = filtered_df["total_product_price"].sum()
-total_transactions = filtered_df["order_id"].nunique()
-total_customers = filtered_df["order_id"].nunique()  
-avg_basket = total_sales / total_transactions if total_transactions else 0
-
-# ---- Layout ----
-st.title("Sales Insights")
-st.markdown("### Overview")
-
+# KPIs
+st.title("📦 Recent Orders Dashboard")
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("💰 Total Sales", f"{total_sales:,.0f} ₺")
-col2.metric("📦 Transactions", total_transactions)
-col3.metric("🧑 Customers", total_customers)
-col4.metric("🛒 Avg Basket", f"{avg_basket:,.2f} ₺")
+col1.metric("Total Sales", f"{filtered['order_total'].sum():,.2f} ₺")
+col2.metric("Total Orders", filtered["order_id"].nunique())
+col3.metric("Avg Order Value", f"{filtered['order_total'].mean():,.2f} ₺")
+col4.metric("Avg Items per Order", f"{filtered['product_count'].mean():.2f}")
 
 st.markdown("---")
 
-# ---- Pie Charts ----
-pie1, pie2 = st.columns(2)
-
-with pie1:
-    by_branch = filtered_df.groupby("table")["total_product_price"].sum().reset_index()
-    fig = px.pie(by_branch, values="total_product_price", names="table", title="Branch Sales")
-    st.plotly_chart(fig, use_container_width=True)
-
-with pie2:
-    by_channel = filtered_df.groupby("status")["total_product_price"].sum().reset_index()
-    fig = px.pie(by_channel, values="total_product_price", names="status", title="Sales by Status")
-    st.plotly_chart(fig, use_container_width=True)
-
-# ---- More Pie Charts ----
+# Pie Charts
 col5, col6 = st.columns(2)
-
 with col5:
-    order_types = filtered_df.groupby("order_type")["total_product_price"].sum().reset_index()
-    fig = px.pie(order_types, values="total_product_price", names="order_type", title="Order Types")
+    fig = px.pie(filtered, values="order_total", names="delivery_app", title="Sales by Delivery App")
     st.plotly_chart(fig, use_container_width=True)
 
 with col6:
-    categories = filtered_df["product"].str.extract(r'(?P<category>\w+)')
-    df_cat = pd.concat([filtered_df, categories], axis=1)
-    by_category = df_cat.groupby("category")["total_product_price"].sum().reset_index()
-    fig = px.pie(by_category, values="total_product_price", names="category", title="Categories")
+    fig = px.pie(filtered, values="order_total", names="payment_method", title="Sales by Payment Method")
     st.plotly_chart(fig, use_container_width=True)
 
-# ---- Top Products Table ----
-st.markdown("### 🏆 Top Products")
-top_products = (
-    filtered_df.groupby("product")
-    .agg(
-        total_sales=("total_product_price", "sum"),
-        avg_price=("unit_price", "mean"),
-        count=("quantity", "sum")
-    )
-    .sort_values("total_sales", ascending=False)
+# Bar Chart by Region
+region_sales = filtered.groupby("district")["order_total"].sum().sort_values(ascending=False).reset_index()
+st.subheader("💸 Sales by district")
+fig = px.bar(region_sales, x="order_total", y="district", orientation="h", title="Top district by Sales")
+st.plotly_chart(fig, use_container_width=True)
+
+# Time Series
+st.subheader("📈 Daily Sales Trend")
+daily_sales = filtered.groupby(filtered["insert_date"].dt.date)["order_total"].sum().reset_index()
+daily_sales.columns = ["date", "sales"]
+fig = px.line(daily_sales, x="date", y="sales", markers=True)
+st.plotly_chart(fig, use_container_width=True)
+
+# Raw Data Table
+st.markdown("### 🧾 Recent Orders Table")
+st.dataframe(filtered[[
+    "order_id", "insert_date", "order_total", "delivery_app", "payment_method", "region", "product_count"
+]].sort_values("insert_date", ascending=False), use_container_width=True)
+
+# Step 1: Create period columns (keep as Period for math)
+df["order_month_period"] = df["insert_date"].dt.to_period("M")
+df["cohort_month_period"] = df.groupby("customer_name")["insert_date"].transform("min").dt.to_period("M")
+
+# Step 2: Calculate index from difference
+df["cohort_index"] = (df["order_month_period"] - df["cohort_month_period"]).apply(lambda x: x.n)
+
+# Step 3: Convert to string for plotting
+df["order_month"] = df["order_month_period"].astype(str)
+df["cohort_month"] = df["cohort_month_period"].astype(str)
+
+# Step 4: Build cohort table
+cohort_data = (
+    df.groupby(["cohort_month", "order_month"])
+    .agg(n_customers=("customer_name", "nunique"))
     .reset_index()
 )
 
-st.dataframe(top_products.head(15), use_container_width=True)
+cohort_data["cohort_index"] = df["cohort_index"]
 
-# --- Load Ingredient Costs ---
-def load_costs_from_hierarchical_excel(path="data/Burgerator.xlsx", sheet_name="Urun_Maliyet"):
-    df = pd.read_excel(path, sheet_name=sheet_name)
-    df.columns = df.columns.str.strip()
+# Step 5: Pivot and plot
+cohort_pivot = cohort_data.pivot_table(index="cohort_month", columns="cohort_index", values="n_customers")
 
-    # Carry down main product name for ingredients
-    df["ÜRÜN"] = df["ÜRÜN"].fillna(method="ffill")
-    df["Birim Fiyat"] = pd.to_numeric(df["Birim Fiyat"].replace("₺", "", regex=True), errors="coerce").fillna(0)
-
-    # Total ingredient cost per product
-    cost_df = df.groupby("ÜRÜN")["Birim Fiyat"].sum().reset_index()
-    cost_df = cost_df.rename(columns={"ÜRÜN": "product", "Birim Fiyat": "unit_cost"})
-    cost_df["product"] = cost_df["product"].str.strip().str.lower()
-    return cost_df
-
-# --- Prepare Orders ---
-def prepare_orders(df):
-    df = df.copy()
-    df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
-    df["product"] = df["product"].str.strip().str.lower()
-    df["tarih"] = pd.to_datetime(df["insert_date"]).dt.date
-    df["total_price"] = df["unit_price"] * df["quantity"]
-    return df
-
-# --- Merge & Compute Profitability ---
-def compute_profitability(orders_df, cost_df):
-    merged = pd.merge(orders_df, cost_df, on="product", how="left")
-    merged["unit_cost"] = merged["unit_cost"].fillna(0)
-    merged["total_cost"] = merged["unit_cost"] * merged["quantity"]
-    merged["profit"] = merged["total_price"] - merged["total_cost"]
-    merged["profit_margin"] = ((merged["profit"] / merged["total_price"]).fillna(0) * 100).round(2)
-    return merged
-
-# --- Load, Process, Display ---
-ingredient_costs = load_costs_from_hierarchical_excel()
-filtered_df = prepare_orders(filtered_df)
-profit_df = compute_profitability(filtered_df, ingredient_costs)
-
-# --- Streamlit Output ---
-st.markdown("### 🍔 Ingredient-Based Profitability")
-
-st.dataframe(profit_df[[
-    "tarih", "product", "quantity", "unit_price", "total_price",
-    "unit_cost", "total_cost", "profit", "profit_margin"
-]].sort_values("profit_margin", ascending=False), use_container_width=True)
-
-st.markdown("### 🍔 Product Cluster Analysis")
-
-grouped = filtered_df.groupby("Product").agg({
-    "Quantity": "sum",
-    "Unit Price": "mean",  # assume fixed menu price
-    "Total Product Price": "sum",
-    "Cost": "sum"  # from merged cost table
-}).reset_index()
-
-grouped["AvgCostPerItem"] = grouped["Cost"] / grouped["Quantity"]
-grouped["AvgSalesPrice"] = grouped["Total Product Price"] / grouped["Quantity"]
-grouped["ContributionMargin"] = grouped["AvgSalesPrice"] - grouped["AvgCostPerItem"]
-
-# Popularity as % of total
-grouped["Popularity"] = grouped["Quantity"] / grouped["Quantity"].sum()
-
-# Set thresholds (can be adjusted)
-popularity_threshold = grouped["Popularity"].median()
-profitability_threshold = grouped["ContributionMargin"].median()
-
-def classify(row):
-    if row["ContributionMargin"] >= profitability_threshold:
-        if row["Popularity"] >= popularity_threshold:
-            return "Star"
-        else:
-            return "Puzzle"
-    else:
-        if row["Popularity"] >= popularity_threshold:
-            return "Plowhorse"
-        else:
-            return "Turtle"
-
-grouped["Category"] = grouped.apply(classify, axis=1)
-
-# 🎯 Quadrant Chart
-fig = px.scatter(
-    grouped,
-    x="ContributionMargin",
-    y="Popularity",
-    color="Category",
-    text="Product",
-    hover_data=["Quantity", "Total Product Price", "Cost", "AvgSalesPrice"],
-    color_discrete_map={
-        "Star": "green",
-        "Puzzle": "blue",
-        "Plowhorse": "red",
-        "Turtle": "gray"
-    },
-    labels={"ContributionMargin": "Profitability", "Popularity": "Popularity"},
-    title="Product Cluster Analysis"
-)
-fig.update_traces(textposition='top center')
+fig = px.imshow(cohort_pivot, text_auto=True, aspect="auto", title="Customer Cohort Analysis")
 st.plotly_chart(fig, use_container_width=True)
 
-# 📋 KPI Cards
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Number of Menu Items", len(grouped))
-col2.metric("Menu Mix % (Top)", f"{(grouped[grouped['Category']=='Star']['Popularity'].sum() * 100):.2f}%")
-col3.metric("Average Contribution Margin", f"{grouped['ContributionMargin'].mean():.2f}₺")
-col4.metric("Potential Food Cost %", f"{(grouped['AvgCostPerItem'].sum() / grouped['AvgSalesPrice'].sum()) * 100:.2f}%")
+df["weekday"] = df["insert_date"].dt.day_name()
+weekday_sales = (
+    df.groupby(["region", "weekday"])["order_total"]
+    .agg(["sum", "count"])
+    .reset_index()
+    .rename(columns={"sum": "total_sales", "count": "num_orders"})
+)
 
+weekday_sales["weekday"] = pd.Categorical(weekday_sales["weekday"], categories=[
+    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+], ordered=True)
+
+pivot = weekday_sales.pivot(index="region", columns="weekday", values="total_sales").fillna(0)
+fig = px.imshow(pivot, text_auto=".1f", labels=dict(x="Weekday", y="Region", color="₺ Sales"), title="📆 Sales by Region and Weekday")
+st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("## 🔍 Extended Insights")
+
+# --- Filter controls ---
+st.sidebar.markdown("### Advanced Filters")
+selected_status = st.sidebar.multiselect("Order Status", df["status"].dropna().unique())
+selected_time_of_day = st.sidebar.multiselect("Time of Day", df["time_of_day"].dropna().unique())
+selected_notes = st.sidebar.multiselect("Order Notes Contain", ["order notes", "special instructions", "allergy info"])
+
+# --- Apply filters ---
+if selected_status:
+    df = df[df["status"].isin(selected_status)]
+
+if selected_time_of_day:
+    df = df[df["time_of_day"].isin(selected_time_of_day)]
+
+for keyword in selected_notes:
+    flag_col = f"note_contains_{keyword.replace(' ', '_')}"
+    df = df[df[flag_col]]
+
+# --- Subheader ---
+st.subheader("📍 Sales by City and Region")
+
+# Prepare district sales
+district_sales = df.groupby("district")["order_total"].sum().reset_index()
+
+district_sales["district"] = district_sales["district"].str.title()
+# Step 3: Load GeoJSON
+geo_url = "https://raw.githubusercontent.com/ozanyerli/istanbul-districts-geojson/main/istanbul-districts.json"
+istanbul_geo = requests.get(geo_url).json()
+
+def normalize(text):
+    if pd.isna(text):
+        return ""
+    return (str(text)
+        .lower()
+        .replace("ğ", "g")
+        .replace("ü", "u")
+        .replace("ş", "s")
+        .replace("ı", "i")
+        .replace("ö", "o")
+        .replace("ç", "c")
+        .strip())
+
+# Normalize district names in both
+district_sales["normalized_district"] = district_sales["district"].apply(normalize)
+
+for feature in istanbul_geo["features"]:
+    feature["properties"]["normalized_name"] = normalize(feature["properties"]["name"])
+
+# Plot using normalized keys
+fig = px.choropleth_mapbox(
+    district_sales,
+    geojson=istanbul_geo,
+    locations="normalized_district",
+    featureidkey="properties.normalized_name",
+    color="order_total",
+    color_continuous_scale="Oranges",
+    mapbox_style="carto-positron",
+    zoom=9,
+    center={"lat": 41.0082, "lon": 28.9784},
+    title="🗺️ Istanbul District-Level Sales"
+)
+fig.update_layout(margin={"r":0,"t":40,"l":0,"b":0})
+st.plotly_chart(fig, use_container_width=True)

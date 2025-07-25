@@ -1,501 +1,901 @@
-order_id,datetime,channel,items,total_price,payment_method,location,customer_type
-1,2025-06-26 15:43:50,Yemeksepeti,"[{'item_id': 18, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",769.33,Wallet,Üsküdar,New
-2,2025-06-30 19:37:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 5, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",569.73,Credit Card,Beşiktaş,New
-3,2025-06-05 09:02:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Credit Card,Kadıköy,Returning
-4,2025-06-28 15:46:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 17, 'quantity': 3}]",523.78,Wallet,Kadıköy,Returning
-5,2025-06-20 01:50:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",709.67,Wallet,Kadıköy,Returning
-6,2025-06-16 02:11:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 6, 'quantity': 2}]",413.92,Credit Card,Kadıköy,New
-7,2025-07-03 03:42:50,Phone,"[{'item_id': 18, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 9, 'quantity': 1}]",348.82,Cash,Beşiktaş,Returning
-8,2025-06-28 16:38:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",484.77,Wallet,Beşiktaş,Returning
-9,2025-06-27 20:22:50,Trendyol,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",407.43,Wallet,Beşiktaş,Returning
-10,2025-06-07 12:06:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 5, 'quantity': 1}]",435.8,Wallet,Beşiktaş,Returning
-11,2025-06-09 16:12:50,Trendyol,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",510.98,Wallet,Üsküdar,Returning
-12,2025-06-12 18:19:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 2}]",258.1,Wallet,Beşiktaş,New
-13,2025-07-04 14:28:50,Trendyol,"[{'item_id': 16, 'quantity': 3}, {'item_id': 19, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",322.78,Cash,Kadıköy,New
-14,2025-06-17 17:30:50,Trendyol,"[{'item_id': 6, 'quantity': 2}]",169.3,Credit Card,Kadıköy,New
-15,2025-06-30 04:30:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 1}]",222.47,Credit Card,Üsküdar,New
-16,2025-06-23 06:58:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",408.4,Credit Card,Üsküdar,New
-17,2025-06-09 09:22:50,Trendyol,"[{'item_id': 6, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",469.65,Credit Card,Üsküdar,New
-18,2025-06-16 17:55:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 10, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",540.58,Cash,Beşiktaş,New
-19,2025-06-12 02:39:50,Trendyol,"[{'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",314.27,Wallet,Beşiktaş,Returning
-20,2025-06-11 00:49:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",174.45,Credit Card,Üsküdar,New
-21,2025-06-11 01:55:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 6, 'quantity': 1}]",487.74,Wallet,Beşiktaş,New
-22,2025-06-21 06:45:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",141.72,Cash,Üsküdar,New
-23,2025-06-29 19:17:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",597.51,Credit Card,Beşiktaş,New
-24,2025-06-24 15:32:50,Trendyol,"[{'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 2}]",365.27,Wallet,Beşiktaş,Returning
-25,2025-07-02 09:05:50,In-Store,"[{'item_id': 18, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",356.76,Wallet,Üsküdar,Returning
-26,2025-06-19 01:43:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 3}]",171.99,Cash,Kadıköy,New
-27,2025-06-20 10:34:50,Phone,"[{'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 2}]",236.97,Credit Card,Beşiktaş,Returning
-28,2025-06-07 17:37:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 14, 'quantity': 2}]",175.41,Wallet,Beşiktaş,Returning
-29,2025-06-14 10:07:50,Phone,"[{'item_id': 6, 'quantity': 2}]",169.3,Wallet,Üsküdar,Returning
-30,2025-06-19 23:26:50,Yemeksepeti,"[{'item_id': 18, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",415.71,Cash,Beşiktaş,Returning
-31,2025-06-20 20:11:50,In-Store,"[{'item_id': 12, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",251.47,Cash,Beşiktaş,Returning
-32,2025-06-28 02:27:50,Trendyol,"[{'item_id': 8, 'quantity': 1}]",58.71,Wallet,Kadıköy,New
-33,2025-06-18 04:05:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 16, 'quantity': 1}]",121.71,Credit Card,Kadıköy,Returning
-34,2025-06-07 05:33:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}]",125.85,Cash,Üsküdar,Returning
-35,2025-06-13 07:41:50,Phone,"[{'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",634.8,Wallet,Kadıköy,Returning
-36,2025-06-19 01:46:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",683.48,Cash,Beşiktaş,New
-37,2025-06-12 03:13:50,Phone,"[{'item_id': 20, 'quantity': 2}, {'item_id': 1, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 2, 'quantity': 2}]",692.32,Cash,Beşiktaş,New
-38,2025-06-12 04:21:50,Phone,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 6, 'quantity': 3}]",563.99,Credit Card,Beşiktaş,New
-39,2025-06-11 02:58:50,Trendyol,"[{'item_id': 7, 'quantity': 1}]",71.67,Credit Card,Üsküdar,Returning
-40,2025-06-15 09:36:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 2}]",347.68,Credit Card,Beşiktaş,New
-41,2025-06-17 18:30:50,In-Store,"[{'item_id': 18, 'quantity': 3}]",130.35,Wallet,Beşiktaş,Returning
-42,2025-06-13 04:23:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 3}]",211.05,Cash,Beşiktaş,Returning
-43,2025-07-03 10:38:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",321.82,Wallet,Kadıköy,New
-44,2025-06-23 07:52:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",616.24,Credit Card,Kadıköy,New
-45,2025-06-07 17:29:50,Trendyol,"[{'item_id': 18, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",302.6,Wallet,Kadıköy,Returning
-46,2025-07-03 01:38:50,In-Store,"[{'item_id': 20, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",275.55,Cash,Kadıköy,Returning
-47,2025-06-17 12:51:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",824.37,Credit Card,Kadıköy,New
-48,2025-06-07 21:05:50,Phone,"[{'item_id': 7, 'quantity': 1}]",71.67,Credit Card,Beşiktaş,Returning
-49,2025-06-21 13:23:50,In-Store,"[{'item_id': 19, 'quantity': 3}, {'item_id': 14, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",440.38,Wallet,Üsküdar,Returning
-50,2025-06-06 00:42:50,Phone,"[{'item_id': 14, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",279.04,Cash,Kadıköy,Returning
-51,2025-07-02 23:27:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",341.32,Credit Card,Beşiktaş,New
-52,2025-06-09 05:04:50,Phone,"[{'item_id': 18, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",462.0,Wallet,Üsküdar,New
-53,2025-06-13 03:29:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 20, 'quantity': 2}]",688.64,Cash,Kadıköy,Returning
-54,2025-06-05 21:02:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",228.01,Credit Card,Beşiktaş,New
-55,2025-06-04 21:03:50,Trendyol,"[{'item_id': 12, 'quantity': 3}]",215.7,Wallet,Beşiktaş,New
-56,2025-06-30 21:29:50,Phone,"[{'item_id': 5, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",406.29,Cash,Beşiktaş,Returning
-57,2025-06-19 01:00:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 2}, {'item_id': 15, 'quantity': 1}]",372.0,Credit Card,Üsküdar,New
-58,2025-06-26 21:31:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",498.41,Cash,Üsküdar,Returning
-59,2025-06-24 19:42:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",417.81,Cash,Üsküdar,New
-60,2025-06-14 06:57:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",309.84,Wallet,Üsküdar,Returning
-61,2025-07-03 06:56:50,In-Store,"[{'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",170.5,Credit Card,Beşiktaş,New
-62,2025-06-29 18:56:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",275.61,Credit Card,Beşiktaş,New
-63,2025-06-27 06:13:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 1}, {'item_id': 1, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 17, 'quantity': 1}]",313.83,Cash,Beşiktaş,New
-64,2025-06-23 07:13:50,Phone,"[{'item_id': 11, 'quantity': 1}, {'item_id': 6, 'quantity': 2}]",211.25,Cash,Kadıköy,New
-65,2025-06-23 16:27:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",524.35,Wallet,Kadıköy,New
-66,2025-06-17 07:40:50,Phone,"[{'item_id': 5, 'quantity': 3}]",172.53,Wallet,Üsküdar,Returning
-67,2025-06-17 18:03:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",267.19,Cash,Beşiktaş,Returning
-68,2025-06-27 03:34:50,In-Store,"[{'item_id': 15, 'quantity': 1}]",35.64,Wallet,Kadıköy,Returning
-69,2025-06-26 22:20:50,Phone,"[{'item_id': 15, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",215.81,Credit Card,Üsküdar,New
-70,2025-06-27 10:17:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,Returning
-71,2025-06-23 11:15:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 19, 'quantity': 3}, {'item_id': 6, 'quantity': 2}]",673.31,Wallet,Beşiktaş,Returning
-72,2025-07-04 10:54:50,Phone,"[{'item_id': 2, 'quantity': 1}]",97.51,Cash,Üsküdar,New
-73,2025-06-30 14:29:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 17, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",435.94,Cash,Kadıköy,Returning
-74,2025-06-29 05:49:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",338.38,Cash,Kadıköy,Returning
-75,2025-06-12 14:28:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 5, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",498.25,Cash,Beşiktaş,Returning
-76,2025-06-19 16:56:50,In-Store,"[{'item_id': 18, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",520.35,Wallet,Kadıköy,Returning
-77,2025-06-18 16:52:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",290.37,Wallet,Kadıköy,New
-78,2025-06-14 00:18:50,Phone,"[{'item_id': 7, 'quantity': 1}]",71.67,Wallet,Üsküdar,Returning
-79,2025-06-14 06:19:50,Trendyol,"[{'item_id': 2, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 11, 'quantity': 3}]",266.81,Credit Card,Beşiktaş,Returning
-80,2025-07-04 07:17:50,In-Store,"[{'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 4, 'quantity': 1}]",327.61,Wallet,Üsküdar,New
-81,2025-06-14 05:02:50,Phone,"[{'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",137.12,Wallet,Beşiktaş,Returning
-82,2025-06-18 20:42:50,Trendyol,"[{'item_id': 18, 'quantity': 1}]",43.45,Cash,Kadıköy,New
-83,2025-06-23 15:16:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",536.37,Credit Card,Beşiktaş,Returning
-84,2025-06-14 13:12:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",107.89,Credit Card,Kadıköy,New
-85,2025-06-12 02:22:50,In-Store,"[{'item_id': 13, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 1, 'quantity': 1}]",287.74,Wallet,Beşiktaş,Returning
-86,2025-06-25 21:25:50,In-Store,"[{'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",139.27,Cash,Beşiktaş,New
-87,2025-06-06 15:28:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",466.67,Credit Card,Üsküdar,Returning
-88,2025-06-11 08:10:50,Trendyol,"[{'item_id': 5, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 18, 'quantity': 2}, {'item_id': 7, 'quantity': 2}]",809.96,Cash,Beşiktaş,New
-89,2025-06-08 13:34:50,In-Store,"[{'item_id': 12, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",391.83,Cash,Beşiktaş,New
-90,2025-06-16 23:30:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 4, 'quantity': 1}]",356.47,Credit Card,Beşiktaş,New
-91,2025-06-29 04:00:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 5, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 17, 'quantity': 3}]",544.56,Cash,Beşiktaş,New
-92,2025-06-05 10:31:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 19, 'quantity': 3}]",183.51,Cash,Beşiktaş,Returning
-93,2025-06-28 13:27:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 12, 'quantity': 3}]",820.69,Wallet,Beşiktaş,New
-94,2025-06-10 12:40:50,Phone,"[{'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 15, 'quantity': 1}]",279.29,Wallet,Beşiktaş,Returning
-95,2025-06-08 21:52:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",98.83,Cash,Üsküdar,Returning
-96,2025-06-11 06:24:50,In-Store,"[{'item_id': 18, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",515.86,Wallet,Kadıköy,New
-97,2025-06-14 15:28:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 17, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",216.44,Cash,Üsküdar,Returning
-98,2025-06-16 17:37:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",429.89,Credit Card,Beşiktaş,Returning
-99,2025-06-26 08:29:50,In-Store,"[{'item_id': 5, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 7, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",587.54,Wallet,Üsküdar,Returning
-100,2025-06-10 01:14:50,Phone,"[{'item_id': 3, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",332.27,Wallet,Üsküdar,Returning
-101,2025-07-02 00:18:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",133.38,Credit Card,Kadıköy,New
-102,2025-06-24 21:03:50,Phone,"[{'item_id': 15, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",427.23,Credit Card,Üsküdar,New
-103,2025-07-03 18:55:50,In-Store,"[{'item_id': 14, 'quantity': 2}]",71.78,Credit Card,Üsküdar,Returning
-104,2025-07-01 09:11:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",466.36,Cash,Üsküdar,New
-105,2025-06-24 11:18:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 3, 'quantity': 2}]",421.57,Cash,Üsküdar,New
-106,2025-06-09 03:41:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",189.63,Cash,Üsküdar,New
-107,2025-06-06 22:29:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 7, 'quantity': 3}]",468.96,Cash,Kadıköy,Returning
-108,2025-06-29 03:54:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",628.12,Wallet,Üsküdar,Returning
-109,2025-06-27 07:59:50,In-Store,"[{'item_id': 3, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 1}]",264.61,Wallet,Üsküdar,Returning
-110,2025-06-26 08:01:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 3, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 14, 'quantity': 1}]",361.5,Cash,Üsküdar,Returning
-111,2025-06-09 18:58:50,Trendyol,"[{'item_id': 19, 'quantity': 3}, {'item_id': 8, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",515.54,Cash,Beşiktaş,Returning
-112,2025-06-26 20:13:50,Trendyol,"[{'item_id': 6, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",511.39,Cash,Kadıköy,Returning
-113,2025-06-05 05:38:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",167.0,Wallet,Kadıköy,New
-114,2025-06-26 00:37:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",123.43,Credit Card,Kadıköy,Returning
-115,2025-06-09 14:31:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",425.03,Credit Card,Beşiktaş,Returning
-116,2025-07-02 20:31:50,Trendyol,"[{'item_id': 20, 'quantity': 1}]",27.16,Credit Card,Beşiktaş,Returning
-117,2025-06-07 17:39:50,Trendyol,"[{'item_id': 16, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 4, 'quantity': 3}]",194.54,Wallet,Üsküdar,Returning
-118,2025-06-05 19:23:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",252.25,Cash,Üsküdar,New
-119,2025-06-19 14:16:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",291.16,Wallet,Kadıköy,Returning
-120,2025-06-24 23:19:50,In-Store,"[{'item_id': 1, 'quantity': 3}]",216.63,Wallet,Üsküdar,New
-121,2025-06-10 04:25:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 13, 'quantity': 2}]",926.3,Wallet,Beşiktaş,New
-122,2025-06-18 16:17:50,Yemeksepeti,"[{'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",543.79,Wallet,Üsküdar,Returning
-123,2025-06-11 00:24:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",222.69,Cash,Üsküdar,New
-124,2025-06-12 08:47:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 14, 'quantity': 1}, {'item_id': 2, 'quantity': 3}]",387.13,Credit Card,Kadıköy,Returning
-125,2025-06-06 21:34:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",264.77,Wallet,Üsküdar,Returning
-126,2025-06-25 07:20:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",389.92,Cash,Üsküdar,New
-127,2025-06-27 11:15:50,Phone,"[{'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",334.85,Wallet,Kadıköy,Returning
-128,2025-06-29 10:19:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 6, 'quantity': 2}]",228.01,Credit Card,Beşiktaş,New
-129,2025-06-27 12:14:50,In-Store,"[{'item_id': 11, 'quantity': 1}]",41.95,Credit Card,Beşiktaş,New
-130,2025-06-28 14:42:50,Phone,"[{'item_id': 6, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 9, 'quantity': 3}]",824.4,Wallet,Beşiktaş,New
-131,2025-06-30 21:13:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",169.98,Cash,Beşiktaş,New
-132,2025-06-21 02:22:50,In-Store,"[{'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",103.0,Credit Card,Kadıköy,Returning
-133,2025-06-14 10:02:50,In-Store,"[{'item_id': 16, 'quantity': 3}]",149.43,Cash,Kadıköy,New
-134,2025-06-22 19:37:50,In-Store,"[{'item_id': 18, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 12, 'quantity': 3}]",548.1,Cash,Üsküdar,New
-135,2025-06-07 07:46:50,Trendyol,"[{'item_id': 11, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 7, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",532.84,Cash,Üsküdar,Returning
-136,2025-06-20 21:43:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 3}]",490.22,Wallet,Üsküdar,New
-137,2025-06-12 07:40:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 5, 'quantity': 2}]",406.85,Wallet,Üsküdar,New
-138,2025-06-11 08:22:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}]",143.34,Cash,Kadıköy,New
-139,2025-07-02 20:03:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 12, 'quantity': 3}]",461.4,Wallet,Beşiktaş,New
-140,2025-06-17 04:28:50,Trendyol,"[{'item_id': 19, 'quantity': 2}, {'item_id': 2, 'quantity': 1}]",148.07,Wallet,Üsküdar,New
-141,2025-06-25 19:25:50,Trendyol,"[{'item_id': 6, 'quantity': 2}]",169.3,Cash,Beşiktaş,Returning
-142,2025-07-02 21:55:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 4, 'quantity': 3}, {'item_id': 1, 'quantity': 3}]",633.78,Cash,Beşiktaş,Returning
-143,2025-06-23 00:39:50,Trendyol,"[{'item_id': 5, 'quantity': 1}]",57.51,Cash,Kadıköy,New
-144,2025-07-04 08:57:50,In-Store,"[{'item_id': 14, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 5, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",562.18,Cash,Kadıköy,Returning
-145,2025-06-12 01:30:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",388.23,Cash,Beşiktaş,New
-146,2025-06-19 10:12:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",185.33,Wallet,Beşiktaş,New
-147,2025-06-14 12:22:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 17, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 12, 'quantity': 1}]",394.32,Cash,Beşiktaş,Returning
-148,2025-06-20 20:23:50,In-Store,"[{'item_id': 3, 'quantity': 1}]",53.06,Cash,Beşiktaş,New
-149,2025-06-26 04:54:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",567.26,Cash,Üsküdar,New
-150,2025-06-28 15:28:50,In-Store,"[{'item_id': 11, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",489.66,Cash,Üsküdar,Returning
-151,2025-06-10 06:19:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 9, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",552.11,Wallet,Beşiktaş,New
-152,2025-06-15 23:41:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",636.06,Cash,Kadıköy,Returning
-153,2025-06-10 04:14:50,Trendyol,"[{'item_id': 15, 'quantity': 2}]",71.28,Cash,Beşiktaş,New
-154,2025-06-10 07:36:50,In-Store,"[{'item_id': 2, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 9, 'quantity': 3}]",657.43,Wallet,Üsküdar,New
-155,2025-06-19 07:52:50,Trendyol,"[{'item_id': 11, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",514.68,Cash,Üsküdar,Returning
-156,2025-06-21 02:51:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 16, 'quantity': 1}]",229.5,Wallet,Kadıköy,New
-157,2025-07-02 20:45:50,Trendyol,"[{'item_id': 2, 'quantity': 3}]",292.53,Credit Card,Üsküdar,Returning
-158,2025-06-04 23:43:50,In-Store,"[{'item_id': 11, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",383.5,Wallet,Kadıköy,Returning
-159,2025-06-30 11:50:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}]",71.28,Cash,Üsküdar,New
-160,2025-06-17 08:01:50,Phone,"[{'item_id': 7, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",909.03,Wallet,Üsküdar,New
-161,2025-07-03 13:10:50,Phone,"[{'item_id': 15, 'quantity': 2}]",71.28,Credit Card,Beşiktaş,New
-162,2025-06-07 21:23:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 18, 'quantity': 1}]",309.75,Credit Card,Beşiktaş,Returning
-163,2025-06-14 06:15:50,Trendyol,"[{'item_id': 18, 'quantity': 2}]",86.9,Credit Card,Beşiktaş,Returning
-164,2025-07-02 11:58:50,In-Store,"[{'item_id': 13, 'quantity': 3}]",235.23,Credit Card,Üsküdar,Returning
-165,2025-06-16 11:52:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 4, 'quantity': 1}]",109.6,Cash,Kadıköy,New
-166,2025-06-15 23:20:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 4, 'quantity': 2}]",334.33,Credit Card,Beşiktaş,New
-167,2025-07-04 03:19:50,Phone,"[{'item_id': 9, 'quantity': 2}]",166.02,Cash,Kadıköy,Returning
-168,2025-06-10 14:33:50,Trendyol,"[{'item_id': 12, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",171.52,Cash,Beşiktaş,New
-169,2025-06-04 19:17:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",412.99,Wallet,Üsküdar,Returning
-170,2025-06-20 15:54:50,Trendyol,"[{'item_id': 9, 'quantity': 1}, {'item_id': 5, 'quantity': 3}]",255.54,Wallet,Üsküdar,Returning
-171,2025-06-08 07:06:50,Yemeksepeti,"[{'item_id': 13, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",553.47,Credit Card,Üsküdar,New
-172,2025-06-12 09:06:50,In-Store,"[{'item_id': 6, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",241.51,Cash,Beşiktaş,New
-173,2025-06-07 16:20:50,Phone,"[{'item_id': 3, 'quantity': 2}]",106.12,Wallet,Kadıköy,Returning
-174,2025-06-20 10:07:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",917.13,Cash,Kadıköy,Returning
-175,2025-06-29 11:04:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 10, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",646.33,Credit Card,Beşiktaş,Returning
-176,2025-06-27 18:24:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 2, 'quantity': 1}]",571.79,Wallet,Beşiktaş,Returning
-177,2025-06-25 00:31:50,In-Store,"[{'item_id': 16, 'quantity': 2}, {'item_id': 6, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 4, 'quantity': 2}]",323.46,Credit Card,Beşiktaş,Returning
-178,2025-06-22 18:43:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",210.55,Cash,Beşiktaş,Returning
-179,2025-06-17 19:58:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 2}]",207.26,Credit Card,Üsküdar,New
-180,2025-06-20 19:30:50,Phone,"[{'item_id': 10, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",510.23,Cash,Kadıköy,Returning
-181,2025-06-22 09:36:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 1}, {'item_id': 10, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 19, 'quantity': 3}]",832.42,Credit Card,Kadıköy,New
-182,2025-06-06 12:29:50,Trendyol,"[{'item_id': 18, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",365.87,Credit Card,Kadıköy,Returning
-183,2025-06-18 09:04:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",142.7,Wallet,Üsküdar,New
-184,2025-06-13 08:43:50,Phone,"[{'item_id': 9, 'quantity': 1}]",83.01,Cash,Üsküdar,New
-185,2025-06-30 11:23:50,Trendyol,"[{'item_id': 17, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 20, 'quantity': 3}]",505.3,Wallet,Kadıköy,Returning
-186,2025-06-10 11:41:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 10, 'quantity': 3}]",636.45,Credit Card,Üsküdar,Returning
-187,2025-07-03 18:38:50,In-Store,"[{'item_id': 3, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 12, 'quantity': 1}]",258.67,Cash,Üsküdar,New
-188,2025-06-09 23:02:50,Phone,"[{'item_id': 16, 'quantity': 3}, {'item_id': 3, 'quantity': 3}]",308.61,Wallet,Kadıköy,Returning
-189,2025-06-08 20:29:50,In-Store,"[{'item_id': 17, 'quantity': 1}]",57.33,Wallet,Üsküdar,New
-190,2025-06-26 10:27:50,Trendyol,"[{'item_id': 8, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",227.5,Cash,Kadıköy,Returning
-191,2025-06-11 14:40:50,Phone,"[{'item_id': 5, 'quantity': 3}, {'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 1}]",224.97,Credit Card,Beşiktaş,New
-192,2025-06-30 12:58:50,In-Store,"[{'item_id': 3, 'quantity': 3}, {'item_id': 7, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",606.09,Cash,Beşiktaş,New
-193,2025-06-26 00:44:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 3}, {'item_id': 17, 'quantity': 2}]",363.69,Wallet,Üsküdar,Returning
-194,2025-06-24 09:07:50,Trendyol,"[{'item_id': 3, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",139.96,Cash,Üsküdar,Returning
-195,2025-06-13 01:16:50,Trendyol,"[{'item_id': 1, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",328.53,Cash,Kadıköy,New
-196,2025-06-12 22:30:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",589.09,Wallet,Kadıköy,Returning
-197,2025-06-20 00:02:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 2, 'quantity': 1}]",236.81,Wallet,Üsküdar,Returning
-198,2025-06-05 00:08:50,Trendyol,"[{'item_id': 12, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",352.56,Cash,Üsküdar,Returning
-199,2025-06-13 21:32:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",520.59,Credit Card,Beşiktaş,New
-200,2025-06-23 07:05:50,Phone,"[{'item_id': 6, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",598.09,Credit Card,Beşiktaş,New
-201,2025-06-17 13:51:50,In-Store,"[{'item_id': 8, 'quantity': 1}, {'item_id': 9, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",517.26,Wallet,Beşiktaş,New
-202,2025-07-04 04:18:50,In-Store,"[{'item_id': 13, 'quantity': 3}]",235.23,Cash,Beşiktaş,New
-203,2025-06-20 05:16:50,Trendyol,"[{'item_id': 3, 'quantity': 3}]",159.18,Wallet,Üsküdar,New
-204,2025-06-10 11:08:50,Trendyol,"[{'item_id': 17, 'quantity': 3}, {'item_id': 4, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",311.18,Credit Card,Kadıköy,Returning
-205,2025-07-04 00:46:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",717.01,Credit Card,Üsküdar,Returning
-206,2025-06-17 17:46:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 18, 'quantity': 1}]",474.55,Wallet,Kadıköy,Returning
-207,2025-06-04 18:12:50,Trendyol,"[{'item_id': 18, 'quantity': 2}, {'item_id': 6, 'quantity': 2}]",256.2,Cash,Kadıköy,New
-208,2025-06-19 07:46:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",120.58,Cash,Üsküdar,New
-209,2025-07-03 13:58:50,Phone,"[{'item_id': 5, 'quantity': 3}, {'item_id': 2, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",620.86,Credit Card,Üsküdar,Returning
-210,2025-07-01 00:29:50,Trendyol,"[{'item_id': 7, 'quantity': 1}]",71.67,Cash,Kadıköy,Returning
-211,2025-06-22 06:46:50,In-Store,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Kadıköy,New
-212,2025-07-03 13:13:50,In-Store,"[{'item_id': 15, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",143.31,Wallet,Üsküdar,Returning
-213,2025-07-02 03:17:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 12, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 3}]",710.3,Cash,Üsküdar,New
-214,2025-06-12 13:57:50,Phone,"[{'item_id': 17, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 4, 'quantity': 3}, {'item_id': 6, 'quantity': 1}]",392.69,Wallet,Beşiktaş,New
-215,2025-07-02 02:26:50,Phone,"[{'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",305.8,Wallet,Üsküdar,Returning
-216,2025-06-07 16:12:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",247.8,Wallet,Beşiktaş,New
-217,2025-06-11 05:40:50,In-Store,"[{'item_id': 17, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",200.86,Cash,Üsküdar,New
-218,2025-07-01 16:03:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",372.89,Wallet,Üsküdar,Returning
-219,2025-06-10 10:41:50,Trendyol,"[{'item_id': 6, 'quantity': 3}]",253.95,Wallet,Beşiktaş,Returning
-220,2025-06-16 18:46:50,Phone,"[{'item_id': 3, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",767.6,Wallet,Beşiktaş,New
-221,2025-06-17 11:14:50,In-Store,"[{'item_id': 2, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 12, 'quantity': 2}]",735.98,Cash,Üsküdar,Returning
-222,2025-06-11 00:39:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 3}]",369.08,Wallet,Beşiktaş,Returning
-223,2025-06-19 10:48:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 20, 'quantity': 3}]",374.01,Credit Card,Kadıköy,New
-224,2025-06-11 17:49:50,In-Store,"[{'item_id': 9, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",494.05,Cash,Kadıköy,Returning
-225,2025-06-08 11:56:50,Phone,"[{'item_id': 2, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 20, 'quantity': 2}]",320.45,Cash,Üsküdar,New
-226,2025-06-23 09:30:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",109.27,Wallet,Kadıköy,New
-227,2025-06-08 02:40:50,Trendyol,"[{'item_id': 8, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 17, 'quantity': 3}]",421.23,Cash,Üsküdar,New
-228,2025-06-05 02:26:50,Trendyol,"[{'item_id': 12, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",193.76,Cash,Beşiktaş,Returning
-229,2025-06-23 12:32:50,Trendyol,"[{'item_id': 12, 'quantity': 1}]",71.9,Cash,Kadıköy,New
-230,2025-06-09 01:08:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 7, 'quantity': 3}]",329.67,Credit Card,Kadıköy,New
-231,2025-07-04 12:11:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",406.38,Cash,Üsküdar,New
-232,2025-06-12 01:04:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",156.11,Wallet,Üsküdar,Returning
-233,2025-06-06 03:26:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",520.48,Cash,Beşiktaş,New
-234,2025-06-10 08:08:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",277.55,Wallet,Kadıköy,New
-235,2025-06-18 18:36:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",420.57,Credit Card,Üsküdar,Returning
-236,2025-06-15 14:00:50,In-Store,"[{'item_id': 3, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 2}, {'item_id': 20, 'quantity': 3}]",386.37,Cash,Üsküdar,New
-237,2025-06-22 12:26:50,Phone,"[{'item_id': 19, 'quantity': 3}]",75.84,Cash,Kadıköy,New
-238,2025-06-26 00:04:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}]",537.57,Cash,Kadıköy,Returning
-239,2025-06-26 14:40:50,Phone,"[{'item_id': 11, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",322.13,Credit Card,Beşiktaş,Returning
-240,2025-06-27 07:10:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 17, 'quantity': 2}]",631.72,Credit Card,Beşiktaş,New
-241,2025-06-12 13:25:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 2, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 1}]",783.15,Cash,Üsküdar,Returning
-242,2025-06-14 03:32:50,Phone,"[{'item_id': 20, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",171.58,Cash,Beşiktaş,Returning
-243,2025-06-20 03:38:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 5, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",494.6,Wallet,Beşiktaş,Returning
-244,2025-06-27 10:30:50,Trendyol,"[{'item_id': 4, 'quantity': 2}]",67.52,Wallet,Üsküdar,New
-245,2025-06-29 14:49:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 13, 'quantity': 1}]",443.18,Wallet,Beşiktaş,Returning
-246,2025-06-14 01:14:50,Phone,"[{'item_id': 15, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 18, 'quantity': 2}]",641.66,Wallet,Üsküdar,New
-247,2025-06-18 08:49:50,In-Store,"[{'item_id': 14, 'quantity': 2}]",71.78,Wallet,Üsküdar,New
-248,2025-06-20 21:05:50,Phone,"[{'item_id': 17, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",492.71,Cash,Beşiktaş,Returning
-249,2025-06-13 23:16:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",353.16,Credit Card,Kadıköy,Returning
-250,2025-06-30 00:09:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 2, 'quantity': 2}]",564.02,Credit Card,Üsküdar,Returning
-251,2025-07-03 05:51:50,In-Store,"[{'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 11, 'quantity': 2}]",506.36,Wallet,Üsküdar,Returning
-252,2025-06-28 22:13:50,Yemeksepeti,"[{'item_id': 3, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",692.35,Wallet,Beşiktaş,New
-253,2025-07-02 22:29:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",587.35,Wallet,Beşiktaş,New
-254,2025-06-20 21:01:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 3, 'quantity': 3}]",586.39,Cash,Üsküdar,Returning
-255,2025-06-26 22:44:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 10, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",647.97,Wallet,Kadıköy,Returning
-256,2025-07-01 22:36:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",608.43,Cash,Beşiktaş,Returning
-257,2025-06-07 12:40:50,Trendyol,"[{'item_id': 8, 'quantity': 3}, {'item_id': 11, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",327.26,Credit Card,Beşiktaş,Returning
-258,2025-06-13 01:24:50,In-Store,"[{'item_id': 14, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 4, 'quantity': 2}]",318.68,Wallet,Üsküdar,Returning
-259,2025-07-02 23:03:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 15, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",643.76,Wallet,Beşiktaş,New
-260,2025-06-19 07:41:50,In-Store,"[{'item_id': 1, 'quantity': 2}]",144.42,Cash,Kadıköy,Returning
-261,2025-06-12 09:51:50,In-Store,"[{'item_id': 9, 'quantity': 3}]",249.03,Cash,Beşiktaş,New
-262,2025-06-30 18:39:50,Trendyol,"[{'item_id': 11, 'quantity': 2}]",83.9,Cash,Kadıköy,New
-263,2025-06-14 00:15:50,Yemeksepeti,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 14, 'quantity': 2}]",568.04,Wallet,Üsküdar,New
-264,2025-06-21 11:32:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 19, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",541.34,Cash,Üsküdar,New
-265,2025-06-12 19:40:50,Yemeksepeti,"[{'item_id': 7, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 1, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",452.85,Wallet,Kadıköy,Returning
-266,2025-06-10 20:24:50,Phone,"[{'item_id': 3, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",465.66,Wallet,Üsküdar,Returning
-267,2025-07-03 13:09:50,In-Store,"[{'item_id': 12, 'quantity': 1}]",71.9,Credit Card,Beşiktaş,Returning
-268,2025-06-19 00:59:50,Phone,"[{'item_id': 19, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 14, 'quantity': 3}]",454.72,Credit Card,Kadıköy,Returning
-269,2025-06-19 23:09:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",308.26,Cash,Beşiktaş,New
-270,2025-06-26 01:57:50,In-Store,"[{'item_id': 8, 'quantity': 2}, {'item_id': 18, 'quantity': 3}]",247.77,Wallet,Kadıköy,New
-271,2025-06-26 03:37:50,Trendyol,"[{'item_id': 4, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 13, 'quantity': 1}]",374.71,Cash,Kadıköy,Returning
-272,2025-07-01 23:04:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 7, 'quantity': 3}, {'item_id': 4, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",423.75,Cash,Beşiktaş,Returning
-273,2025-06-16 14:52:50,Phone,"[{'item_id': 1, 'quantity': 1}]",72.21,Wallet,Üsküdar,New
-274,2025-07-01 02:45:50,Trendyol,"[{'item_id': 9, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 15, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 4, 'quantity': 3}]",506.49,Cash,Üsküdar,New
-275,2025-06-20 14:17:50,Phone,"[{'item_id': 12, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",330.72,Wallet,Kadıköy,Returning
-276,2025-06-14 07:52:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 1}]",291.95,Credit Card,Beşiktaş,New
-277,2025-06-27 02:58:50,In-Store,"[{'item_id': 10, 'quantity': 2}]",207.26,Cash,Beşiktaş,Returning
-278,2025-06-24 16:07:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",627.5,Cash,Beşiktaş,New
-279,2025-06-15 20:45:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",92.97,Cash,Beşiktaş,New
-280,2025-06-06 19:11:50,Trendyol,"[{'item_id': 10, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",291.16,Cash,Kadıköy,New
-281,2025-07-03 08:03:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}]",83.9,Cash,Kadıköy,New
-282,2025-07-02 13:59:50,Phone,"[{'item_id': 9, 'quantity': 2}, {'item_id': 17, 'quantity': 1}]",223.35,Credit Card,Beşiktaş,Returning
-283,2025-06-28 09:47:50,Phone,"[{'item_id': 5, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",154.57,Cash,Beşiktaş,New
-284,2025-06-30 03:59:50,Yemeksepeti,"[{'item_id': 3, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 6, 'quantity': 3}, {'item_id': 12, 'quantity': 2}]",611.25,Cash,Üsküdar,Returning
-285,2025-06-22 15:46:50,In-Store,"[{'item_id': 2, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",751.3,Wallet,Beşiktaş,Returning
-286,2025-07-02 19:01:50,Trendyol,"[{'item_id': 1, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",441.53,Credit Card,Kadıköy,Returning
-287,2025-06-30 17:25:50,In-Store,"[{'item_id': 4, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",84.32,Credit Card,Üsküdar,New
-288,2025-06-30 22:11:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 13, 'quantity': 2}]",406.96,Wallet,Beşiktaş,New
-289,2025-06-15 01:41:50,In-Store,"[{'item_id': 13, 'quantity': 2}]",156.82,Wallet,Üsküdar,New
-290,2025-06-22 07:50:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",129.0,Wallet,Üsküdar,New
-291,2025-06-23 13:56:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 6, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",770.1,Wallet,Kadıköy,Returning
-292,2025-06-07 01:27:50,In-Store,"[{'item_id': 12, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",418.51,Wallet,Kadıköy,Returning
-293,2025-06-22 20:43:50,Phone,"[{'item_id': 9, 'quantity': 2}, {'item_id': 7, 'quantity': 1}]",237.69,Wallet,Beşiktaş,New
-294,2025-07-01 13:43:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 10, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 1, 'quantity': 1}]",462.66,Cash,Üsküdar,Returning
-295,2025-06-26 17:53:50,In-Store,"[{'item_id': 1, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 6, 'quantity': 3}]",448.93,Credit Card,Beşiktaş,New
-296,2025-06-06 22:22:50,Phone,"[{'item_id': 3, 'quantity': 1}]",53.06,Credit Card,Beşiktaş,New
-297,2025-06-22 03:09:50,Yemeksepeti,"[{'item_id': 16, 'quantity': 3}, {'item_id': 20, 'quantity': 2}]",203.75,Cash,Üsküdar,New
-298,2025-06-15 02:32:50,Phone,"[{'item_id': 15, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 12, 'quantity': 3}]",328.93,Credit Card,Kadıköy,New
-299,2025-07-01 10:45:50,Trendyol,"[{'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 7, 'quantity': 2}]",402.69,Credit Card,Üsküdar,Returning
-300,2025-06-09 16:33:50,In-Store,"[{'item_id': 5, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",144.41,Cash,Üsküdar,Returning
-301,2025-06-09 01:04:50,In-Store,"[{'item_id': 17, 'quantity': 2}, {'item_id': 8, 'quantity': 1}]",173.37,Credit Card,Üsküdar,New
-302,2025-06-23 10:08:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 11, 'quantity': 1}]",432.3,Cash,Beşiktaş,New
-303,2025-06-27 23:15:50,Phone,"[{'item_id': 10, 'quantity': 1}]",103.63,Wallet,Kadıköy,Returning
-304,2025-06-17 19:29:50,Trendyol,"[{'item_id': 9, 'quantity': 2}, {'item_id': 10, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 4, 'quantity': 3}]",649.47,Cash,Üsküdar,New
-305,2025-07-03 22:40:50,Trendyol,"[{'item_id': 13, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",365.33,Cash,Üsküdar,Returning
-306,2025-06-06 19:08:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 3}]",400.69,Credit Card,Üsküdar,Returning
-307,2025-06-05 21:41:50,In-Store,"[{'item_id': 17, 'quantity': 3}, {'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",603.31,Wallet,Kadıköy,New
-308,2025-06-08 05:47:50,Trendyol,"[{'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 19, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",409.77,Wallet,Kadıköy,New
-309,2025-06-13 15:46:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}]",106.92,Cash,Üsküdar,Returning
-310,2025-06-17 03:15:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",738.63,Credit Card,Kadıköy,New
-311,2025-06-10 10:00:50,In-Store,"[{'item_id': 16, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",633.2,Credit Card,Üsküdar,New
-312,2025-06-22 01:28:50,Trendyol,"[{'item_id': 9, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 6, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",554.43,Cash,Üsküdar,Returning
-313,2025-06-19 10:41:50,Phone,"[{'item_id': 2, 'quantity': 2}]",195.02,Credit Card,Üsküdar,New
-314,2025-06-07 22:54:50,Phone,"[{'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",438.98,Wallet,Beşiktaş,New
-315,2025-06-13 08:27:50,Trendyol,"[{'item_id': 19, 'quantity': 1}, {'item_id': 2, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 1, 'quantity': 2}]",528.43,Credit Card,Üsküdar,Returning
-316,2025-07-03 17:25:50,Trendyol,"[{'item_id': 11, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",111.06,Cash,Beşiktaş,New
-317,2025-06-21 07:22:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",572.07,Cash,Beşiktaş,New
-318,2025-06-08 02:58:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",252.53,Credit Card,Beşiktaş,Returning
-319,2025-06-06 17:01:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}, {'item_id': 20, 'quantity': 3}, {'item_id': 9, 'quantity': 3}, {'item_id': 6, 'quantity': 3}]",710.31,Credit Card,Kadıköy,New
-320,2025-07-03 09:47:50,Phone,"[{'item_id': 13, 'quantity': 3}]",235.23,Credit Card,Beşiktaş,New
-321,2025-06-16 06:06:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 17, 'quantity': 1}]",160.96,Wallet,Kadıköy,Returning
-322,2025-06-17 09:00:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",370.52,Wallet,Kadıköy,New
-323,2025-06-19 20:29:50,In-Store,"[{'item_id': 8, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",291.15,Cash,Kadıköy,New
-324,2025-06-11 21:34:50,Phone,"[{'item_id': 3, 'quantity': 1}, {'item_id': 8, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 18, 'quantity': 1}]",489.27,Credit Card,Beşiktaş,Returning
-325,2025-06-12 13:53:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 2, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",391.78,Wallet,Kadıköy,New
-326,2025-06-19 13:36:50,In-Store,"[{'item_id': 19, 'quantity': 2}]",50.56,Cash,Kadıköy,Returning
-327,2025-06-24 00:30:50,Trendyol,"[{'item_id': 5, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",350.25,Cash,Üsküdar,Returning
-328,2025-07-01 07:58:50,Trendyol,"[{'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 15, 'quantity': 2}]",475.61,Credit Card,Beşiktaş,New
-329,2025-06-21 04:35:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",124.34,Credit Card,Beşiktaş,Returning
-330,2025-06-28 00:12:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 17, 'quantity': 2}]",677.45,Credit Card,Kadıköy,New
-331,2025-06-21 19:51:50,Trendyol,"[{'item_id': 7, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 2, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 12, 'quantity': 1}]",586.0,Cash,Beşiktaş,Returning
-332,2025-06-27 22:40:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",461.2,Credit Card,Üsküdar,Returning
-333,2025-06-15 09:10:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",510.28,Cash,Beşiktaş,Returning
-334,2025-07-04 05:20:50,Phone,"[{'item_id': 14, 'quantity': 2}, {'item_id': 16, 'quantity': 1}, {'item_id': 1, 'quantity': 1}]",193.8,Credit Card,Kadıköy,Returning
-335,2025-06-23 06:10:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",472.16,Wallet,Üsküdar,New
-336,2025-06-05 09:57:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}]",54.32,Wallet,Üsküdar,Returning
-337,2025-07-02 05:44:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 6, 'quantity': 1}, {'item_id': 2, 'quantity': 2}]",380.95,Cash,Kadıköy,New
-338,2025-06-20 02:55:50,Yemeksepeti,"[{'item_id': 5, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 12, 'quantity': 2}]",475.51,Cash,Kadıköy,Returning
-339,2025-06-09 15:41:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 14, 'quantity': 2}, {'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 18, 'quantity': 3}]",456.47,Cash,Beşiktaş,Returning
-340,2025-06-18 00:07:50,Trendyol,"[{'item_id': 9, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",201.91,Cash,Beşiktaş,New
-341,2025-07-04 12:41:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 7, 'quantity': 1}, {'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",515.93,Credit Card,Kadıköy,New
-342,2025-06-28 11:46:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Credit Card,Üsküdar,New
-343,2025-06-08 13:41:50,Trendyol,"[{'item_id': 18, 'quantity': 2}]",86.9,Credit Card,Kadıköy,Returning
-344,2025-06-19 08:10:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 7, 'quantity': 1}]",147.51,Wallet,Üsküdar,New
-345,2025-06-15 23:10:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 4, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",572.44,Wallet,Beşiktaş,Returning
-346,2025-06-23 22:47:50,In-Store,"[{'item_id': 11, 'quantity': 3}]",125.85,Wallet,Üsküdar,New
-347,2025-06-29 21:10:50,Phone,"[{'item_id': 19, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 14, 'quantity': 3}]",349.53,Cash,Beşiktaş,Returning
-348,2025-06-08 08:21:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 9, 'quantity': 3}, {'item_id': 10, 'quantity': 2}]",610.63,Credit Card,Kadıköy,New
-349,2025-07-04 13:36:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 7, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 11, 'quantity': 2}]",280.42,Cash,Kadıköy,New
-350,2025-06-22 08:19:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 3}, {'item_id': 12, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",391.3,Cash,Beşiktaş,Returning
-351,2025-06-18 02:26:50,In-Store,"[{'item_id': 4, 'quantity': 2}, {'item_id': 5, 'quantity': 1}]",125.03,Wallet,Kadıköy,New
-352,2025-06-12 22:38:50,Yemeksepeti,"[{'item_id': 14, 'quantity': 3}, {'item_id': 10, 'quantity': 2}, {'item_id': 18, 'quantity': 1}]",358.38,Cash,Üsküdar,Returning
-353,2025-06-15 05:42:50,Phone,"[{'item_id': 5, 'quantity': 3}]",172.53,Cash,Kadıköy,Returning
-354,2025-07-02 02:41:50,Trendyol,"[{'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",392.57,Cash,Beşiktaş,New
-355,2025-06-12 15:18:50,Trendyol,"[{'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",233.16,Cash,Beşiktaş,New
-356,2025-06-28 22:03:50,Trendyol,"[{'item_id': 15, 'quantity': 3}]",106.92,Credit Card,Üsküdar,Returning
-357,2025-06-21 05:46:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 2, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",537.98,Credit Card,Beşiktaş,Returning
-358,2025-07-03 15:45:50,Trendyol,"[{'item_id': 6, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",314.49,Cash,Beşiktaş,New
-359,2025-06-29 11:26:50,Phone,"[{'item_id': 13, 'quantity': 2}, {'item_id': 11, 'quantity': 1}, {'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",645.46,Credit Card,Üsküdar,New
-360,2025-06-04 20:12:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 1}, {'item_id': 15, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",329.13,Credit Card,Beşiktaş,New
-361,2025-06-11 14:09:50,Trendyol,"[{'item_id': 8, 'quantity': 1}]",58.71,Cash,Beşiktaş,New
-362,2025-06-07 06:54:50,Phone,"[{'item_id': 12, 'quantity': 3}]",215.7,Cash,Üsküdar,New
-363,2025-06-27 11:04:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 9, 'quantity': 1}, {'item_id': 19, 'quantity': 3}, {'item_id': 2, 'quantity': 1}]",328.26,Cash,Kadıköy,Returning
-364,2025-06-09 23:51:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 2}, {'item_id': 3, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 5, 'quantity': 2}]",496.75,Credit Card,Beşiktaş,New
-365,2025-06-09 19:21:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",170.19,Cash,Kadıköy,New
-366,2025-06-20 02:14:50,Trendyol,"[{'item_id': 10, 'quantity': 1}, {'item_id': 9, 'quantity': 2}]",269.65,Wallet,Kadıköy,New
-367,2025-06-15 06:50:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 8, 'quantity': 1}]",141.72,Credit Card,Üsküdar,Returning
-368,2025-06-07 13:55:50,Phone,"[{'item_id': 9, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 20, 'quantity': 1}, {'item_id': 10, 'quantity': 3}]",588.29,Cash,Beşiktaş,Returning
-369,2025-06-21 03:17:50,Trendyol,"[{'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 12, 'quantity': 1}]",593.77,Cash,Kadıköy,New
-370,2025-06-15 12:19:50,Trendyol,"[{'item_id': 18, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",166.24,Cash,Üsküdar,New
-371,2025-07-01 00:30:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 2}, {'item_id': 14, 'quantity': 1}, {'item_id': 3, 'quantity': 1}, {'item_id': 18, 'quantity': 2}, {'item_id': 9, 'quantity': 2}]",392.43,Cash,Beşiktaş,New
-372,2025-06-25 13:25:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 2, 'quantity': 1}, {'item_id': 17, 'quantity': 3}]",595.35,Wallet,Üsküdar,New
-373,2025-06-21 08:32:50,Yemeksepeti,"[{'item_id': 9, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 18, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 2, 'quantity': 3}]",848.32,Credit Card,Üsküdar,Returning
-374,2025-07-01 23:46:50,Phone,"[{'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 6, 'quantity': 1}]",641.12,Credit Card,Beşiktaş,New
-375,2025-06-15 22:00:50,In-Store,"[{'item_id': 19, 'quantity': 3}]",75.84,Cash,Kadıköy,New
-376,2025-06-20 09:56:50,In-Store,"[{'item_id': 12, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 14, 'quantity': 3}]",752.32,Cash,Üsküdar,Returning
-377,2025-07-04 04:05:50,Phone,"[{'item_id': 12, 'quantity': 3}, {'item_id': 13, 'quantity': 1}]",294.11,Credit Card,Kadıköy,Returning
-378,2025-06-28 18:46:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",139.94,Wallet,Kadıköy,New
-379,2025-06-24 21:22:50,In-Store,"[{'item_id': 1, 'quantity': 3}]",216.63,Wallet,Beşiktaş,New
-380,2025-06-29 22:48:50,Phone,"[{'item_id': 7, 'quantity': 2}, {'item_id': 14, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 5, 'quantity': 3}]",717.34,Cash,Üsküdar,New
-381,2025-07-03 02:49:50,Phone,"[{'item_id': 18, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 15, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",298.25,Cash,Kadıköy,Returning
-382,2025-07-01 13:25:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 4, 'quantity': 1}]",60.92,Credit Card,Beşiktaş,New
-383,2025-06-30 17:40:50,Trendyol,"[{'item_id': 7, 'quantity': 3}, {'item_id': 11, 'quantity': 3}]",340.86,Cash,Kadıköy,Returning
-384,2025-06-08 22:59:50,In-Store,"[{'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 1}]",229.03,Credit Card,Üsküdar,Returning
-385,2025-06-07 20:56:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 3}, {'item_id': 18, 'quantity': 3}, {'item_id': 11, 'quantity': 1}]",279.22,Wallet,Üsküdar,New
-386,2025-06-22 17:34:50,In-Store,"[{'item_id': 6, 'quantity': 1}, {'item_id': 19, 'quantity': 2}]",135.21,Cash,Üsküdar,New
-387,2025-06-09 12:06:50,In-Store,"[{'item_id': 4, 'quantity': 3}, {'item_id': 20, 'quantity': 2}, {'item_id': 15, 'quantity': 3}]",262.52,Cash,Kadıköy,Returning
-388,2025-06-16 19:53:50,Trendyol,"[{'item_id': 14, 'quantity': 2}, {'item_id': 19, 'quantity': 2}]",122.34,Cash,Üsküdar,New
-389,2025-06-21 18:14:50,Phone,"[{'item_id': 1, 'quantity': 3}]",216.63,Credit Card,Üsküdar,Returning
-390,2025-06-18 22:57:50,Phone,"[{'item_id': 14, 'quantity': 1}]",35.89,Credit Card,Üsküdar,Returning
-391,2025-06-14 20:41:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 4, 'quantity': 1}]",69.4,Cash,Kadıköy,New
-392,2025-06-19 16:52:50,Trendyol,"[{'item_id': 1, 'quantity': 1}]",72.21,Wallet,Üsküdar,Returning
-393,2025-06-05 20:02:50,Trendyol,"[{'item_id': 1, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 18, 'quantity': 2}]",354.09,Credit Card,Beşiktaş,Returning
-394,2025-06-19 03:28:50,Yemeksepeti,"[{'item_id': 20, 'quantity': 2}]",54.32,Wallet,Beşiktaş,Returning
-395,2025-06-14 02:05:50,Phone,"[{'item_id': 20, 'quantity': 1}]",27.16,Wallet,Kadıköy,Returning
-396,2025-06-09 03:06:50,In-Store,"[{'item_id': 12, 'quantity': 1}, {'item_id': 6, 'quantity': 3}, {'item_id': 8, 'quantity': 2}]",443.27,Wallet,Kadıköy,Returning
-397,2025-06-21 04:10:50,In-Store,"[{'item_id': 7, 'quantity': 1}, {'item_id': 1, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",412.48,Wallet,Beşiktaş,Returning
-398,2025-06-15 20:58:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 15, 'quantity': 3}, {'item_id': 2, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",510.8,Wallet,Üsküdar,New
-399,2025-06-19 00:09:50,Trendyol,"[{'item_id': 1, 'quantity': 1}, {'item_id': 18, 'quantity': 2}]",159.11,Wallet,Üsküdar,Returning
-400,2025-06-16 00:50:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 1}]",120.36,Credit Card,Üsküdar,Returning
-401,2025-06-29 16:08:50,Phone,"[{'item_id': 1, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",295.54,Cash,Kadıköy,Returning
-402,2025-06-09 07:16:50,Trendyol,"[{'item_id': 1, 'quantity': 2}]",144.42,Cash,Kadıköy,New
-403,2025-06-19 08:06:50,Trendyol,"[{'item_id': 2, 'quantity': 1}]",97.51,Credit Card,Beşiktaş,Returning
-404,2025-07-03 18:29:50,Phone,"[{'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 3}]",425.55,Cash,Kadıköy,New
-405,2025-06-09 22:37:50,In-Store,"[{'item_id': 1, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 8, 'quantity': 1}, {'item_id': 10, 'quantity': 1}]",404.27,Wallet,Üsküdar,New
-406,2025-06-23 20:35:50,In-Store,"[{'item_id': 15, 'quantity': 1}]",35.64,Credit Card,Üsküdar,New
-407,2025-06-17 19:44:50,Phone,"[{'item_id': 20, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 1}]",261.05,Wallet,Kadıköy,Returning
-408,2025-06-29 04:48:50,Phone,"[{'item_id': 15, 'quantity': 1}, {'item_id': 10, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 1}, {'item_id': 9, 'quantity': 1}]",406.84,Wallet,Beşiktaş,Returning
-409,2025-06-27 03:43:50,Trendyol,"[{'item_id': 5, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 1, 'quantity': 2}]",302.89,Wallet,Beşiktaş,New
-410,2025-06-17 04:19:50,Phone,"[{'item_id': 9, 'quantity': 3}, {'item_id': 20, 'quantity': 1}]",276.19,Credit Card,Kadıköy,Returning
-411,2025-07-02 03:29:50,Trendyol,"[{'item_id': 11, 'quantity': 3}, {'item_id': 1, 'quantity': 3}, {'item_id': 5, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 15, 'quantity': 3}]",836.94,Wallet,Üsküdar,Returning
-412,2025-06-18 07:55:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 7, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 20, 'quantity': 3}]",445.83,Credit Card,Beşiktaş,New
-413,2025-06-04 18:54:50,In-Store,"[{'item_id': 10, 'quantity': 2}, {'item_id': 9, 'quantity': 1}, {'item_id': 18, 'quantity': 1}, {'item_id': 1, 'quantity': 2}, {'item_id': 13, 'quantity': 3}]",713.37,Cash,Beşiktaş,New
-414,2025-06-18 02:26:50,Phone,"[{'item_id': 10, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 4, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 12, 'quantity': 2}]",689.54,Wallet,Beşiktaş,New
-415,2025-06-24 02:15:50,Trendyol,"[{'item_id': 8, 'quantity': 3}, {'item_id': 16, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",261.58,Cash,Kadıköy,Returning
-416,2025-07-03 21:51:50,Trendyol,"[{'item_id': 10, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 1, 'quantity': 2}, {'item_id': 15, 'quantity': 3}]",797.46,Credit Card,Üsküdar,Returning
-417,2025-06-30 22:45:50,Phone,"[{'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 1}]",69.65,Cash,Kadıköy,Returning
-418,2025-06-09 04:51:50,Trendyol,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,New
-419,2025-06-11 19:28:50,Trendyol,"[{'item_id': 10, 'quantity': 1}]",103.63,Cash,Beşiktaş,New
-420,2025-06-28 11:44:50,Yemeksepeti,"[{'item_id': 19, 'quantity': 3}]",75.84,Credit Card,Üsküdar,New
-421,2025-06-18 12:40:50,In-Store,"[{'item_id': 19, 'quantity': 1}, {'item_id': 17, 'quantity': 2}, {'item_id': 10, 'quantity': 2}]",347.2,Credit Card,Beşiktaş,New
-422,2025-06-08 01:58:50,Trendyol,"[{'item_id': 5, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 19, 'quantity': 1}]",341.15,Cash,Beşiktaş,New
-423,2025-07-01 08:33:50,In-Store,"[{'item_id': 14, 'quantity': 1}, {'item_id': 16, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 3, 'quantity': 1}]",281.83,Cash,Kadıköy,Returning
-424,2025-07-03 07:47:50,Yemeksepeti,"[{'item_id': 12, 'quantity': 1}, {'item_id': 1, 'quantity': 3}, {'item_id': 15, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 3}]",582.36,Credit Card,Kadıköy,New
-425,2025-06-19 12:39:50,Phone,"[{'item_id': 14, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",284.92,Cash,Kadıköy,New
-426,2025-06-14 18:12:50,Phone,"[{'item_id': 9, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 3}]",661.36,Cash,Beşiktaş,New
-427,2025-06-10 15:44:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 19, 'quantity': 3}, {'item_id': 5, 'quantity': 1}]",204.63,Credit Card,Beşiktaş,Returning
-428,2025-06-13 01:19:50,Trendyol,"[{'item_id': 2, 'quantity': 2}, {'item_id': 5, 'quantity': 3}]",367.55,Credit Card,Beşiktaş,Returning
-429,2025-06-08 05:35:50,Trendyol,"[{'item_id': 12, 'quantity': 2}]",143.8,Wallet,Üsküdar,Returning
-430,2025-06-30 16:49:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 14, 'quantity': 3}, {'item_id': 12, 'quantity': 2}, {'item_id': 5, 'quantity': 3}, {'item_id': 9, 'quantity': 1}]",579.22,Credit Card,Kadıköy,New
-431,2025-06-14 19:37:50,Trendyol,"[{'item_id': 9, 'quantity': 3}]",249.03,Wallet,Üsküdar,Returning
-432,2025-06-06 18:53:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 6, 'quantity': 2}, {'item_id': 20, 'quantity': 1}]",515.17,Cash,Üsküdar,Returning
-433,2025-06-13 20:01:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 2}]",559.83,Credit Card,Kadıköy,New
-434,2025-06-08 08:24:50,Phone,"[{'item_id': 8, 'quantity': 2}, {'item_id': 20, 'quantity': 3}, {'item_id': 2, 'quantity': 3}]",491.43,Cash,Üsküdar,New
-435,2025-06-07 17:09:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 18, 'quantity': 1}, {'item_id': 17, 'quantity': 3}, {'item_id': 11, 'quantity': 1}, {'item_id': 7, 'quantity': 3}]",679.66,Credit Card,Üsküdar,Returning
-436,2025-06-09 00:35:50,In-Store,"[{'item_id': 9, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",381.98,Cash,Üsküdar,New
-437,2025-06-24 15:49:50,In-Store,"[{'item_id': 2, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 19, 'quantity': 3}]",475.12,Cash,Kadıköy,New
-438,2025-06-08 15:47:50,Trendyol,"[{'item_id': 10, 'quantity': 2}]",207.26,Wallet,Beşiktaş,New
-439,2025-06-19 23:30:50,Phone,"[{'item_id': 13, 'quantity': 2}, {'item_id': 1, 'quantity': 3}]",373.45,Cash,Beşiktaş,New
-440,2025-07-03 06:02:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",437.5,Cash,Kadıköy,Returning
-441,2025-06-16 10:37:50,Yemeksepeti,"[{'item_id': 11, 'quantity': 3}]",125.85,Credit Card,Beşiktaş,New
-442,2025-06-27 13:24:50,Phone,"[{'item_id': 8, 'quantity': 1}]",58.71,Cash,Kadıköy,Returning
-443,2025-06-30 06:56:50,Trendyol,"[{'item_id': 8, 'quantity': 2}, {'item_id': 7, 'quantity': 3}]",332.43,Cash,Kadıköy,Returning
-444,2025-06-10 11:57:50,Phone,"[{'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 3}, {'item_id': 14, 'quantity': 1}, {'item_id': 5, 'quantity': 1}]",395.38,Credit Card,Beşiktaş,New
-445,2025-07-02 17:07:50,Trendyol,"[{'item_id': 15, 'quantity': 2}, {'item_id': 17, 'quantity': 3}, {'item_id': 13, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 4, 'quantity': 3}]",548.81,Credit Card,Beşiktaş,New
-446,2025-06-05 13:52:50,Trendyol,"[{'item_id': 20, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 9, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",551.26,Wallet,Beşiktaş,New
-447,2025-06-27 15:54:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 6, 'quantity': 2}, {'item_id': 3, 'quantity': 2}]",334.13,Wallet,Üsküdar,New
-448,2025-06-11 03:19:50,In-Store,"[{'item_id': 17, 'quantity': 1}]",57.33,Wallet,Beşiktaş,New
-449,2025-06-09 10:39:50,In-Store,"[{'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 18, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 9, 'quantity': 3}]",572.97,Credit Card,Kadıköy,Returning
-450,2025-06-13 13:23:50,Phone,"[{'item_id': 10, 'quantity': 2}, {'item_id': 16, 'quantity': 2}, {'item_id': 12, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",486.45,Credit Card,Kadıköy,New
-451,2025-06-28 00:29:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 14, 'quantity': 1}]",246.44,Credit Card,Beşiktaş,New
-452,2025-06-12 02:22:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 5, 'quantity': 1}, {'item_id': 11, 'quantity': 1}, {'item_id': 15, 'quantity': 3}, {'item_id': 16, 'quantity': 1}]",313.52,Cash,Beşiktaş,Returning
-453,2025-06-12 20:12:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 12, 'quantity': 3}, {'item_id': 7, 'quantity': 3}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 3}]",668.91,Cash,Üsküdar,New
-454,2025-07-03 13:29:50,Yemeksepeti,"[{'item_id': 10, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 13, 'quantity': 3}, {'item_id': 15, 'quantity': 2}]",527.56,Cash,Beşiktaş,Returning
-455,2025-06-09 23:16:50,Yemeksepeti,"[{'item_id': 4, 'quantity': 2}, {'item_id': 8, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 17, 'quantity': 2}]",291.45,Credit Card,Kadıköy,New
-456,2025-06-28 07:45:50,Trendyol,"[{'item_id': 7, 'quantity': 3}, {'item_id': 3, 'quantity': 3}, {'item_id': 6, 'quantity': 2}, {'item_id': 20, 'quantity': 2}]",597.81,Credit Card,Kadıköy,New
-457,2025-06-16 23:38:50,In-Store,"[{'item_id': 11, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 6, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 2}]",372.99,Credit Card,Beşiktaş,New
-458,2025-06-08 20:25:50,Trendyol,"[{'item_id': 15, 'quantity': 3}, {'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 3}]",248.35,Credit Card,Beşiktaş,New
-459,2025-06-16 06:09:50,In-Store,"[{'item_id': 16, 'quantity': 3}, {'item_id': 2, 'quantity': 2}]",344.45,Wallet,Üsküdar,Returning
-460,2025-07-04 00:39:50,Phone,"[{'item_id': 8, 'quantity': 2}]",117.42,Cash,Üsküdar,Returning
-461,2025-06-09 23:01:50,Phone,"[{'item_id': 17, 'quantity': 3}, {'item_id': 19, 'quantity': 1}]",197.27,Credit Card,Beşiktaş,Returning
-462,2025-06-23 22:52:50,In-Store,"[{'item_id': 17, 'quantity': 1}, {'item_id': 16, 'quantity': 2}]",156.95,Credit Card,Beşiktaş,Returning
-463,2025-06-07 12:14:50,In-Store,"[{'item_id': 6, 'quantity': 3}, {'item_id': 13, 'quantity': 3}, {'item_id': 18, 'quantity': 1}, {'item_id': 15, 'quantity': 1}]",568.27,Credit Card,Üsküdar,New
-464,2025-06-29 07:15:50,In-Store,"[{'item_id': 14, 'quantity': 2}, {'item_id': 3, 'quantity': 2}, {'item_id': 17, 'quantity': 2}, {'item_id': 7, 'quantity': 2}]",435.9,Wallet,Kadıköy,Returning
-465,2025-06-21 19:32:50,In-Store,"[{'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 19, 'quantity': 2}, {'item_id': 11, 'quantity': 3}]",621.27,Cash,Üsküdar,New
-466,2025-06-13 16:19:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 6, 'quantity': 3}]",546.48,Cash,Beşiktaş,Returning
-467,2025-06-24 02:44:50,Phone,"[{'item_id': 7, 'quantity': 1}, {'item_id': 11, 'quantity': 2}, {'item_id': 13, 'quantity': 1}, {'item_id': 5, 'quantity': 2}, {'item_id': 16, 'quantity': 2}]",448.62,Cash,Üsküdar,New
-468,2025-06-12 13:29:50,Trendyol,"[{'item_id': 4, 'quantity': 3}, {'item_id': 16, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 17, 'quantity': 2}, {'item_id': 14, 'quantity': 1}]",477.3,Cash,Üsküdar,New
-469,2025-06-23 04:55:50,Yemeksepeti,"[{'item_id': 6, 'quantity': 3}]",253.95,Cash,Üsküdar,Returning
-470,2025-06-30 16:06:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}, {'item_id': 16, 'quantity': 1}, {'item_id': 13, 'quantity': 3}]",343.75,Cash,Üsküdar,Returning
-471,2025-07-01 11:52:50,Phone,"[{'item_id': 1, 'quantity': 1}, {'item_id': 12, 'quantity': 2}, {'item_id': 19, 'quantity': 1}, {'item_id': 16, 'quantity': 3}]",390.72,Wallet,Üsküdar,Returning
-472,2025-06-15 22:09:50,In-Store,"[{'item_id': 15, 'quantity': 2}, {'item_id': 9, 'quantity': 3}, {'item_id': 11, 'quantity': 2}, {'item_id': 8, 'quantity': 3}]",580.34,Credit Card,Üsküdar,New
-473,2025-06-14 00:33:50,Phone,"[{'item_id': 19, 'quantity': 3}]",75.84,Wallet,Kadıköy,New
-474,2025-06-23 02:30:50,Trendyol,"[{'item_id': 18, 'quantity': 1}, {'item_id': 13, 'quantity': 2}]",200.27,Wallet,Kadıköy,New
-475,2025-06-12 11:31:50,In-Store,"[{'item_id': 4, 'quantity': 1}, {'item_id': 3, 'quantity': 2}, {'item_id': 10, 'quantity': 1}, {'item_id': 20, 'quantity': 2}, {'item_id': 16, 'quantity': 1}]",347.64,Credit Card,Beşiktaş,New
-476,2025-06-05 08:13:50,Phone,"[{'item_id': 2, 'quantity': 3}, {'item_id': 9, 'quantity': 2}, {'item_id': 13, 'quantity': 2}, {'item_id': 16, 'quantity': 3}, {'item_id': 5, 'quantity': 3}]",937.33,Cash,Beşiktaş,New
-477,2025-06-10 22:31:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 9, 'quantity': 1}, {'item_id': 18, 'quantity': 3}, {'item_id': 3, 'quantity': 2}]",525.77,Cash,Kadıköy,Returning
-478,2025-06-06 22:22:50,In-Store,"[{'item_id': 18, 'quantity': 1}]",43.45,Cash,Kadıköy,New
-479,2025-06-22 19:46:50,Trendyol,"[{'item_id': 20, 'quantity': 2}, {'item_id': 14, 'quantity': 3}, {'item_id': 16, 'quantity': 3}, {'item_id': 7, 'quantity': 2}, {'item_id': 9, 'quantity': 3}]",703.79,Cash,Beşiktaş,New
-480,2025-06-10 16:57:50,Phone,"[{'item_id': 12, 'quantity': 2}]",143.8,Cash,Kadıköy,New
-481,2025-06-15 01:16:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 2}, {'item_id': 10, 'quantity': 2}, {'item_id': 19, 'quantity': 2}, {'item_id': 3, 'quantity': 1}]",382.16,Credit Card,Beşiktaş,Returning
-482,2025-06-27 20:35:50,Yemeksepeti,"[{'item_id': 8, 'quantity': 1}]",58.71,Credit Card,Beşiktaş,New
-483,2025-06-24 08:31:50,Phone,"[{'item_id': 2, 'quantity': 2}, {'item_id': 8, 'quantity': 3}, {'item_id': 3, 'quantity': 1}, {'item_id': 5, 'quantity': 1}]",481.72,Wallet,Beşiktaş,New
-484,2025-06-07 03:07:50,Trendyol,"[{'item_id': 11, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",296.49,Cash,Üsküdar,Returning
-485,2025-06-30 12:35:50,Yemeksepeti,"[{'item_id': 15, 'quantity': 1}, {'item_id': 11, 'quantity': 3}, {'item_id': 8, 'quantity': 2}, {'item_id': 9, 'quantity': 1}]",361.92,Credit Card,Üsküdar,Returning
-486,2025-06-22 02:01:50,Trendyol,"[{'item_id': 17, 'quantity': 1}, {'item_id': 1, 'quantity': 3}]",273.96,Cash,Üsküdar,New
-487,2025-06-27 01:31:50,In-Store,"[{'item_id': 7, 'quantity': 1}]",71.67,Wallet,Üsküdar,Returning
-488,2025-06-18 20:29:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 14, 'quantity': 2}, {'item_id': 11, 'quantity': 3}, {'item_id': 19, 'quantity': 2}]",281.95,Cash,Üsküdar,New
-489,2025-06-29 14:00:50,Trendyol,"[{'item_id': 7, 'quantity': 2}, {'item_id': 8, 'quantity': 2}, {'item_id': 3, 'quantity': 1}, {'item_id': 15, 'quantity': 2}]",385.1,Wallet,Üsküdar,New
-490,2025-06-05 07:28:50,Phone,"[{'item_id': 5, 'quantity': 2}, {'item_id': 2, 'quantity': 1}, {'item_id': 15, 'quantity': 1}, {'item_id': 18, 'quantity': 1}]",291.62,Cash,Üsküdar,Returning
-491,2025-06-19 10:33:50,Yemeksepeti,"[{'item_id': 17, 'quantity': 1}, {'item_id': 20, 'quantity': 1}, {'item_id': 13, 'quantity': 3}, {'item_id': 4, 'quantity': 3}]",421.0,Cash,Kadıköy,Returning
-492,2025-06-25 10:59:50,Trendyol,"[{'item_id': 12, 'quantity': 2}]",143.8,Cash,Kadıköy,New
-493,2025-06-16 21:53:50,Trendyol,"[{'item_id': 7, 'quantity': 2}]",143.34,Wallet,Beşiktaş,New
-494,2025-06-07 12:22:50,In-Store,"[{'item_id': 8, 'quantity': 2}, {'item_id': 7, 'quantity': 3}, {'item_id': 13, 'quantity': 3}]",567.66,Credit Card,Üsküdar,Returning
-495,2025-06-14 05:21:50,In-Store,"[{'item_id': 4, 'quantity': 1}]",33.76,Credit Card,Kadıköy,New
-496,2025-06-06 13:43:50,Phone,"[{'item_id': 11, 'quantity': 3}]",125.85,Credit Card,Kadıköy,Returning
-497,2025-06-13 11:47:50,In-Store,"[{'item_id': 10, 'quantity': 3}, {'item_id': 17, 'quantity': 3}, {'item_id': 12, 'quantity': 1}, {'item_id': 19, 'quantity': 2}, {'item_id': 14, 'quantity': 2}]",677.12,Cash,Beşiktaş,Returning
-498,2025-06-21 15:07:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 3}, {'item_id': 14, 'quantity': 3}, {'item_id': 17, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 8, 'quantity': 3}]",712.07,Credit Card,Üsküdar,New
-499,2025-06-20 10:18:50,Yemeksepeti,"[{'item_id': 2, 'quantity': 2}]",195.02,Cash,Üsküdar,New
-500,2025-06-06 15:39:50,Trendyol,"[{'item_id': 4, 'quantity': 1}, {'item_id': 13, 'quantity': 1}, {'item_id': 12, 'quantity': 1}, {'item_id': 5, 'quantity': 3}, {'item_id': 8, 'quantity': 3}]",532.73,Cash,Kadıköy,New
+id,tableName,waiterName,orderTotal,taxAmount,currency,insertDate,updateDate,orderType,status,salesChannelName,paymentMethodName,customerId,orderNumber
+252810620,,can,1459.82,137.26,TRY,2025-01-02T11:03:20.16,2025-01-02T12:11:41.407,Paket Siparişi,Kapandı,Ana Kanal,,22347505,101
+252812412,,can,560.91,50.99,TRY,2025-01-02T11:19:56.63,2025-01-02T12:11:43.65,Paket Siparişi,Kapandı,Ana Kanal,,375706,102
+252812516,,can,1049.7,10.38,TRY,2025-01-02T11:20:49.957,2025-01-02T12:11:44.41,Paket Siparişi,Kapandı,Ana Kanal,,33059039,103
+252814826,,can,699.8,6.93,TRY,2025-01-02T11:36:22.473,2025-01-02T12:11:42.327,Paket Siparişi,Kapandı,Ana Kanal,,28252265,104
+252817864,,can,407.91,41.63,TRY,2025-01-02T11:52:23.587,2025-01-02T12:11:46.003,Paket Siparişi,Kapandı,Ana Kanal,,22276515,105
+252818835,,can,378.16,34.38,TRY,2025-01-02T11:56:48.597,2025-01-02T12:50:53.977,Paket Siparişi,Kapandı,Ana Kanal,,24793644,106
+252819791,,can,1391.96,126.54,TRY,2025-01-02T12:00:31.537,2025-01-02T14:08:32.223,Paket Siparişi,Kapandı,Ana Kanal,,32838787,107
+252821339,,can,1354.78,127.7,TRY,2025-01-02T12:05:57.287,2025-01-02T12:50:56.37,Paket Siparişi,Kapandı,Ana Kanal,,33060180,108
+252822184,,can,328.16,34.38,TRY,2025-01-02T12:08:35.1,2025-01-02T12:50:55.08,Paket Siparişi,Kapandı,Ana Kanal,,536827,109
+252824497,,can,378.16,34.38,TRY,2025-01-02T12:15:13.53,2025-01-02T12:50:58.637,Paket Siparişi,Kapandı,Ana Kanal,,33060516,110
+252826004,,can,1142.98,103.91,TRY,2025-01-02T12:19:38.793,2025-01-02T13:10:25.967,Paket Siparişi,Kapandı,Ana Kanal,,33060671,111
+252834106,Masa 1,can,4369.1,43.26,TRY,2025-01-02T12:42:42.267,2025-01-02T13:19:17.09,Masa Siparişi,Kapandı,Ana Kanal,,0,112
+252836769,,can,377.41,38.86,TRY,2025-01-02T12:50:26.49,2025-01-02T13:49:08.49,Paket Siparişi,Kapandı,Ana Kanal,,33061665,113
+252841472,,can,804.82,77.71,TRY,2025-01-02T13:05:30.92,2025-01-02T13:49:23.953,Paket Siparişi,Kapandı,Ana Kanal,,24774016,114
+252842306,,can,378.16,34.38,TRY,2025-01-02T13:08:21.183,2025-01-02T13:49:26.667,Paket Siparişi,Kapandı,Ana Kanal,,29646118,115
+252843448,,can,756.33,68.76,TRY,2025-01-02T13:12:02.023,2025-01-02T13:49:24.9,Paket Siparişi,Kapandı,Ana Kanal,,29303328,116
+252844429,,can,485.7,6.9,TRY,2025-01-02T13:15:20.73,2025-01-02T13:49:27.373,Paket Siparişi,Kapandı,Ana Kanal,,8903827,117
+252845650,,can,359.9,32.72,TRY,2025-01-02T13:19:25.117,2025-01-02T13:49:30.87,Paket Siparişi,Kapandı,Ana Kanal,,33062557,118
+252846359,,can,349.6,3.46,TRY,2025-01-02T13:22:04.403,2025-01-02T13:49:38.86,Paket Siparişi,Kapandı,Ana Kanal,,2281842,119
+252847328,,can,427.9,38.9,TRY,2025-01-02T13:25:30.447,2025-01-02T13:49:33.653,Paket Siparişi,Kapandı,Ana Kanal,,32702950,120
+252848830,,can,356.6,4.5,TRY,2025-01-02T13:31:00.98,2025-01-02T13:49:34.833,Paket Siparişi,Kapandı,Ana Kanal,,30259240,121
+252850064,,can,369.9,3.66,TRY,2025-01-02T13:35:50.243,2025-01-02T14:20:50.5,Paket Siparişi,Kapandı,Ana Kanal,,23504033,122
+252852680,,can,450.41,40.95,TRY,2025-01-02T13:45:22.843,2025-01-02T14:08:30.82,Paket Siparişi,Kapandı,Ana Kanal,,15416513,123
+252853452,,can,666.66,60.6,TRY,2025-01-02T13:48:18.91,2025-01-02T14:20:51.313,Paket Siparişi,Kapandı,Ana Kanal,,32957720,124
+252855627,,can,402.33,36.58,TRY,2025-01-02T13:56:25.62,2025-01-02T14:20:53.32,Paket Siparişi,Kapandı,Ana Kanal,,17993132,125
+252856147,,can,368.9,33.54,TRY,2025-01-02T13:58:15.12,2025-01-02T14:20:52.247,Paket Siparişi,Kapandı,Ana Kanal,,22973186,126
+252858046,,can,378.16,34.38,TRY,2025-01-02T14:05:26.217,2025-01-02T14:36:12.193,Paket Siparişi,Kapandı,Ana Kanal,,32845529,127
+252858048,,can,516.53,46.96,TRY,2025-01-02T14:05:26.53,2025-01-02T14:49:34.67,Paket Siparişi,Kapandı,Ana Kanal,,17627320,128
+252860226,,can,436.9,39.72,TRY,2025-01-02T14:13:24.153,2025-01-02T14:49:38.157,Paket Siparişi,Kapandı,Ana Kanal,,16312684,129
+252862231,,can,737.8,67.07,TRY,2025-01-02T14:20:41.44,2025-01-02T14:39:55.123,Paket Siparişi,Kapandı,Ana Kanal,,25104488,130
+252863640,,can,756.33,68.76,TRY,2025-01-02T14:25:56.227,2025-01-02T14:49:41.34,Paket Siparişi,Kapandı,Ana Kanal,,1863837,131
+252865885,,can,427.9,38.9,TRY,2025-01-02T14:34:02.66,2025-01-02T14:55:19.157,Paket Siparişi,Kapandı,Ana Kanal,,22796104,132
+252866020,,can,377.41,38.86,TRY,2025-01-02T14:34:33.313,2025-01-02T14:55:21.823,Paket Siparişi,Kapandı,Ana Kanal,,29278828,133
+252866224,,can,422.06,42.91,TRY,2025-01-02T14:35:18.727,2025-01-02T14:55:19.963,Paket Siparişi,Kapandı,Ana Kanal,,33064686,134
+252866228,,can,377.41,38.86,TRY,2025-01-02T14:35:19.173,2025-01-02T15:07:19.497,Paket Siparişi,Kapandı,Ana Kanal,,26529246,135
+252866283,,can,393.57,35.78,TRY,2025-01-02T14:35:30.89,2025-01-02T15:30:07.497,Paket Siparişi,Kapandı,Ana Kanal,,19698283,136
+252866285,,can,393.57,35.78,TRY,2025-01-02T14:35:31.15,2025-01-02T15:30:09.337,Paket Siparişi,Kapandı,Ana Kanal,,21011826,137
+252866419,,can,422.06,42.91,TRY,2025-01-02T14:36:03.61,2025-01-02T14:55:20.757,Paket Siparişi,Kapandı,Ana Kanal,,31291781,138
+252868729,,can,589.67,53.6,TRY,2025-01-02T14:44:23.837,2025-01-02T15:30:21.443,Paket Siparişi,Kapandı,Ana Kanal,,17013330,139
+252869356,,can,497.16,45.2,TRY,2025-01-02T14:46:33.35,2025-01-02T15:30:08.49,Paket Siparişi,Kapandı,Ana Kanal,,28829367,140
+252869591,,can,446.16,40.56,TRY,2025-01-02T14:47:17.503,2025-01-02T15:30:20.27,Paket Siparişi,Kapandı,Ana Kanal,,391573,141
+252869805,,can,336.66,35.15,TRY,2025-01-02T14:48:02.713,2025-01-02T15:56:31.213,Paket Siparişi,Kapandı,Ana Kanal,,33065039,142
+252873492,,can,386.66,35.15,TRY,2025-01-02T15:01:18.29,2025-01-02T15:30:34.133,Paket Siparişi,Kapandı,Ana Kanal,,1630216,143
+252873701,,can,378.16,34.38,TRY,2025-01-02T15:02:05.09,2025-01-02T15:30:35.647,Paket Siparişi,Kapandı,Ana Kanal,,30354839,144
+252876453,,can,378.16,34.38,TRY,2025-01-02T15:11:38.573,2025-01-02T15:56:33.413,Paket Siparişi,Kapandı,Ana Kanal,,28663888,145
+252877137,,can,394.51,40.41,TRY,2025-01-02T15:14:08.693,2025-01-02T16:04:11.023,Paket Siparişi,Kapandı,Ana Kanal,,33065763,146
+252877654,,can,393.57,35.78,TRY,2025-01-02T15:16:03.953,2025-01-02T16:02:10.263,Paket Siparişi,Kapandı,Ana Kanal,,15282518,147
+252877732,,can,427.9,38.9,TRY,2025-01-02T15:16:19.083,2025-01-02T16:12:09.573,Paket Siparişi,Kapandı,Ana Kanal,,21941999,148
+252877967,Bahçe Masa 1,müdür,753.8,7.46,TRY,2025-01-02T15:17:11.587,2025-01-02T15:50:06.69,Masa Siparişi,Kapandı,Ana Kanal,,0,149
+252878063,,can,764.83,69.53,TRY,2025-01-02T15:17:32.307,2025-01-02T15:56:34.19,Paket Siparişi,Kapandı,Ana Kanal,,2314016,150
+252878262,,can,386.66,35.15,TRY,2025-01-02T15:18:16.903,2025-01-02T15:56:36.303,Paket Siparişi,Kapandı,Ana Kanal,,19149346,151
+252879931,,can,573.58,52.14,TRY,2025-01-02T15:24:10.683,2025-01-02T15:56:40.913,Paket Siparişi,Kapandı,Ana Kanal,,33066013,152
+252880284,,can,410.66,41.88,TRY,2025-01-02T15:25:27.673,2025-01-02T15:56:39.29,Paket Siparişi,Kapandı,Ana Kanal,,31081918,153
+252880346,,can,378.16,34.38,TRY,2025-01-02T15:25:39.917,2025-01-02T15:56:44.967,Paket Siparişi,Kapandı,Ana Kanal,,33066049,154
+252881754,,can,378.16,34.38,TRY,2025-01-02T15:30:48.943,2025-01-02T15:56:49.037,Paket Siparişi,Kapandı,Ana Kanal,,15509153,155
+252881968,,can,446.16,40.56,TRY,2025-01-02T15:31:33.027,2025-01-02T15:56:50.673,Paket Siparişi,Kapandı,Ana Kanal,,5364947,156
+252885209,,can,410.34,37.3,TRY,2025-01-02T15:42:36.563,2025-01-02T16:04:08.007,Paket Siparişi,Kapandı,Ana Kanal,,33066524,157
+252887692,,can,377.41,38.86,TRY,2025-01-02T15:51:06.913,2025-01-02T16:28:58.667,Paket Siparişi,Kapandı,Ana Kanal,,21225413,158
+252888117,,can,823.82,79.44,TRY,2025-01-02T15:52:36.917,2025-01-02T17:06:08.423,Paket Siparişi,Kapandı,Ana Kanal,,21384507,159
+252889561,,can,378.16,34.38,TRY,2025-01-02T15:57:25.32,2025-01-02T16:16:24.623,Paket Siparişi,Kapandı,Ana Kanal,,33066922,160
+252891045,,can,348.6,3.45,TRY,2025-01-02T16:02:32.117,2025-01-02T16:22:36.397,Paket Siparişi,Kapandı,Ana Kanal,,1316180,161
+252891899,,can,966.23,92.39,TRY,2025-01-02T16:05:26.537,2025-01-02T16:22:39.05,Paket Siparişi,Kapandı,Ana Kanal,,21538908,162
+252891927,,can,328.16,34.38,TRY,2025-01-02T16:05:31.253,2025-01-02T16:29:01.323,Paket Siparişi,Kapandı,Ana Kanal,,15116488,163
+252892173,,can,598.98,54.45,TRY,2025-01-02T16:06:15.393,2025-01-02T17:06:10.393,Paket Siparişi,Kapandı,Ana Kanal,,907896,164
+252894566,,can,507.8,46.16,TRY,2025-01-02T16:13:53.59,2025-01-02T16:32:39.537,Paket Siparişi,Kapandı,Ana Kanal,,33067392,165
+252896067,,can,410.66,41.88,TRY,2025-01-02T16:19:00.357,2025-01-02T17:06:11.437,Paket Siparişi,Kapandı,Ana Kanal,,25757955,166
+252896802,,can,410.66,41.88,TRY,2025-01-02T16:21:16.317,2025-01-02T17:06:12.24,Paket Siparişi,Kapandı,Ana Kanal,,9320677,167
+252898430,,can,416.36,42.4,TRY,2025-01-02T16:26:34.94,2025-01-02T17:45:46.297,Paket Siparişi,Kapandı,Ana Kanal,,33067773,168
+252899626,,can,472.31,47.48,TRY,2025-01-02T16:30:21.043,2025-01-02T17:45:47.387,Paket Siparişi,Kapandı,Ana Kanal,,32032970,169
+252900907,,can,334.6,3.31,TRY,2025-01-02T16:34:23.327,2025-01-02T17:06:17.017,Paket Siparişi,Kapandı,Ana Kanal,,14381186,170
+252905187,,can,1092.08,99.28,TRY,2025-01-02T16:47:48.273,2025-01-02T17:45:48.01,Paket Siparişi,Kapandı,Ana Kanal,,33003230,171
+252905566,,can,391.97,35.63,TRY,2025-01-02T16:49:01.28,2025-01-02T17:45:50.627,Paket Siparişi,Kapandı,Ana Kanal,,1718436,172
+252905713,Bahçe Masa 1,müdür,1299.8,12.87,TRY,2025-01-02T16:49:27.413,2025-01-02T17:21:56.377,Masa Siparişi,Kapandı,Ana Kanal,,0,173
+252905812,,can,390.0,35.45,TRY,2025-01-02T16:49:45.373,2025-01-02T17:45:48.747,Paket Siparişi,Kapandı,Ana Kanal,,535351,174
+252906140,,can,368.9,33.54,TRY,2025-01-02T16:50:47.247,2025-01-02T17:45:52.81,Paket Siparişi,Kapandı,Ana Kanal,,30199863,175
+252907306,,can,539.58,49.05,TRY,2025-01-02T16:54:11.13,2025-01-02T17:48:34.353,Paket Siparişi,Kapandı,Ana Kanal,,16471568,176
+252907807,,can,480.08,43.64,TRY,2025-01-02T16:55:39.557,2025-01-02T17:45:49.487,Paket Siparişi,Kapandı,Ana Kanal,,20191136,177
+252912840,,can,1614.43,146.76,TRY,2025-01-02T17:10:23.857,2025-01-02T18:10:58.477,Paket Siparişi,Kapandı,Ana Kanal,,33069243,178
+252912863,,can,376.9,34.26,TRY,2025-01-02T17:10:28.693,2025-01-02T17:49:00.96,Paket Siparişi,Kapandı,Ana Kanal,,2251617,179
+252913118,,can,1134.48,103.14,TRY,2025-01-02T17:11:07.923,2025-01-02T18:11:22.583,Paket Siparişi,Kapandı,Ana Kanal,,30001699,180
+252913681,,can,454.66,41.33,TRY,2025-01-02T17:12:45.98,2025-01-02T17:48:54.02,Paket Siparişi,Kapandı,Ana Kanal,,24585041,181
+252915790,,can,409.7,37.25,TRY,2025-01-02T17:18:31.59,2025-01-02T17:49:02.653,Paket Siparişi,Kapandı,Ana Kanal,,18814371,182
+252916165,,can,1109.7,10.99,TRY,2025-01-02T17:19:39.707,2025-01-02T18:11:25.2,Paket Siparişi,Kapandı,Ana Kanal,,22318172,183
+252918126,,can,388.03,35.28,TRY,2025-01-02T17:25:07.983,2025-01-02T18:11:24.063,Paket Siparişi,Kapandı,Ana Kanal,,1057113,184
+252919195,,can,2947.19,267.92,TRY,2025-01-02T17:28:05.57,2025-01-02T18:22:39.66,Paket Siparişi,Kapandı,Ana Kanal,,5070914,185
+252919201,,can,875.33,79.58,TRY,2025-01-02T17:28:06.137,2025-01-02T18:11:26.103,Paket Siparişi,Kapandı,Ana Kanal,,33069984,186
+252920225,,can,1331.98,125.63,TRY,2025-01-02T17:30:48.373,2025-01-02T18:11:36.873,Paket Siparişi,Kapandı,Ana Kanal,,21637154,187
+252920352,,can,1178.7,107.15,TRY,2025-01-02T17:31:08.557,2025-01-02T18:11:32.63,Paket Siparişi,Kapandı,Ana Kanal,,28608681,188
+252920628,,can,1398.4,13.84,TRY,2025-01-02T17:31:47.697,2025-01-02T18:11:41.337,Paket Siparişi,Kapandı,Ana Kanal,,32850138,189
+252920885,,can,378.16,34.38,TRY,2025-01-02T17:32:32.94,2025-01-02T18:11:34.937,Paket Siparişi,Kapandı,Ana Kanal,,32130025,190
+252923022,,can,398.5,36.23,TRY,2025-01-02T17:38:23.573,2025-01-02T18:35:58.713,Paket Siparişi,Kapandı,Ana Kanal,,33070456,191
+252925330,,can,1186.7,107.87,TRY,2025-01-02T17:44:32.457,2025-01-02T18:11:27.997,Paket Siparişi,Kapandı,Ana Kanal,,4972684,192
+252926754,Masa 4,can,809.7,15.3,TRY,2025-01-02T17:48:13.36,2025-01-02T18:16:32.853,Masa Siparişi,Kapandı,Ana Kanal,,0,193
+252927217,,can,825.78,75.07,TRY,2025-01-02T17:49:27.3,2025-01-02T18:36:00.367,Paket Siparişi,Kapandı,Ana Kanal,,3806472,194
+252927757,,can,446.16,40.56,TRY,2025-01-02T17:50:55.793,2025-01-02T18:23:43.88,Paket Siparişi,Kapandı,Ana Kanal,,4264102,195
+252928319,,can,378.16,34.38,TRY,2025-01-02T17:52:24.083,2025-01-02T18:23:54.497,Paket Siparişi,Kapandı,Ana Kanal,,3806597,196
+252928538,,can,389.9,35.45,TRY,2025-01-02T17:52:58.43,2025-01-02T18:23:45.47,Paket Siparişi,Kapandı,Ana Kanal,,27847426,197
+252928553,,can,377.41,38.86,TRY,2025-01-02T17:52:59.743,2025-01-02T18:23:50.2,Paket Siparişi,Kapandı,Ana Kanal,,23313594,198
+252928606,,can,386.66,35.15,TRY,2025-01-02T17:53:08.263,2025-01-02T18:23:47.257,Paket Siparişi,Kapandı,Ana Kanal,,29305626,199
+252928915,,can,369.9,3.66,TRY,2025-01-02T17:53:57.503,2025-01-02T18:23:52.297,Paket Siparişi,Kapandı,Ana Kanal,,16098356,200
+252930623,,can,773.33,70.3,TRY,2025-01-02T17:58:18.9,2025-01-02T18:36:01.587,Paket Siparişi,Kapandı,Ana Kanal,,26982209,201
+252931196,,can,378.16,34.38,TRY,2025-01-02T17:59:47.243,2025-01-02T19:09:55.743,Paket Siparişi,Kapandı,Ana Kanal,,30932761,202
+252931988,,can,376.9,34.26,TRY,2025-01-02T18:01:54.527,2025-01-02T18:36:05.18,Paket Siparişi,Kapandı,Ana Kanal,,9884609,203
+252932870,,can,378.16,34.38,TRY,2025-01-02T18:04:13.247,2025-01-02T18:24:12.033,Paket Siparişi,Kapandı,Ana Kanal,,341948,204
+252933425,,can,1906.96,173.36,TRY,2025-01-02T18:05:41.717,2025-01-02T19:09:56.757,Paket Siparişi,Kapandı,Ana Kanal,,1598367,205
+252934540,,can,369.9,3.66,TRY,2025-01-02T18:08:38.597,2025-01-02T18:32:23.273,Paket Siparişi,Kapandı,Ana Kanal,,33071883,206
+252935499,,can,505.57,50.51,TRY,2025-01-02T18:11:04.717,2025-01-02T20:23:35.26,Paket Siparişi,Kapandı,Ana Kanal,,32971676,207
+252935994,,can,493.51,44.87,TRY,2025-01-02T18:12:22.43,2025-01-02T19:09:57.817,Paket Siparişi,Kapandı,Ana Kanal,,33072071,208
+252937663,,can,378.16,34.38,TRY,2025-01-02T18:16:45.357,2025-01-02T18:45:13.257,Paket Siparişi,Kapandı,Ana Kanal,,25067855,209
+252938829,,can,560.91,50.99,TRY,2025-01-02T18:19:42.397,2025-01-02T20:23:35.987,Paket Siparişi,Kapandı,Ana Kanal,,30595670,210
+252939018,,can,369.9,3.66,TRY,2025-01-02T18:20:12.003,2025-01-02T19:10:00.067,Paket Siparişi,Kapandı,Ana Kanal,,32761896,211
+252939645,,can,699.2,6.92,TRY,2025-01-02T18:21:51.187,2025-01-02T19:10:05.637,Paket Siparişi,Kapandı,Ana Kanal,,19766144,212
+252941307,,can,749.5,7.42,TRY,2025-01-02T18:25:56.673,2025-01-02T19:10:11.107,Paket Siparişi,Kapandı,Ana Kanal,,4435637,213
+252941731,,can,1069.7,10.58,TRY,2025-01-02T18:27:01.443,2025-01-02T19:10:13.51,Paket Siparişi,Kapandı,Ana Kanal,,16874117,214
+252942070,,can,458.13,49.8,TRY,2025-01-02T18:27:54.557,2025-01-02T19:10:23.177,Paket Siparişi,Kapandı,Ana Kanal,,1250588,215
+252942641,,can,832.83,75.71,TRY,2025-01-02T18:29:17.453,2025-01-02T19:28:23.647,Paket Siparişi,Kapandı,Ana Kanal,,33072886,216
+252942919,,can,2107.9,20.87,TRY,2025-01-02T18:29:56.507,2025-01-02T19:10:25.317,Paket Siparişi,Kapandı,Ana Kanal,,33072831,217
+252943854,,can,683.25,62.11,TRY,2025-01-02T18:32:14.887,2025-01-02T20:23:34.58,Paket Siparişi,Kapandı,Ana Kanal,,31557539,218
+252944122,,can,378.16,34.38,TRY,2025-01-02T18:32:58.687,2025-01-02T19:10:27.323,Paket Siparişi,Kapandı,Ana Kanal,,341948,219
+252945128,,can,699.2,6.92,TRY,2025-01-02T18:35:36.113,2025-01-02T19:10:17.26,Paket Siparişi,Kapandı,Ana Kanal,,21105247,220
+252945583,,can,378.16,34.38,TRY,2025-01-02T18:36:40.277,2025-01-02T19:10:29.72,Paket Siparişi,Kapandı,Ana Kanal,,915765,221
+252945878,,can,446.16,40.56,TRY,2025-01-02T18:37:24.567,2025-01-02T19:10:19.117,Paket Siparişi,Kapandı,Ana Kanal,,7918633,222
+252946473,,can,453.07,41.19,TRY,2025-01-02T18:38:52.92,2025-01-02T19:10:21.093,Paket Siparişi,Kapandı,Ana Kanal,,18755982,223
+252947991,Bahçe Masa 1,can,1059.1,10.48,TRY,2025-01-02T18:42:53.407,2025-01-02T19:15:12.527,Masa Siparişi,Kapandı,Ana Kanal,,0,224
+252950694,,can,386.66,35.15,TRY,2025-01-02T18:49:58.937,2025-01-02T20:23:36.687,Paket Siparişi,Kapandı,Ana Kanal,,21057103,225
+252951252,,can,446.16,40.56,TRY,2025-01-02T18:51:24.127,2025-01-02T20:23:37.25,Paket Siparişi,Kapandı,Ana Kanal,,17605959,226
+252951259,,can,756.33,68.76,TRY,2025-01-02T18:51:24.637,2025-01-02T19:10:34.193,Paket Siparişi,Kapandı,Ana Kanal,,1802159,227
+252952559,,can,377.41,38.86,TRY,2025-01-02T18:54:48.127,2025-01-02T20:23:42.3,Paket Siparişi,Kapandı,Ana Kanal,,31196900,228
+252953356,,can,737.8,67.07,TRY,2025-01-02T18:56:52.917,2025-01-02T20:23:42.733,Paket Siparişi,Kapandı,Ana Kanal,,21122439,229
+252953514,,can,457.13,41.56,TRY,2025-01-02T18:57:17.823,2025-01-02T20:23:39.79,Paket Siparişi,Kapandı,Ana Kanal,,2047446,230
+252955186,Bahçe Masa 2,can,693.2,6.86,TRY,2025-01-02T19:01:48.477,2025-01-02T19:27:58.08,Masa Siparişi,Kapandı,Ana Kanal,,0,231
+252956030,,can,559.79,50.89,TRY,2025-01-02T19:03:57.627,2025-01-02T20:23:43.327,Paket Siparişi,Kapandı,Ana Kanal,,5065917,232
+252958736,,can,368.9,33.54,TRY,2025-01-02T19:10:41.433,2025-01-02T20:23:43.743,Paket Siparişi,Kapandı,Ana Kanal,,33074915,233
+252959003,,can,788.5,71.68,TRY,2025-01-02T19:11:19.95,2025-01-02T20:23:53.72,Paket Siparişi,Kapandı,Ana Kanal,,21500130,234
+252959005,,can,688.33,62.57,TRY,2025-01-02T19:11:20.357,2025-01-02T20:23:45.007,Paket Siparişi,Kapandı,Ana Kanal,,30705784,235
+252960453,,can,837.08,76.1,TRY,2025-01-02T19:15:01.207,2025-01-02T20:23:44.327,Paket Siparişi,Kapandı,Ana Kanal,,16534887,236
+252963948,,can,378.16,34.38,TRY,2025-01-02T19:24:36.393,2025-01-02T20:23:45.517,Paket Siparişi,Kapandı,Ana Kanal,,32948707,237
+252964521,Bahçe Masa 1,can,349.6,3.46,TRY,2025-01-02T19:26:01.467,2025-01-02T20:23:26.99,Masa Siparişi,Kapandı,Ana Kanal,,0,238
+252965255,,can,432.9,39.35,TRY,2025-01-02T19:28:01.197,2025-01-02T20:23:46.08,Paket Siparişi,Kapandı,Ana Kanal,,33075754,239
+252966449,Bahçe Masa 2,can,464.9,4.6,TRY,2025-01-02T19:31:11.977,2025-01-02T19:38:53.343,Masa Siparişi,Kapandı,Ana Kanal,,0,240
+252967764,,can,377.41,38.86,TRY,2025-01-02T19:34:47.257,2025-01-02T20:23:48.937,Paket Siparişi,Kapandı,Ana Kanal,,22855131,241
+252968554,,can,567.32,56.12,TRY,2025-01-02T19:37:02.56,2025-01-02T20:23:51.11,Paket Siparişi,Kapandı,Ana Kanal,,32985173,242
+252969618,,can,368.9,33.54,TRY,2025-01-02T19:40:01.927,2025-01-02T20:23:52.843,Paket Siparişi,Kapandı,Ana Kanal,,26611415,243
+252971527,,can,328.16,34.38,TRY,2025-01-02T19:45:14.657,2025-01-02T20:23:54.557,Paket Siparişi,Kapandı,Ana Kanal,,32163143,244
+252971810,,can,454.66,41.33,TRY,2025-01-02T19:45:58.56,2025-01-02T20:23:55.333,Paket Siparişi,Kapandı,Ana Kanal,,33076511,245
+252974262,,can,599.34,54.48,TRY,2025-01-02T19:52:37.85,2025-01-02T20:23:57.133,Paket Siparişi,Kapandı,Ana Kanal,,13705311,246
+252974553,,can,1298.7,118.06,TRY,2025-01-02T19:53:29.617,2025-01-02T20:46:03.023,Paket Siparişi,Kapandı,Ana Kanal,,20655803,247
+252975277,,can,739.8,7.32,TRY,2025-01-02T19:55:20.943,2025-01-02T20:23:57.917,Paket Siparişi,Kapandı,Ana Kanal,,33076912,248
+252975642,,can,776.06,70.55,TRY,2025-01-02T19:56:19.163,2025-01-02T20:23:56.497,Paket Siparişi,Kapandı,Ana Kanal,,18400779,249
+252976334,,can,1517.23,142.47,TRY,2025-01-02T19:58:08.553,2025-01-02T20:31:53.173,Paket Siparişi,Kapandı,Ana Kanal,,25546833,250
+252979136,,can,849.73,77.25,TRY,2025-01-02T20:05:53.88,2025-01-02T20:24:00.67,Paket Siparişi,Kapandı,Ana Kanal,,33077406,251
+252979660,,can,860.71,78.25,TRY,2025-01-02T20:07:22.477,2025-01-02T20:58:37.457,Paket Siparişi,Kapandı,Ana Kanal,,33077464,252
+252981209,,can,410.66,41.88,TRY,2025-01-02T20:11:42.497,2025-01-02T20:31:59.493,Paket Siparişi,Kapandı,Ana Kanal,,29332933,253
+252981238,,can,446.16,40.56,TRY,2025-01-02T20:11:47.62,2025-01-02T20:46:27.443,Paket Siparişi,Kapandı,Ana Kanal,,1759730,254
+252981842,Bahçe Masa 2,can,749.5,7.42,TRY,2025-01-02T20:13:30.047,2025-01-02T20:23:12.927,Masa Siparişi,Kapandı,Ana Kanal,,0,255
+252982046,,can,386.66,35.15,TRY,2025-01-02T20:14:01.187,2025-01-02T20:52:02.1,Paket Siparişi,Kapandı,Ana Kanal,,380583,256
+252982607,,can,359.9,3.56,TRY,2025-01-02T20:15:33.603,2025-01-02T20:46:33.743,Paket Siparişi,Kapandı,Ana Kanal,,21372559,257
+252983131,,can,378.16,34.38,TRY,2025-01-02T20:16:59.317,2025-01-02T21:30:52.507,Paket Siparişi,Kapandı,Ana Kanal,,21221016,258
+252983381,,can,383.11,39.37,TRY,2025-01-02T20:17:44.147,2025-01-02T20:50:28.583,Paket Siparişi,Kapandı,Ana Kanal,,33077889,259
+252984507,,can,534.16,53.11,TRY,2025-01-02T20:20:45.62,2025-01-02T20:46:30.703,Paket Siparişi,Kapandı,Ana Kanal,,18915839,260
+252984959,,can,446.16,40.56,TRY,2025-01-02T20:22:07.103,2025-01-02T20:45:50.76,Paket Siparişi,Kapandı,Ana Kanal,,33078040,261
+252986320,,can,847.57,81.6,TRY,2025-01-02T20:26:02.523,2025-01-02T20:52:00.147,Paket Siparişi,Kapandı,Ana Kanal,,31453969,262
+252989833,,can,746.14,67.83,TRY,2025-01-02T20:36:06.96,2025-01-02T20:58:39.387,Paket Siparişi,Kapandı,Ana Kanal,,22339309,263
+252990309,,can,328.16,34.38,TRY,2025-01-02T20:37:35.533,2025-01-02T20:51:57.643,Paket Siparişi,Kapandı,Ana Kanal,,23965515,264
+252990559,,can,487.9,44.35,TRY,2025-01-02T20:38:19.637,2025-01-02T21:30:55.317,Paket Siparişi,Kapandı,Ana Kanal,,13187890,265
+252991555,,can,378.16,34.38,TRY,2025-01-02T20:41:16.677,2025-01-02T21:31:01.463,Paket Siparişi,Kapandı,Ana Kanal,,18113040,266
+252992507,,can,462.25,42.02,TRY,2025-01-02T20:44:13.583,2025-01-02T21:05:01.19,Paket Siparişi,Kapandı,Ana Kanal,,15416513,267
+252992693,,can,1117.8,101.62,TRY,2025-01-02T20:44:46.35,2025-01-02T21:31:02.47,Paket Siparişi,Kapandı,Ana Kanal,,8544208,268
+252994239,,can,804.82,77.71,TRY,2025-01-02T20:49:26.687,2025-01-02T21:30:56.033,Paket Siparişi,Kapandı,Ana Kanal,,18098298,269
+252994925,,can,446.16,40.56,TRY,2025-01-02T20:51:35.637,2025-01-02T21:30:56.94,Paket Siparişi,Kapandı,Ana Kanal,,28793721,270
+252996558,,can,804.82,77.71,TRY,2025-01-02T20:56:38.253,2025-01-02T21:30:57.913,Paket Siparişi,Kapandı,Ana Kanal,,28388275,271
+252997461,,can,427.9,38.9,TRY,2025-01-02T20:59:32.923,2025-01-02T21:30:59.067,Paket Siparişi,Kapandı,Ana Kanal,,30712163,272
+253000459,,can,386.66,35.15,TRY,2025-01-02T21:10:02.507,2025-01-02T21:31:09.633,Paket Siparişi,Kapandı,Ana Kanal,,29048051,273
+253001999,,can,377.41,38.86,TRY,2025-01-02T21:15:29.203,2025-01-02T21:31:07.507,Paket Siparişi,Kapandı,Ana Kanal,,20308782,274
+253009076,,can,926.23,84.2,TRY,2025-01-02T21:42:30.867,2025-01-02T22:14:06.92,Paket Siparişi,Kapandı,Ana Kanal,,33080892,275
+253009854,,can,385.01,39.55,TRY,2025-01-02T21:45:45.597,2025-01-02T22:26:13.457,Paket Siparişi,Kapandı,Ana Kanal,,30878468,276
+253010610,Bahçe Masa 1,can,359.9,3.56,TRY,2025-01-02T21:48:59.833,2025-01-02T21:56:46.513,Masa Siparişi,Kapandı,Ana Kanal,,0,277
+253011877,,can,471.58,42.87,TRY,2025-01-02T21:54:17.693,2025-01-02T22:26:15.017,Paket Siparişi,Kapandı,Ana Kanal,,30748677,278
+253013447,,can,393.9,3.9,TRY,2025-01-02T22:01:11.41,2025-01-02T22:26:17.3,Paket Siparişi,Kapandı,Ana Kanal,,1105283,279
+253015138,Bahçe Masa 1,can,442.9,4.39,TRY,2025-01-02T22:09:14.273,2025-01-02T23:00:09.303,Masa Siparişi,Kapandı,Ana Kanal,,0,280
+253015426,,can,377.41,38.86,TRY,2025-01-02T22:10:37.347,2025-01-02T22:34:14.953,Paket Siparişi,Kapandı,Ana Kanal,,30517334,281
+253016861,,can,377.41,38.86,TRY,2025-01-02T22:17:25.29,2025-01-02T22:46:07.573,Paket Siparişi,Kapandı,Ana Kanal,,33081976,282
+253017337,,can,377.41,38.86,TRY,2025-01-02T22:19:41.053,2025-01-02T22:46:09.127,Paket Siparişi,Kapandı,Ana Kanal,,33081976,283
+253017965,,can,854.8,42.08,TRY,2025-01-02T22:22:42.557,2025-01-02T22:46:14.087,Paket Siparişi,Kapandı,Ana Kanal,,21743356,284
+253019024,,can,446.16,40.56,TRY,2025-01-02T22:28:13.523,2025-01-02T22:46:12.293,Paket Siparişi,Kapandı,Ana Kanal,,17898001,285
+253053451,,can,811.58,73.78,TRY,2025-01-03T11:17:13.623,2025-01-03T11:48:36.387,Paket Siparişi,Kapandı,Ana Kanal,,33088287,101
+253053846,,can,390.0,35.45,TRY,2025-01-03T11:20:10.133,2025-01-03T11:53:42.5,Paket Siparişi,Kapandı,Ana Kanal,,21507902,102
+253054541,,can,789.8,7.82,TRY,2025-01-03T11:25:12.447,2025-01-03T12:23:21.627,Paket Siparişi,Kapandı,Ana Kanal,,26410903,103
+253055348,,can,1134.48,103.14,TRY,2025-01-03T11:30:29.03,2025-01-03T12:11:19.197,Paket Siparişi,Kapandı,Ana Kanal,,32502474,104
+253056505,,can,423.96,43.09,TRY,2025-01-03T11:36:58.013,2025-01-03T12:00:49.46,Paket Siparişi,Kapandı,Ana Kanal,,15876497,105
+253056690,,can,1234.7,112.25,TRY,2025-01-03T11:38:02.433,2025-01-03T12:00:56.84,Paket Siparişi,Kapandı,Ana Kanal,,28984691,106
+253056775,,can,507.36,46.12,TRY,2025-01-03T11:38:35.347,2025-01-03T12:01:40.857,Paket Siparişi,Kapandı,Ana Kanal,,340118,107
+253057860,,can,1004.53,91.32,TRY,2025-01-03T11:44:29.4,2025-01-03T12:11:31.543,Paket Siparişi,Kapandı,Ana Kanal,,33088866,108
+253058646,,can,560.91,50.99,TRY,2025-01-03T11:48:10.847,2025-01-03T12:11:29.853,Paket Siparişi,Kapandı,Ana Kanal,,375706,109
+253062677,,can,709.8,7.02,TRY,2025-01-03T12:03:54.887,2025-01-03T12:48:14.143,Paket Siparişi,Kapandı,Ana Kanal,,31978786,110
+253063346,,can,756.33,68.76,TRY,2025-01-03T12:05:52.277,2025-01-03T12:48:16.887,Paket Siparişi,Kapandı,Ana Kanal,,18022846,111
+253064080,,can,378.16,34.38,TRY,2025-01-03T12:08:05.6,2025-01-03T12:48:17.803,Paket Siparişi,Kapandı,Ana Kanal,,32530590,112
+253064330,,can,482.53,43.87,TRY,2025-01-03T12:08:49.737,2025-01-03T12:48:18.627,Paket Siparişi,Kapandı,Ana Kanal,,22099318,113
+253065335,,can,1256.93,118.82,TRY,2025-01-03T12:11:41.43,2025-01-03T12:48:20.753,Paket Siparişi,Kapandı,Ana Kanal,,33089735,114
+253066406,,can,1202.48,109.32,TRY,2025-01-03T12:14:43.847,2025-01-03T12:57:00.397,Paket Siparişi,Kapandı,Ana Kanal,,22794054,115
+253066597,,can,349.9,3.46,TRY,2025-01-03T12:15:14.847,2025-01-03T12:48:19.437,Paket Siparişi,Kapandı,Ana Kanal,,28252265,116
+253067984,,can,377.41,38.86,TRY,2025-01-03T12:19:18.273,2025-01-03T13:01:58.563,Paket Siparişi,Kapandı,Ana Kanal,,31625817,117
+253072592,Bahçe Masa 1,can,1559.8,15.83,TRY,2025-01-03T12:32:15.117,2025-01-03T13:09:57.947,Masa Siparişi,Kapandı,Ana Kanal,,0,118
+253074235,,can,641.58,58.32,TRY,2025-01-03T12:36:51.07,2025-01-03T14:04:15.897,Paket Siparişi,Kapandı,Ana Kanal,,19993783,119
+253075705,,can,943.23,85.75,TRY,2025-01-03T12:40:33.36,2025-01-03T14:04:17.323,Paket Siparişi,Kapandı,Ana Kanal,,33090730,120
+253080113,,can,377.41,38.86,TRY,2025-01-03T12:53:14.08,2025-01-03T14:04:19.027,Paket Siparişi,Kapandı,Ana Kanal,,33091118,121
+253084587,,can,497.9,45.26,TRY,2025-01-03T13:06:57.347,2025-01-03T14:04:20.933,Paket Siparişi,Kapandı,Ana Kanal,,30544430,122
+253084656,,can,386.66,35.15,TRY,2025-01-03T13:07:07.063,2025-01-03T14:37:31.03,Paket Siparişi,Kapandı,Ana Kanal,,2491259,123
+253085891,,can,386.66,35.15,TRY,2025-01-03T13:10:48.35,2025-01-03T14:37:32.06,Paket Siparişi,Kapandı,Ana Kanal,,32935665,124
+253088305,,can,328.16,34.38,TRY,2025-01-03T13:18:09.923,2025-01-03T14:04:22.577,Paket Siparişi,Kapandı,Ana Kanal,,536827,125
+253089882,,can,378.16,34.38,TRY,2025-01-03T13:23:19.797,2025-01-03T14:04:23.333,Paket Siparişi,Kapandı,Ana Kanal,,24590553,126
+253090819,,can,349.9,3.46,TRY,2025-01-03T13:26:33.84,2025-01-03T14:23:48.61,Paket Siparişi,Kapandı,Ana Kanal,,21508119,127
+253090919,,can,797.8,7.9,TRY,2025-01-03T13:26:55.3,2025-01-03T14:04:27.62,Paket Siparişi,Kapandı,Ana Kanal,,30414539,128
+253092015,,can,446.16,40.56,TRY,2025-01-03T13:30:43.977,2025-01-03T14:04:13.48,Paket Siparişi,Kapandı,Ana Kanal,,33092331,129
+253092019,,can,385.07,35.01,TRY,2025-01-03T13:30:44.523,2025-01-03T14:04:30.693,Paket Siparişi,Kapandı,Ana Kanal,,33092332,130
+253092557,,can,377.41,38.86,TRY,2025-01-03T13:32:29.887,2025-01-03T14:23:49.867,Paket Siparişi,Kapandı,Ana Kanal,,30955330,131
+253093476,,can,1232.23,116.57,TRY,2025-01-03T13:35:30.783,2025-01-03T14:37:29.317,Paket Siparişi,Kapandı,Ana Kanal,,33092468,132
+253094880,,can,368.9,33.54,TRY,2025-01-03T13:40:15.657,2025-01-03T14:04:37.677,Paket Siparişi,Kapandı,Ana Kanal,,20740389,133
+253095610,,can,1085.81,98.71,TRY,2025-01-03T13:42:35.55,2025-01-03T14:37:34.203,Paket Siparişi,Kapandı,Ana Kanal,,30566920,134
+253096711,,can,505.57,50.51,TRY,2025-01-03T13:46:04.943,2025-01-03T14:37:35.003,Paket Siparişi,Kapandı,Ana Kanal,,15059154,135
+253097617,,can,398.7,36.25,TRY,2025-01-03T13:48:56.483,2025-01-03T14:23:50.787,Paket Siparişi,Kapandı,Ana Kanal,,13817884,136
+253097674,,can,377.41,38.86,TRY,2025-01-03T13:49:06.383,2025-01-03T14:25:39.437,Paket Siparişi,Kapandı,Ana Kanal,,26361003,137
+253098370,,can,368.9,33.54,TRY,2025-01-03T13:51:18.127,2025-01-03T14:37:39.307,Paket Siparişi,Kapandı,Ana Kanal,,23145647,138
+253099368,,can,446.16,40.56,TRY,2025-01-03T13:54:19.427,2025-01-03T14:40:41.26,Paket Siparişi,Kapandı,Ana Kanal,,33093112,139
+253102066,,can,396.16,40.56,TRY,2025-01-03T14:02:26.303,2025-01-03T14:25:44.643,Paket Siparişi,Kapandı,Ana Kanal,,31453534,140
+253103514,,can,378.16,34.38,TRY,2025-01-03T14:06:52.137,2025-01-03T14:25:42.837,Paket Siparişi,Kapandı,Ana Kanal,,33093525,141
+253108001,,can,378.16,34.38,TRY,2025-01-03T14:20:53.427,2025-01-03T14:55:56.37,Paket Siparişi,Kapandı,Ana Kanal,,17838009,142
+253108423,,can,548.16,49.83,TRY,2025-01-03T14:22:21.877,2025-01-03T15:36:05.557,Paket Siparişi,Kapandı,Ana Kanal,,1783451,143
+253108913,,can,378.16,34.38,TRY,2025-01-03T14:23:56.267,2025-01-03T15:22:03.68,Paket Siparişi,Kapandı,Ana Kanal,,5445644,144
+253108914,,can,379.9,3.76,TRY,2025-01-03T14:23:56.387,2025-01-03T14:55:58.783,Paket Siparişi,Kapandı,Ana Kanal,,33094081,145
+253109643,,can,359.9,32.72,TRY,2025-01-03T14:26:16.85,2025-01-03T15:03:16.933,Paket Siparişi,Kapandı,Ana Kanal,,33094154,146
+253114186,,can,696.91,63.36,TRY,2025-01-03T14:40:48.393,2025-01-03T15:30:59.483,Paket Siparişi,Kapandı,Ana Kanal,,17573927,147
+253115657,,can,377.41,38.86,TRY,2025-01-03T14:45:45.233,2025-01-03T15:36:07.88,Paket Siparişi,Kapandı,Ana Kanal,,21781405,148
+253115962,,can,594.91,54.08,TRY,2025-01-03T14:46:42.237,2025-01-03T15:36:09.597,Paket Siparişi,Kapandı,Ana Kanal,,33094783,149
+253119580,,can,449.9,40.9,TRY,2025-01-03T14:58:48.023,2025-01-03T15:36:03.213,Paket Siparişi,Kapandı,Ana Kanal,,33095124,150
+253121594,,can,393.57,35.78,TRY,2025-01-03T15:05:07.903,2025-01-03T15:36:01.467,Paket Siparişi,Kapandı,Ana Kanal,,33095308,151
+253122708,,can,446.16,40.56,TRY,2025-01-03T15:08:48.88,2025-01-03T16:24:03.29,Paket Siparişi,Kapandı,Ana Kanal,,28556567,152
+253130136,Bahçe Masa 1,can,349.6,3.46,TRY,2025-01-03T15:31:58.34,2025-01-03T15:32:50.807,Masa Siparişi,Kapandı,Ana Kanal,,0,153
+253132315,,can,362.5,4.63,TRY,2025-01-03T15:38:48.303,2025-01-03T16:24:04.447,Paket Siparişi,Kapandı,Ana Kanal,,1422770,154
+253132691,,can,368.9,33.54,TRY,2025-01-03T15:40:03.637,2025-01-03T16:24:05.653,Paket Siparişi,Kapandı,Ana Kanal,,32781858,155
+253133800,,can,376.9,34.26,TRY,2025-01-03T15:43:31.48,2025-01-03T16:24:06.72,Paket Siparişi,Kapandı,Ana Kanal,,10081016,156
+253134738,,can,756.33,68.76,TRY,2025-01-03T15:46:27.527,2025-01-03T16:24:09.233,Paket Siparişi,Kapandı,Ana Kanal,,1688279,157
+253134984,,can,737.8,67.08,TRY,2025-01-03T15:47:10.98,2025-01-03T16:24:10.41,Paket Siparişi,Kapandı,Ana Kanal,,30923667,158
+253135209,,can,378.16,34.38,TRY,2025-01-03T15:47:55.613,2025-01-03T16:24:07.977,Paket Siparişi,Kapandı,Ana Kanal,,33096578,159
+253135670,,can,336.66,36.81,TRY,2025-01-03T15:49:24.187,2025-01-03T16:43:27.637,Paket Siparişi,Kapandı,Ana Kanal,,33096617,160
+253137564,,can,368.9,33.54,TRY,2025-01-03T15:55:17.44,2025-01-03T16:24:13.563,Paket Siparişi,Kapandı,Ana Kanal,,18807739,161
+253140464,,can,346.6,3.43,TRY,2025-01-03T16:04:01.643,2025-01-03T16:24:14.517,Paket Siparişi,Kapandı,Ana Kanal,,1532060,162
+253141975,,can,396.53,36.05,TRY,2025-01-03T16:08:34.02,2025-01-03T16:47:45.367,Paket Siparişi,Kapandı,Ana Kanal,,33097178,163
+253143572,,can,377.41,38.86,TRY,2025-01-03T16:13:16,2025-01-03T17:09:05.09,Paket Siparişi,Kapandı,Ana Kanal,,26361003,164
+253143681,Bahçe Masa 1,can,719.8,7.13,TRY,2025-01-03T16:13:34.11,2025-01-03T16:38:45.227,Masa Siparişi,Kapandı,Ana Kanal,,0,165
+253143961,,can,378.16,34.38,TRY,2025-01-03T16:14:27.687,2025-01-03T16:43:34.603,Paket Siparişi,Kapandı,Ana Kanal,,33097376,166
+253146896,,can,1169.8,106.35,TRY,2025-01-03T16:22:57.793,2025-01-03T17:09:01.25,Paket Siparişi,Kapandı,Ana Kanal,,33097633,167
+253147019,,can,288.73,26.24,TRY,2025-01-03T16:23:18.813,2025-01-03T17:09:02.013,Paket Siparişi,Kapandı,Ana Kanal,,20191136,168
+253147808,,can,756.33,68.76,TRY,2025-01-03T16:25:31.577,2025-01-03T17:09:02.987,Paket Siparişi,Kapandı,Ana Kanal,,23211379,169
+253150889,,can,604.69,54.98,TRY,2025-01-03T16:34:24.413,2025-01-03T17:08:58.513,Paket Siparişi,Kapandı,Ana Kanal,,22931573,170
+253151121,,can,386.66,35.15,TRY,2025-01-03T16:35:06.133,2025-01-03T17:09:03.717,Paket Siparişi,Kapandı,Ana Kanal,,30037266,171
+253152030,,can,487.9,44.35,TRY,2025-01-03T16:37:48.68,2025-01-03T17:09:04.41,Paket Siparişi,Kapandı,Ana Kanal,,21216908,172
+253154382,,can,400.47,36.41,TRY,2025-01-03T16:44:41.97,2025-01-03T17:09:05.997,Paket Siparişi,Kapandı,Ana Kanal,,31556436,173
+253154478,,can,410.66,41.88,TRY,2025-01-03T16:44:56.68,2025-01-03T17:31:16.073,Paket Siparişi,Kapandı,Ana Kanal,,33098410,174
+253156123,Bahçe Masa 1,can,809.8,8.02,TRY,2025-01-03T16:49:38.963,2025-01-03T17:30:57.75,Masa Siparişi,Kapandı,Ana Kanal,,0,175
+253156227,,can,737.8,67.07,TRY,2025-01-03T16:49:57.24,2025-01-03T17:31:18.403,Paket Siparişi,Kapandı,Ana Kanal,,6532359,176
+253156718,,can,468.97,42.63,TRY,2025-01-03T16:51:20.89,2025-01-03T17:48:18.653,Paket Siparişi,Kapandı,Ana Kanal,,18407203,177
+253157805,,can,386.66,35.15,TRY,2025-01-03T16:54:30.223,2025-01-03T17:48:19.447,Paket Siparişi,Kapandı,Ana Kanal,,32120294,178
+253157885,,can,1241.73,117.43,TRY,2025-01-03T16:54:44.223,2025-01-03T17:21:59.143,Paket Siparişi,Kapandı,Ana Kanal,,33098797,179
+253157994,,can,756.33,68.76,TRY,2025-01-03T16:55:03.41,2025-01-03T17:29:40.65,Paket Siparişi,Kapandı,Ana Kanal,,15134428,180
+253158415,,can,368.9,33.54,TRY,2025-01-03T16:56:10.117,2025-01-03T17:48:21.967,Paket Siparişi,Kapandı,Ana Kanal,,23685997,181
+253158790,,can,408.74,37.16,TRY,2025-01-03T16:57:14.35,2025-01-03T17:31:21.867,Paket Siparişi,Kapandı,Ana Kanal,,28511830,182
+253158916,,can,349.9,3.46,TRY,2025-01-03T16:57:33.877,2025-01-03T17:31:28.103,Paket Siparişi,Kapandı,Ana Kanal,,2551592,183
+253160649,,can,885.57,85.05,TRY,2025-01-03T17:02:17.717,2025-01-03T17:48:24.8,Paket Siparişi,Kapandı,Ana Kanal,,24364155,184
+253161268,,can,1516.91,137.9,TRY,2025-01-03T17:03:52.26,2025-01-03T17:48:25.863,Paket Siparişi,Kapandı,Ana Kanal,,32873390,185
+253161844,,can,457.12,46.1,TRY,2025-01-03T17:05:18.763,2025-01-03T17:48:22.773,Paket Siparişi,Kapandı,Ana Kanal,,12638998,186
+253163373,,can,368.9,33.54,TRY,2025-01-03T17:09:25.48,2025-01-03T17:48:26.67,Paket Siparişi,Kapandı,Ana Kanal,,24773785,187
+253164316,,can,4079.0,40.39,TRY,2025-01-03T17:11:55.627,2025-01-03T17:48:28.783,Paket Siparişi,Kapandı,Ana Kanal,,24343070,188
+253165599,,can,368.9,33.54,TRY,2025-01-03T17:15:13.23,2025-01-03T18:14:13.797,Paket Siparişi,Kapandı,Ana Kanal,,20403702,189
+253166850,,can,369.9,3.66,TRY,2025-01-03T17:18:22.643,2025-01-03T18:00:28.597,Paket Siparişi,Kapandı,Ana Kanal,,22903890,190
+253167256,,can,914.64,83.15,TRY,2025-01-03T17:19:26.95,2025-01-03T18:14:18.247,Paket Siparişi,Kapandı,Ana Kanal,,16537098,191
+253167543,,can,385.07,35.01,TRY,2025-01-03T17:20:06.687,2025-01-03T18:00:29.733,Paket Siparişi,Kapandı,Ana Kanal,,30967201,192
+253169477,,can,377.41,38.86,TRY,2025-01-03T17:24:58.96,2025-01-03T18:14:19.307,Paket Siparişi,Kapandı,Ana Kanal,,19218186,193
+253169851,,can,456.03,41.46,TRY,2025-01-03T17:26:00.387,2025-01-03T18:06:07.93,Paket Siparişi,Kapandı,Ana Kanal,,9230705,194
+253170169,,can,471.58,42.87,TRY,2025-01-03T17:26:44.62,2025-01-03T18:14:12.713,Paket Siparişi,Kapandı,Ana Kanal,,13580598,195
+253170724,,can,396.16,40.56,TRY,2025-01-03T17:28:12.92,2025-01-03T18:15:08.053,Paket Siparişi,Kapandı,Ana Kanal,,30335627,196
+253172063,,can,536.8,48.8,TRY,2025-01-03T17:31:30.923,2025-01-03T18:15:40.577,Paket Siparişi,Kapandı,Ana Kanal,,4252587,197
+253172471,,can,446.16,40.56,TRY,2025-01-03T17:32:38.16,2025-01-03T18:15:08.863,Paket Siparişi,Kapandı,Ana Kanal,,32650950,198
+253172753,,can,851.38,77.41,TRY,2025-01-03T17:33:22.78,2025-01-03T18:15:43.197,Paket Siparişi,Kapandı,Ana Kanal,,29502576,199
+253173927,,can,386.66,35.15,TRY,2025-01-03T17:36:20.517,2025-01-03T18:15:10.42,Paket Siparişi,Kapandı,Ana Kanal,,33100655,200
+253175128,,can,687.7,62.51,TRY,2025-01-03T17:39:16.773,2025-01-03T18:15:47.323,Paket Siparişi,Kapandı,Ana Kanal,,24126773,201
+253175165,,can,368.9,33.54,TRY,2025-01-03T17:39:21.61,2025-01-03T18:15:45.07,Paket Siparişi,Kapandı,Ana Kanal,,33100799,202
+253175919,Bahçe Masa 1,can,1838.2,24.67,TRY,2025-01-03T17:41:21.743,2025-01-03T18:30:29.68,Masa Siparişi,Kapandı,Ana Kanal,,0,203
+253176611,,can,696.2,6.89,TRY,2025-01-03T17:42:55.61,2025-01-03T18:15:48.243,Paket Siparişi,Kapandı,Ana Kanal,,1692598,204
+253176624,,can,328.16,34.38,TRY,2025-01-03T17:42:57.617,2025-01-03T18:15:11.23,Paket Siparişi,Kapandı,Ana Kanal,,15047169,205
+253178767,,can,448.66,45.33,TRY,2025-01-03T17:48:22.047,2025-01-03T18:15:51.413,Paket Siparişi,Kapandı,Ana Kanal,,17110812,206
+253180241,,can,1134.48,103.14,TRY,2025-01-03T17:51:48.067,2025-01-03T18:16:29.37,Paket Siparişi,Kapandı,Ana Kanal,,8822518,207
+253180797,,can,607.48,55.22,TRY,2025-01-03T17:53:16.403,2025-01-03T18:30:18.22,Paket Siparişi,Kapandı,Ana Kanal,,26464480,208
+253182874,Bahçe Masa 3,müdür,348.6,3.45,TRY,2025-01-03T17:58:06.767,2025-01-03T18:18:35.373,Masa Siparişi,Kapandı,Ana Kanal,,0,209
+253182896,,can,823.82,79.44,TRY,2025-01-03T17:58:11.293,2025-01-03T18:39:32.69,Paket Siparişi,Kapandı,Ana Kanal,,33101669,210
+253183166,,can,1419.0,14.05,TRY,2025-01-03T17:58:45.93,2025-01-03T19:15:36.85,Paket Siparişi,Kapandı,Ana Kanal,,33101641,211
+253183875,,can,1292.7,117.52,TRY,2025-01-03T18:00:29.58,2025-01-03T19:15:38.483,Paket Siparişi,Kapandı,Ana Kanal,,3472160,212
+253184174,,can,377.41,38.86,TRY,2025-01-03T18:01:12.08,2025-01-03T19:15:39.373,Paket Siparişi,Kapandı,Ana Kanal,,26985350,213
+253184217,,can,359.9,32.72,TRY,2025-01-03T18:01:19.05,2025-01-03T19:15:59.057,Paket Siparişi,Kapandı,Ana Kanal,,22867878,214
+253184476,,can,410.66,41.88,TRY,2025-01-03T18:01:57.04,2025-01-03T19:16:01.03,Paket Siparişi,Kapandı,Ana Kanal,,33101858,215
+253185844,,can,458.13,46.2,TRY,2025-01-03T18:05:05.653,2025-01-03T19:15:54.843,Paket Siparişi,Kapandı,Ana Kanal,,1250588,216
+253186465,,can,472.32,47.49,TRY,2025-01-03T18:06:29.55,2025-01-03T19:16:03.897,Paket Siparişi,Kapandı,Ana Kanal,,21550910,217
+253186470,,can,416.36,42.4,TRY,2025-01-03T18:06:29.933,2025-01-03T19:16:03.007,Paket Siparişi,Kapandı,Ana Kanal,,28344961,218
+253187873,Bahçe Masa 2,can,799.8,7.92,TRY,2025-01-03T18:09:37.473,2025-01-03T18:37:42.41,Masa Siparişi,Kapandı,Ana Kanal,,0,219
+253188465,,can,427.9,38.9,TRY,2025-01-03T18:10:53.303,2025-01-03T19:15:43.403,Paket Siparişi,Kapandı,Ana Kanal,,33102374,220
+253188883,,can,410.66,41.88,TRY,2025-01-03T18:11:46.56,2025-01-03T19:16:04.957,Paket Siparişi,Kapandı,Ana Kanal,,33102418,221
+253188961,,can,359.9,3.56,TRY,2025-01-03T18:11:56.133,2025-01-03T19:16:06.503,Paket Siparişi,Kapandı,Ana Kanal,,15549621,222
+253189263,,can,603.5,54.87,TRY,2025-01-03T18:12:36.49,2025-01-03T19:15:55.377,Paket Siparişi,Kapandı,Ana Kanal,,22976032,223
+253190213,,can,410.66,41.88,TRY,2025-01-03T18:14:47.95,2025-01-03T19:16:07.18,Paket Siparişi,Kapandı,Ana Kanal,,30061465,224
+253190488,,can,942.42,85.67,TRY,2025-01-03T18:15:24.387,2025-01-03T19:16:02.057,Paket Siparişi,Kapandı,Ana Kanal,,32882614,225
+253190896,,can,383.11,39.37,TRY,2025-01-03T18:16:18.177,2025-01-03T19:16:00.047,Paket Siparişi,Kapandı,Ana Kanal,,28405884,226
+253192126,,can,368.9,33.54,TRY,2025-01-03T18:19:06.593,2025-01-03T19:21:43.747,Paket Siparişi,Kapandı,Ana Kanal,,33102835,227
+253192461,,can,842.33,90.89,TRY,2025-01-03T18:19:49.373,2025-01-03T19:16:09.53,Paket Siparişi,Kapandı,Ana Kanal,,33102874,228
+253192815,,can,386.66,35.15,TRY,2025-01-03T18:20:33.513,2025-01-03T19:16:08.007,Paket Siparişi,Kapandı,Ana Kanal,,4386980,229
+253194360,,can,393.9,3.9,TRY,2025-01-03T18:23:57.807,2025-01-03T19:21:45.99,Paket Siparişi,Kapandı,Ana Kanal,,2551592,230
+253194787,,can,1109.8,10.98,TRY,2025-01-03T18:24:48.133,2025-01-03T19:21:45.243,Paket Siparişi,Kapandı,Ana Kanal,,31301796,231
+253195945,,can,1355.3,123.2,TRY,2025-01-03T18:27:23.087,2025-01-03T19:23:37.92,Paket Siparişi,Kapandı,Ana Kanal,,12547258,232
+253196061,,can,909.32,87.21,TRY,2025-01-03T18:27:37.66,2025-01-03T19:21:44.5,Paket Siparişi,Kapandı,Ana Kanal,,33103317,233
+253196759,,can,1207.44,114.32,TRY,2025-01-03T18:29:07.883,2025-01-03T20:03:12.597,Paket Siparişi,Kapandı,Ana Kanal,,33103402,234
+253197852,,can,933.6,77.61,TRY,2025-01-03T18:31:33.897,2025-01-03T19:21:47.677,Paket Siparişi,Kapandı,Ana Kanal,,19891793,235
+253198616,Bahçe Masa 1,can,764.8,7.57,TRY,2025-01-03T18:33:06.483,2025-01-03T19:17:43.623,Masa Siparişi,Kapandı,Ana Kanal,,0,236
+253199638,,can,387.54,35.23,TRY,2025-01-03T18:35:20.653,2025-01-03T19:23:40.08,Paket Siparişi,Kapandı,Ana Kanal,,2512618,237
+253199642,,can,378.16,34.38,TRY,2025-01-03T18:35:21.037,2025-01-03T19:21:46.637,Paket Siparişi,Kapandı,Ana Kanal,,24590553,238
+253200530,Bahçe Masa 3,can,1079.7,10.68,TRY,2025-01-03T18:37:20.89,2025-01-03T19:01:16.863,Masa Siparişi,Kapandı,Ana Kanal,,0,239
+253200963,,can,728.18,66.19,TRY,2025-01-03T18:38:16.12,2025-01-03T19:21:57.243,Paket Siparişi,Kapandı,Ana Kanal,,20081785,240
+253201615,,can,666.91,60.62,TRY,2025-01-03T18:39:45.327,2025-01-03T20:03:14.247,Paket Siparişi,Kapandı,Ana Kanal,,33103998,241
+253202359,,can,1312.27,119.3,TRY,2025-01-03T18:41:14.523,2025-01-03T20:13:23.53,Paket Siparişi,Kapandı,Ana Kanal,,24948963,242
+253203718,,can,871.32,83.76,TRY,2025-01-03T18:44:12.38,2025-01-03T19:23:42.48,Paket Siparişi,Kapandı,Ana Kanal,,33104211,243
+253204090,,can,349.9,3.46,TRY,2025-01-03T18:45:04.92,2025-01-03T20:13:24.26,Paket Siparişi,Kapandı,Ana Kanal,,2551592,244
+253204704,,can,1121.73,101.97,TRY,2025-01-03T18:46:23.613,2025-01-03T20:13:25.173,Paket Siparişi,Kapandı,Ana Kanal,,18828143,245
+253205391,,can,1552.11,141.1,TRY,2025-01-03T18:47:52.073,2025-01-03T20:13:22.737,Paket Siparişi,Kapandı,Ana Kanal,,8034875,246
+253205982,,can,796.8,72.44,TRY,2025-01-03T18:49:11.96,2025-01-03T20:13:25.573,Paket Siparişi,Kapandı,Ana Kanal,,33104468,247
+253206063,,can,466.5,42.41,TRY,2025-01-03T18:49:22.187,2025-01-03T20:13:31.417,Paket Siparişi,Kapandı,Ana Kanal,,386516,248
+253206229,,can,427.9,38.9,TRY,2025-01-03T18:49:41.003,2025-01-03T20:13:32.323,Paket Siparişi,Kapandı,Ana Kanal,,5540937,249
+253207505,,can,903.28,82.12,TRY,2025-01-03T18:52:23.83,2025-01-03T20:13:24.753,Paket Siparişi,Kapandı,Ana Kanal,,33104645,250
+253209334,,can,410.66,41.88,TRY,2025-01-03T18:56:16.187,2025-01-03T20:13:26.227,Paket Siparişi,Kapandı,Ana Kanal,,33104851,251
+253212460,,can,427.9,38.9,TRY,2025-01-03T19:02:49.053,2025-01-03T19:21:06.43,Paket Siparişi,Kapandı,Ana Kanal,,28117536,252
+253213247,Bahçe Masa 3,müdür,744.4,10.19,TRY,2025-01-03T19:04:38.08,2025-01-03T21:06:38.19,Masa Siparişi,Kapandı,Ana Kanal,,0,253
+253213411,,can,397.63,36.15,TRY,2025-01-03T19:04:58.14,2025-01-03T19:21:05,Paket Siparişi,Kapandı,Ana Kanal,,30187178,254
+253213712,,can,526.83,47.89,TRY,2025-01-03T19:05:33.807,2025-01-03T20:13:34.34,Paket Siparişi,Kapandı,Ana Kanal,,19579401,255
+253214762,,can,514.08,46.73,TRY,2025-01-03T19:07:45.407,2025-01-03T20:13:36.453,Paket Siparişi,Kapandı,Ana Kanal,,33105509,256
+253215749,,can,871.32,83.76,TRY,2025-01-03T19:09:49.973,2025-01-03T20:13:38.027,Paket Siparişi,Kapandı,Ana Kanal,,30922979,257
+253217175,,can,481.91,48.36,TRY,2025-01-03T19:12:50.803,2025-01-03T20:13:35.4,Paket Siparişi,Kapandı,Ana Kanal,,19770196,258
+253217510,,can,410.66,41.88,TRY,2025-01-03T19:13:36.593,2025-01-03T20:13:37.413,Paket Siparişi,Kapandı,Ana Kanal,,14356357,259
+253219303,,can,756.33,68.76,TRY,2025-01-03T19:17:21.01,2025-01-03T20:13:38.737,Paket Siparişi,Kapandı,Ana Kanal,,29831523,260
+253221818,,can,1130.7,102.79,TRY,2025-01-03T19:22:48.777,2025-01-03T20:13:40.073,Paket Siparişi,Kapandı,Ana Kanal,,22107498,261
+253223073,,can,963.39,87.58,TRY,2025-01-03T19:25:27.897,2025-01-03T20:13:40.83,Paket Siparişi,Kapandı,Ana Kanal,,1153928,262
+253225148,,can,487.9,44.35,TRY,2025-01-03T19:30:03.263,2025-01-03T20:13:41.3,Paket Siparişi,Kapandı,Ana Kanal,,24376718,263
+253226300,,can,359.9,32.72,TRY,2025-01-03T19:32:32.43,2025-01-03T20:13:39.413,Paket Siparişi,Kapandı,Ana Kanal,,25471700,264
+253226782,,can,544.91,59.08,TRY,2025-01-03T19:33:34.227,2025-01-03T20:13:41.89,Paket Siparişi,Kapandı,Ana Kanal,,33106970,265
+253227637,,can,368.9,33.54,TRY,2025-01-03T19:35:14.083,2025-01-03T20:13:43.687,Paket Siparişi,Kapandı,Ana Kanal,,25512689,266
+253228221,,can,892.33,81.12,TRY,2025-01-03T19:36:30.923,2025-01-03T20:13:45.523,Paket Siparişi,Kapandı,Ana Kanal,,13131444,267
+253228270,,can,376.9,34.26,TRY,2025-01-03T19:36:37.17,2025-01-03T20:13:44.33,Paket Siparişi,Kapandı,Ana Kanal,,6632165,268
+253228435,,can,885.57,85.05,TRY,2025-01-03T19:36:59.553,2025-01-03T20:13:47.4,Paket Siparişi,Kapandı,Ana Kanal,,20747295,269
+253233215,,can,377.41,38.86,TRY,2025-01-03T19:47:32.7,2025-01-03T20:13:42.87,Paket Siparişi,Kapandı,Ana Kanal,,31159480,270
+253233930,,can,462.93,42.08,TRY,2025-01-03T19:49:03.657,2025-01-03T20:24:50.993,Paket Siparişi,Kapandı,Ana Kanal,,21017671,271
+253236145,,can,756.33,68.76,TRY,2025-01-03T19:54:13.9,2025-01-03T20:13:49.457,Paket Siparişi,Kapandı,Ana Kanal,,22072957,272
+253239471,,can,336.66,35.15,TRY,2025-01-03T20:01:38.553,2025-01-03T20:24:49.137,Paket Siparişi,Kapandı,Ana Kanal,,33108384,273
+253240622,,can,1175.32,111.39,TRY,2025-01-03T20:04:07.163,2025-01-03T20:58:29.693,Paket Siparişi,Kapandı,Ana Kanal,,30613080,274
+253241326,,can,871.32,83.76,TRY,2025-01-03T20:05:37.697,2025-01-03T20:58:31.39,Paket Siparişi,Kapandı,Ana Kanal,,20953094,275
+253241328,,can,529.41,52.67,TRY,2025-01-03T20:05:38.12,2025-01-03T20:40:50.45,Paket Siparişi,Kapandı,Ana Kanal,,6475962,276
+253241854,,can,843.7,15.63,TRY,2025-01-03T20:06:44.653,2025-01-03T21:02:25.867,Paket Siparişi,Kapandı,Ana Kanal,,5285318,277
+253244285,Bahçe Masa 1,can,719.8,7.12,TRY,2025-01-03T20:12:15.803,2025-01-03T21:06:41.71,Masa Siparişi,Kapandı,Ana Kanal,,0,278
+253244633,,can,349.6,3.46,TRY,2025-01-03T20:13:03.487,2025-01-03T21:02:38.893,Paket Siparişi,Kapandı,Ana Kanal,,19687686,279
+253247298,,can,487.9,44.35,TRY,2025-01-03T20:19:14.763,2025-01-03T20:40:52.567,Paket Siparişi,Kapandı,Ana Kanal,,2235095,280
+253247334,,can,671.41,61.04,TRY,2025-01-03T20:19:19.46,2025-01-03T21:02:37.043,Paket Siparişi,Kapandı,Ana Kanal,,33109210,281
+253247948,,can,894.71,81.34,TRY,2025-01-03T20:20:47.59,2025-01-03T21:02:38.413,Paket Siparişi,Kapandı,Ana Kanal,,29265930,282
+253250832,,can,1014.73,92.25,TRY,2025-01-03T20:27:25.477,2025-01-03T20:58:22.4,Paket Siparişi,Kapandı,Ana Kanal,,21304982,283
+253257960,,can,378.16,34.38,TRY,2025-01-03T20:45:07.993,2025-01-03T21:25:54.703,Paket Siparişi,Kapandı,Ana Kanal,,21350443,284
+253258785,,can,764.83,69.53,TRY,2025-01-03T20:47:20.137,2025-01-03T21:25:57.38,Paket Siparişi,Kapandı,Ana Kanal,,2281154,285
+253259057,,can,378.16,34.38,TRY,2025-01-03T20:48:04.47,2025-01-03T22:26:48.63,Paket Siparişi,Kapandı,Ana Kanal,,1629868,286
+253260992,,can,391.97,35.63,TRY,2025-01-03T20:53:14.853,2025-01-03T22:26:47.9,Paket Siparişi,Kapandı,Ana Kanal,,1269995,287
+253262928,,can,343.57,37.45,TRY,2025-01-03T20:58:24.58,2025-01-03T22:26:46.257,Paket Siparişi,Kapandı,Ana Kanal,,7323074,288
+253263740,,can,427.9,38.9,TRY,2025-01-03T21:00:37.247,2025-01-03T22:26:47.103,Paket Siparişi,Kapandı,Ana Kanal,,30435143,289
+253264045,,can,486.57,41.88,TRY,2025-01-03T21:01:27.693,2025-01-03T21:26:01.53,Paket Siparişi,Kapandı,Ana Kanal,,29960980,290
+253264497,,can,525.13,47.74,TRY,2025-01-03T21:02:50.603,2025-01-03T22:26:50.837,Paket Siparişi,Kapandı,Ana Kanal,,32611049,291
+253264808,,can,377.41,38.86,TRY,2025-01-03T21:03:43.883,2025-01-03T22:26:52.913,Paket Siparişi,Kapandı,Ana Kanal,,17449660,292
+253265031,,can,369.9,3.66,TRY,2025-01-03T21:04:21.587,2025-01-03T22:26:51.723,Paket Siparişi,Kapandı,Ana Kanal,,26424371,293
+253265689,Bahçe Masa 2,can,709.5,7.02,TRY,2025-01-03T21:06:15.21,2025-01-03T21:24:57.567,Masa Siparişi,Kapandı,Ana Kanal,,0,294
+253266284,,can,328.16,34.38,TRY,2025-01-03T21:08:00.203,2025-01-03T21:25:51.203,Paket Siparişi,Kapandı,Ana Kanal,,4455817,295
+253266904,,can,410.66,41.88,TRY,2025-01-03T21:09:45.623,2025-01-03T22:26:53.743,Paket Siparişi,Kapandı,Ana Kanal,,28501014,296
+253269729,Bahçe Masa 1,can,349.6,3.46,TRY,2025-01-03T21:17:48.743,2025-01-03T21:50:21.72,Masa Siparişi,Kapandı,Ana Kanal,,0,297
+253272151,Bahçe Masa 2,can,349.6,3.46,TRY,2025-01-03T21:25:13.72,2025-01-03T21:43:34.807,Masa Siparişi,Kapandı,Ana Kanal,,0,298
+253276615,,can,342.6,3.39,TRY,2025-01-03T21:39:31.817,2025-01-03T22:26:54.8,Paket Siparişi,Kapandı,Ana Kanal,,26648651,299
+253277194,,can,368.9,33.54,TRY,2025-01-03T21:41:32.03,2025-01-03T22:26:55.61,Paket Siparişi,Kapandı,Ana Kanal,,24866443,300
+253277854,,can,385.01,39.55,TRY,2025-01-03T21:43:40.383,2025-01-03T22:34:41.697,Paket Siparişi,Kapandı,Ana Kanal,,33112717,301
+253278586,,can,359.9,32.72,TRY,2025-01-03T21:46:06.607,2025-01-03T22:26:59.25,Paket Siparişi,Kapandı,Ana Kanal,,21388557,302
+253279094,,can,939.08,85.37,TRY,2025-01-03T21:47:50.38,2025-01-03T22:26:57.843,Paket Siparişi,Kapandı,Ana Kanal,,16507621,303
+253279200,,can,377.41,38.86,TRY,2025-01-03T21:48:11.46,2025-01-03T22:26:58.49,Paket Siparişi,Kapandı,Ana Kanal,,33112904,304
+253279745,,can,446.16,40.56,TRY,2025-01-03T21:50:02.93,2025-01-03T22:34:38.337,Paket Siparişi,Kapandı,Ana Kanal,,1236678,305
+253280506,,can,368.9,33.54,TRY,2025-01-03T21:52:47.533,2025-01-03T22:34:39.4,Paket Siparişi,Kapandı,Ana Kanal,,4097100,306
+253282841,,can,414.9,4.11,TRY,2025-01-03T22:01:49.81,2025-01-03T23:12:50.007,Paket Siparişi,Kapandı,Ana Kanal,,15798259,307
+253283025,,can,378.16,34.38,TRY,2025-01-03T22:02:34.787,2025-01-03T23:12:49.293,Paket Siparişi,Kapandı,Ana Kanal,,1627239,308
+253283228,,can,444.38,40.4,TRY,2025-01-03T22:03:18.997,2025-01-03T23:12:54.87,Paket Siparişi,Kapandı,Ana Kanal,,26715762,309
+253284807,,can,432.9,39.35,TRY,2025-01-03T22:09:11.093,2025-01-03T23:12:55.41,Paket Siparişi,Kapandı,Ana Kanal,,10558601,310
+253285011,,can,389.13,35.38,TRY,2025-01-03T22:09:59.477,2025-01-03T23:12:51.17,Paket Siparişi,Kapandı,Ana Kanal,,33113657,311
+253286212,,can,368.9,33.54,TRY,2025-01-03T22:14:34.89,2025-01-03T23:12:57.303,Paket Siparişi,Kapandı,Ana Kanal,,32675289,312
+253287481,,can,883.73,80.34,TRY,2025-01-03T22:19:33.517,2025-01-03T23:12:56.387,Paket Siparişi,Kapandı,Ana Kanal,,28535339,313
+253287977,,can,378.16,34.38,TRY,2025-01-03T22:21:46.233,2025-01-03T23:12:53.68,Paket Siparişi,Kapandı,Ana Kanal,,6365001,314
+253288522,,can,483.8,43.99,TRY,2025-01-03T22:24:02.203,2025-01-03T23:12:52.14,Paket Siparişi,Kapandı,Ana Kanal,,18814371,315
+253288598,,can,377.41,38.86,TRY,2025-01-03T22:24:21.737,2025-01-03T23:12:59.427,Paket Siparişi,Kapandı,Ana Kanal,,27387664,316
+253289116,,müdür,468.8,42.62,TRY,2025-01-03T22:26:31.047,2025-01-03T23:13:02.53,Paket Siparişi,Kapandı,Ana Kanal,,15801485,317
+253289411,,can,402.33,36.58,TRY,2025-01-03T22:27:41.967,2025-01-03T23:13:04.113,Paket Siparişi,Kapandı,Ana Kanal,,17993132,318
+253289460,,can,427.9,38.9,TRY,2025-01-03T22:27:52.41,2025-01-03T23:12:52.88,Paket Siparişi,Kapandı,Ana Kanal,,2235095,319
+253291090,,can,378.16,34.38,TRY,2025-01-03T22:35:04,2025-01-03T23:21:21.267,Paket Siparişi,Kapandı,Ana Kanal,,33114592,320
+253291406,,can,764.83,69.53,TRY,2025-01-03T22:36:33.763,2025-01-03T22:41:44.433,Paket Siparişi,İptal Edildi,Ana Kanal,,33114638,321
+253293390,,can,497.9,45.26,TRY,2025-01-03T22:45:53.347,2025-01-03T23:13:18.69,Paket Siparişi,Kapandı,Ana Kanal,,30737613,322
+253294525,,can,404.9,4.01,TRY,2025-01-03T22:51:25.683,2025-01-03T23:42:13.397,Paket Siparişi,Kapandı,Ana Kanal,,32973487,323
+253294968,,can,1300.23,118.2,TRY,2025-01-03T22:53:30.443,2025-01-03T23:21:18.91,Paket Siparişi,Kapandı,Ana Kanal,,30483881,324
+253294971,,can,378.16,34.38,TRY,2025-01-03T22:53:30.817,2025-01-03T23:29:50.593,Paket Siparişi,Kapandı,Ana Kanal,,30165078,325
+253295139,,can,446.16,40.56,TRY,2025-01-03T22:54:19.643,2025-01-03T23:42:09.71,Paket Siparişi,Kapandı,Ana Kanal,,1958384,326
+253295800,,can,377.41,38.86,TRY,2025-01-03T22:57:30.997,2025-01-03T23:42:07.167,Paket Siparişi,Kapandı,Ana Kanal,,31432309,327
+253298476,,can,446.16,40.56,TRY,2025-01-03T23:11:56.117,2025-01-03T23:52:53.297,Paket Siparişi,Kapandı,Ana Kanal,,476826,328
+253299298,,can,369.9,3.66,TRY,2025-01-03T23:16:20.77,2025-01-03T23:31:24.2,Paket Siparişi,Kapandı,Ana Kanal,,17823628,329
+253299779,,can,378.8,34.44,TRY,2025-01-03T23:19:17.923,2025-01-03T23:53:16.453,Paket Siparişi,Kapandı,Ana Kanal,,33116153,330
+253300135,,can,507.36,46.12,TRY,2025-01-03T23:21:31.877,2025-01-03T23:58:53.037,Paket Siparişi,Kapandı,Ana Kanal,,2667032,331
+253300355,,can,385.07,35.01,TRY,2025-01-03T23:23:00.367,2025-01-03T23:53:17.43,Paket Siparişi,Kapandı,Ana Kanal,,29704693,332
+253301756,,can,336.15,30.56,TRY,2025-01-03T23:32:37.313,2025-01-03T23:58:53.697,Paket Siparişi,Kapandı,Ana Kanal,,1639606,333
+253337797,,can,569.9,51.81,TRY,2025-01-04T12:21:32.787,2025-01-04T13:00:57.71,Paket Siparişi,Kapandı,Ana Kanal,,23136481,101
+253338637,,can,459.97,41.82,TRY,2025-01-04T12:25:15.287,2025-01-04T13:02:23.153,Paket Siparişi,Kapandı,Ana Kanal,,18355073,102
+253340819,,can,505.57,50.51,TRY,2025-01-04T12:35:01.98,2025-01-04T13:41:25.273,Paket Siparişi,Kapandı,Ana Kanal,,22830951,103
+253343860,,can,378.16,34.38,TRY,2025-01-04T12:47:23.023,2025-01-04T13:41:27.397,Paket Siparişi,Kapandı,Ana Kanal,,33123123,104
+253345041,,can,368.9,33.54,TRY,2025-01-04T12:52:20.47,2025-01-04T13:41:28.787,Paket Siparişi,Kapandı,Ana Kanal,,33123265,105
+253345424,,can,838.07,80.74,TRY,2025-01-04T12:53:52.84,2025-01-04T13:41:30.923,Paket Siparişi,Kapandı,Ana Kanal,,29996447,106
+253351235,,can,505.57,50.51,TRY,2025-01-04T13:14:59.39,2025-01-04T13:49:37.477,Paket Siparişi,Kapandı,Ana Kanal,,32971676,107
+253351258,,can,368.9,33.54,TRY,2025-01-04T13:15:04.577,2025-01-04T13:57:04.42,Paket Siparişi,Kapandı,Ana Kanal,,20808957,108
+253354004,,can,804.82,77.71,TRY,2025-01-04T13:24:02.923,2025-01-04T14:11:18.777,Paket Siparişi,Kapandı,Ana Kanal,,14151337,109
+253354302,,can,1613.6,17.92,TRY,2025-01-04T13:25:03.167,2025-01-04T14:11:26.807,Paket Siparişi,Kapandı,Ana Kanal,,19848706,110
+253357640,,can,394.51,40.41,TRY,2025-01-04T13:35:22.343,2025-01-04T13:56:59.493,Paket Siparişi,Kapandı,Ana Kanal,,32843689,111
+253360060,,can,388.03,35.28,TRY,2025-01-04T13:42:42.127,2025-01-04T14:11:21.573,Paket Siparişi,Kapandı,Ana Kanal,,561143,112
+253360367,,can,410.66,41.88,TRY,2025-01-04T13:43:40.56,2025-01-04T14:03:30.133,Paket Siparişi,Kapandı,Ana Kanal,,32971676,113
+253360574,,can,591.8,53.79,TRY,2025-01-04T13:44:17.693,2025-01-04T14:55:54.543,Paket Siparişi,Kapandı,Ana Kanal,,30020119,114
+253360591,,can,497.8,45.25,TRY,2025-01-04T13:44:20.427,2025-01-04T14:15:21.37,Paket Siparişi,Kapandı,Ana Kanal,,33124812,115
+253365235,,can,504.07,45.82,TRY,2025-01-04T13:58:11.917,2025-01-04T14:11:30.167,Paket Siparişi,Kapandı,Ana Kanal,,26529856,116
+253370809,Bahçe Masa 1,müdür,394.9,3.91,TRY,2025-01-04T14:13:42.643,2025-01-04T14:32:30.987,Masa Siparişi,Kapandı,Ana Kanal,,0,117
+253375437,,can,846.26,76.94,TRY,2025-01-04T14:26:12.53,2025-01-04T15:00:04.553,Paket Siparişi,Kapandı,Ana Kanal,,400094,118
+253375618,,can,820.02,79.09,TRY,2025-01-04T14:26:39.737,2025-01-04T14:55:51.34,Paket Siparişi,Kapandı,Ana Kanal,,33126266,119
+253376635,,can,649.9,6.43,TRY,2025-01-04T14:29:18.55,2025-01-04T15:00:06.89,Paket Siparişi,Kapandı,Ana Kanal,,400094,120
+253377405,,can,386.66,35.15,TRY,2025-01-04T14:31:22.413,2025-01-04T15:14:37.767,Paket Siparişi,Kapandı,Ana Kanal,,26593669,121
+253377713,,can,378.16,34.38,TRY,2025-01-04T14:32:06.997,2025-01-04T15:14:42.947,Paket Siparişi,Kapandı,Ana Kanal,,21660507,122
+253381114,,can,476.8,43.34,TRY,2025-01-04T14:40:58.523,2025-01-04T15:15:20.52,Paket Siparişi,Kapandı,Ana Kanal,,21509711,123
+253381892,,can,449.9,4.45,TRY,2025-01-04T14:42:59.113,2025-01-04T15:14:47.763,Paket Siparişi,Kapandı,Ana Kanal,,20060058,124
+253381995,,can,396.16,40.56,TRY,2025-01-04T14:43:12.307,2025-01-04T15:15:16.917,Paket Siparişi,Kapandı,Ana Kanal,,1564910,125
+253382566,,can,391.97,35.63,TRY,2025-01-04T14:44:39.98,2025-01-04T15:15:05.347,Paket Siparişi,Kapandı,Ana Kanal,,30177142,126
+253385503,,can,1512.66,137.52,TRY,2025-01-04T14:52:05.547,2025-01-04T17:09:10.13,Paket Siparişi,Kapandı,Ana Kanal,,388046,127
+253387970,,can,472.41,47.49,TRY,2025-01-04T14:58:19.567,2025-01-04T15:24:24.623,Paket Siparişi,Kapandı,Ana Kanal,,33127453,128
+253389330,,can,388.03,35.28,TRY,2025-01-04T15:01:40.873,2025-01-04T15:14:56.213,Paket Siparişi,Kapandı,Ana Kanal,,19108853,129
+253391140,,can,1512.66,137.52,TRY,2025-01-04T15:06:06.217,2025-01-04T15:46:57.13,Paket Siparişi,Kapandı,Ana Kanal,,11769082,130
+253391781,Bahçe Masa 1,can,1047.8,10.37,TRY,2025-01-04T15:07:36.777,2025-01-04T15:37:08.903,Masa Siparişi,Kapandı,Ana Kanal,,0,131
+253394490,,can,410.66,41.88,TRY,2025-01-04T15:14:09.163,2025-01-04T15:50:24.993,Paket Siparişi,Kapandı,Ana Kanal,,26066839,132
+253394810,,can,472.41,47.49,TRY,2025-01-04T15:14:54.28,2025-01-04T15:50:29.39,Paket Siparişi,Kapandı,Ana Kanal,,11376766,133
+253395429,,can,377.41,38.86,TRY,2025-01-04T15:16:24.74,2025-01-04T15:50:27.85,Paket Siparişi,Kapandı,Ana Kanal,,11376766,134
+253395436,,can,507.36,46.12,TRY,2025-01-04T15:16:25.687,2025-01-04T16:08:34.463,Paket Siparişi,Kapandı,Ana Kanal,,31835452,135
+253399899,,can,814.32,78.58,TRY,2025-01-04T15:27:00.647,2025-01-04T15:56:13.797,Paket Siparişi,Kapandı,Ana Kanal,,8328805,136
+253400269,,can,587.8,53.43,TRY,2025-01-04T15:27:50.807,2025-01-04T15:56:16.493,Paket Siparişi,Kapandı,Ana Kanal,,16028057,137
+253401184,,can,472.41,47.49,TRY,2025-01-04T15:30:01.64,2025-01-04T16:21:03.717,Paket Siparişi,Kapandı,Ana Kanal,,18984704,138
+253401374,,can,460.47,41.86,TRY,2025-01-04T15:30:26.247,2025-01-04T16:08:36.197,Paket Siparişi,Kapandı,Ana Kanal,,2174862,139
+253403180,,can,1398.4,13.85,TRY,2025-01-04T15:34:43.473,2025-01-04T16:21:05.26,Paket Siparişi,Kapandı,Ana Kanal,,33128802,140
+253405031,,can,385.01,39.55,TRY,2025-01-04T15:39:04.973,2025-01-04T16:09:51.22,Paket Siparişi,Kapandı,Ana Kanal,,20071118,141
+253406047,,can,950.09,86.37,TRY,2025-01-04T15:41:30.503,2025-01-04T16:36:38.127,Paket Siparişi,Kapandı,Ana Kanal,,30513990,142
+253406060,,can,400.08,36.37,TRY,2025-01-04T15:41:31.657,2025-01-04T16:21:09.327,Paket Siparişi,Kapandı,Ana Kanal,,26224589,143
+253408938,,can,376.9,34.26,TRY,2025-01-04T15:48:18.71,2025-01-04T16:26:34.353,Paket Siparişi,Kapandı,Ana Kanal,,5702346,144
+253409223,,can,871.32,83.76,TRY,2025-01-04T15:48:59.373,2025-01-04T16:36:36.243,Paket Siparişi,Kapandı,Ana Kanal,,7551097,145
+253411351,,can,507.36,46.12,TRY,2025-01-04T15:54:03.293,2025-01-04T16:36:34.067,Paket Siparişi,Kapandı,Ana Kanal,,19087624,146
+253413843,,can,1106.7,100.61,TRY,2025-01-04T15:59:49.723,2025-01-04T17:57:27.697,Paket Siparişi,Kapandı,Ana Kanal,,32062424,147
+253416605,,can,377.41,38.86,TRY,2025-01-04T16:06:20.31,2025-01-04T16:50:14.53,Paket Siparişi,Kapandı,Ana Kanal,,32676502,148
+253416608,,can,448.66,45.33,TRY,2025-01-04T16:06:20.79,2025-01-04T16:50:15.607,Paket Siparişi,Kapandı,Ana Kanal,,20776157,149
+253416725,,can,378.16,34.38,TRY,2025-01-04T16:06:35.8,2025-01-04T17:58:15.64,Paket Siparişi,Kapandı,Ana Kanal,,31324752,150
+253418913,,can,481.82,48.35,TRY,2025-01-04T16:11:37.093,2025-01-04T16:52:16.837,Paket Siparişi,Kapandı,Ana Kanal,,22517115,151
+253419924,,can,385.07,35.01,TRY,2025-01-04T16:13:57.963,2025-01-04T16:56:21.053,Paket Siparişi,Kapandı,Ana Kanal,,33130397,152
+253420252,,can,756.33,68.76,TRY,2025-01-04T16:14:42.793,2025-01-04T16:56:23.563,Paket Siparişi,Kapandı,Ana Kanal,,15042237,153
+253420920,,can,436.9,39.72,TRY,2025-01-04T16:16:17.903,2025-01-04T16:52:27.27,Paket Siparişi,Kapandı,Ana Kanal,,33130494,154
+253421523,,can,904.98,82.27,TRY,2025-01-04T16:17:38.793,2025-01-04T16:56:21.673,Paket Siparişi,Kapandı,Ana Kanal,,22962751,155
+253423417,,can,856.8,77.89,TRY,2025-01-04T16:22:02.407,2025-01-04T16:56:24.35,Paket Siparişi,Kapandı,Ana Kanal,,31076178,156
+253423430,,can,378.16,34.38,TRY,2025-01-04T16:22:04.217,2025-01-04T16:56:25.03,Paket Siparişi,Kapandı,Ana Kanal,,5009152,157
+253423735,,can,378.16,34.38,TRY,2025-01-04T16:22:48.55,2025-01-04T16:56:27.477,Paket Siparişi,Kapandı,Ana Kanal,,32484690,158
+253424675,,can,378.16,34.38,TRY,2025-01-04T16:25:01.937,2025-01-04T17:01:23.527,Paket Siparişi,Kapandı,Ana Kanal,,33130900,159
+253425651,,can,391.97,35.63,TRY,2025-01-04T16:27:13.867,2025-01-04T17:09:47.147,Paket Siparişi,Kapandı,Ana Kanal,,33131005,160
+253430062,,can,379.9,34.54,TRY,2025-01-04T16:37:20.62,2025-01-04T17:09:54.67,Paket Siparişi,Kapandı,Ana Kanal,,30926530,161
+253433130,,can,378.16,34.38,TRY,2025-01-04T16:44:12,2025-01-04T17:09:50.343,Paket Siparişi,Kapandı,Ana Kanal,,26095022,162
+253433158,,can,1475.6,134.15,TRY,2025-01-04T16:44:16.05,2025-01-04T17:09:52.383,Paket Siparişi,Kapandı,Ana Kanal,,29009688,163
+253434824,,can,4159.76,378.16,TRY,2025-01-04T16:47:53.68,2025-01-04T17:31:16.773,Paket Siparişi,Kapandı,Ana Kanal,,1315669,164
+253436106,,can,368.9,33.54,TRY,2025-01-04T16:50:44.163,2025-01-04T17:31:18.997,Paket Siparişi,Kapandı,Ana Kanal,,33132065,165
+253436464,,can,422.17,38.38,TRY,2025-01-04T16:51:34.273,2025-01-04T17:38:55.06,Paket Siparişi,Kapandı,Ana Kanal,,33132106,166
+253438160,Bahçe Masa 1,müdür,1059.1,10.48,TRY,2025-01-04T16:55:21.143,2025-01-04T17:30:45.263,Masa Siparişi,Kapandı,Ana Kanal,,0,167
+253439148,,can,416.36,42.4,TRY,2025-01-04T16:57:37.39,2025-01-04T17:31:21.093,Paket Siparişi,Kapandı,Ana Kanal,,32372062,168
+253439149,,can,377.41,38.86,TRY,2025-01-04T16:57:37.853,2025-01-04T17:38:58.283,Paket Siparişi,Kapandı,Ana Kanal,,22855131,169
+253441158,,can,383.11,39.37,TRY,2025-01-04T17:02:08.94,2025-01-04T17:38:47.907,Paket Siparişi,Kapandı,Ana Kanal,,32981778,170
+253443234,,müdür,1579.6,15.64,TRY,2025-01-04T17:06:48.377,2025-01-04T17:13:04.467,Gel-Al Satış,Kapandı,Ana Kanal,,0,171
+253447631,,can,478.9,43.54,TRY,2025-01-04T17:16:23.5,2025-01-04T17:39:03.44,Paket Siparişi,Kapandı,Ana Kanal,,16041863,172
+253448077,,can,525.03,47.73,TRY,2025-01-04T17:17:22.093,2025-01-04T17:39:00.247,Paket Siparişi,Kapandı,Ana Kanal,,33133348,173
+253448452,,can,378.16,34.38,TRY,2025-01-04T17:18:09.673,2025-01-04T17:46:45.463,Paket Siparişi,Kapandı,Ana Kanal,,30517548,174
+253448983,,can,329.7,29.97,TRY,2025-01-04T17:19:19.247,2025-01-04T17:46:44.123,Paket Siparişi,Kapandı,Ana Kanal,,9879598,175
+253449091,,can,404.3,36.75,TRY,2025-01-04T17:19:34.443,2025-01-04T17:58:25.1,Paket Siparişi,Kapandı,Ana Kanal,,33133457,176
+253449428,,can,1084.49,103.14,TRY,2025-01-04T17:20:18.267,2025-01-04T17:46:37.947,Paket Siparişi,Kapandı,Ana Kanal,,33133497,177
+253451136,,can,1933.3,175.75,TRY,2025-01-04T17:23:59.867,2025-01-04T17:46:40.34,Paket Siparişi,Kapandı,Ana Kanal,,31131833,178
+253455312,,can,804.82,77.71,TRY,2025-01-04T17:33:03.557,2025-01-04T17:58:26.22,Paket Siparişi,Kapandı,Ana Kanal,,33134186,179
+253456260,,can,824.33,74.94,TRY,2025-01-04T17:35:03.007,2025-01-04T18:27:52.243,Paket Siparişi,Kapandı,Ana Kanal,,17095462,180
+253456384,,can,377.41,38.86,TRY,2025-01-04T17:35:19.087,2025-01-04T18:27:54.29,Paket Siparişi,Kapandı,Ana Kanal,,33134309,181
+253457649,,can,488.48,44.41,TRY,2025-01-04T17:37:59.91,2025-01-04T18:28:00.793,Paket Siparişi,Kapandı,Ana Kanal,,559132,182
+253459080,,can,378.16,34.38,TRY,2025-01-04T17:41:01.55,2025-01-04T18:27:58.297,Paket Siparişi,Kapandı,Ana Kanal,,23819879,183
+253459223,,can,383.11,39.37,TRY,2025-01-04T17:41:20.493,2025-01-04T17:58:16.78,Paket Siparişi,Kapandı,Ana Kanal,,30608060,184
+253459770,,can,399.41,36.31,TRY,2025-01-04T17:42:24.873,2025-01-04T18:27:59.417,Paket Siparişi,Kapandı,Ana Kanal,,32653719,185
+253460662,,can,377.41,38.86,TRY,2025-01-04T17:44:21.267,2025-01-04T18:29:34.687,Paket Siparişi,Kapandı,Ana Kanal,,33134847,186
+253460774,,can,446.16,40.56,TRY,2025-01-04T17:44:37.683,2025-01-04T18:28:02.217,Paket Siparişi,Kapandı,Ana Kanal,,31750166,187
+253461825,,can,892.33,81.12,TRY,2025-01-04T17:46:50.11,2025-01-04T18:07:40.34,Paket Siparişi,Kapandı,Ana Kanal,,25010103,188
+253467105,,can,378.16,34.38,TRY,2025-01-04T17:57:53.93,2025-01-04T18:39:26.487,Paket Siparişi,Kapandı,Ana Kanal,,33135648,189
+253469912,,can,756.33,68.76,TRY,2025-01-04T18:03:48.62,2025-01-04T18:29:40.867,Paket Siparişi,Kapandı,Ana Kanal,,17204421,190
+253471664,,can,892.33,81.12,TRY,2025-01-04T18:07:29.867,2025-01-04T19:27:37.237,Paket Siparişi,Kapandı,Ana Kanal,,31557539,191
+253473055,,can,446.16,40.56,TRY,2025-01-04T18:10:26.867,2025-01-04T19:27:39.687,Paket Siparişi,Kapandı,Ana Kanal,,33136428,192
+253473575,,can,377.41,38.86,TRY,2025-01-04T18:11:29.347,2025-01-04T18:39:31.033,Paket Siparişi,Kapandı,Ana Kanal,,9699804,193
+253473885,,can,427.9,38.9,TRY,2025-01-04T18:12:06.437,2025-01-04T18:39:33.777,Paket Siparişi,Kapandı,Ana Kanal,,32944067,194
+253474160,,can,511.47,46.5,TRY,2025-01-04T18:12:39.497,2025-01-04T19:27:40.34,Paket Siparişi,Kapandı,Ana Kanal,,29702413,195
+253476070,,can,250.0,2.48,TRY,2025-01-04T18:16:27.327,2025-01-04T19:27:40.99,Paket Siparişi,Kapandı,Ana Kanal,,6996165,196
+253477055,,can,469.65,42.7,TRY,2025-01-04T18:18:33.393,2025-01-04T19:27:42.383,Paket Siparişi,Kapandı,Ana Kanal,,33136935,197
+253477802,,can,453.07,41.19,TRY,2025-01-04T18:20:05.437,2025-01-04T19:27:41.583,Paket Siparişi,Kapandı,Ana Kanal,,19240518,198
+253478156,,can,756.33,68.76,TRY,2025-01-04T18:20:46.62,2025-01-04T19:27:43.747,Paket Siparişi,Kapandı,Ana Kanal,,19631146,199
+253480958,,can,377.41,38.86,TRY,2025-01-04T18:26:33.803,2025-01-04T19:27:44.75,Paket Siparişi,Kapandı,Ana Kanal,,26235377,200
+253481722,,can,450.41,40.95,TRY,2025-01-04T18:28:08.577,2025-01-04T19:27:45.163,Paket Siparişi,Kapandı,Ana Kanal,,351006,201
+253485414,,can,906.04,82.37,TRY,2025-01-04T18:35:31.517,2025-01-04T19:27:46.007,Paket Siparişi,Kapandı,Ana Kanal,,758063,202
+253486979,,can,416.36,42.4,TRY,2025-01-04T18:38:38.78,2025-01-04T19:27:46.75,Paket Siparişi,Kapandı,Ana Kanal,,33138257,203
+253488281,,can,865.8,78.71,TRY,2025-01-04T18:41:19.397,2025-01-04T19:42:24.42,Paket Siparişi,Kapandı,Ana Kanal,,22243433,204
+253489359,,can,362.5,4.63,TRY,2025-01-04T18:43:32.153,2025-01-04T19:33:46.643,Paket Siparişi,Kapandı,Ana Kanal,,19351261,205
+253489958,Bahçe Masa 1,müdür,699.2,6.92,TRY,2025-01-04T18:44:52.287,2025-01-04T19:45:24.57,Masa Siparişi,Kapandı,Ana Kanal,,0,206
+253490209,,can,1923.64,179.42,TRY,2025-01-04T18:45:26.147,2025-01-04T19:27:47.573,Paket Siparişi,Kapandı,Ana Kanal,,33138671,207
+253490986,,can,1027.89,98.0,TRY,2025-01-04T18:46:56.75,2025-01-04T19:57:40.64,Paket Siparişi,Kapandı,Ana Kanal,,7272081,208
+253491664,,can,368.9,33.54,TRY,2025-01-04T18:48:14.11,2025-01-04T19:57:41.463,Paket Siparişi,Kapandı,Ana Kanal,,19853469,209
+253491750,,can,876.07,84.19,TRY,2025-01-04T18:48:27.293,2025-01-04T19:57:44.19,Paket Siparişi,Kapandı,Ana Kanal,,6508240,210
+253491755,,can,472.31,47.48,TRY,2025-01-04T18:48:27.793,2025-01-04T19:34:19.763,Paket Siparişi,Kapandı,Ana Kanal,,30030763,211
+253491905,,can,991.2,90.11,TRY,2025-01-04T18:48:47.087,2025-01-04T19:57:46.517,Paket Siparişi,Kapandı,Ana Kanal,,33138909,212
+253492572,,can,376.9,34.26,TRY,2025-01-04T18:50:08.897,2025-01-04T19:57:47.6,Paket Siparişi,Kapandı,Ana Kanal,,12274510,213
+253492615,,can,1184.7,11.73,TRY,2025-01-04T18:50:14.003,2025-01-04T19:57:42.37,Paket Siparişi,Kapandı,Ana Kanal,,5284962,214
+253492766,,can,1165.7,105.98,TRY,2025-01-04T18:50:31.573,2025-01-04T19:57:43.67,Paket Siparişi,Kapandı,Ana Kanal,,33139021,215
+253493367,,can,459.97,41.82,TRY,2025-01-04T18:51:45.597,2025-01-04T19:57:45.187,Paket Siparişi,Kapandı,Ana Kanal,,33139099,216
+253493548,,can,379.9,34.54,TRY,2025-01-04T18:52:07.053,2025-01-04T19:57:48.43,Paket Siparişi,Kapandı,Ana Kanal,,33139119,217
+253494162,,can,1918.5,26.27,TRY,2025-01-04T18:53:20.07,2025-01-04T20:01:00.623,Paket Siparişi,Kapandı,Ana Kanal,,33139081,218
+253494355,,can,368.9,33.54,TRY,2025-01-04T18:53:45.763,2025-01-04T20:00:54.923,Paket Siparişi,Kapandı,Ana Kanal,,20776066,219
+253494469,,can,386.66,35.15,TRY,2025-01-04T18:53:57.05,2025-01-04T20:00:56.463,Paket Siparişi,Kapandı,Ana Kanal,,4366660,220
+253494475,,can,1334.16,121.29,TRY,2025-01-04T18:53:57.42,2025-01-04T20:00:59.743,Paket Siparişi,Kapandı,Ana Kanal,,1414953,221
+253494638,,can,737.8,67.07,TRY,2025-01-04T18:54:19.637,2025-01-04T20:00:57.647,Paket Siparişi,Kapandı,Ana Kanal,,32880963,222
+253494728,,can,386.91,39.72,TRY,2025-01-04T18:54:29.517,2025-01-04T20:07:28.517,Paket Siparişi,Kapandı,Ana Kanal,,21558086,223
+253495691,,can,737.8,67.07,TRY,2025-01-04T18:56:20.8,2025-01-04T20:09:46.97,Paket Siparişi,Kapandı,Ana Kanal,,33139425,224
+253500436,,can,913.02,87.55,TRY,2025-01-04T19:05:47.947,2025-01-04T20:01:02.287,Paket Siparişi,Kapandı,Ana Kanal,,31828276,225
+253500775,,can,1393.63,139.87,TRY,2025-01-04T19:06:33.203,2025-01-10T06:11:23.017,Paket Siparişi,Kapandı,Ana Kanal,,8882341,226
+253502338,Bahçe Masa 2,can,1084.4,10.73,TRY,2025-01-04T19:09:41.84,2025-01-04T19:57:31.147,Masa Siparişi,Kapandı,Ana Kanal,,0,227
+253503420,,can,378.8,34.44,TRY,2025-01-04T19:11:52.653,2025-01-04T20:09:48.007,Paket Siparişi,Kapandı,Ana Kanal,,4175703,228
+253503501,,can,837.7,76.15,TRY,2025-01-04T19:12:00.987,2025-01-04T20:09:49.037,Paket Siparişi,Kapandı,Ana Kanal,,33140434,229
+253505612,Bahçe Masa 3,can,794.8,7.87,TRY,2025-01-04T19:16:22.247,2025-01-04T19:45:30.103,Masa Siparişi,Kapandı,Ana Kanal,,0,230
+253505854,,can,928.33,84.39,TRY,2025-01-04T19:16:53.227,2025-01-04T20:09:49.773,Paket Siparişi,Kapandı,Ana Kanal,,33140743,231
+253506194,,can,875.33,79.57,TRY,2025-01-04T19:17:33.193,2025-01-04T20:31:27.107,Paket Siparişi,Kapandı,Ana Kanal,,32983492,232
+253506909,,can,792.5,7.84,TRY,2025-01-04T19:19:00.67,2025-01-04T20:09:50.477,Paket Siparişi,Kapandı,Ana Kanal,,33140826,233
+253507714,,can,1799.5,17.82,TRY,2025-01-04T19:20:42.21,2025-01-04T20:31:28.177,Paket Siparişi,Kapandı,Ana Kanal,,30524408,234
+253509484,,can,930.22,89.11,TRY,2025-01-04T19:24:38.37,2025-01-04T20:09:56.927,Paket Siparişi,Kapandı,Ana Kanal,,25059794,235
+253509952,,can,798.66,72.61,TRY,2025-01-04T19:25:39.557,2025-01-04T20:09:51.677,Paket Siparişi,Kapandı,Ana Kanal,,1350117,236
+253512571,,can,1250.7,113.7,TRY,2025-01-04T19:31:30.047,2025-01-04T20:31:33.773,Paket Siparişi,Kapandı,Ana Kanal,,24638948,237
+253512883,,can,823.82,79.44,TRY,2025-01-04T19:32:11.747,2025-01-04T20:14:14.183,Paket Siparişi,Kapandı,Ana Kanal,,23615977,238
+253513172,,can,567.8,51.61,TRY,2025-01-04T19:32:51.397,2025-01-04T20:09:53.507,Paket Siparişi,Kapandı,Ana Kanal,,18997827,239
+253513604,,can,396.04,36.0,TRY,2025-01-04T19:33:48.333,2025-01-04T20:31:34.747,Paket Siparişi,Kapandı,Ana Kanal,,21011826,240
+253514124,,can,578.8,52.62,TRY,2025-01-04T19:34:59.607,2025-01-04T20:31:35.77,Paket Siparişi,Kapandı,Ana Kanal,,33141758,241
+253514538,,can,412.56,42.05,TRY,2025-01-04T19:35:57.353,2025-01-04T20:09:54.79,Paket Siparişi,Kapandı,Ana Kanal,,15142660,242
+253514772,Bahçe Masa 4,müdür,699.2,6.92,TRY,2025-01-04T19:36:31.32,2025-01-04T20:30:41.633,Masa Siparişi,Kapandı,Ana Kanal,,0,243
+253514843,,can,838.07,80.74,TRY,2025-01-04T19:36:42.497,2025-01-04T20:31:39.95,Paket Siparişi,Kapandı,Ana Kanal,,33141837,244
+253514909,,can,378.16,34.38,TRY,2025-01-04T19:36:51.257,2025-01-04T20:31:36.757,Paket Siparişi,Kapandı,Ana Kanal,,24952060,245
+253515483,,can,2039.49,185.41,TRY,2025-01-04T19:38:13.513,2025-01-04T20:31:41.01,Paket Siparişi,Kapandı,Ana Kanal,,30974555,246
+253516849,,can,1236.41,112.4,TRY,2025-01-04T19:41:10.45,2025-01-04T20:31:32.753,Paket Siparişi,Kapandı,Ana Kanal,,33142108,247
+253517518,,can,378.16,34.38,TRY,2025-01-04T19:42:38.367,2025-01-04T20:31:37.517,Paket Siparişi,Kapandı,Ana Kanal,,345417,248
+253519778,,can,804.82,77.71,TRY,2025-01-04T19:48:00.923,2025-01-04T20:31:43.15,Paket Siparişi,Kapandı,Ana Kanal,,21334147,249
+253521002,,can,610.64,55.51,TRY,2025-01-04T19:50:44.89,2025-01-04T20:35:16.333,Paket Siparişi,Kapandı,Ana Kanal,,17555618,250
+253521359,,can,957.78,87.07,TRY,2025-01-04T19:51:29.133,2025-01-04T20:35:17.53,Paket Siparişi,Kapandı,Ana Kanal,,22671529,251
+253521993,,can,446.16,40.56,TRY,2025-01-04T19:52:57.947,2025-01-04T20:50:27.09,Paket Siparişi,Kapandı,Ana Kanal,,28793721,252
+253522327,,can,446.16,40.56,TRY,2025-01-04T19:53:42.093,2025-01-04T20:50:28.7,Paket Siparişi,Kapandı,Ana Kanal,,696277,253
+253524940,,can,398.5,36.23,TRY,2025-01-04T19:59:35.617,2025-01-04T20:50:30.02,Paket Siparişi,Kapandı,Ana Kanal,,20983142,254
+253525797,,can,377.41,38.86,TRY,2025-01-04T20:01:34.987,2025-01-04T20:31:47.057,Paket Siparişi,Kapandı,Ana Kanal,,32861926,255
+253527987,,can,737.8,67.08,TRY,2025-01-04T20:06:29.283,2025-01-04T20:50:33.47,Paket Siparişi,Kapandı,Ana Kanal,,2276699,256
+253528023,,can,334.6,3.31,TRY,2025-01-04T20:06:34.22,2025-01-04T20:50:30.57,Paket Siparişi,Kapandı,Ana Kanal,,33143417,257
+253528541,,can,343.57,35.78,TRY,2025-01-04T20:07:47.483,2025-01-04T20:53:24.327,Paket Siparişi,Kapandı,Ana Kanal,,26599073,258
+253528960,Bahçe Masa 1,can,779.8,7.72,TRY,2025-01-04T20:08:48.167,2025-01-04T20:30:38.423,Masa Siparişi,Kapandı,Ana Kanal,,0,259
+253529900,,can,423.9,38.54,TRY,2025-01-04T20:11:00.19,2025-01-04T20:40:22.85,Paket Siparişi,Kapandı,Ana Kanal,,32817473,260
+253531678,,can,899.73,86.35,TRY,2025-01-04T20:15:10.2,2025-01-04T20:50:36.153,Paket Siparişi,Kapandı,Ana Kanal,,33143872,261
+253532244,Bahçe Masa 2,can,343.6,3.4,TRY,2025-01-04T20:16:29.74,2025-01-04T20:26:49.937,Masa Siparişi,Kapandı,Ana Kanal,,0,262
+253533823,,can,405.41,36.86,TRY,2025-01-04T20:20:19.867,2025-01-04T20:50:41.273,Paket Siparişi,Kapandı,Ana Kanal,,759775,263
+253534500,,can,377.41,38.86,TRY,2025-01-04T20:21:57.34,2025-01-04T20:58:52.853,Paket Siparişi,Kapandı,Ana Kanal,,18137363,264
+253534821,,can,472.32,47.49,TRY,2025-01-04T20:22:42.753,2025-01-04T21:03:06.89,Paket Siparişi,Kapandı,Ana Kanal,,33144207,265
+253535352,,can,386.66,35.15,TRY,2025-01-04T20:24:00.293,2025-01-04T20:58:54.59,Paket Siparişi,Kapandı,Ana Kanal,,31220201,266
+253535988,,can,719.8,7.13,TRY,2025-01-04T20:25:30.527,2025-01-04T20:39:38.42,Paket Siparişi,Kapandı,Ana Kanal,,21372559,267
+253539056,,can,410.66,41.88,TRY,2025-01-04T20:33:16.523,2025-01-04T21:04:00.087,Paket Siparişi,Kapandı,Ana Kanal,,33144724,268
+253539478,,can,416.78,37.89,TRY,2025-01-04T20:34:19.213,2025-01-04T20:53:30.05,Paket Siparişi,Kapandı,Ana Kanal,,17993132,269
+253539718,Bahçe Masa 1,can,709.5,7.02,TRY,2025-01-04T20:34:55.833,2025-01-04T21:14:23.65,Masa Siparişi,Kapandı,Ana Kanal,,0,270
+253542615,,can,378.16,34.38,TRY,2025-01-04T20:42:26.92,2025-01-04T20:58:58.903,Paket Siparişi,Kapandı,Ana Kanal,,427275,271
+253542618,,can,391.97,35.63,TRY,2025-01-04T20:42:27.23,2025-01-04T21:27:16.92,Paket Siparişi,Kapandı,Ana Kanal,,30009185,272
+253543195,,can,1159.98,105.45,TRY,2025-01-04T20:43:54.397,2025-01-04T21:27:14.937,Paket Siparişi,Kapandı,Ana Kanal,,23869157,273
+253545867,Bahçe Masa 2,can,1379.7,13.66,TRY,2025-01-04T20:51:09.597,2025-01-04T21:26:50.667,Masa Siparişi,Kapandı,Ana Kanal,,0,274
+253547070,,can,938.68,89.89,TRY,2025-01-04T20:54:22.75,2025-01-04T21:27:18.167,Paket Siparişi,Kapandı,Ana Kanal,,22959267,275
+253547806,,can,504.07,45.82,TRY,2025-01-04T20:56:30.57,2025-01-04T21:35:30.11,Paket Siparişi,Kapandı,Ana Kanal,,31678688,276
+253548534,Bahçe Masa 3,müdür,774.8,7.67,TRY,2025-01-04T20:58:35.297,2025-01-04T21:24:17.447,Masa Siparişi,Kapandı,Ana Kanal,,0,277
+253548547,,can,666.98,60.63,TRY,2025-01-04T20:58:39.103,2025-01-04T21:27:19.92,Paket Siparişi,Kapandı,Ana Kanal,,28106672,278
+253549579,,can,378.16,34.38,TRY,2025-01-04T21:01:39.967,2025-01-04T21:42:33.303,Paket Siparişi,Kapandı,Ana Kanal,,1627239,279
+253550185,,can,410.66,41.88,TRY,2025-01-04T21:03:25.443,2025-01-04T21:45:52.333,Paket Siparişi,Kapandı,Ana Kanal,,8471776,280
+253554196,,can,410.66,41.88,TRY,2025-01-04T21:14:44.067,2025-01-04T21:42:35.06,Paket Siparişi,Kapandı,Ana Kanal,,26958108,281
+253554531,,can,756.33,68.76,TRY,2025-01-04T21:15:38.933,2025-01-04T22:13:10.81,Paket Siparişi,Kapandı,Ana Kanal,,22303682,282
+253554999,,can,410.66,41.88,TRY,2025-01-04T21:16:59.45,2025-01-04T21:49:02.363,Paket Siparişi,Kapandı,Ana Kanal,,15134202,283
+253557668,,can,450.41,40.95,TRY,2025-01-04T21:24:28.797,2025-01-04T22:13:12.827,Paket Siparişi,Kapandı,Ana Kanal,,20657068,284
+253558036,,can,1631.8,148.35,TRY,2025-01-04T21:25:26.67,2025-01-04T21:49:05.347,Paket Siparişi,Kapandı,Ana Kanal,,26326685,285
+253558987,,can,349.33,36.3,TRY,2025-01-04T21:28:10.35,2025-01-04T22:13:12.003,Paket Siparişi,Kapandı,Ana Kanal,,25894547,286
+253560429,,can,446.16,40.56,TRY,2025-01-04T21:32:35.327,2025-01-04T22:13:13.577,Paket Siparişi,Kapandı,Ana Kanal,,24759949,287
+253563273,,can,368.9,33.54,TRY,2025-01-04T21:41:12.607,2025-01-04T22:13:14.69,Paket Siparişi,Kapandı,Ana Kanal,,33147636,288
+253564095,,can,460.96,41.91,TRY,2025-01-04T21:43:39.447,2025-01-04T22:23:17.81,Paket Siparişi,Kapandı,Ana Kanal,,1420399,289
+253564176,Bahçe Masa 1,müdür,2068.9,20.48,TRY,2025-01-04T21:43:52.253,2025-01-04T22:22:31.333,Masa Siparişi,Kapandı,Ana Kanal,,0,290
+253565512,,can,446.16,40.56,TRY,2025-01-04T21:48:04.2,2025-01-04T22:35:27.91,Paket Siparişi,Kapandı,Ana Kanal,,30550362,291
+253565742,,can,894.36,81.31,TRY,2025-01-04T21:48:48.493,2025-01-04T22:13:17.62,Paket Siparişi,Kapandı,Ana Kanal,,18048343,292
+253565933,,can,377.41,38.86,TRY,2025-01-04T21:49:25.863,2025-01-04T22:23:20.26,Paket Siparişi,Kapandı,Ana Kanal,,14950394,293
+253570123,,can,378.16,34.38,TRY,2025-01-04T22:03:33.133,2025-01-04T22:44:06.907,Paket Siparişi,Kapandı,Ana Kanal,,32686265,294
+253570465,,can,669.8,60.89,TRY,2025-01-04T22:04:41.82,2025-01-04T22:44:09.423,Paket Siparişi,Kapandı,Ana Kanal,,33148644,295
+253570567,,can,386.66,35.15,TRY,2025-01-04T22:05:01.707,2025-01-04T22:44:08.11,Paket Siparişi,Kapandı,Ana Kanal,,33148664,296
+253570861,,can,411.61,41.96,TRY,2025-01-04T22:06:02.907,2025-01-04T22:23:24.703,Paket Siparişi,Kapandı,Ana Kanal,,33148710,297
+253571077,,can,386.91,39.72,TRY,2025-01-04T22:06:48.013,2025-01-04T22:23:26.597,Paket Siparişi,Kapandı,Ana Kanal,,33148710,298
+253571212,,can,378.16,34.38,TRY,2025-01-04T22:07:14.19,2025-01-04T22:35:24.95,Paket Siparişi,Kapandı,Ana Kanal,,33148767,299
+253571743,,can,368.9,33.54,TRY,2025-01-04T22:09:00.687,2025-01-04T22:28:22.843,Paket Siparişi,Kapandı,Ana Kanal,,30087333,300
+253574539,,can,775.78,70.53,TRY,2025-01-04T22:19:04.287,2025-01-04T22:55:54.19,Paket Siparişi,Kapandı,Ana Kanal,,1525532,301
+253574966,,can,1098.47,99.86,TRY,2025-01-04T22:20:31.91,2025-01-04T22:55:55.337,Paket Siparişi,Kapandı,Ana Kanal,,11652804,302
+253576048,,can,446.16,40.56,TRY,2025-01-04T22:24:13.753,2025-01-04T22:44:11.793,Paket Siparişi,Kapandı,Ana Kanal,,451022,303
+253576085,,can,448.9,40.81,TRY,2025-01-04T22:24:21.333,2025-01-04T22:55:57.187,Paket Siparişi,Kapandı,Ana Kanal,,33149539,304
+253576616,,can,737.8,67.08,TRY,2025-01-04T22:26:22.893,2025-01-04T22:48:22.193,Paket Siparişi,Kapandı,Ana Kanal,,7371626,305
+253579957,,can,488.5,37.15,TRY,2025-01-04T22:40:00.99,2025-01-04T22:50:53.067,Paket Siparişi,Kapandı,Ana Kanal,,32663092,306
+253634550,,can,684.5,6.77,TRY,2025-01-05T13:03:00.97,2025-01-05T13:28:47.75,Paket Siparişi,Kapandı,Ana Kanal,,7098030,101
+253634715,,can,892.33,81.12,TRY,2025-01-05T13:03:43.393,2025-01-05T13:30:53.293,Paket Siparişi,Kapandı,Ana Kanal,,31557539,102
+253637251,,can,1278.2,116.2,TRY,2025-01-05T13:13:39.563,2025-01-05T14:09:52.66,Paket Siparişi,Kapandı,Ana Kanal,,33159819,103
+253639302,,can,379.9,34.54,TRY,2025-01-05T13:21:26.613,2025-01-05T13:43:45.563,Paket Siparişi,Kapandı,Ana Kanal,,19618358,104
+253642132,Bahçe Masa 1,can,394.9,3.91,TRY,2025-01-05T13:31:47.053,2025-01-05T13:53:13.35,Masa Siparişi,Kapandı,Ana Kanal,,0,105
+253642582,,can,349.9,3.46,TRY,2025-01-05T13:33:21.82,2025-01-05T14:09:45.723,Paket Siparişi,Kapandı,Ana Kanal,,28252265,106
+253642991,,can,450.41,40.95,TRY,2025-01-05T13:34:47.227,2025-01-05T14:09:47.6,Paket Siparişi,Kapandı,Ana Kanal,,12771825,107
+253643699,,can,837.7,76.16,TRY,2025-01-05T13:37:22.603,2025-01-05T14:09:57.093,Paket Siparişi,Kapandı,Ana Kanal,,29153680,108
+253643856,,can,491.9,44.71,TRY,2025-01-05T13:37:53.313,2025-01-05T14:23:32.557,Paket Siparişi,Kapandı,Ana Kanal,,30020119,109
+253646538,,can,378.16,34.38,TRY,2025-01-05T13:47:15.253,2025-01-05T14:17:24.39,Paket Siparişi,Kapandı,Ana Kanal,,33160765,110
+253652903,Bahçe Masa 1,müdür,799.8,7.92,TRY,2025-01-05T14:07:07.05,2025-01-05T14:29:00.583,Masa Siparişi,Kapandı,Ana Kanal,,0,111
+253655416,,can,2230.8,202.8,TRY,2025-01-05T14:14:31.413,2025-01-05T14:57:04.777,Paket Siparişi,Kapandı,Ana Kanal,,1315669,112
+253656441,,can,527.89,47.99,TRY,2025-01-05T14:17:28.41,2025-01-05T14:57:02.833,Paket Siparişi,Kapandı,Ana Kanal,,6598114,113
+253660860,,can,379.9,3.76,TRY,2025-01-05T14:29:33.837,2025-01-05T15:04:51.107,Paket Siparişi,Kapandı,Ana Kanal,,29558556,114
+253666900,,can,892.33,81.12,TRY,2025-01-05T14:45:29.203,2025-01-05T15:29:44.743,Paket Siparişi,Kapandı,Ana Kanal,,33162718,115
+253668472,,can,699.2,6.92,TRY,2025-01-05T14:49:24.68,2025-01-05T15:29:47.34,Paket Siparişi,Kapandı,Ana Kanal,,555441,116
+253668676,,can,446.16,40.56,TRY,2025-01-05T14:49:54.777,2025-01-05T15:29:48.11,Paket Siparişi,Kapandı,Ana Kanal,,33162867,117
+253669129,,can,487.9,44.35,TRY,2025-01-05T14:50:55.95,2025-01-05T15:29:49.953,Paket Siparişi,Kapandı,Ana Kanal,,18754707,118
+253671965,,can,390.0,35.45,TRY,2025-01-05T14:58:01.73,2025-01-05T15:29:50.577,Paket Siparişi,Kapandı,Ana Kanal,,33163173,119
+253673456,,can,359.9,32.72,TRY,2025-01-05T15:01:44.693,2025-01-05T15:29:52.263,Paket Siparişi,Kapandı,Ana Kanal,,25498131,120
+253673775,,can,386.66,35.15,TRY,2025-01-05T15:02:27.543,2025-01-05T15:29:54.397,Paket Siparişi,Kapandı,Ana Kanal,,2066510,121
+253676258,,can,477.16,47.92,TRY,2025-01-05T15:08:24.507,2025-01-05T15:57:59.533,Paket Siparişi,Kapandı,Ana Kanal,,23603179,122
+253677056,Bahçe Masa 1,can,334.6,3.31,TRY,2025-01-05T15:10:06.547,2025-01-05T15:11:49.037,Masa Siparişi,Kapandı,Ana Kanal,,0,123
+253677582,,can,639.41,58.13,TRY,2025-01-05T15:11:18.613,2025-01-05T15:41:54.227,Paket Siparişi,Kapandı,Ana Kanal,,27090732,124
+253678520,,can,756.33,68.76,TRY,2025-01-05T15:13:31.403,2025-01-05T15:29:56.067,Paket Siparişi,Kapandı,Ana Kanal,,30116557,125
+253679107,,can,648.6,58.97,TRY,2025-01-05T15:14:54.39,2025-01-05T15:34:00.817,Paket Siparişi,Kapandı,Ana Kanal,,5200075,126
+253681469,,can,432.9,39.35,TRY,2025-01-05T15:20:25.123,2025-01-05T15:34:13.613,Paket Siparişi,Kapandı,Ana Kanal,,33164011,127
+253683467,Bahçe Masa 1,can,349.6,3.46,TRY,2025-01-05T15:25:05.84,2025-01-05T15:44:39.363,Masa Siparişi,Kapandı,Ana Kanal,,0,128
+253691225,,can,376.9,34.26,TRY,2025-01-05T15:42:04.84,2025-01-05T15:57:57.08,Paket Siparişi,Kapandı,Ana Kanal,,22956088,129
+253693740,,can,764.83,69.53,TRY,2025-01-05T15:47:30.02,2025-01-05T16:25:14.917,Paket Siparişi,Kapandı,Ana Kanal,,33165208,130
+253696029,,can,456.03,41.46,TRY,2025-01-05T15:52:36.617,2025-01-05T16:25:16.517,Paket Siparişi,Kapandı,Ana Kanal,,12056347,131
+253699903,,can,368.9,33.54,TRY,2025-01-05T16:00:43.477,2025-01-05T16:39:21.89,Paket Siparişi,Kapandı,Ana Kanal,,15636149,132
+253700604,,can,368.9,33.54,TRY,2025-01-05T16:02:10.787,2025-01-05T16:39:26.813,Paket Siparişi,Kapandı,Ana Kanal,,10465218,133
+253702689,,can,385.07,35.01,TRY,2025-01-05T16:06:37.49,2025-01-05T16:39:28.1,Paket Siparişi,Kapandı,Ana Kanal,,33166010,134
+253703435,,can,385.07,35.01,TRY,2025-01-05T16:08:06.223,2025-01-05T16:54:47.573,Paket Siparişi,Kapandı,Ana Kanal,,29338436,135
+253703999,,can,328.16,34.38,TRY,2025-01-05T16:09:09.773,2025-01-05T16:45:31.173,Paket Siparişi,Kapandı,Ana Kanal,,21062182,136
+253704777,,can,427.9,38.9,TRY,2025-01-05T16:10:42.117,2025-01-05T16:39:30.38,Paket Siparişi,Kapandı,Ana Kanal,,17182225,137
+253704945,Masa 1,can,399.0,36.27,TRY,2025-01-05T16:11:01.69,2025-01-05T16:53:18.56,Masa Siparişi,Kapandı,Ana Kanal,,33166229,138
+253705141,Masa 3,can,359.0,32.64,TRY,2025-01-05T16:11:27.717,2025-01-05T16:53:38.103,Masa Siparişi,Kapandı,Ana Kanal,,33166247,139
+253705307,,can,328.16,35.9,TRY,2025-01-05T16:11:47.407,2025-01-05T16:45:32.723,Paket Siparişi,Kapandı,Ana Kanal,,536827,140
+253706516,,can,378.16,34.38,TRY,2025-01-05T16:14:07.12,2025-01-05T16:45:33.85,Paket Siparişi,Kapandı,Ana Kanal,,31002871,141
+253708668,,can,737.8,67.08,TRY,2025-01-05T16:18:14.507,2025-01-05T16:54:48.767,Paket Siparişi,Kapandı,Ana Kanal,,26025868,142
+253709781,,can,446.16,40.56,TRY,2025-01-05T16:20:39.97,2025-01-05T17:12:35.917,Paket Siparişi,Kapandı,Ana Kanal,,912951,143
+253710968,,can,422.06,42.91,TRY,2025-01-05T16:23:05.977,2025-01-05T17:12:38.737,Paket Siparişi,Kapandı,Ana Kanal,,33166773,144
+253713045,,can,378.16,34.38,TRY,2025-01-05T16:27:16.377,2025-01-05T17:12:37.663,Paket Siparişi,Kapandı,Ana Kanal,,1063200,145
+253714017,,can,449.9,4.45,TRY,2025-01-05T16:29:10.217,2025-01-05T16:44:26.64,Paket Siparişi,Kapandı,Ana Kanal,,20454603,146
+253714568,,can,1134.48,103.14,TRY,2025-01-05T16:30:13.813,2025-01-05T16:54:57.003,Paket Siparişi,Kapandı,Ana Kanal,,16731275,147
+253719454,,can,453.07,41.19,TRY,2025-01-05T16:39:48.09,2025-01-05T17:12:39.433,Paket Siparişi,Kapandı,Ana Kanal,,33167606,148
+253720659,,can,1398.4,13.85,TRY,2025-01-05T16:42:05.777,2025-01-05T17:59:39.2,Paket Siparişi,Kapandı,Ana Kanal,,29449587,149
+253723660,,can,378.16,34.38,TRY,2025-01-05T16:47:54.373,2025-01-05T17:59:40.46,Paket Siparişi,Kapandı,Ana Kanal,,25981002,150
+253731482,,can,989.03,94.45,TRY,2025-01-05T17:03:04.193,2025-01-05T17:59:42.98,Paket Siparişi,Kapandı,Ana Kanal,,29257310,151
+253731663,,can,1512.66,137.52,TRY,2025-01-05T17:03:24.16,2025-01-05T17:59:46.52,Paket Siparişi,Kapandı,Ana Kanal,,31191103,152
+253732151,,can,758.8,68.99,TRY,2025-01-05T17:04:28.593,2025-01-05T17:59:45.11,Paket Siparişi,Kapandı,Ana Kanal,,25091817,153
+253734373,,can,1726.86,156.98,TRY,2025-01-05T17:08:35.393,2025-01-05T17:59:43.703,Paket Siparişi,Kapandı,Ana Kanal,,33169247,154
+253734647,,can,1108.82,105.35,TRY,2025-01-05T17:09:06.573,2025-01-05T17:59:49.747,Paket Siparişi,Kapandı,Ana Kanal,,33169282,155
+253734741,,can,616.08,56.0,TRY,2025-01-05T17:09:16.937,2025-01-05T17:59:50.587,Paket Siparişi,Kapandı,Ana Kanal,,3993547,156
+253735139,,can,462.93,42.08,TRY,2025-01-05T17:10:01.94,2025-01-05T17:59:59.817,Paket Siparişi,Kapandı,Ana Kanal,,25435516,157
+253735287,,can,379.9,3.76,TRY,2025-01-05T17:10:18.4,2025-01-05T17:59:51.26,Paket Siparişi,Kapandı,Ana Kanal,,33169349,158
+253735961,,can,396.16,43.17,TRY,2025-01-05T17:11:30.187,2025-01-05T17:59:54.787,Paket Siparişi,Kapandı,Ana Kanal,,23965515,159
+253736349,,can,328.16,35.9,TRY,2025-01-05T17:12:14.963,2025-01-05T17:59:55.97,Paket Siparişi,Kapandı,Ana Kanal,,23965515,160
+253736831,,can,1392.6,126.6,TRY,2025-01-05T17:13:05.467,2025-01-05T18:00:03.747,Paket Siparişi,Kapandı,Ana Kanal,,4252587,161
+253737322,,can,1034.4,10.24,TRY,2025-01-05T17:14:01.197,2025-01-05T18:00:06.243,Paket Siparişi,Kapandı,Ana Kanal,,32696583,162
+253737539,,can,378.16,34.38,TRY,2025-01-05T17:14:27.667,2025-01-05T17:59:56.983,Paket Siparişi,Kapandı,Ana Kanal,,23965515,163
+253738302,,can,393.57,35.78,TRY,2025-01-05T17:15:55.793,2025-01-05T18:00:07.667,Paket Siparişi,Kapandı,Ana Kanal,,33169676,164
+253741522,,can,885.57,85.05,TRY,2025-01-05T17:21:55.91,2025-01-05T18:00:05.643,Paket Siparişi,Kapandı,Ana Kanal,,12774782,165
+253742238,,can,378.16,34.38,TRY,2025-01-05T17:23:17.937,2025-01-05T18:00:08.787,Paket Siparişi,Kapandı,Ana Kanal,,33170178,166
+253742240,,can,378.16,34.38,TRY,2025-01-05T17:23:18.24,2025-01-05T18:00:12.143,Paket Siparişi,Kapandı,Ana Kanal,,1165852,167
+253742328,,can,884.62,84.97,TRY,2025-01-05T17:23:26.997,2025-01-05T18:35:56.287,Paket Siparişi,Kapandı,Ana Kanal,,18196901,168
+253743259,,can,368.9,33.54,TRY,2025-01-05T17:25:10.313,2025-01-05T18:35:57.283,Paket Siparişi,Kapandı,Ana Kanal,,25570545,169
+253743540,,can,966.23,92.39,TRY,2025-01-05T17:25:42.753,2025-01-05T18:35:58.643,Paket Siparişi,Kapandı,Ana Kanal,,33170331,170
+253744264,,can,368.9,33.54,TRY,2025-01-05T17:27:06.05,2025-01-05T18:00:15.323,Paket Siparişi,Kapandı,Ana Kanal,,32256964,171
+253744843,Masa 1,can,349.6,3.46,TRY,2025-01-05T17:28:13.573,2025-01-05T17:58:31.907,Masa Siparişi,Kapandı,Ana Kanal,,0,172
+253745513,,can,804.82,77.71,TRY,2025-01-05T17:29:28.633,2025-01-05T18:00:19.32,Paket Siparişi,Kapandı,Ana Kanal,,33170576,173
+253745632,,can,368.9,33.54,TRY,2025-01-05T17:29:40.653,2025-01-05T18:00:10.747,Paket Siparişi,Kapandı,Ana Kanal,,26117731,174
+253747644,,can,1499.6,136.33,TRY,2025-01-05T17:33:32.943,2025-01-05T18:35:59.81,Paket Siparişi,Kapandı,Ana Kanal,,32293408,175
+253750322,,can,495.25,45.02,TRY,2025-01-05T17:38:45.58,2025-01-05T18:36:00.323,Paket Siparişi,Kapandı,Ana Kanal,,542946,176
+253752248,,can,377.41,38.86,TRY,2025-01-05T17:42:17.667,2025-01-05T18:36:01.133,Paket Siparişi,Kapandı,Ana Kanal,,22338002,177
+253752746,,can,368.9,33.54,TRY,2025-01-05T17:43:13.04,2025-01-05T18:00:23.49,Paket Siparişi,Kapandı,Ana Kanal,,28360810,178
+253752977,,can,1380.4,13.66,TRY,2025-01-05T17:43:39.19,2025-01-05T18:36:01.74,Paket Siparişi,Kapandı,Ana Kanal,,33171387,179
+253753878,,can,1545.7,140.52,TRY,2025-01-05T17:45:19.53,2025-01-05T18:36:02.57,Paket Siparişi,Kapandı,Ana Kanal,,33171595,180
+253756370,,can,922.53,88.41,TRY,2025-01-05T17:49:50.307,2025-01-05T18:36:06.983,Paket Siparişi,Kapandı,Ana Kanal,,10379676,181
+253756752,,can,453.07,41.19,TRY,2025-01-05T17:50:34.547,2025-01-05T18:36:03.66,Paket Siparişi,Kapandı,Ana Kanal,,1458269,182
+253757123,,can,1652.84,150.27,TRY,2025-01-05T17:51:18.76,2025-01-05T18:36:02.88,Paket Siparişi,Kapandı,Ana Kanal,,3972408,183
+253757968,,can,891.27,85.57,TRY,2025-01-05T17:52:51.71,2025-01-05T18:36:04.977,Paket Siparişi,Kapandı,Ana Kanal,,29253600,184
+253757975,,can,378.16,34.38,TRY,2025-01-05T17:52:52.463,2025-01-05T18:36:06.183,Paket Siparişi,Kapandı,Ana Kanal,,1616753,185
+253759133,,can,1750.66,159.16,TRY,2025-01-05T17:55:03.467,2025-01-05T18:36:04.607,Paket Siparişi,Kapandı,Ana Kanal,,28514128,186
+253763773,,can,378.16,34.38,TRY,2025-01-05T18:03:50.773,2025-01-05T18:36:07.86,Paket Siparişi,Kapandı,Ana Kanal,,1831147,187
+253765148,,can,1433.7,130.33,TRY,2025-01-05T18:06:16.753,2025-01-05T19:09:01.89,Paket Siparişi,Kapandı,Ana Kanal,,23835482,188
+253765272,,can,737.8,67.08,TRY,2025-01-05T18:06:28.757,2025-01-05T19:09:02.87,Paket Siparişi,Kapandı,Ana Kanal,,31924881,189
+253769910,,can,378.16,34.38,TRY,2025-01-05T18:14:53.297,2025-01-05T18:36:12.28,Paket Siparişi,Kapandı,Ana Kanal,,10519458,190
+253771182,,can,446.16,40.56,TRY,2025-01-05T18:17:06.93,2025-01-05T18:36:16.47,Paket Siparişi,Kapandı,Ana Kanal,,10519458,191
+253771573,,can,446.16,40.56,TRY,2025-01-05T18:17:51.073,2025-01-05T18:40:43.383,Paket Siparişi,Kapandı,Ana Kanal,,33173983,192
+253771579,,can,1338.48,121.68,TRY,2025-01-05T18:17:51.363,2025-01-05T22:48:17.59,Paket Siparişi,Kapandı,Ana Kanal,,30091163,193
+253773189,,can,377.41,38.86,TRY,2025-01-05T18:20:44.163,2025-01-05T19:09:03.63,Paket Siparişi,Kapandı,Ana Kanal,,33174212,194
+253773406,,can,427.9,38.9,TRY,2025-01-05T18:21:08.22,2025-01-05T19:09:04.697,Paket Siparişi,Kapandı,Ana Kanal,,33174247,195
+253775163,,can,432.9,39.35,TRY,2025-01-05T18:24:18.973,2025-01-05T18:40:48.66,Paket Siparişi,Kapandı,Ana Kanal,,33174473,196
+253775683,,can,383.11,39.37,TRY,2025-01-05T18:25:15.953,2025-01-05T19:09:06.403,Paket Siparişi,Kapandı,Ana Kanal,,9608346,197
+253777637,,can,824.33,74.94,TRY,2025-01-05T18:28:54.653,2025-01-05T19:46:22.43,Paket Siparişi,Kapandı,Ana Kanal,,30456576,198
+253778738,,can,745.8,67.8,TRY,2025-01-05T18:30:50.457,2025-01-05T19:19:00.643,Paket Siparişi,Kapandı,Ana Kanal,,33174962,199
+253779801,,can,769.1,13.27,TRY,2025-01-05T18:32:48.51,2025-01-05T19:46:12.84,Paket Siparişi,Kapandı,Ana Kanal,,33175079,200
+253780129,,can,986.73,89.7,TRY,2025-01-05T18:33:23.85,2025-01-05T19:19:03.93,Paket Siparişi,Kapandı,Ana Kanal,,22420749,201
+253780628,Masa 1,can,1119.4,37.77,TRY,2025-01-05T18:34:14.167,2025-01-05T19:01:33.32,Masa Siparişi,Kapandı,Ana Kanal,,0,202
+253781075,,can,383.11,39.37,TRY,2025-01-05T18:35:05.567,2025-01-05T19:46:21.897,Paket Siparişi,Kapandı,Ana Kanal,,20434978,203
+253782152,Masa 2,can,1203.4,11.91,TRY,2025-01-05T18:37:05.39,2025-01-05T18:49:17.71,Masa Siparişi,Kapandı,Ana Kanal,,0,204
+253782535,,can,1831.24,166.48,TRY,2025-01-05T18:37:45.637,2025-01-05T19:46:23.187,Paket Siparişi,Kapandı,Ana Kanal,,1066878,205
+253783028,,can,368.9,33.54,TRY,2025-01-05T18:38:41.903,2025-01-05T19:46:20.563,Paket Siparişi,Kapandı,Ana Kanal,,29234401,206
+253783720,,can,1024.68,93.15,TRY,2025-01-05T18:39:57.857,2025-01-05T19:46:24.39,Paket Siparişi,Kapandı,Ana Kanal,,33175646,207
+253783727,,can,378.16,34.38,TRY,2025-01-05T18:39:58.457,2025-01-05T19:08:57.127,Paket Siparişi,Kapandı,Ana Kanal,,28986988,208
+253785521,,can,368.9,33.54,TRY,2025-01-05T18:43:19.533,2025-01-05T19:46:33.15,Paket Siparişi,Kapandı,Ana Kanal,,2408430,209
+253786961,,can,349.6,3.46,TRY,2025-01-05T18:45:54.34,2025-01-05T19:18:56.137,Paket Siparişi,Kapandı,Ana Kanal,,26851114,210
+253788149,,can,328.16,35.9,TRY,2025-01-05T18:48:04.143,2025-01-05T19:46:21.233,Paket Siparişi,Kapandı,Ana Kanal,,15047169,211
+253790525,,can,529.41,52.67,TRY,2025-01-05T18:52:26.32,2025-01-05T19:46:37.747,Paket Siparişi,Kapandı,Ana Kanal,,29305472,212
+253790550,,can,328.16,35.9,TRY,2025-01-05T18:52:29.21,2025-01-05T19:46:36.54,Paket Siparişi,Kapandı,Ana Kanal,,15047169,213
+253790972,,can,994.33,90.39,TRY,2025-01-05T18:53:16.563,2025-01-05T19:46:26.467,Paket Siparişi,Kapandı,Ana Kanal,,33176627,214
+253790976,,can,756.33,68.76,TRY,2025-01-05T18:53:16.883,2025-01-05T19:46:40.87,Paket Siparişi,Kapandı,Ana Kanal,,20463394,215
+253790981,,can,378.16,34.38,TRY,2025-01-05T18:53:17.197,2025-01-05T19:46:35.13,Paket Siparişi,Kapandı,Ana Kanal,,15588118,216
+253791346,,can,378.16,34.38,TRY,2025-01-05T18:53:57.347,2025-01-05T19:46:39,Paket Siparişi,Kapandı,Ana Kanal,,19393808,217
+253791738,,can,573.58,52.14,TRY,2025-01-05T18:54:41.69,2025-01-05T19:46:43.48,Paket Siparişi,Kapandı,Ana Kanal,,546760,218
+253791750,,can,505.57,50.51,TRY,2025-01-05T18:54:42.813,2025-01-05T19:46:41.313,Paket Siparişi,Kapandı,Ana Kanal,,27372974,219
+253792675,,can,526.4,47.85,TRY,2025-01-05T18:56:26.29,2025-01-05T19:46:42.05,Paket Siparişi,Kapandı,Ana Kanal,,13056080,220
+253793106,,can,368.9,33.54,TRY,2025-01-05T18:57:16.197,2025-01-05T19:46:44.8,Paket Siparişi,Kapandı,Ana Kanal,,2280017,221
+253794478,,can,567.79,51.62,TRY,2025-01-05T18:59:51.877,2025-01-05T19:46:51.07,Paket Siparişi,Kapandı,Ana Kanal,,19594739,222
+253795091,,can,376.9,34.26,TRY,2025-01-05T19:01:05.493,2025-01-05T19:46:39.803,Paket Siparişi,Kapandı,Ana Kanal,,10081016,223
+253795222,,can,386.66,35.15,TRY,2025-01-05T19:01:19.343,2025-01-05T20:12:38.67,Paket Siparişi,Kapandı,Ana Kanal,,21830001,224
+253795853,,can,436.9,39.72,TRY,2025-01-05T19:02:28.943,2025-01-05T19:46:44.073,Paket Siparişi,Kapandı,Ana Kanal,,26518494,225
+253797626,,can,450.41,40.95,TRY,2025-01-05T19:05:44.57,2025-01-05T19:46:42.73,Paket Siparişi,Kapandı,Ana Kanal,,15400559,226
+253799171,,can,883.73,80.34,TRY,2025-01-05T19:08:41.653,2025-01-05T19:46:46.93,Paket Siparişi,Kapandı,Ana Kanal,,1383537,227
+253799366,,can,422.06,42.91,TRY,2025-01-05T19:09:02.683,2025-01-05T20:12:52.593,Paket Siparişi,Kapandı,Ana Kanal,,15859047,228
+253800406,,can,518.56,56.26,TRY,2025-01-05T19:11:01.657,2025-01-05T19:46:49.377,Paket Siparişi,Kapandı,Ana Kanal,,1250588,229
+253800555,Bahçe Masa 1,can,1079.4,10.68,TRY,2025-01-05T19:11:19.307,2025-01-05T20:15:48.927,Masa Siparişi,Kapandı,Ana Kanal,,0,230
+253802171,,can,410.66,41.88,TRY,2025-01-05T19:14:18.407,2025-01-05T20:12:36.85,Paket Siparişi,Kapandı,Ana Kanal,,21818054,231
+253802390,,can,368.9,33.54,TRY,2025-01-05T19:14:45.293,2025-01-05T20:12:40.973,Paket Siparişi,Kapandı,Ana Kanal,,12259636,232
+253802852,,can,745.8,67.8,TRY,2025-01-05T19:15:37.813,2025-01-05T20:12:43.237,Paket Siparişi,Kapandı,Ana Kanal,,33178220,233
+253804132,,can,359.9,32.72,TRY,2025-01-05T19:18:09.537,2025-01-05T19:47:02.033,Paket Siparişi,Kapandı,Ana Kanal,,29565637,234
+253806324,,can,482.7,43.88,TRY,2025-01-05T19:22:38.39,2025-01-05T19:46:55.827,Paket Siparişi,Kapandı,Ana Kanal,,18583740,235
+253806759,,can,386.66,35.15,TRY,2025-01-05T19:23:28.623,2025-01-05T20:12:44.93,Paket Siparişi,Kapandı,Ana Kanal,,29733212,236
+253807174,,can,368.9,33.54,TRY,2025-01-05T19:24:21.28,2025-01-05T20:12:55.85,Paket Siparişi,Kapandı,Ana Kanal,,31456241,237
+253808165,,can,377.41,38.86,TRY,2025-01-05T19:26:21.547,2025-01-05T20:12:48.697,Paket Siparişi,Kapandı,Ana Kanal,,29283886,238
+253808182,,can,2639.99,240.0,TRY,2025-01-05T19:26:23.727,2025-01-05T20:12:44.383,Paket Siparişi,Kapandı,Ana Kanal,,33178905,239
+253808526,,can,679.68,61.79,TRY,2025-01-05T19:27:07.993,2025-01-05T20:12:50.01,Paket Siparişi,Kapandı,Ana Kanal,,6153963,240
+253808850,,can,377.41,38.86,TRY,2025-01-05T19:27:52.21,2025-01-05T20:31:32.07,Paket Siparişi,Kapandı,Ana Kanal,,33178988,241
+253809517,,can,377.41,38.86,TRY,2025-01-05T19:29:22.647,2025-01-05T20:13:41.37,Paket Siparişi,Kapandı,Ana Kanal,,31947590,242
+253811157,,can,773.33,70.3,TRY,2025-01-05T19:33:04.663,2025-01-05T20:12:45.693,Paket Siparişi,Kapandı,Ana Kanal,,1060509,243
+253811825,,can,456.03,41.46,TRY,2025-01-05T19:34:30.86,2025-01-05T20:12:46.767,Paket Siparişi,Kapandı,Ana Kanal,,32954311,244
+253812445,,can,368.9,33.54,TRY,2025-01-05T19:35:52.073,2025-01-05T20:24:58.27,Paket Siparişi,Kapandı,Ana Kanal,,31062505,245
+253813848,,can,359.9,32.72,TRY,2025-01-05T19:38:56.69,2025-01-05T20:13:32.897,Paket Siparişi,Kapandı,Ana Kanal,,33179682,246
+253813933,,can,385.01,39.55,TRY,2025-01-05T19:39:10.62,2025-01-05T20:25:00.293,Paket Siparişi,Kapandı,Ana Kanal,,30878468,247
+253814129,,can,369.9,3.66,TRY,2025-01-05T19:39:38.257,2025-01-05T20:31:32.833,Paket Siparişi,Kapandı,Ana Kanal,,23826142,248
+253814166,,can,698.2,6.91,TRY,2025-01-05T19:39:43.147,2025-01-05T20:31:33.72,Paket Siparişi,Kapandı,Ana Kanal,,12380924,249
+253814883,,can,368.9,33.54,TRY,2025-01-05T19:41:20.483,2025-01-05T20:31:34.523,Paket Siparişi,Kapandı,Ana Kanal,,14539308,250
+253815263,,can,905.42,86.85,TRY,2025-01-05T19:42:12.167,2025-01-05T20:31:35.087,Paket Siparişi,Kapandı,Ana Kanal,,13681462,251
+253815996,Bahçe Masa 2,can,1109.7,10.99,TRY,2025-01-05T19:43:52.68,2025-01-05T20:20:18.883,Masa Siparişi,Kapandı,Ana Kanal,,0,252
+253816287,,can,378.8,34.44,TRY,2025-01-05T19:44:33.51,2025-01-05T20:13:35.023,Paket Siparişi,Kapandı,Ana Kanal,,29902615,253
+253816421,,can,560.91,50.99,TRY,2025-01-05T19:44:49.623,2025-01-05T20:31:35.78,Paket Siparişi,Kapandı,Ana Kanal,,25798336,254
+253816788,,can,815.91,74.17,TRY,2025-01-05T19:45:33.977,2025-01-05T20:31:37.37,Paket Siparişi,Kapandı,Ana Kanal,,400094,255
+253819073,,can,462.25,42.02,TRY,2025-01-05T19:50:43.963,2025-01-05T20:31:37.94,Paket Siparişi,Kapandı,Ana Kanal,,20245928,256
+253819076,,can,991.14,90.1,TRY,2025-01-05T19:50:44.363,2025-01-05T20:31:38.603,Paket Siparişi,Kapandı,Ana Kanal,,33180322,257
+253820278,,can,377.41,38.86,TRY,2025-01-05T19:53:30.58,2025-01-05T20:31:39.197,Paket Siparişi,Kapandı,Ana Kanal,,33170576,258
+253822972,,can,378.16,34.38,TRY,2025-01-05T19:59:35.09,2025-01-05T20:57:00.337,Paket Siparişi,Kapandı,Ana Kanal,,18464096,259
+253824858,,can,385.07,35.01,TRY,2025-01-05T20:04:00.75,2025-01-05T20:57:01.563,Paket Siparişi,Kapandı,Ana Kanal,,2385051,260
+253825482,,can,471.58,42.87,TRY,2025-01-05T20:05:29.62,2025-01-05T20:49:25.723,Paket Siparişi,Kapandı,Ana Kanal,,2314110,261
+253827788,,can,709.5,7.02,TRY,2025-01-05T20:11:05.58,2025-01-05T20:57:03.173,Paket Siparişi,Kapandı,Ana Kanal,,33181463,262
+253829450,,can,378.16,34.38,TRY,2025-01-05T20:15:05.037,2025-01-05T20:57:02.07,Paket Siparişi,Kapandı,Ana Kanal,,32828574,263
+253831194,,can,824.33,74.94,TRY,2025-01-05T20:19:29.85,2025-01-05T20:57:04.497,Paket Siparişi,Kapandı,Ana Kanal,,20466653,264
+253835102,,can,436.9,39.72,TRY,2025-01-05T20:29:19.403,2025-01-05T20:57:06.52,Paket Siparişi,Kapandı,Ana Kanal,,23828338,265
+253835868,Bahçe Masa 1,can,1094.7,10.84,TRY,2025-01-05T20:31:16.76,2025-01-05T21:12:36.803,Masa Siparişi,Kapandı,Ana Kanal,,0,266
+253837024,,can,396.16,43.17,TRY,2025-01-05T20:34:14.12,2025-01-05T20:59:08.18,Paket Siparişi,Kapandı,Ana Kanal,,32766497,267
+253839455,,can,378.16,34.38,TRY,2025-01-05T20:40:52.773,2025-01-05T21:37:58.797,Paket Siparişi,Kapandı,Ana Kanal,,25981002,268
+253841519,,can,789.8,7.82,TRY,2025-01-05T20:46:34.017,2025-01-05T21:37:59.827,Paket Siparişi,Kapandı,Ana Kanal,,15502855,269
+253842348,Bahçe Masa 2,can,699.2,6.92,TRY,2025-01-05T20:48:50.95,2025-01-05T21:12:40.017,Masa Siparişi,Kapandı,Ana Kanal,,0,270
+253842888,,can,699.2,6.92,TRY,2025-01-05T20:50:21.567,2025-01-05T21:24:21.1,Paket Siparişi,Kapandı,Ana Kanal,,10639719,271
+253843185,,can,1071.53,97.41,TRY,2025-01-05T20:51:11.627,2025-01-05T21:38:02.257,Paket Siparişi,Kapandı,Ana Kanal,,33183579,272
+253844347,,can,383.11,39.37,TRY,2025-01-05T20:54:38.757,2025-01-05T21:38:02.767,Paket Siparişi,Kapandı,Ana Kanal,,9852158,273
+253845797,,can,855.8,77.8,TRY,2025-01-05T20:59:00.62,2025-01-05T21:38:00.953,Paket Siparişi,Kapandı,Ana Kanal,,18545806,274
+253850114,,can,368.9,33.54,TRY,2025-01-05T21:12:24.63,2025-01-05T21:38:03.52,Paket Siparişi,Kapandı,Ana Kanal,,25921477,275
+253850852,,can,378.8,34.44,TRY,2025-01-05T21:14:44.253,2025-01-05T21:59:31.067,Paket Siparişi,Kapandı,Ana Kanal,,19900962,276
+253853532,,can,396.8,33.09,TRY,2025-01-05T21:23:18.573,2025-01-05T22:01:09.763,Paket Siparişi,Kapandı,Ana Kanal,,22561282,277
+253855597,,can,764.83,69.53,TRY,2025-01-05T21:30:19.44,2025-01-05T22:27:21.51,Paket Siparişi,Kapandı,Ana Kanal,,30243453,278
+253856870,,can,773.33,70.3,TRY,2025-01-05T21:34:42.11,2025-01-05T22:01:11.9,Paket Siparişi,Kapandı,Ana Kanal,,6506120,279
+253857152,,can,502.5,45.68,TRY,2025-01-05T21:35:49.493,2025-01-05T22:02:27.537,Paket Siparişi,Kapandı,Ana Kanal,,33185492,280
+253857416,,can,915.8,83.25,TRY,2025-01-05T21:36:40.123,2025-01-05T22:02:25.34,Paket Siparişi,Kapandı,Ana Kanal,,33185533,281
+253858779,,can,378.16,34.38,TRY,2025-01-05T21:41:20.32,2025-01-05T22:12:00.523,Paket Siparişi,Kapandı,Ana Kanal,,19698283,282
+253861249,,can,441.31,40.12,TRY,2025-01-05T21:50:11.593,2025-01-05T22:25:18.243,Paket Siparişi,Kapandı,Ana Kanal,,33186090,283
+253861305,,can,386.91,39.72,TRY,2025-01-05T21:50:25.027,2025-01-05T22:25:19.107,Paket Siparişi,Kapandı,Ana Kanal,,28381598,284
+253861436,,can,1508.09,137.11,TRY,2025-01-05T21:50:55.79,2025-01-05T22:20:04.597,Paket Siparişi,Kapandı,Ana Kanal,,560380,285
+253861804,,can,832.83,75.71,TRY,2025-01-05T21:52:24.337,2025-01-05T22:25:15.957,Paket Siparişi,Kapandı,Ana Kanal,,33186170,286
+253864594,,can,1976.5,179.69,TRY,2025-01-05T22:03:38.06,2025-01-05T22:25:20.713,Paket Siparişi,Kapandı,Ana Kanal,,18756162,287
+253865225,Masa 1,can,747.9,35.68,TRY,2025-01-05T22:06:02.957,2025-01-05T22:45:42.1,Masa Siparişi,Kapandı,Ana Kanal,,33186753,288
+253867371,,can,385.07,35.01,TRY,2025-01-05T22:15:16.897,2025-01-05T22:56:55.193,Paket Siparişi,Kapandı,Ana Kanal,,4257029,289
+253867376,,can,667.16,65.2,TRY,2025-01-05T22:15:18.067,2025-01-05T22:47:20.537,Paket Siparişi,Kapandı,Ana Kanal,,18128892,290
+253867529,,can,390.0,35.45,TRY,2025-01-05T22:16:01.47,2025-01-05T22:47:15.283,Paket Siparişi,Kapandı,Ana Kanal,,2047446,291
+253867945,Bahçe Masa 1,can,359.9,3.56,TRY,2025-01-05T22:17:46.28,2025-01-05T22:18:28.9,Masa Siparişi,Kapandı,Ana Kanal,,0,292
+253869039,,can,892.33,81.12,TRY,2025-01-05T22:22:38.903,2025-01-05T22:47:40.1,Paket Siparişi,Kapandı,Ana Kanal,,28759857,293
+253869085,,can,461.96,46.54,TRY,2025-01-05T22:22:50.703,2025-01-05T23:03:36.947,Paket Siparişi,Kapandı,Ana Kanal,,26659539,294
+253869088,,can,377.41,38.86,TRY,2025-01-05T22:22:51.1,2025-01-05T22:47:26.633,Paket Siparişi,Kapandı,Ana Kanal,,21334147,295
+253870140,,can,764.83,69.53,TRY,2025-01-05T22:27:48.283,2025-01-05T23:02:44.273,Paket Siparişi,Kapandı,Ana Kanal,,33187603,296
+253871315,,can,410.66,41.88,TRY,2025-01-05T22:33:24.337,2025-01-05T22:47:34.427,Paket Siparişi,Kapandı,Ana Kanal,,18879188,297
+253873262,,can,498.16,49.83,TRY,2025-01-05T22:43:18.34,2025-01-05T23:18:05.133,Paket Siparişi,Kapandı,Ana Kanal,,33188238,298
+253873428,,can,450.41,40.95,TRY,2025-01-05T22:44:09.503,2025-01-05T23:09:54.127,Paket Siparişi,Kapandı,Ana Kanal,,33188269,299
+253873877,,can,1106.7,100.61,TRY,2025-01-05T22:46:30.91,2025-01-05T23:18:11.63,Paket Siparişi,Kapandı,Ana Kanal,,17270583,300
+253874084,,can,437.8,39.8,TRY,2025-01-05T22:47:48.47,2025-01-05T23:18:08.667,Paket Siparişi,Kapandı,Ana Kanal,,32792697,301
+253874208,,can,520.54,47.32,TRY,2025-01-05T22:48:29.66,2025-01-05T23:17:58.587,Paket Siparişi,Kapandı,Ana Kanal,,33188418,302
+253905792,,can,398.5,36.23,TRY,2025-01-06T11:09:35.503,2025-01-06T11:47:28.897,Paket Siparişi,Kapandı,Ana Kanal,,21507902,101
+253907113,,can,497.9,45.26,TRY,2025-01-06T11:19:44.383,2025-01-06T11:47:30.477,Paket Siparişi,Kapandı,Ana Kanal,,20403702,102
+253908140,,can,412.93,42.08,TRY,2025-01-06T11:27:16.797,2025-01-06T11:47:06.633,Paket Siparişi,Kapandı,Ana Kanal,,1358122,103
+253908460,,can,796.8,72.44,TRY,2025-01-06T11:29:21.957,2025-01-06T12:02:01.727,Paket Siparişi,Kapandı,Ana Kanal,,22346990,104
+253913969,,can,378.16,34.38,TRY,2025-01-06T11:56:47.62,2025-01-06T12:33:02.947,Paket Siparişi,Kapandı,Ana Kanal,,33195202,105
+253916421,,can,377.41,38.86,TRY,2025-01-06T12:05:45.177,2025-01-06T12:33:03.74,Paket Siparişi,Kapandı,Ana Kanal,,16155449,106
+253919908,,can,378.16,34.38,TRY,2025-01-06T12:15:58.45,2025-01-06T13:05:51.01,Paket Siparişi,Kapandı,Ana Kanal,,33195794,107
+253920030,,can,377.41,38.86,TRY,2025-01-06T12:16:18.49,2025-01-06T13:20:05.593,Paket Siparişi,Kapandı,Ana Kanal,,26611397,108
+253920174,,can,378.16,34.38,TRY,2025-01-06T12:16:42.71,2025-01-06T13:20:06.827,Paket Siparişi,Kapandı,Ana Kanal,,21046659,109
+253921030,,can,368.9,33.54,TRY,2025-01-06T12:19:10.747,2025-01-06T13:05:52.01,Paket Siparişi,Kapandı,Ana Kanal,,33195907,110
+253926187,,can,411.61,41.96,TRY,2025-01-06T12:33:38.517,2025-01-06T13:20:08.21,Paket Siparişi,Kapandı,Ana Kanal,,14645253,111
+253926865,Bahçe Masa 1,can,719.8,7.13,TRY,2025-01-06T12:35:33.757,2025-01-06T13:17:54.597,Masa Siparişi,Kapandı,Ana Kanal,,0,112
+253928962,,can,469.84,42.71,TRY,2025-01-06T12:41:02.673,2025-01-06T13:20:09.713,Paket Siparişi,Kapandı,Ana Kanal,,31815423,113
+253929788,,can,497.16,45.2,TRY,2025-01-06T12:43:15.563,2025-01-06T13:20:37.177,Paket Siparişi,Kapandı,Ana Kanal,,16975474,114
+253930690,Masa 1,can,1396.4,13.82,TRY,2025-01-06T12:45:34.973,2025-01-06T13:21:12.127,Masa Siparişi,Kapandı,Ana Kanal,,0,115
+253932697,,can,378.16,34.38,TRY,2025-01-06T12:51:27.01,2025-01-06T13:05:52.81,Paket Siparişi,Kapandı,Ana Kanal,,33196914,116
+253933560,,can,368.9,33.54,TRY,2025-01-06T12:53:57.54,2025-01-06T13:10:39.677,Paket Siparişi,Kapandı,Ana Kanal,,33196993,117
+253934169,,can,756.33,68.76,TRY,2025-01-06T12:55:48.557,2025-01-06T13:56:54.493,Paket Siparişi,Kapandı,Ana Kanal,,28007287,118
+253934336,,can,377.41,38.86,TRY,2025-01-06T12:56:15.363,2025-01-06T13:56:55.32,Paket Siparişi,Kapandı,Ana Kanal,,16152202,119
+253935392,,can,1483.6,134.88,TRY,2025-01-06T12:59:33.807,2025-01-06T13:56:52.37,Paket Siparişi,Kapandı,Ana Kanal,,33197187,120
+253935500,,can,737.8,67.08,TRY,2025-01-06T12:59:54.813,2025-01-06T13:56:50.65,Paket Siparişi,Kapandı,Ana Kanal,,32842084,121
+253936294,,can,1085.54,98.69,TRY,2025-01-06T13:02:26.503,2025-01-06T13:59:38.937,Paket Siparişi,Kapandı,Ana Kanal,,33197273,122
+253938158,,can,378.16,34.38,TRY,2025-01-06T13:08:20.033,2025-01-06T13:56:56.28,Paket Siparişi,Kapandı,Ana Kanal,,23985102,123
+253939085,,can,386.91,39.72,TRY,2025-01-06T13:11:22.653,2025-01-06T13:56:58.357,Paket Siparişi,Kapandı,Ana Kanal,,30882440,124
+253939107,,can,427.9,38.9,TRY,2025-01-06T13:11:26.19,2025-01-06T13:57:06.507,Paket Siparişi,Kapandı,Ana Kanal,,7276415,125
+253942499,,can,396.16,40.56,TRY,2025-01-06T13:22:20.717,2025-01-06T13:57:13.663,Paket Siparişi,Kapandı,Ana Kanal,,29417094,126
+253948293,,can,1063.57,96.7,TRY,2025-01-06T13:42:59.633,2025-01-06T14:12:51.05,Paket Siparişi,Kapandı,Ana Kanal,,398160,127
+253951203,,can,386.66,35.15,TRY,2025-01-06T13:53:23.663,2025-01-06T14:06:32.067,Paket Siparişi,Kapandı,Ana Kanal,,30354839,128
+253953076,,can,368.9,33.54,TRY,2025-01-06T14:00:01.32,2025-01-06T14:47:09.167,Paket Siparişi,Kapandı,Ana Kanal,,20740389,129
+253953437,,can,488.66,44.42,TRY,2025-01-06T14:01:24.823,2025-01-06T14:47:10.257,Paket Siparişi,Kapandı,Ana Kanal,,7546896,130
+253955067,,can,383.11,39.37,TRY,2025-01-06T14:07:12.74,2025-01-06T14:47:11.143,Paket Siparişi,Kapandı,Ana Kanal,,30256837,131
+253955819,,can,511.96,46.54,TRY,2025-01-06T14:09:35.187,2025-01-06T14:52:37.96,Paket Siparişi,Kapandı,Ana Kanal,,13885159,132
+253955995,,can,378.16,34.38,TRY,2025-01-06T14:10:15.383,2025-01-06T14:47:11.853,Paket Siparişi,Kapandı,Ana Kanal,,32280564,133
+253957252,Bahçe Masa 1,can,394.9,3.91,TRY,2025-01-06T14:14:44.803,2025-01-06T14:41:24.093,Masa Siparişi,Kapandı,Ana Kanal,,0,134
+253958559,,can,386.91,39.72,TRY,2025-01-06T14:19:16.947,2025-01-06T14:47:13.29,Paket Siparişi,Kapandı,Ana Kanal,,18466282,135
+253960593,,can,390.0,35.45,TRY,2025-01-06T14:26:29.593,2025-01-06T14:47:14.99,Paket Siparişi,Kapandı,Ana Kanal,,33199723,136
+253961314,,can,592.02,58.37,TRY,2025-01-06T14:29:05.563,2025-01-06T14:52:32.96,Paket Siparişi,Kapandı,Ana Kanal,,33199801,137
+253961716,Masa 3,can,349.0,31.73,TRY,2025-01-06T14:30:18.823,2025-01-06T14:43:43.773,Masa Siparişi,Kapandı,Ana Kanal,,33199840,138
+253965383,,can,403.58,36.69,TRY,2025-01-06T14:42:43.23,2025-01-06T15:32:37.047,Paket Siparişi,Kapandı,Ana Kanal,,1350117,139
+253968204,,müdür,514.8,11.57,TRY,2025-01-06T14:52:19.397,2025-01-06T14:59:02.947,Gel-Al Satış,Kapandı,Ana Kanal,,0,140
+253969248,,can,683.9,62.17,TRY,2025-01-06T14:55:48.333,2025-01-06T15:32:38.343,Paket Siparişi,Kapandı,Ana Kanal,,33200557,141
+253970168,,can,756.33,68.76,TRY,2025-01-06T14:58:55.89,2025-01-06T15:32:40.44,Paket Siparişi,Kapandı,Ana Kanal,,23211379,142
+253970811,,can,999.77,95.44,TRY,2025-01-06T15:01:08.577,2025-01-06T15:32:55.417,Paket Siparişi,Kapandı,Ana Kanal,,536827,143
+253972518,,can,394.51,40.41,TRY,2025-01-06T15:06:50.617,2025-01-06T15:36:10.26,Paket Siparişi,Kapandı,Ana Kanal,,30392639,144
+253974948,,can,375.9,3.72,TRY,2025-01-06T15:14:53.543,2025-01-06T16:42:04.22,Paket Siparişi,Kapandı,Ana Kanal,,28803293,145
+253975660,,can,386.66,35.15,TRY,2025-01-06T15:17:22.62,2025-01-06T16:42:34.043,Paket Siparişi,Kapandı,Ana Kanal,,33201167,146
+253975883,,can,866.73,78.79,TRY,2025-01-06T15:18:06.4,2025-01-06T16:42:05.44,Paket Siparişi,Kapandı,Ana Kanal,,33201188,147
+253976304,,can,801.4,72.86,TRY,2025-01-06T15:19:31.587,2025-01-06T16:42:06.353,Paket Siparişi,Kapandı,Ana Kanal,,30327547,148
+253978679,,can,377.41,38.86,TRY,2025-01-06T15:27:11.78,2025-01-06T16:42:36.59,Paket Siparişi,Kapandı,Ana Kanal,,17523616,149
+253979306,,can,388.03,35.28,TRY,2025-01-06T15:29:09.99,2025-01-06T16:42:30.877,Paket Siparişi,Kapandı,Ana Kanal,,31920138,150
+253979534,,can,388.03,35.28,TRY,2025-01-06T15:29:54.26,2025-01-06T16:42:29.153,Paket Siparişi,Kapandı,Ana Kanal,,33201528,151
+253979967,,can,427.9,38.9,TRY,2025-01-06T15:31:18.143,2025-01-06T16:42:37.963,Paket Siparişi,Kapandı,Ana Kanal,,7213493,152
+253979985,,can,394.56,35.87,TRY,2025-01-06T15:31:22.607,2025-01-06T16:42:39.617,Paket Siparişi,Kapandı,Ana Kanal,,33201560,153
+253980935,,can,368.9,33.54,TRY,2025-01-06T15:34:28.46,2025-01-06T16:42:41.743,Paket Siparişi,Kapandı,Ana Kanal,,26566652,154
+253981606,,can,497.9,45.26,TRY,2025-01-06T15:36:35.733,2025-01-06T16:42:40.537,Paket Siparişi,Kapandı,Ana Kanal,,4152388,155
+253982239,,can,368.9,33.54,TRY,2025-01-06T15:38:44.807,2025-01-06T16:42:42.51,Paket Siparişi,Kapandı,Ana Kanal,,31290980,156
+253982552,,can,432.9,39.35,TRY,2025-01-06T15:39:47.35,2025-01-06T16:42:43.25,Paket Siparişi,Kapandı,Ana Kanal,,25040822,157
+253984942,,can,422.06,42.91,TRY,2025-01-06T15:47:33.673,2025-01-06T16:42:44.51,Paket Siparişi,Kapandı,Ana Kanal,,33202032,158
+253986353,,can,804.82,77.71,TRY,2025-01-06T15:52:04.74,2025-01-06T16:42:45.487,Paket Siparişi,Kapandı,Ana Kanal,,29403932,159
+253986776,,can,573.58,52.14,TRY,2025-01-06T15:53:30.277,2025-01-06T16:42:46.207,Paket Siparişi,Kapandı,Ana Kanal,,496547,160
+253988295,,can,368.9,33.54,TRY,2025-01-06T15:58:24.47,2025-01-06T16:42:49.233,Paket Siparişi,Kapandı,Ana Kanal,,30288150,161
+253988622,,can,560.91,50.99,TRY,2025-01-06T15:59:25.393,2025-01-06T16:54:51.08,Paket Siparişi,Kapandı,Ana Kanal,,33094783,162
+253990336,,can,385.01,39.55,TRY,2025-01-06T16:04:54.177,2025-01-06T16:42:52.063,Paket Siparişi,Kapandı,Ana Kanal,,8070667,163
+253992672,,can,575.08,52.27,TRY,2025-01-06T16:11:55.603,2025-01-06T16:42:53.263,Paket Siparişi,Kapandı,Ana Kanal,,33202808,164
+253993199,,can,906.14,82.38,TRY,2025-01-06T16:13:24.33,2025-01-06T17:16:52.447,Paket Siparişi,Kapandı,Ana Kanal,,33202848,165
+253993624,,can,368.9,33.54,TRY,2025-01-06T16:14:50.51,2025-01-06T16:42:55.44,Paket Siparişi,Kapandı,Ana Kanal,,25510478,166
+253996642,,can,349.9,3.46,TRY,2025-01-06T16:24:16.14,2025-01-06T16:54:46.24,Paket Siparişi,Kapandı,Ana Kanal,,28252265,167
+253997220,,can,377.41,38.86,TRY,2025-01-06T16:26:00.317,2025-01-06T17:16:53.853,Paket Siparişi,Kapandı,Ana Kanal,,33203232,168
+253999648,,can,386.66,35.15,TRY,2025-01-06T16:33:19.753,2025-01-06T17:16:55.07,Paket Siparişi,Kapandı,Ana Kanal,,31241972,169
+254000166,,can,446.16,40.56,TRY,2025-01-06T16:34:48.347,2025-01-06T16:57:30.553,Paket Siparişi,Kapandı,Ana Kanal,,14580048,170
+254001552,,can,457.36,46.12,TRY,2025-01-06T16:39:14.027,2025-01-06T17:16:56.01,Paket Siparişi,Kapandı,Ana Kanal,,557990,171
+254003067,,can,446.16,40.56,TRY,2025-01-06T16:43:38.59,2025-01-06T17:16:57.363,Paket Siparişi,Kapandı,Ana Kanal,,33203821,172
+254007171,,can,1844.5,167.68,TRY,2025-01-06T16:55:56.963,2025-01-06T17:17:07.52,Paket Siparişi,Kapandı,Ana Kanal,,33204239,173
+254007698,,can,579.9,5.74,TRY,2025-01-06T16:57:32.587,2025-01-06T17:17:09.787,Paket Siparişi,Kapandı,Ana Kanal,,23638966,174
